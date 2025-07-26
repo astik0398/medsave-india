@@ -1,0 +1,135 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Search, BarChart3, Tag, Wallet } from "lucide-react";
+
+const HowItWorks = () => {
+  const steps = [
+    {
+      step: 1,
+      icon: Search,
+      title: "Search Medicine",
+      description: "Enter the name of your medicine in our search bar. We support both brand names and generic names.",
+      color: "text-primary"
+    },
+    {
+      step: 2,
+      icon: BarChart3,
+      title: "Compare Prices",
+      description: "View real-time prices from multiple trusted e-pharmacy platforms including delivery options.",
+      color: "text-secondary"
+    },
+    {
+      step: 3,
+      icon: Tag,
+      title: "Apply Coupons",
+      description: "Browse through available discount coupons and promotional offers to maximize your savings.",
+      color: "text-accent"
+    },
+    {
+      step: 4,
+      icon: Wallet,
+      title: "Save Money",
+      description: "Purchase from the platform with the best deal and enjoy significant savings on your healthcare.",
+      color: "text-secondary"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            How MedSave India Works
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Save money on your medicines in just 4 simple steps
+          </p>
+        </div>
+
+        <div className="max-w-6xl mx-auto">
+          {/* Desktop Layout */}
+          <div className="hidden md:block">
+            <div className="grid md:grid-cols-4 gap-8 relative">
+              {/* Connection Lines */}
+              <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-primary via-secondary to-accent opacity-30"></div>
+              
+              {steps.map((step, index) => (
+                <div key={index} className="relative">
+                  <Card className="text-center shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
+                    <CardContent className="p-8">
+                      {/* Step Number */}
+                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">
+                        <span className="text-2xl font-bold text-primary-foreground">{step.step}</span>
+                      </div>
+                      
+                      {/* Icon */}
+                      <div className={`inline-flex p-4 bg-muted rounded-2xl mb-4 ${step.color}`}>
+                        <step.icon className="h-8 w-8" />
+                      </div>
+                      
+                      {/* Content */}
+                      <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile Layout */}
+          <div className="md:hidden space-y-6">
+            {steps.map((step, index) => (
+              <div key={index} className="relative">
+                {index < steps.length - 1 && (
+                  <div className="absolute left-8 top-20 w-px h-16 bg-gradient-to-b from-primary to-secondary opacity-30"></div>
+                )}
+                
+                <Card className="shadow-soft">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      {/* Step Number & Icon */}
+                      <div className="flex flex-col items-center space-y-3">
+                        <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">
+                          <span className="text-lg font-bold text-primary-foreground">{step.step}</span>
+                        </div>
+                        <div className={`p-3 bg-muted rounded-xl ${step.color}`}>
+                          <step.icon className="h-6 w-6" />
+                        </div>
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="flex-1 pt-2">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Additional Benefits */}
+        <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="text-center p-6 bg-primary-glow rounded-2xl">
+            <h4 className="font-semibold text-primary mb-2">100% Verified</h4>
+            <p className="text-sm text-muted-foreground">All partner pharmacies are licensed and verified</p>
+          </div>
+          
+          <div className="text-center p-6 bg-secondary-glow rounded-2xl">
+            <h4 className="font-semibold text-secondary mb-2">Real-time Prices</h4>
+            <p className="text-sm text-muted-foreground">Prices updated every hour for accuracy</p>
+          </div>
+          
+          <div className="text-center p-6 bg-primary-glow rounded-2xl">
+            <h4 className="font-semibold text-primary mb-2">Free to Use</h4>
+            <p className="text-sm text-muted-foreground">No hidden charges or subscription fees</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorks;
