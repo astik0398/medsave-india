@@ -6,23 +6,15 @@ const FAQ = () => {
   const faqData = [
     {
       question: "How do you collect the price data?",
-      answer: "We use automated systems to collect price data from partner e-pharmacy websites every hour. Our technology ensures that prices are accurate and up-to-date. We also verify prices manually to maintain data quality."
+      answer: "We use automated systems to collect price data from partner e-pharmacy websites frequently. Our technology ensures that prices are accurate and up-to-date. We also verify prices manually to maintain data quality."
     },
     {
       question: "Is MedSave India affiliated with the pharmacy platforms?",
       answer: "No, MedSave India is an independent platform. We are not owned by or affiliated with any of the e-pharmacy platforms we compare. This ensures unbiased price comparisons and recommendations."
     },
     {
-      question: "Are the prices updated in real-time?",
-      answer: "Prices are updated every hour to ensure accuracy. While not technically real-time, this frequency ensures you always see current pricing information. Some flash sales or limited-time offers might have slight delays."
-    },
-    {
       question: "Do you charge any fees for using the service?",
       answer: "No, MedSave India is completely free to use. We don't charge users any fees for price comparisons, coupon access, or any other features. Our revenue comes from affiliate partnerships with e-pharmacies."
-    },
-    {
-      question: "How do I know if a medicine is available?",
-      answer: "Our platform shows real-time availability status for each medicine across different platforms. If a medicine is out of stock, we'll show 'Out of Stock' and offer to notify you when it becomes available again."
     },
     {
       question: "Can I buy medicines directly through MedSave India?",
@@ -31,10 +23,6 @@ const FAQ = () => {
     {
       question: "How accurate are the coupon codes?",
       answer: "We verify all coupon codes regularly and remove expired ones. However, some coupons might have usage limits or specific terms. We recommend checking the terms on the e-pharmacy website before applying any coupon."
-    },
-    {
-      question: "Do you compare generic medicines as well?",
-      answer: "Yes, we compare prices for both branded and generic medicines. Our search function can find both types, and we clearly indicate whether a medicine is branded or generic in the results."
     },
     {
       question: "How do you ensure the quality of partner pharmacies?",

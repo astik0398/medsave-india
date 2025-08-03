@@ -4,28 +4,58 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 import { Mail, CheckCircle, Bell } from "lucide-react";
+import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!email) return;
 
-    setIsSubmitting(true);
-    
-    // Simulate subscription
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Subscribed Successfully!",
-      description: "You'll receive weekly updates on medicine prices and exclusive offers.",
+  setIsSubmitting(true);
+
+  try {
+    const formData = new FormData();
+    formData.append("access_key", "6466632c-274d-4d98-9582-7c8e4598aca5");
+    formData.append("email", email);
+    formData.append("subject", "New Newsletter Subscription");
+    formData.append("from_name", "Medsave Newsletter");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
     });
 
-    setEmail("");
+    const result = await response.json();
+
+    if (result.success) {
+      toast({
+        title: "Subscribed Successfully!",
+        description: "You'll receive weekly updates on medicine prices and exclusive offers.",
+      });
+      setEmail("");
+      const { error } = await supabase
+      .from("newsletter")
+      .insert([{ email, mail_sent: false }]);
+    } else {
+      toast({
+        title: "Subscription Failed",
+        description: "Something went wrong. Please try again.",
+      });
+      console.error(result);
+    }
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Unable to connect to the server.",
+    });
+    console.error(error);
+  } finally {
     setIsSubmitting(false);
-  };
+  }
+};
 
   return (
     <section className="py-20 bg-gradient-primary">

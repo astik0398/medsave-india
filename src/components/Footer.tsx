@@ -58,13 +58,13 @@ const Footer = () => {
             
             {/* Contact Info */}
             <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>support@medsaveindia.com</span>
+                <span>medsaveindia@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 1800-123-4567</span>
+                <span>+91 798-001-8498</span>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ const Footer = () => {
         <Separator className="mb-8" />
 
         {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-[-40px]">
           {/* Copyright */}
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
             <span>© 2024 MedSave India. Made with</span>
@@ -165,13 +165,13 @@ const Footer = () => {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-8 p-4 bg-muted/50 rounded-lg">
+        {/* <div className="mt-8 p-4 bg-muted/50 rounded-lg">
           <p className="text-xs text-muted-foreground text-center">
             <strong>Disclaimer:</strong> MedSave India is an independent price comparison platform. 
             We are not affiliated with any pharmacy. Prices are subject to change. 
             Always verify prices and availability on the respective pharmacy websites before purchase.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

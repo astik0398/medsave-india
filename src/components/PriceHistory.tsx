@@ -25,7 +25,8 @@ const PriceHistory = () => {
     netmeds: '#8884d8',
     tata1mg: '#82ca9d',
     pharmeasy: '#ffc658',
-    apollo: '#ff7c7c'
+    apollo: '#ff7c7c',
+    truemeds: '#a1ff7cff'
   };
 
   return (
@@ -104,7 +105,7 @@ const PriceHistory = () => {
           </Card>
 
           {/* Legend */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+          <div  className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-6">
             {Object.entries(platformColors).map(([platform, color]) => (
               <div key={platform} className="flex items-center space-x-2 p-3 bg-card rounded-lg border">
                 <div 

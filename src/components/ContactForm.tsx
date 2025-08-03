@@ -12,33 +12,63 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+  try {
+    const formPayload = new FormData();
+    formPayload.append("access_key", "6466632c-274d-4d98-9582-7c8e4598aca5");
+    formPayload.append("name", formData.name);
+    formPayload.append("email", formData.email);
+    formPayload.append("message", formData.message);
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. We'll get back to you within 24 hours.",
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formPayload,
     });
 
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    const data = await response.json();
+
+    if (data.success) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. We'll get back to you within 24 hours.",
+      });
+
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      console.error("Error submitting form:", data);
+
+      toast({
+        title: "Error Sending the Message!",
+        description: "There was a problem sending your message. Please try again!",
+      });
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+
+    toast({
+      title: "Network Error!",
+      description: "Please check your internet connection and try again.",
+    });
+  } finally {
     setIsSubmitting(false);
-  };
+  }
+};
 
   return (
     <section id="contact" className="py-20 bg-background">
@@ -48,7 +78,8 @@ const ContactForm = () => {
             Get in Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions about medicine prices or need help? We're here to assist you.
+            Have questions about medicine prices or need help? We're here to
+            assist you.
           </p>
         </div>
 
@@ -56,41 +87,49 @@ const ContactForm = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-foreground mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-primary-glow rounded-lg">
+                <div style={{ alignItems:'center'}} className="flex items-start space-x-4">
+                  <div  className="p-3 bg-primary-glow rounded-lg">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                    <p className="text-muted-foreground">support@medsaveindia.com</p>
-                    <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
+                    <h4 className="font-semibold text-foreground">
+                      Email
+                    </h4>
+                    <p className="text-muted-foreground">
+                      medsaveindia@gmail.com
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      We'll respond within 24 hours
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div style={{alignItems:'center'}} className="flex items-start space-x-4">
                   <div className="p-3 bg-secondary-glow rounded-lg">
                     <Phone className="h-6 w-6 text-secondary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                    <p className="text-muted-foreground">+91 1800-123-4567</p>
-                    <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM IST</p>
+                    <h4 className="font-semibold text-foreground">
+                      Phone
+                    </h4>
+                    <p className="text-muted-foreground">+91 798-001-8498</p>
+                   
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div style={{alignItems:'center'}} className="flex items-start space-x-4">
                   <div className="p-3 bg-primary-glow rounded-lg">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Office</h4>
-                    <p className="text-muted-foreground">
-                      123 Healthcare Plaza<br />
-                      Mumbai, Maharashtra 400001<br />
-                      India
-                    </p>
+                    <h4 className="font-semibold text-foreground">
+                      Office
+                    </h4>
+                    <p className="text-muted-foreground">Mumbai, India</p>
                   </div>
                 </div>
               </div>
@@ -100,16 +139,28 @@ const ContactForm = () => {
             <div className="p-6 bg-gradient-subtle rounded-2xl">
               <h4 className="font-semibold text-foreground mb-3">Quick Help</h4>
               <div className="space-y-2">
-                <a href="#faq" className="block text-sm text-primary hover:underline">
+                <a
+                  href="#faq"
+                  className="block text-sm text-primary hover:underline"
+                >
                   → How do you collect price data?
                 </a>
-                <a href="#faq" className="block text-sm text-primary hover:underline">
+                <a
+                  href="#faq"
+                  className="block text-sm text-primary hover:underline"
+                >
                   → Are the prices updated in real-time?
                 </a>
-                <a href="#faq" className="block text-sm text-primary hover:underline">
+                <a
+                  href="#faq"
+                  className="block text-sm text-primary hover:underline"
+                >
                   → Is MedSave India free to use?
                 </a>
-                <a href="#faq" className="block text-sm text-primary hover:underline">
+                <a
+                  href="#faq"
+                  className="block text-sm text-primary hover:underline"
+                >
                   → View all FAQs
                 </a>
               </div>
@@ -119,7 +170,9 @@ const ContactForm = () => {
           {/* Contact Form */}
           <Card className="shadow-medium">
             <CardHeader>
-              <CardTitle className="text-xl text-foreground">Send us a Message</CardTitle>
+              <CardTitle className="text-xl text-foreground">
+                Send us a Message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -162,9 +215,9 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  className="w-full" 
+                <Button
+                  type="submit"
+                  className="w-full"
                   variant="hero"
                   disabled={isSubmitting}
                 >

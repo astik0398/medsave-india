@@ -3,98 +3,64 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Copy, Calendar, Tag, Gift } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { useEffect, useState } from "react";
+import netmeds from "../assets/netmeds trans.png";
+import onemg from "../assets/1mg trans.png";
+import truemeds from "../assets/truemeds trans.png";
+import pharmeasy from "../assets/pharmeasy trans.png";
+import apollo from "../assets/apllo pharmacy trans.png";
 
 const CouponsSection = () => {
-  const couponData = [
-    {
-      platform: "Netmeds",
-      logo: "🏥",
-      coupons: [
-        {
-          code: "SAVE20",
-          title: "20% Off on First Order",
-          description: "Valid on orders above ₹500",
-          discount: "Up to ₹100",
-          expiry: "31 Dec 2024",
-          isNew: true
-        },
-        {
-          code: "HEALTH15",
-          title: "15% Off on Health Products",
-          description: "No minimum order value",
-          discount: "Up to ₹75",
-          expiry: "15 Jan 2025",
-          isNew: false
-        }
-      ]
-    },
-    {
-      platform: "Tata 1mg",
-      logo: "💊",
-      coupons: [
-        {
-          code: "FIRST25",
-          title: "25% Off for New Users",
-          description: "Valid on orders above ₹300",
-          discount: "Up to ₹150",
-          expiry: "28 Dec 2024",
-          isNew: true
-        },
-        {
-          code: "MEDICINE10",
-          title: "10% Off on All Medicines",
-          description: "Valid on all prescription drugs",
-          discount: "Up to ₹50",
-          expiry: "20 Jan 2025",
-          isNew: false
-        }
-      ]
-    },
-    {
-      platform: "PharmEasy",
-      logo: "🔬",
-      coupons: [
-        {
-          code: "PHARMA30",
-          title: "30% Off + Free Delivery",
-          description: "Valid on orders above ₹999",
-          discount: "Up to ₹200",
-          expiry: "5 Jan 2025",
-          isNew: true
-        },
-        {
-          code: "WELLNESS12",
-          title: "12% Off on Wellness Products",
-          description: "Valid on vitamins & supplements",
-          discount: "Up to ₹80",
-          expiry: "10 Feb 2025",
-          isNew: false
-        }
-      ]
-    },
-    {
-      platform: "Apollo Pharmacy",
-      logo: "⚕️",
-      coupons: [
-        {
-          code: "APOLLO40",
-          title: "40% Off on Health Checkups",
-          description: "Book health packages online",
-          discount: "Up to ₹500",
-          expiry: "25 Dec 2024",
-          isNew: true
-        },
-        {
-          code: "GENERIC20",
-          title: "20% Off on Generic Medicines",
-          description: "Valid on all generic drugs",
-          discount: "Up to ₹100",
-          expiry: "30 Jan 2025",
-          isNew: false
-        }
-      ]
-    }
-  ];
+
+    const [coupons, setCoupons] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const fetchCoupons = async () => {
+  setLoading(true);
+
+  const endpoints = {
+    "netmeds": "https://medicompare-production.up.railway.app/netmeds-coupons",
+    "pharmeasy": "https://medicompare-production.up.railway.app/pharmeasy-coupons",
+    "1mg": "https://medicompare-production.up.railway.app/1mg-coupons",
+    "truemeds": "https://medicompare-production.up.railway.app/truemeds-coupons"
+  };
+
+  try {
+    const responses = await Promise.all(
+      Object.entries(endpoints).map(async ([platform, url]) => {
+        const res = await fetch(url);
+        const data = await res.json();
+        return {
+          platform,
+          logo:
+            platform === "netmeds"
+              ? netmeds
+              : platform === "pharmeasy"
+              ? pharmeasy
+              : platform === "1mg"
+              ? onemg : platform === "truemeds"
+              ? truemeds : platform === "apollo"
+              ? apollo
+              : "💊",
+          coupons: data.coupons || []
+        };
+      })
+    );
+    console.log('responses===>', responses);
+    
+    setCoupons(responses); // Set array of platform objects, each with coupons
+  } catch (error) {
+    console.error("Error fetching coupons:", error);
+  } finally {
+    setLoading(false);
+  }
+};
+    // useEffect to trigger coupon fetch when activeTab changes
+  useEffect(() => {
+    fetchCoupons();
+  }, []);
+
+  
 
   const copyToClipboard = (code: string) => {
     navigator.clipboard.writeText(code);
@@ -120,16 +86,16 @@ const CouponsSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {couponData.map((platform, platformIndex) => (
+          {coupons.map((platform, platformIndex) => (
             <Card key={platformIndex} className="shadow-soft hover:shadow-medium transition-all duration-300">
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center space-x-3">
-                  <span className="text-2xl">{platform.logo}</span>
-                  <span className="text-xl">{platform.platform} Coupons</span>
+                  <img width='50px' src={platform.logo} alt={platform.platform} />
+                  <span className="text-xl">{platform.platform.toUpperCase()} COUPON</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {platform.coupons.map((coupon, couponIndex) => (
+                {platform.coupons.slice(0, 2).map((coupon, couponIndex) => (
                   <div
                     key={couponIndex}
                     className="p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors group"
@@ -137,22 +103,22 @@ const CouponsSection = () => {
                     <div className="flex items-start justify-between mb-3">
                       <div className="flex-1">
                         <div className="flex items-center space-x-2 mb-1">
-                          <h4 className="font-semibold text-foreground">{coupon.title}</h4>
+                          <h4 className="font-semibold text-foreground">{coupon.title ? coupon.title: coupon.additionalDetail}</h4>
                           {coupon.isNew && (
                             <Badge variant="secondary" className="text-xs">
                               NEW
                             </Badge>
                           )}
                         </div>
-                        <p className="text-sm text-muted-foreground mb-2">{coupon.description}</p>
+                        <p className="text-sm text-muted-foreground mb-2">{coupon.additionalDetail}</p>
                         <div className="flex items-center space-x-4 text-xs text-muted-foreground">
                           <div className="flex items-center space-x-1">
                             <Tag className="h-3 w-3" />
-                            <span>{coupon.discount}</span>
+                            <span>{coupon.discount || 'Up to ₹100'}</span>
                           </div>
                           <div className="flex items-center space-x-1">
                             <Calendar className="h-3 w-3" />
-                            <span>Expires: {coupon.expiry}</span>
+                            <span>Expires: {coupon.validTill}</span>
                           </div>
                         </div>
                       </div>
@@ -162,13 +128,13 @@ const CouponsSection = () => {
                       <div className="flex items-center space-x-2">
                         <span className="text-sm text-muted-foreground">Code:</span>
                         <code className="px-2 py-1 bg-primary-glow text-primary text-sm font-mono rounded">
-                          {coupon.code}
+                          {coupon.couponCode}
                         </code>
                       </div>
                       <Button
                         size="sm"
                         variant="outline"
-                        onClick={() => copyToClipboard(coupon.code)}
+                        onClick={() => copyToClipboard(coupon.couponCode)}
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       >
                         <Copy className="h-3 w-3 mr-1" />

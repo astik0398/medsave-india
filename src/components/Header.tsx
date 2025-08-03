@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Pill, Search, Heart, HelpCircle, Phone } from "lucide-react";
+import {
+  Menu,
+  X,
+  TicketPercentIcon,
+  HelpCircle,
+  Phone,
+  House,
+  Scale,
+  ChartNoAxesCombined,
+} from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/logo.png";
 
@@ -8,9 +17,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home", icon: Search },
-    { label: "Coupons", href: "#coupons", icon: Heart },
-    { label: "Price History", href: "#price-history", icon: Pill },
+    { label: "Home", href: "#home", icon: House },
+    { label: "Compare Price", href: "#price-comparison", icon: Scale },
+    { label: "Coupons", href: "#coupons", icon: TicketPercentIcon },
+    {
+      label: "Price History",
+      href: "#price-history",
+      icon: ChartNoAxesCombined,
+    },
     { label: "FAQ", href: "#faq", icon: HelpCircle },
     { label: "Contact", href: "#contact", icon: Phone },
   ];
@@ -27,14 +41,14 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex space-x-14">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="flex items-center space-x-1 text-sm font-medium text-foreground hover:text-primary transition-colors"
+              className="flex items-center space-x-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              <item.icon className="h-4 w-4" />
+              <item.icon className="h-4 w-4 relative top-[1.2px]" />
               <span>{item.label}</span>
             </a>
           ))}
@@ -43,7 +57,20 @@ const Header = () => {
         {/* Desktop Controls */}
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
-          <Button variant="hero" size="sm">
+          <Button
+            variant="hero"
+            size="sm"
+            onClick={() => {
+              const target = document.getElementById("home");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+                // Wait ~600ms to allow scroll animation to complete
+                setTimeout(() => {
+                  window.dispatchEvent(new Event("focusSearchInput"));
+                }, 600);
+              }
+            }}
+          >
             Get Started
           </Button>
         </div>
@@ -56,7 +83,11 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -77,7 +108,21 @@ const Header = () => {
               </a>
             ))}
             <div className="pt-4">
-              <Button variant="hero" size="sm" className="w-full">
+              <Button
+                variant="hero"
+                size="sm"
+                className="w-full"
+                onClick={() => {
+                  const target = document.getElementById("home");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                    // Wait ~600ms to allow scroll animation to complete
+                    setTimeout(() => {
+                      window.dispatchEvent(new Event("focusSearchInput"));
+                    }, 600);
+                  }
+                }}
+              >
                 Get Started
               </Button>
             </div>
