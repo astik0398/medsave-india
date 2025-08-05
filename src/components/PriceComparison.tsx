@@ -80,16 +80,21 @@ const PriceComparison = () => {
 
       setPriceData(transformed);
 
-      const lowestPriceData = transformed.reduce((minItem, currentItem) => {
-        return currentItem.price < minItem.price ? currentItem : minItem;
-      });
+     let lowestPriceData = null;
 
-      if (lowestPriceData?.name) setMedicineName(lowestPriceData.name);
-      if (lowestPriceData?.platform) setPlatformName(lowestPriceData.platform);
-      if (lowestPriceData?.deliveryTime)
-        setDeliveryTime(lowestPriceData.deliveryTime);
+if (transformed.length > 0) {
+  lowestPriceData = transformed.reduce((minItem, currentItem) => {
+    return currentItem.price < minItem.price ? currentItem : minItem;
+  });
 
-      console.log("lowestPriceData===>", lowestPriceData);
+  if (lowestPriceData?.name) setMedicineName(lowestPriceData.name);
+  if (lowestPriceData?.platform) setPlatformName(lowestPriceData.platform);
+  if (lowestPriceData?.deliveryTime) setDeliveryTime(lowestPriceData.deliveryTime);
+
+  console.log("lowestPriceData ===>", lowestPriceData);
+} else {
+  console.log("transformed array is empty");
+}
     };
 
     // Load data initially
