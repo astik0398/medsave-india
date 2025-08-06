@@ -11,6 +11,15 @@ const Hero = () => {
   const [error, setError] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const currentDate = new Date();
+  const formattedDate = `${String(currentDate.getDate()).padStart(
+    2,
+    "0"
+  )}-${String(currentDate.getMonth() + 1).padStart(
+    2,
+    "0"
+  )}-${currentDate.getFullYear()}`;
+
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
@@ -42,6 +51,7 @@ const Hero = () => {
 
       // Get the first valid medicine name
       const firstMedicineName = (validEntries as any)[0][1].name;
+      localStorage.setItem("price_history_name", firstMedicineName);
 
       // Build prices array
       const pricesArray = validEntries.map(([platform, data]) => {
@@ -51,18 +61,34 @@ const Hero = () => {
         return { [platform]: numericPrice };
       });
 
-      // Insert into Supabase
-      const { data: insertData, error: insertError } = await supabase
+      // Check if record already exists
+      const { data: existingRecords, error: selectError } = await supabase
         .from("price_history")
-        .insert([
-          {
-            prices: pricesArray,
-            medicineName: firstMedicineName, // ✅ inserting the name
-          },
-        ]);
+        .select("*")
+        .eq("medicineName", firstMedicineName)
+        .eq("date", formattedDate);
 
-      if (insertError) {
-        console.error("Supabase insert error:", insertError);
+      if (selectError) {
+        console.error("Supabase select error:", selectError);
+      } else if (existingRecords && existingRecords.length > 0) {
+        console.log(
+          "Record already exists for this medicine and date. Skipping insert."
+        );
+      } else {
+        // Insert into Supabase only if no record exists
+        const { data: insertData, error: insertError } = await supabase
+          .from("price_history")
+          .insert([
+            {
+              prices: pricesArray,
+              medicineName: firstMedicineName,
+              date: formattedDate,
+            },
+          ]);
+
+        if (insertError) {
+          console.error("Supabase insert error:", insertError);
+        }
       }
 
       console.log("----result----", result);
