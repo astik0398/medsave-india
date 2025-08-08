@@ -126,7 +126,7 @@ if (transformed.length > 0) {
   console.log(lowestPrice);
 
   return (
-    <section id="price-comparison" className="py-20 bg-background">
+    <section id="price-comparison" className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -134,7 +134,7 @@ if (transformed.length > 0) {
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Compare prices for{" "}
-            <span className="font-bold">{medicineData.name}</span> across
+            <span className="font-medium">{medicineData.name}</span> across
             India's leading e-pharmacy platforms
           </p>
         </div>
@@ -158,10 +158,10 @@ if (transformed.length > 0) {
               <div className="flex items-center justify-center md:justify-end">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground">Lowest Price</p>
-                  <p className="text-3xl font-bold text-secondary">
+                  <p className="text-3xl font-bold text-secondary dark:text-[#10B77F]">
                     ₹{lowestPrice}
                   </p>
-                  <Badge variant="secondary" className="mt-1">
+                  <Badge variant="secondary" className="mt-1 dark:bg-[#10B77F]">
                     Best Deal
                   </Badge>
                 </div>
@@ -184,7 +184,7 @@ if (transformed.length > 0) {
               }`}
             >
               {item.price === lowestPrice && (
-                <Badge className="absolute top-2 right-4 bg-secondary text-secondary-foreground">
+                <Badge className="absolute top-2 right-4 bg-secondary dark:bg-[#10B77F] text-secondary-foreground">
                   Best Price
                 </Badge>
               )}
@@ -220,7 +220,7 @@ if (transformed.length > 0) {
                   </div>
 
                   {item.couponCode && (
-                    <div className="p-2 bg-primary-glow rounded-md">
+                    <div className="p-2 bg-primary-glow dark:bg-[#005CD3] rounded-md">
                       <p className="text-xs text-primary font-medium">
                         COUPON: {item.couponCode}
                       </p>

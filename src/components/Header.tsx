@@ -60,6 +60,7 @@ const Header = () => {
           <Button
             variant="hero"
             size="sm"
+            className="dark:text-white"
             onClick={() => {
               const target = document.getElementById("home");
               if (target) {
@@ -111,7 +112,7 @@ const Header = () => {
               <Button
                 variant="hero"
                 size="sm"
-                className="w-full"
+                className="w-full dark:text-white"
                 onClick={() => {
                   const target = document.getElementById("home");
                   if (target) {

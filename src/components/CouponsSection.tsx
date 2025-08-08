@@ -71,16 +71,16 @@ const CouponsSection = () => {
   };
 
   return (
-    <section id="coupons" className="py-20 bg-gradient-subtle">
+    <section id="coupons" className="py-20 bg-[#F2F5F9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Gift className="h-8 w-8 text-secondary" />
+            <Gift className="h-8 w-8 mr-2 text-secondary dark:text-[#23BC89]" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Latest Coupons & Offers
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Save even more with exclusive discount coupons from India's top e-pharmacy platforms
           </p>
         </div>
@@ -127,7 +127,7 @@ const CouponsSection = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <span className="text-sm text-muted-foreground">Code:</span>
-                        <code className="px-2 py-1 bg-primary-glow text-primary text-sm font-mono rounded">
+                        <code className="px-2 py-1 bg-primary-glow dark:bg-[#005CD3] text-primary text-sm font-mono rounded">
                           {coupon.couponCode}
                         </code>
                       </div>
@@ -149,7 +149,7 @@ const CouponsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button className="dark:text-white" variant="hero" size="lg">
             View All Coupons
           </Button>
         </div>

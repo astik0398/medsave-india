@@ -122,7 +122,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-subtle flex items-center"
+      className="min-h-screen bg-[#F2F5F9] dark:bg-[#020817] flex items-center"
     >
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -158,7 +158,7 @@ const Hero = () => {
                   className="pl-10 h-12 text-base"
                 />
               </div>
-              <Button type="submit" variant="hero" className="h-12 px-8">
+              <Button type="submit" variant="hero" className="h-12 px-8 dark:text-white">
                 {loading ? (
                   <span className="w-6 h-6 inline-block rounded-full border-t-4 border-r-4 border-white border-r-transparent box-border animate-spin"></span>
                 ) : (
@@ -170,7 +170,7 @@ const Hero = () => {
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-primary-glow rounded-lg">
+                <div className="p-2 bg-primary-glow rounded-lg dark:bg-[#0A54B6]">
                   <TrendingDown className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -182,8 +182,8 @@ const Hero = () => {
               </div>
 
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-secondary-glow rounded-lg">
-                  <Shield className="h-5 w-5 text-secondary" />
+                <div className="p-2 bg-secondary-glow rounded-lg dark:bg-[#0A54B6]">
+                  <Shield className="h-5 w-5 text-secondary dark:text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">
@@ -196,7 +196,7 @@ const Hero = () => {
               </div>
 
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-primary-glow rounded-lg">
+                <div className="p-2 bg-primary-glow rounded-lg dark:bg-[#0A54B6]">
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>

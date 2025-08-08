@@ -71,7 +71,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -92,7 +92,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
               </h3>
               <div className="space-y-6">
                 <div style={{ alignItems:'center'}} className="flex items-start space-x-4">
-                  <div  className="p-3 bg-primary-glow rounded-lg">
+                  <div  className="p-3 bg-primary-glow dark:bg-gradient-primary rounded-lg">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -102,15 +102,15 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                     <p className="text-muted-foreground">
                       medsaveindia@gmail.com
                     </p>
-                    <p className="text-sm text-muted-foreground">
+                    {/* <p className="text-sm text-muted-foreground">
                       We'll respond within 24 hours
-                    </p>
+                    </p> */}
                   </div>
                 </div>
 
                 <div style={{alignItems:'center'}} className="flex items-start space-x-4">
-                  <div className="p-3 bg-secondary-glow rounded-lg">
-                    <Phone className="h-6 w-6 text-secondary" />
+                  <div className="p-3 bg-secondary-glow dark:bg-gradient-primary rounded-lg">
+                    <Phone className="h-6 w-6 text-secondary dark:text-primary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">
@@ -122,7 +122,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                 </div>
 
                 <div style={{alignItems:'center'}} className="flex items-start space-x-4">
-                  <div className="p-3 bg-primary-glow rounded-lg">
+                  <div className="p-3 bg-primary-glow rounded-lg dark:bg-gradient-primary">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -136,7 +136,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             </div>
 
             {/* FAQ Quick Links */}
-            <div className="p-6 bg-gradient-subtle rounded-2xl">
+            <div className="p-6 bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 rounded-2xl">
               <h4 className="font-semibold text-foreground mb-3">Quick Help</h4>
               <div className="space-y-2">
                 <a

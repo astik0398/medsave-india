@@ -15,21 +15,21 @@ const HowItWorks = () => {
       icon: BarChart3,
       title: "Compare Prices",
       description: "View real-time prices from multiple trusted e-pharmacy platforms including delivery options.",
-      color: "text-secondary"
+      color: "text-secondary dark:text-primary"
     },
     {
       step: 3,
       icon: Tag,
       title: "Apply Coupons",
       description: "Browse through available discount coupons and promotional offers to maximize your savings.",
-      color: "text-accent"
+      color: "text-accent dark:text-primary"
     },
     {
       step: 4,
       icon: Wallet,
       title: "Save Money",
       description: "Purchase from the platform with the best deal and enjoy significant savings on your healthcare.",
-      color: "text-secondary"
+      color: "text-secondary dark:text-primary"
     }
   ];
 

@@ -146,7 +146,7 @@ const PriceHistory = () => {
   };
 
   return (
-    <section id="price-history" className="py-20 bg-background">
+    <section id="price-history" className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -211,9 +211,9 @@ const PriceHistory = () => {
           {/* Chart Placeholder */}
           <Card className="shadow-soft">
             <CardContent className="p-6">
-              <div className="h-96 w-full flex items-center justify-center bg-gradient-subtle rounded-lg">
+              <div className="h-96 w-full flex items-center justify-center bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 rounded-lg">
                 <div className="text-center">
-                  <BarChart3 className="h-16 w-16 text-primary mx-auto mb-4" />
+                  <BarChart3 className="h-16 w-16 text-primary dark:text-[#004EB4] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     Interactive Price Chart
                   </h3>
@@ -224,7 +224,7 @@ const PriceHistory = () => {
                   </p>
                   <div className="mt-6 grid grid-cols-2 gap-4 max-w-sm mx-auto">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-secondary">
+                      <div className="text-lg font-bold text-secondary dark:text-[#10B780]">
                         -12%
                       </div>
                       <div className="text-xs text-muted-foreground">
@@ -232,7 +232,7 @@ const PriceHistory = () => {
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-primary">
+                      <div className="text-lg font-bold text-primary dark:text-[#004EB4]">
                         ₹{currentPrice}
                       </div>
                       <div className="text-xs text-muted-foreground">
@@ -267,12 +267,12 @@ const PriceHistory = () => {
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <Card className="p-4">
               <div className="flex items-center space-x-2 mb-2">
-                <TrendingDown className="h-5 w-5 text-secondary" />
+                <TrendingDown className="h-5 w-5 text-secondary dark:text-[#10B780]" />
                 <h4 className="font-semibold text-foreground">
                   Lowest Price Period
                 </h4>
               </div>
-              <p className="text-2xl font-bold text-secondary">
+              <p className="text-2xl font-bold text-secondary dark:text-[#10B780]">
                 ₹{currentPrice}
               </p>
               <p className="text-sm text-muted-foreground">
@@ -282,12 +282,12 @@ const PriceHistory = () => {
 
             <Card className="p-4">
               <div className="flex items-center space-x-2 mb-2">
-                <Calendar className="h-5 w-5 text-primary" />
+                <Calendar className="h-5 w-5 text-primary dark:text-[#004EB4]" />
                 <h4 className="font-semibold text-foreground">
                   Best Month to Buy
                 </h4>
               </div>
-              <p className="text-2xl font-bold text-primary">
+              <p className="text-2xl font-bold text-primary dark:text-[#004EB4]">
                 {lowestPriceMonth}
               </p>
               <p className="text-sm text-muted-foreground">
@@ -297,12 +297,12 @@ const PriceHistory = () => {
 
             <Card className="p-4">
               <div className="flex items-center space-x-2 mb-2">
-                <TrendingUp className="h-5 w-5 text-accent" />
+                <TrendingUp className="h-5 w-5 text-accent dark:text-[#0670FF]" />
                 <h4 className="font-semibold text-foreground">
                   Average Savings
                 </h4>
               </div>
-              <p className="text-2xl font-bold text-accent">15%</p>
+              <p className="text-2xl font-bold text-accent dark:text-[#0670FF]">15%</p>
               <p className="text-sm text-muted-foreground">Compared to MRP</p>
             </Card>
           </div>

@@ -58,13 +58,13 @@ const handleSubmit = async (e: React.FormEvent) => {
 };
 
   return (
-    <section className="py-20 bg-gradient-primary">
+    <section className="py-20 bg-[#005ED9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto bg-background/95 backdrop-blur shadow-strong">
           <CardContent className="p-8 md:p-12">
             <div className="text-center mb-8">
               <div className="flex items-center justify-center space-x-2 mb-4">
-                <div className="p-3 bg-primary-glow rounded-full">
+                <div className="p-2 mr-2 bg-primary-glow dark:bg-gradient-primary rounded-full">
                   <Mail className="h-8 w-8 text-primary" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground">
@@ -134,7 +134,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className="text-sm text-muted-foreground">Subscribers</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-secondary">₹2Cr+</div>
+                <div className="text-2xl font-bold text-secondary dark:text-primary">₹2Cr+</div>
                 <div className="text-sm text-muted-foreground">Money Saved</div>
               </div>
               <div className="text-center">
@@ -142,7 +142,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className="text-sm text-muted-foreground">Medicines Tracked</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-secondary">4.8★</div>
+                <div className="text-2xl font-bold text-secondary dark:text-primary">4.8★</div>
                 <div className="text-sm text-muted-foreground">User Rating</div>
               </div>
             </div>

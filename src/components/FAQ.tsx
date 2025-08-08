@@ -35,16 +35,16 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-gradient-subtle">
+    <section id="faq" className="py-20 bg-[#F2F5F9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <HelpCircle className="h-8 w-8 text-primary" />
+            <HelpCircle className="h-8 w-8 mr-2 text-primary dark:text-[#0A54B6]" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Frequently Asked Questions
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Get answers to common questions about MedSave India and how we help you save on medicines
           </p>
         </div>
@@ -79,7 +79,7 @@ const FAQ = () => {
             </p>
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-6 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:shadow-medium transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center px-6 py-3 bg-gradient-primary text-primary-foreground dark:text-white rounded-lg font-medium hover:shadow-medium transition-all duration-300 hover:scale-105"
             >
               Contact Support
             </a>
