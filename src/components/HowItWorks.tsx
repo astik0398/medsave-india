@@ -34,7 +34,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -48,9 +48,9 @@ const HowItWorks = () => {
         <div className="max-w-6xl mx-auto">
           {/* Desktop Layout */}
           <div className="hidden md:block">
-            <div className="grid md:grid-cols-4 gap-8 relative">
+            <div className="grid md:grid-cols-4 gap-10 relative">
               {/* Connection Lines */}
-              <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-primary via-secondary to-accent opacity-30"></div>
+              <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-3/4 h-[2px] bg-gradient-to-r from-[#005CD4] to-[#11B77F] opacity-40"></div>
               
               {steps.map((step, index) => (
                 <div key={index} className="relative">
@@ -58,7 +58,7 @@ const HowItWorks = () => {
                     <CardContent className="p-8">
                       {/* Step Number */}
                       <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">
-                        <span className="text-2xl font-bold text-primary-foreground">{step.step}</span>
+                        <span className="text-2xl font-bold text-primary-foreground dark:text-white">{step.step}</span>
                       </div>
                       
                       {/* Icon */}
@@ -81,7 +81,7 @@ const HowItWorks = () => {
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 {index < steps.length - 1 && (
-                  <div className="absolute left-8 top-20 w-px h-16 bg-gradient-to-b from-primary to-secondary opacity-30"></div>
+                  <div></div>
                 )}
                 
                 <Card className="shadow-soft">
@@ -112,17 +112,17 @@ const HowItWorks = () => {
 
         {/* Additional Benefits */}
         <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="text-center p-6 bg-primary-glow rounded-2xl">
+          <div className="text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
             <h4 className="font-semibold text-primary mb-2">100% Verified</h4>
             <p className="text-sm text-muted-foreground">All partner pharmacies are licensed and verified</p>
           </div>
           
-          <div className="text-center p-6 bg-secondary-glow rounded-2xl">
-            <h4 className="font-semibold text-secondary mb-2">Real-time Prices</h4>
+          <div className="text-center p-6 bg-[#C2F0E0] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
+            <h4 className="font-semibold text-secondary dark:text-primary mb-2">Real-time Prices</h4>
             <p className="text-sm text-muted-foreground">Prices updated every hour for accuracy</p>
           </div>
           
-          <div className="text-center p-6 bg-primary-glow rounded-2xl">
+          <div className="text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
             <h4 className="font-semibold text-primary mb-2">Free to Use</h4>
             <p className="text-sm text-muted-foreground">No hidden charges or subscription fees</p>
           </div>

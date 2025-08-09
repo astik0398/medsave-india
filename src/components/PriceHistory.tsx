@@ -210,14 +210,14 @@ const PriceHistory = () => {
 
           {/* Chart Placeholder */}
           <Card className="shadow-soft">
-            <CardContent className="p-6">
-              <div className="h-96 w-full flex items-center justify-center bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 rounded-lg">
+            <CardContent className="p-8">
+              <div className="h-96 w-full flex items-center justify-center bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 dark:shadow-strong rounded-lg">
                 <div className="text-center">
                   <BarChart3 className="h-16 w-16 text-primary dark:text-[#004EB4] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     Interactive Price Chart
                   </h3>
-                  <p className="text-muted-foreground max-w-md">
+                  <p className="text-muted-foreground max-w-lg">
                     Track price trends across multiple platforms over time.
                     Historical data shows <b>{lowestPlatform}</b> consistently
                     offers the lowest prices.

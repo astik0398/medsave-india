@@ -176,7 +176,7 @@ const Hero = () => {
                 <div>
                   <h3 className="font-semibold text-foreground">Best Prices</h3>
                   <p className="text-sm text-muted-foreground">
-                    Compare across platforms
+                    Compare platforms
                   </p>
                 </div>
               </div>

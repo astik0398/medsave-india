@@ -72,7 +72,7 @@ const FAQ = () => {
           </Card>
 
           {/* Still have questions? */}
-          <div className="text-center mt-12 p-8 bg-card rounded-2xl shadow-soft">
+          <div className="text-center mt-12 p-8 bg-card rounded-2xl shadow-soft dark:shadow-strong">
             <h3 className="text-xl font-semibold text-foreground mb-2">Still have questions?</h3>
             <p className="text-muted-foreground mb-4">
               Can't find the answer you're looking for? Please reach out to our customer support team.

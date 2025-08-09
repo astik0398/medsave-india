@@ -217,7 +217,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
                 <Button
                   type="submit"
-                  className="w-full"
+                  className="w-full dark:text-white"
                   variant="hero"
                   disabled={isSubmitting}
                 >

@@ -80,15 +80,15 @@ const handleSubmit = async (e: React.FormEvent) => {
             {/* Benefits */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                <CheckCircle className="h-5 w-5 text-secondary dark:text-[#005CD4] flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">Weekly price alerts</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                <CheckCircle className="h-5 w-5 text-secondary dark:text-[#005CD4] flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">Exclusive discount coupons</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                <CheckCircle className="h-5 w-5 text-secondary dark:text-[#005CD4] flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">Health tips & news</span>
               </div>
             </div>
@@ -109,7 +109,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <Button 
                   type="submit" 
                   variant="hero" 
-                  className="h-12 px-8"
+                  className="h-12 px-8 dark:text-white"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
