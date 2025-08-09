@@ -136,9 +136,11 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                Find the best prices for your medicines across India's top
-                e-pharmacy platforms. Compare prices, apply coupons, and save
-                money on your healthcare needs.
+                Compare prices for any medicine across India's top e-pharmacy
+                platforms like Netmeds, Tata 1mg, PharmEasy, Apollo Pharmacy,
+                and Truemeds. Get exclusive{" "}
+                <strong>online medicine discounts</strong>
+                
               </p>
             </div>
 
@@ -152,13 +154,17 @@ const Hero = () => {
                 <Input
                   ref={inputRef}
                   type="text"
-                  placeholder="Enter medicine name (e.g., Paracetamol)"
+                  placeholder="Enter medicine name (e.g., Himalaya Liv 52)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 h-12 text-base"
                 />
               </div>
-              <Button type="submit" variant="hero" className="h-12 px-8 dark:text-white">
+              <Button
+                type="submit"
+                variant="hero"
+                className="h-12 px-8 dark:text-white"
+              >
                 {loading ? (
                   <span className="w-6 h-6 inline-block rounded-full border-t-4 border-r-4 border-white border-r-transparent box-border animate-spin"></span>
                 ) : (
@@ -214,7 +220,7 @@ const Hero = () => {
             <div className="relative z-10">
               <img
                 src={heroImage}
-                alt="Medicine comparison illustration"
+                alt="Compare medicine prices, discounts, and coupon codes online"
                 className="w-full h-auto rounded-2xl shadow-strong"
               />
             </div>

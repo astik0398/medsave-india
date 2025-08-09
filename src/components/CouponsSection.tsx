@@ -90,8 +90,8 @@ const CouponsSection = () => {
             <Card key={platformIndex} className="shadow-soft hover:shadow-medium transition-all duration-300">
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center space-x-3">
-                  <img width='50px' src={platform.logo} alt={platform.platform} />
-                  <span className="text-xl">{platform.platform.toUpperCase()} COUPON</span>
+                  <img width='50px' src={platform.logo}   alt={`${platform.platform} coupon code and offers`}  />
+                  <span className="text-xl">{platform.platform.toUpperCase()} COUPON CODE & OFFERS</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">

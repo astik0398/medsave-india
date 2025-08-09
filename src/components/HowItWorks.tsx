@@ -7,21 +7,21 @@ const HowItWorks = () => {
       step: 1,
       icon: Search,
       title: "Search Medicine",
-      description: "Enter the name of your medicine in our search bar. We support both brand names and generic names.",
+      description: "Enter the name of your branded or generic medicine in our search bar to find the best prices.",
       color: "text-primary"
     },
     {
       step: 2,
       icon: BarChart3,
       title: "Compare Prices",
-      description: "View real-time prices from multiple trusted e-pharmacy platforms including delivery options.",
+      description: "View real-time price comparison for medicines from multiple trusted online pharmacies in India.",
       color: "text-secondary dark:text-primary"
     },
     {
       step: 3,
       icon: Tag,
       title: "Apply Coupons",
-      description: "Browse through available discount coupons and promotional offers to maximize your savings.",
+      description: "Get exclusive medicine discount coupons and promotional offers to maximize your savings.",
       color: "text-accent dark:text-primary"
     },
     {

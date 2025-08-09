@@ -3,36 +3,37 @@ import { Card, CardContent } from "@/components/ui/card";
 import { HelpCircle } from "lucide-react";
 
 const FAQ = () => {
+
   const faqData = [
-    {
-      question: "How do you collect the price data?",
-      answer: "We use automated systems to collect price data from partner e-pharmacy websites frequently. Our technology ensures that prices are accurate and up-to-date. We also verify prices manually to maintain data quality."
-    },
-    {
-      question: "Is MedSave India affiliated with the pharmacy platforms?",
-      answer: "No, MedSave India is an independent platform. We are not owned by or affiliated with any of the e-pharmacy platforms we compare. This ensures unbiased price comparisons and recommendations."
-    },
-    {
-      question: "Do you charge any fees for using the service?",
-      answer: "No, MedSave India is completely free to use. We don't charge users any fees for price comparisons, coupon access, or any other features. Our revenue comes from affiliate partnerships with e-pharmacies."
-    },
-    {
-      question: "Can I buy medicines directly through MedSave India?",
-      answer: "No, we don't sell medicines directly. We redirect you to the respective e-pharmacy platforms where you can complete your purchase. This ensures you get the same customer service and guarantees from the original seller."
-    },
-    {
-      question: "How accurate are the coupon codes?",
-      answer: "We verify all coupon codes regularly and remove expired ones. However, some coupons might have usage limits or specific terms. We recommend checking the terms on the e-pharmacy website before applying any coupon."
-    },
-    {
+  {
+    question: "How do you collect the online medicine price comparison data?",
+    answer: "We collect online medicine price comparison data from multiple trusted e-pharmacy platforms in India. Our automated systems track prices in real time, and we manually verify them to ensure you always see the most accurate and updated rates before buying medicines online."
+  },
+  {
+    question: "Is MedSave India affiliated with the best e-pharmacies in India?",
+    answer: "No, MedSave India is completely independent. We are not owned by any pharmacy platform, ensuring unbiased comparisons. This way, when you search for the best e-pharmacy in India, you can trust our results are purely based on price, discounts, and reliability."
+  },
+  {
+    question: "Do you offer discount coupons for medicines?",
+    answer: "Yes, we regularly update and verify exclusive discount coupons for medicines from India's top online pharmacies. You can apply these e-pharmacy promo codes at checkout to save more on your orders."
+  },
+  {
+    question: "Can I buy medicines directly through MedSave India?",
+    answer: "We don’t sell medicines directly. Instead, we connect you to verified e-pharmacies where you can complete your purchase. This ensures you still get the full benefits, customer service, and delivery from the original seller."
+  },
+  {
+    question: "Are your online pharmacy discounts always valid?",
+    answer: "We regularly check and update our online pharmacy discounts and coupons to ensure they work. However, some may have usage limits or be available only for specific medicines, so always check the terms before applying them."
+  },
+     {
       question: "How do you ensure the quality of partner pharmacies?",
       answer: "All our partner e-pharmacies are licensed by the appropriate authorities and follow strict quality standards. We only work with well-established platforms that have good customer reviews and reliable service records."
     },
-    {
-      question: "Can I track price history for any medicine?",
-      answer: "Yes, we maintain price history data for medicines and provide charts showing price trends over time. This helps you identify the best times to buy and understand pricing patterns across different platforms."
-    }
-  ];
+  {
+    question: "Can I track medicine price history before I buy?",
+    answer: "Yes, you can view the price history for medicines across different e-pharmacies. Our charts help you find the best time to buy and make sure you’re getting the best online medicine deals in India."
+  }
+];
 
   return (
     <section id="faq" className="py-20 bg-[#F2F5F9] dark:bg-[#020817] border-t">
@@ -44,8 +45,8 @@ const FAQ = () => {
               Frequently Asked Questions
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            Get answers to common questions about MedSave India and how we help you save on medicines
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Find answers about online medicine price comparison, best e-pharmacies in India, and exclusive pharmacy discount coupons
           </p>
         </div>
 
