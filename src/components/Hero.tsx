@@ -139,7 +139,7 @@ const Hero = () => {
                 Compare prices for any medicine across India's top e-pharmacy
                 platforms like Netmeds, Tata 1mg, PharmEasy, Apollo Pharmacy,
                 and Truemeds. Get exclusive{" "}
-                <strong>online medicine discounts</strong>
+                <strong>online medicine discounts.</strong>
                 
               </p>
             </div>
