@@ -146,8 +146,8 @@ const FlashDeals = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="-left-4 md:-left-12 bg-background/80 backdrop-blur-sm border-primary/20 hover:border-primary/40" />
+            <CarouselNext className="-right-4 md:-right-12 bg-background/80 backdrop-blur-sm border-primary/20 hover:border-primary/40" />
           </Carousel>
         </div>
 
