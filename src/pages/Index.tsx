@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
+import FlashDeals from "@/components/FlashDeals";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <Hero />
       <PriceComparison />
+            {/* <FlashDeals /> */}
       <CouponsSection />
       <PriceHistory />
       <HowItWorks />
