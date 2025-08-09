@@ -174,12 +174,9 @@ if (transformed.length > 0) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {priceData.map((item, index) => (
             <Card
-              style={{
-                boxShadow:
-                  item.price === lowestPrice ? "0 0 10px 1px #10b77f" : "",
-              }}
+             
               key={index}
-              className={`relative overflow-hidden transition-all duration-300 hover:shadow-medium hover:scale-105 ${
+              className={`relative overflow-hidden transition-all duration-300 ${item.price === lowestPrice ? 'shadow-[0_0_40px_2px_rgba(57,255,20,0.9)] dark:shadow-strong' : ''} hover:scale-105 ${
                 !item.inStock ? "opacity-75" : ""
               }`}
             >
