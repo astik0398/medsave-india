@@ -11,11 +11,17 @@ import {
   ChartNoAxesCombined,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/medi bachat dark mode (1).png";
+import logoLight from "@/assets/medibachat all images (3).png"
+
+import { useTheme } from "next-themes";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme } = useTheme(); // get current theme
 
+  console.log('theme right now--------->', theme);
+  
   const navItems = [
     { label: "Home", href: "#home", icon: House },
     { label: "Compare Price", href: "#price-comparison", icon: Scale },
@@ -34,10 +40,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src={logo} alt="MedSave India" className="h-8 w-8" />
-          <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            MedSave India
-          </span>
+          <img src={theme === 'dark' ? logo: logoLight} alt="MedSave India" className="h-40 w-40" />
         </div>
 
         {/* Desktop Navigation */}
