@@ -1,6 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Heart, Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from "lucide-react";
+import {
+  Heart,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+} from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -28,7 +36,7 @@ const Footer = () => {
       { label: "Tata 1mg", href: "#" },
       { label: "PharmEasy", href: "#" },
       // { label: "Apollo Pharmacy", href: "#" },
-    ]
+    ],
   };
 
   const socialLinks = [
@@ -52,17 +60,23 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              India's leading medicine price comparison platform. Compare prices, 
-              find coupons, and save money on your healthcare needs.
+              India's leading medicine price comparison platform. Compare
+              prices, find coupons, and save money on your healthcare needs.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-2">
-              <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
+              <div
+                style={{ alignItems: "center" }}
+                className="flex space-x-2 text-sm text-muted-foreground"
+              >
                 <Mail className="h-4 w-4" />
                 <span>medibachatforyou@gmail.com</span>
               </div>
-              <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
+              <div
+                style={{ alignItems: "center" }}
+                className="flex space-x-2 text-sm text-muted-foreground"
+              >
                 <Phone className="h-4 w-4" />
                 <span>+91 798-001-8498</span>
               </div>
@@ -75,8 +89,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                     target="_blank"
                   >
@@ -93,8 +107,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.features.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                   >
                     {link.label}
@@ -110,8 +124,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                   >
                     {link.label}
@@ -127,8 +141,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.platforms.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                   >
                     {link.label}
@@ -166,12 +180,31 @@ const Footer = () => {
         </div>
 
         {/* Disclaimer */}
-       <div className="mt-14 mb-[-30px] p-4 bg-muted/50 rounded-lg border-l-4 border-r-4 border-blue-500">
-  <p className="text-sm text-muted-foreground">
-    <strong>Medical Disclaimer:</strong> This website provides information for comparison purposes only and is not intended as medical advice, diagnosis, or treatment. The content should not be used as a substitute for professional medical advice. Always consult with a qualified healthcare provider before making decisions about medications, treatments, or health conditions. Prices and availability are subject to change without notice. MediBachat is not affiliated with any pharmacy and does not sell medicines directly.
-  </p>
-</div>
+        <div className="mt-14 mb-[-30px] p-4 bg-muted/50 rounded-lg border-l-4 border-r-4 border-blue-500">
+          <p className="text-sm text-muted-foreground">
+            <strong>Medical Disclaimer:</strong> This website provides
+            information for comparison purposes only and is not intended as
+            medical advice, diagnosis, or treatment. The content should not be
+            used as a substitute for professional medical advice. Always consult
+            with a qualified healthcare provider before making decisions about
+            medications, treatments, or health conditions. Prices and
+            availability are subject to change without notice. MediBachat is not
+            affiliated with any pharmacy and does not sell medicines directly.
+          </p>
+        </div>
 
+        {/* <!-- hitwebcounter Code START --> */}
+
+        <div style={{display:'flex', justifyContent:'center', marginTop:'60px', marginBottom:'-50px'}}>
+          <a href="https://www.hitwebcounter.com" target="_blank">
+            <img
+              src="https://hitwebcounter.com/counter/counter.php?page=21365985&style=0025&nbdigits=5&type=page&initCount=0"
+              title="Counter Widget"
+              Alt="Visit counter For Websites"
+              border="0"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );
