@@ -42,7 +42,7 @@ const Footer = () => {
     <footer className="bg-[#F2F5F9] dark:bg-[#020817] border-t border-border">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 mb-8 mt-[-20px]">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
@@ -166,13 +166,12 @@ const Footer = () => {
         </div>
 
         {/* Disclaimer */}
-        {/* <div className="mt-8 p-4 bg-muted/50 rounded-lg">
-          <p className="text-xs text-muted-foreground text-center">
-            <strong>Disclaimer:</strong> MedSave India is an independent price comparison platform. 
-            We are not affiliated with any pharmacy. Prices are subject to change. 
-            Always verify prices and availability on the respective pharmacy websites before purchase.
-          </p>
-        </div> */}
+       <div className="mt-14 mb-[-30px] p-4 bg-muted/50 rounded-lg border-l-4 border-r-4 border-blue-500">
+  <p className="text-sm text-muted-foreground">
+    <strong>Medical Disclaimer:</strong> This website provides information for comparison purposes only and is not intended as medical advice, diagnosis, or treatment. The content should not be used as a substitute for professional medical advice. Always consult with a qualified healthcare provider before making decisions about medications, treatments, or health conditions. Prices and availability are subject to change without notice. MediBachat is not affiliated with any pharmacy and does not sell medicines directly.
+  </p>
+</div>
+
       </div>
     </footer>
   );
