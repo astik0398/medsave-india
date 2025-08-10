@@ -6,28 +6,28 @@ import logo from "@/assets/logo.png";
 const Footer = () => {
   const footerLinks = {
     company: [
-      { label: "About Us", href: "#about" },
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Privacy Policy", href: "#privacy" },
-      { label: "Terms of Service", href: "#terms" },
+      { label: "About Us", href: "/about-us" },
+      // { label: "How It Works", href: "#how-it-works" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Service", href: "/terms-of-service" },
     ],
     features: [
       { label: "Price Comparison", href: "#price-comparison" },
-      { label: "Coupons & Offers", href: "#coupons" },
+      // { label: "Coupons & Offers", href: "#coupons" },
       { label: "Price History", href: "#price-history" },
       { label: "Medicine Search", href: "#home" },
     ],
     support: [
       { label: "FAQ", href: "#faq" },
       { label: "Contact Us", href: "#contact" },
-      { label: "Help Center", href: "#help" },
-      { label: "Report Issue", href: "#report" },
+      // { label: "Help Center", href: "#help" },
+      { label: "Report Issue", href: "#contact" },
     ],
     platforms: [
       { label: "Netmeds", href: "#" },
       { label: "Tata 1mg", href: "#" },
       { label: "PharmEasy", href: "#" },
-      { label: "Apollo Pharmacy", href: "#" },
+      // { label: "Apollo Pharmacy", href: "#" },
     ]
   };
 
@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>medsaveindia@gmail.com</span>
+                <span>medibachatforyou@gmail.com</span>
               </div>
               <div style={{alignItems:'center'}} className="flex space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -78,6 +78,7 @@ const Footer = () => {
                   <a 
                     href={link.href} 
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                    target="_blank"
                   >
                     {link.label}
                   </a>
@@ -138,7 +139,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <Separator className="mb-8" />
+        <Separator className="mb-4" />
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-[-40px]">
