@@ -15,11 +15,55 @@ const PriceComparison = () => {
   const [platformName, setPlatformName] = useState("");
   const [deliveryTime, setDeliveryTime] = useState("");
 
+  const dummyData = {
+  netmeds: {
+    name: "Cetaphil Syndet Bar 75gm",
+    price: "₹189.00",
+    finalPrice: "₹189.00",
+    originalPrice: "₹225.00",
+    image: "https://www.netmeds.com/images/product-v1/150x150/379578/cetaphil_syndet_bar_75gm_45420_0_3.jpg",
+    rating: 4.8,
+    url: "https://www.netmeds.com/non-prescriptions/cetaphil-syndet-bar-75gm"
+  },
+  pharmeasy: {
+    name: "Cetaphil Gentle Skin Cleanser | Dry To Normal Sensitive Skin | 125 Ml",
+    price: "₹390.39",
+    finalPrice: "₹390.39",
+    originalPrice: "₹429.00",
+    image: "https://cdn01.pharmeasy.in/dam/products_otc/I00623/cetaphil-gentle-skin-cleanser-125ml-2-1671740876.jpg?dim=256x256&q=75",
+    rating: 4,
+    url: "https://pharmeasy.in/health-care/products/cetaphil-gentle-skin-cleanser---125ml-11064"
+  },
+  tata1mg: {
+    name: "Cetaphil Gentle Skin Cleanser | For Dry to Normal, Sensitive Skin",
+    price: "₹399",
+    finalPrice: "₹399",
+    originalPrice: "₹429",
+    image: null,
+    rating: "4.4",
+    url: "https://www.1mg.com/otc/cetaphil-gentle-skin-cleanser-for-dry-to-normal-sensitive-skin-otc533388"
+  },
+  truemeds: {
+    name: "Cetaphil Gentle Skin Cleanser 125ml",
+    price: "₹398.97",
+    finalPrice: "₹398.97",
+    originalPrice: "MRP ₹429",
+    image: "https://assets.truemeds.in/Images/ProductImage/TM-LOES1-000749/cetaphil-gentle-skin-cleanser-125ml_cetaphil-gentle-skin-cleanser-125ml--TM-LOES1-000749_1.png?width=240",
+    rating: 4.9,
+    url: "https://www.truemeds.in/otc/cetaphil-gentle-skin-cleanser-125ml_cetaphil-gentle-skin-cleanser-125ml-tm-loes1-000749"
+  }
+};
+
   useEffect(() => {
     const loadDataFromLocalStorage = () => {
-      const savedPriceData = JSON.parse(
+      let savedPriceData = JSON.parse(
         localStorage.getItem("priceData") || "{}"
       );
+
+       if (!savedPriceData || Object.keys(savedPriceData).length === 0) {
+      console.log("No data in localStorage — using dummyData");
+      savedPriceData = dummyData;
+    }
 
       const platformMap = {
         netmeds: "Netmeds",

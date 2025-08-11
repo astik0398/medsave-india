@@ -27,8 +27,10 @@ const PriceHistory = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const price_history_name = localStorage.getItem("price_history_name");
-      if (!price_history_name) return;
+      let price_history_name = localStorage.getItem("price_history_name");
+      if (!price_history_name){
+        price_history_name = 'Cetaphil Syndet Bar 75gm'
+      };
 
       const { data, error } = await supabase
         .from("price_history")
@@ -90,7 +92,7 @@ const PriceHistory = () => {
       }
 
       // Set current and last month prices for a platform (e.g., Tata 1mg)
-      if (transformed.length >= 2 && overallLowestPlatform) {
+      if (transformed.length >= 1 && overallLowestPlatform) {
         const current =
           transformed[transformed.length - 1]?.[overallLowestPlatform];
         const last =
