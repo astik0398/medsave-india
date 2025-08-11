@@ -179,7 +179,7 @@ const PriceHistory = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-foreground">
-                {localStorage.getItem("price_history_name") === undefined ? "Cetaphil Syndet Bar 75gm" : localStorage.getItem("price_history_name")} Price Trends
+                {localStorage.getItem("price_history_name") ?? "Cetaphil Syndet Bar 75gm"} Price Trends
               </h3>
               <div className="flex items-center space-x-4">
                 <div className="flex items-center space-x-2">
