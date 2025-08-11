@@ -32,6 +32,9 @@ const PriceHistory = () => {
         price_history_name = 'Cetaphil Syndet Bar 75gm'
       };
 
+      console.log('price_history_name', price_history_name);
+      
+
       const { data, error } = await supabase
         .from("price_history")
         .select("date, prices")
@@ -69,6 +72,8 @@ const PriceHistory = () => {
         const { date, ...platformPrices } = entry;
 
         Object.entries(platformPrices).forEach(([platform, price]) => {
+          console.log('checking price type==>>',typeof price);
+          
           if (typeof price === "number" && price < overallLowestPrice) {
             overallLowestPrice = price;
             overallLowestDate = date;
@@ -76,6 +81,11 @@ const PriceHistory = () => {
           }
         });
       });
+
+      console.log('overallLowestDate---',overallLowestDate);
+      console.log('overallLowestPlatform---',overallLowestPlatform);
+            console.log('overallLowestPrice---',overallLowestPrice);
+
 
       if (overallLowestDate) {
         const [day, month, year] = overallLowestDate.split("-");
@@ -92,20 +102,19 @@ const PriceHistory = () => {
       }
 
       // Set current and last month prices for a platform (e.g., Tata 1mg)
-      if (transformed.length >= 2 && overallLowestPlatform) {
+      if (transformed.length >= 1 && overallLowestPlatform) {
         const current =
           transformed[transformed.length - 1]?.[overallLowestPlatform];
         const last =
-          transformed[transformed.length - 2]?.[overallLowestPlatform];
+          transformed[transformed.length - 2]?.[overallLowestPlatform] || transformed[transformed.length-1]?.[overallLowestPlatform]
         setCurrentPrice(current);
         setLastMonthPrice(last);
         setLowestPlatformName(overallLowestPlatform);
+
+        console.log('current---->', current);
+      console.log('last---', last);
       }
-      else{
-        setCurrentPrice(transformed[transformed.length]?.[overallLowestPlatform]);
-        setLastMonthPrice(transformed[transformed.length]?.[overallLowestPlatform]);
-        setLowestPlatformName(overallLowestPlatform);
-      }
+      
     };
 
     fetchData();
