@@ -200,8 +200,8 @@ const Footer = () => {
             <img
               src="https://hitwebcounter.com/counter/counter.php?page=21365985&style=0025&nbdigits=5&type=page&initCount=0"
               title="Counter Widget"
-              Alt="Visit counter For Websites"
-              border="0"
+              alt="Visit counter For Websites"
+              style={{ border: 0 }}
             />
           </a>
         </div>

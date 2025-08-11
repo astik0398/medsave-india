@@ -9,6 +9,7 @@ import ContactForm from "@/components/ContactForm";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import FlashDeals from "@/components/FlashDeals";
+import BlogSection from "@/components/BlogSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <CouponsSection />
       <PriceHistory />
       <HowItWorks />
+      <BlogSection />
       <FAQ />
       <ContactForm />
       <Newsletter />
