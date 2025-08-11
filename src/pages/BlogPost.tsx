@@ -10,48 +10,45 @@ const BlogPost = () => {
 
   const blogPosts = {
     "1": {
-      title: "Top 10 Ways to Save Money on Prescription Medications",
-      author: "Dr. Sarah Johnson",
-      date: "March 15, 2024",
-      readTime: "5 min read",
-      category: "Health Tips",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>Managing prescription medication costs can be challenging, but there are many effective strategies to reduce your expenses without compromising your health. Here are the top 10 ways to save money on prescription medications.</p>
-        
-        <h3>1. Ask About Generic Alternatives</h3>
-        <p>Generic medications contain the same active ingredients as brand-name drugs but cost significantly less. Always ask your doctor or pharmacist if a generic version is available for your prescription.</p>
-        
-        <h3>2. Use Price Comparison Tools</h3>
-        <p>Different pharmacies can have vastly different prices for the same medication. Use online comparison tools like MediBachat to find the best deals in your area.</p>
-        
-        <h3>3. Look for Manufacturer Coupons</h3>
-        <p>Many pharmaceutical companies offer coupons and discount programs for their medications. Check the manufacturer's website or ask your doctor about available programs.</p>
-        
-        <h3>4. Consider 90-Day Supplies</h3>
-        <p>Many insurance plans offer better rates for 90-day supplies compared to 30-day refills. This can also save you multiple trips to the pharmacy.</p>
-        
-        <h3>5. Split Higher-Dose Pills</h3>
-        <p>Sometimes higher-dose pills cost the same as lower doses. If your doctor approves, you might be able to get higher-dose pills and split them with a pill splitter.</p>
-        
-        <h3>6. Check for Patient Assistance Programs</h3>
-        <p>Many pharmaceutical companies offer patient assistance programs for people who qualify based on income and other factors.</p>
-        
-        <h3>7. Use Prescription Discount Cards</h3>
-        <p>Free prescription discount cards can provide significant savings, especially for medications not covered by insurance.</p>
-        
-        <h3>8. Shop at Different Pharmacy Chains</h3>
-        <p>Prices can vary significantly between different pharmacy chains. Some stores offer $4 generic programs for common medications.</p>
-        
-        <h3>9. Ask About Therapeutic Alternatives</h3>
-        <p>Sometimes there are different medications that treat the same condition but cost less. Discuss with your doctor if alternatives might work for you.</p>
-        
-        <h3>10. Review Your Insurance Formulary</h3>
-        <p>Your insurance plan's formulary lists covered medications. Choose drugs from your plan's preferred list when possible to minimize costs.</p>
-        
-        <p><strong>Conclusion:</strong> By implementing these strategies, you can significantly reduce your prescription medication costs while maintaining the quality of your healthcare. Always consult with your healthcare provider before making any changes to your medication regimen.</p>
-      `
-    },
+  title: "7 Online Shopping Hacks to Reduce Your Medicine Bill",
+  author: "Kumar Astik",
+  date: "August 11, 2025",
+  readTime: "8 min read",
+  category: "Money-Saving Tips",
+  image: "https://images.unsplash.com/photo-1584367368783-92a80f85f7d7?w=800&h=400&fit=crop&crop=center",
+  content: `
+    <p>Rising medicine prices can feel like an unavoidable burden, but the truth is, with a little smart shopping, you can significantly cut your pharmacy expenses without compromising on quality. The growth of online medicine shopping in India has opened up dozens of money-saving opportunities—if you know where to look. In this guide, we’ll cover seven proven online shopping hacks that can help you pay less for the medicines you need.</p>
+
+    <h3>1. Compare Prices Across Multiple Online Pharmacies</h3>
+    <p>Medicine prices can vary drastically from one platform to another. For example, a strip of common blood pressure tablets might cost ₹90 on one website but ₹70 on another. Use price comparison tools like MediBachat, 1mg, or Netmeds’ price check to quickly identify the cheapest option. Even a small difference in price can add up to significant savings over the course of a year, especially for long-term prescriptions.</p>
+
+    <h3>2. Use Coupon Codes and Cashback Offers</h3>
+    <p>Before you hit the checkout button, always search for active coupon codes. Most online pharmacies run promotional campaigns during festivals, end-of-month sales, or health awareness weeks. Websites like PharmEasy, Apollo 24/7, and Netmeds often partner with digital wallets like Paytm or Amazon Pay to provide extra cashback. For example, you might get 20% off your total bill plus ₹100 cashback—double savings with just a few extra clicks.</p>
+
+    <h3>3. Take Advantage of Generic Medicines</h3>
+    <p>Many people assume brand-name medicines are the only option, but generic medicines contain the same active ingredients at a fraction of the price. For instance, instead of buying Crocin Advance, you can opt for the generic Paracetamol 500mg tablet. Ask your doctor if a generic equivalent is available for your prescription. Platforms like MediBachat even highlight cheaper generic alternatives automatically, saving you the research time.</p>
+
+    <h3>4. Buy in Bulk and Opt for 90-Day Refills</h3>
+    <p>If you’re on a long-term prescription, buying in bulk can lead to considerable discounts. Many platforms offer lower prices per unit when you purchase a three-month supply. This not only saves you money but also reduces the number of orders you place, saving on delivery charges and ensuring you never run out of essential medicines.</p>
+
+    <h3>5. Subscribe for Auto-Delivery</h3>
+    <p>Some online pharmacies offer subscription plans where you get a small discount for setting up automatic monthly deliveries. For example, if you need diabetes medication every month, subscribing can shave off 5–10% from your bill consistently. Plus, you avoid last-minute price hikes or out-of-stock issues.</p>
+
+    <h3>6. Stack Bank Offers and Wallet Rewards</h3>
+    <p>Bank credit and debit cards frequently offer instant discounts on online purchases, including medicines. For example, HDFC, ICICI, and SBI cards may have offers like "Flat 10% off on orders above ₹1,000". Combine these with cashback rewards from wallets like Paytm, PhonePe, or Google Pay for extra savings. Timing your purchases to match these bank offer periods can result in huge cumulative savings over the year.</p>
+
+    <h3>7. Monitor Seasonal and Flash Sales</h3>
+    <p>Just like fashion and electronics, medicine platforms also run seasonal sales—especially during festive seasons or special days like World Health Day. Flash sales can offer 25–40% off for a limited time, but you have to act fast. Signing up for newsletters or app notifications ensures you don’t miss these short-lived deals.</p>
+
+    <h3>Bonus Tip: Join Loyalty Programs</h3>
+    <p>Many online pharmacies have loyalty programs where you earn points for each purchase. These points can be redeemed for future discounts. For example, Apollo 24/7 offers ‘Health Credits’ while 1mg has ‘Care Points’. Over time, these rewards can easily amount to a free refill or two each year.</p>
+
+    <h3>Why This Works</h3>
+    <p>The secret to reducing your medicine bill lies in combining these strategies. Imagine buying your medicines in bulk during a flash sale, using a generic alternative, applying a coupon, paying with a bank card offer, and earning loyalty points—all in one transaction. The savings can be surprisingly large, often exceeding 40% of your original bill.</p>
+
+    <p><strong>Conclusion:</strong> Medicines are essential, but overpaying for them is not. By applying these seven online shopping hacks, you can bring down your medicine costs while still ensuring top-quality healthcare. Start with just one or two of these tips and you’ll quickly see the difference in your monthly expenses. Over time, these habits can save you thousands of rupees annually—money that could go toward your family’s well-being, investments, or even a much-needed vacation.</p>
+  `
+},
     "2": {
       title: "Understanding Generic vs Brand Name Medicines",
       author: "Dr. Michael Chen",

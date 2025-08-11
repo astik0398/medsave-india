@@ -49,13 +49,13 @@ const BlogSection = () => {
     },
     {
       id: 5,
-      title: "Digital Health: The Future of Medicine Shopping",
+      title: "Digital Health: The Future of Medicine Shopping in India",
       excerpt: "Explore how technology is revolutionizing the way we purchase and manage our medications.",
       author: "Tech Health Team",
       date: "March 5, 2024",
       readTime: "6 min read",
       category: "Technology",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop&crop=center"
     },
     {
       id: 6,
@@ -72,43 +72,43 @@ const BlogSection = () => {
   const getCategoryColor = (category: string) => {
     switch (category.toLowerCase()) {
       case "health tips":
-        return "bg-gradient-to-r from-green-100 to-green-200 text-green-800 dark:from-green-900/20 dark:to-green-800/20 dark:text-green-300";
+        return "bg-gradient-to-r from-green-100 to-green-200 text-green-800 dark:from-green-100 dark:to-green-200 dark:text-green-700";
       case "education":
-        return "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 dark:from-blue-900/20 dark:to-blue-800/20 dark:text-blue-300";
+        return "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 dark:from-blue-100 dark:to-blue-200 dark:text-blue-700";
       case "guide":
-        return "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 dark:from-purple-900/20 dark:to-purple-800/20 dark:text-purple-300";
+        return "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 dark:from-purple-100 dark:to-purple-200 dark:text-purple-700";
       case "safety":
-        return "bg-gradient-to-r from-red-100 to-red-200 text-red-800 dark:from-red-900/20 dark:to-red-800/20 dark:text-red-300";
+        return "bg-gradient-to-r from-red-100 to-red-200 text-red-800 dark:from-red-100 dark:to-red-200 dark:text-red-700";
       case "technology":
-        return "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-800 dark:from-cyan-900/20 dark:to-cyan-800/20 dark:text-cyan-300";
+        return "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-800 dark:from-cyan-100 dark:to-cyan-200 dark:text-cyan-700";
       default:
         return "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 dark:from-gray-900/20 dark:to-gray-800/20 dark:text-gray-300";
     }
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
+    <section className="py-20 dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-12" id="blog">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          Health & Medicine Blog
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Our Latest Blog
         </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Stay informed with expert insights, health tips, and the latest trends in medicine and healthcare.
         </p>
       </div>
 
       {/* Featured Post */}
       {blogPosts.filter(post => post.featured).map(post => (
-        <Card key={post.id} className="mb-12 overflow-hidden group hover:shadow-lg transition-all duration-300 border-2 border-primary/20">
+        <Card key={post.id} className="mb-12 overflow-hidden group hover:shadow-lg transition-all duration-300 dark:shadow-strong border-[0.5px] border-primary/20 border-primary/20">
           <div className="md:flex">
             <div className="md:w-1/2">
               <div className="relative overflow-hidden h-64 md:h-full">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
                   <Badge className={`${getCategoryColor(post.category)} font-semibold`}>
@@ -206,15 +206,17 @@ const BlogSection = () => {
               </CardContent>
             </Card>
           ))}
+          
+           {/* View All Button */}
+       
+       <div className="flex justify-center items-center mt-6">
+          <button className="flex items-center justify-center w-20 h-20 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+    <ArrowRight className="w-10 h-10" />
+  </button>
+       </div>
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90">
-            View All Articles
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
+       
       </div>
     </section>
   );

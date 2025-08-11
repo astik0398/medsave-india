@@ -132,11 +132,11 @@ const CouponsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button className="dark:text-white" variant="hero" size="lg">
             View All Coupons
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
