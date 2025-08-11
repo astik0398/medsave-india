@@ -92,13 +92,18 @@ const PriceHistory = () => {
       }
 
       // Set current and last month prices for a platform (e.g., Tata 1mg)
-      if (transformed.length >= 1 && overallLowestPlatform) {
+      if (transformed.length >= 2 && overallLowestPlatform) {
         const current =
           transformed[transformed.length - 1]?.[overallLowestPlatform];
         const last =
           transformed[transformed.length - 2]?.[overallLowestPlatform];
         setCurrentPrice(current);
         setLastMonthPrice(last);
+        setLowestPlatformName(overallLowestPlatform);
+      }
+      else{
+        setCurrentPrice(transformed[transformed.length]?.[overallLowestPlatform]);
+        setLastMonthPrice(transformed[transformed.length]?.[overallLowestPlatform]);
         setLowestPlatformName(overallLowestPlatform);
       }
     };
