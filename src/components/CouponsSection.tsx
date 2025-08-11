@@ -9,58 +9,40 @@ import onemg from "../assets/1mg trans.png";
 import truemeds from "../assets/truemeds trans.png";
 import pharmeasy from "../assets/pharmeasy trans.png";
 import apollo from "../assets/apllo pharmacy trans.png";
+import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 
 const CouponsSection = () => {
 
     const [coupons, setCoupons] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const fetchCoupons = async () => {
+ const fetchCoupons = async () => {
   setLoading(true);
-
-  const endpoints = {
-    "netmeds": "https://medicompare-production.up.railway.app/netmeds-coupons",
-    "pharmeasy": "https://medicompare-production.up.railway.app/pharmeasy-coupons",
-    "1mg": "https://medicompare-production.up.railway.app/1mg-coupons",
-    "truemeds": "https://medicompare-production.up.railway.app/truemeds-coupons"
-  };
-
   try {
-    const responses = await Promise.all(
-      Object.entries(endpoints).map(async ([platform, url]) => {
-        const res = await fetch(url);
-        const data = await res.json();
-        return {
-          platform,
-          logo:
-            platform === "netmeds"
-              ? netmeds
-              : platform === "pharmeasy"
-              ? pharmeasy
-              : platform === "1mg"
-              ? onemg : platform === "truemeds"
-              ? truemeds : platform === "apollo"
-              ? apollo
-              : "💊",
-          coupons: data.coupons || []
-        };
-      })
-    );
-    console.log('responses===>', responses);
+    const { data, error } = await supabase
+      .from('coupons')
+      .select('data')
+      .order('fetched_at', { ascending: false })
+      .limit(1)
+      .single();
+
+    if (error) throw error;
+
+    console.log('data of coupons===>', data);
     
-    setCoupons(responses); // Set array of platform objects, each with coupons
-  } catch (error) {
-    console.error("Error fetching coupons:", error);
+
+    setCoupons(data.data || []);
+  } catch (err) {
+    console.error('Error fetching coupons:', err);
   } finally {
     setLoading(false);
   }
 };
+
     // useEffect to trigger coupon fetch when activeTab changes
   useEffect(() => {
     fetchCoupons();
   }, []);
-
-  
 
   const copyToClipboard = (code: string) => {
     navigator.clipboard.writeText(code);
@@ -94,8 +76,9 @@ const CouponsSection = () => {
                   <span className="text-xl">{platform.platform.toUpperCase()} COUPON CODE & OFFERS</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                {platform.coupons.slice(0, 2).map((coupon, couponIndex) => (
+              <CardContent >
+               <div className="max-h-[400px] overflow-y-auto pr-2 space-y-4">
+                 {platform.coupons.map((coupon, couponIndex) => (
                   <div
                     key={couponIndex}
                     className="p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors group"
@@ -143,6 +126,7 @@ const CouponsSection = () => {
                     </div>
                   </div>
                 ))}
+               </div>
               </CardContent>
             </Card>
           ))}
