@@ -179,12 +179,12 @@ const PriceHistory = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-foreground">
-                {localStorage.getItem("price_history_name") || "Cetaphil Syndet Bar 75gm"} Price Trends
+                {localStorage.getItem("price_history_name") ?? "Cetaphil Syndet Bar 75gm"} Price Trends
               </h3>
               <div className="flex items-center space-x-4">
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl font-bold text-foreground">
-                    ₹{currentPrice}
+                    ₹{currentPrice ?? 599}
                   </span>
                   <Badge
                     variant={isDecrease ? "secondary" : "destructive"}
@@ -249,7 +249,7 @@ const PriceHistory = () => {
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-primary dark:text-[#004EB4]">
-                        ₹{currentPrice}
+                        ₹{currentPrice ?? 599}
                       </div>
                       <div className="text-xs text-muted-foreground">
                         Lowest price
@@ -289,10 +289,10 @@ const PriceHistory = () => {
                 </h4>
               </div>
               <p className="text-2xl font-bold text-secondary dark:text-[#10B780]">
-                ₹{currentPrice}
+                ₹{currentPrice ?? 599}
               </p>
               <p className="text-sm text-muted-foreground">
-                {lowestPriceMonth} 2025 on {lowestPlatform}
+                {lowestPriceMonth ?? 'August'} 2025 on {lowestPlatform ?? 'Tata1mg'}
               </p>
             </Card>
 
@@ -304,7 +304,7 @@ const PriceHistory = () => {
                 </h4>
               </div>
               <p className="text-2xl font-bold text-primary dark:text-[#004EB4]">
-                {lowestPriceMonth}
+                {lowestPriceMonth ?? 'August'}
               </p>
               <p className="text-sm text-muted-foreground">
                 Historically lowest prices
