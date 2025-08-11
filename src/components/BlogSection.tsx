@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   const blogPosts = [
@@ -88,70 +89,72 @@ const BlogSection = () => {
   return (
     <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Health & Medicine Blog
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      {/* Header */}
+      <div className="text-center mb-12" id="blog">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Health & Medicine Blog
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Stay informed with expert insights, health tips, and the latest trends in medicine and healthcare.
-          </p>
-        </div>
+        </p>
+      </div>
 
-        {/* Featured Post */}
-        {blogPosts.filter(post => post.featured).map(post => (
-          <Card key={post.id} className="mb-12 overflow-hidden group hover:shadow-lg transition-all duration-300 border-2 border-primary/20">
-            <div className="md:flex">
-              <div className="md:w-1/2">
-                <div className="relative overflow-hidden h-64 md:h-full">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge className={`${getCategoryColor(post.category)} font-semibold`}>
-                      Featured
-                    </Badge>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-1/2 p-8">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge className={getCategoryColor(post.category)}>
-                    {post.category}
+      {/* Featured Post */}
+      {blogPosts.filter(post => post.featured).map(post => (
+        <Card key={post.id} className="mb-12 overflow-hidden group hover:shadow-lg transition-all duration-300 border-2 border-primary/20">
+          <div className="md:flex">
+            <div className="md:w-1/2">
+              <div className="relative overflow-hidden h-64 md:h-full">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4">
+                  <Badge className={`${getCategoryColor(post.category)} font-semibold`}>
+                    Featured
                   </Badge>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
-                  {post.title}
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                    <div className="flex items-center space-x-1">
-                      <User className="h-4 w-4" />
-                      <span>{post.author}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{post.date}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Clock className="h-4 w-4" />
-                      <span>{post.readTime}</span>
-                    </div>
+              </div>
+            </div>
+            <div className="md:w-1/2 p-8">
+              <div className="flex items-center gap-2 mb-3">
+                <Badge className={getCategoryColor(post.category)}>
+                  {post.category}
+                </Badge>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                {post.title}
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                {post.excerpt}
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                  <div className="flex items-center space-x-1">
+                    <User className="h-4 w-4" />
+                    <span>{post.author}</span>
                   </div>
+                  <div className="flex items-center space-x-1">
+                    <Calendar className="h-4 w-4" />
+                    <span>{post.date}</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Clock className="h-4 w-4" />
+                    <span>{post.readTime}</span>
+                  </div>
+                </div>
+                <Link to={`/blog/${post.id}`}>
                   <Button variant="outline" className="group/btn">
                     Read More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
-                </div>
+                </Link>
               </div>
             </div>
-          </Card>
-        ))}
+          </div>
+        </Card>
+      ))}
 
         {/* Regular Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,10 +197,12 @@ const BlogSection = () => {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" size="sm" className="w-full group/btn">
-                  Read Article
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                <Link to={`/blog/${post.id}`}>
+                  <Button variant="outline" size="sm" className="w-full group/btn">
+                    Read Article
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
