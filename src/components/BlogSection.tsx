@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import online_medicine_buying from "@/assets/online medicine buying.png"
 
 const BlogSection = () => {
   const blogPosts = [
@@ -14,7 +15,7 @@ const BlogSection = () => {
       date: "March 15, 2024",
       readTime: "5 min read",
       category: "Health Tips",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop&crop=center",
+      image: online_medicine_buying,
       featured: true
     },
     {
