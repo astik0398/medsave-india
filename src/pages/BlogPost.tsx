@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowLeft, Share2 } from "lucide-react";
 import online_medicine_buying from "@/assets/online medicine buying.png"
+import online_coupon_discount from "@/assets/online medicine coupon discount (433 x 192 px).png"
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -138,43 +139,94 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 </>
 
 },
-    "2": {
-      title: "Understanding Generic vs Brand Name Medicines",
-      author: "Dr. Michael Chen",
+    "online-medicine-discount-coupons-in-india": {
+      title: "Pharmacy Discount Coupons in India: A Complete 2025 Guide",
+      author: "Team MediBachat",
       date: "March 12, 2024",
       readTime: "4 min read",
       category: "Education",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>When it comes to prescription medications, you often have a choice between generic and brand name options. Understanding the differences can help you make informed decisions about your healthcare and budget.</p>
-        
-        <h3>What Are Generic Medicines?</h3>
-        <p>Generic medicines are copies of brand-name drugs that have the same active ingredient, strength, dosage form, and route of administration. They are approved by regulatory authorities after the original drug's patent expires.</p>
-        
-        <h3>Key Similarities</h3>
-        <ul>
-        <li><strong>Active Ingredients:</strong> Generics contain the same active ingredients as brand-name drugs</li>
-        <li><strong>Effectiveness:</strong> They work the same way in the body</li>
-        <li><strong>Safety:</strong> They meet the same rigorous safety standards</li>
-        <li><strong>Quality:</strong> Manufacturing standards are identical</li>
-        </ul>
-        
-        <h3>Main Differences</h3>
-        <ul>
-        <li><strong>Price:</strong> Generics typically cost 80-85% less than brand names</li>
-        <li><strong>Appearance:</strong> Color, shape, and packaging may differ</li>
-        <li><strong>Inactive Ingredients:</strong> Fillers and preservatives may vary</li>
-        <li><strong>Brand Recognition:</strong> Generic names are often harder to remember</li>
-        </ul>
-        
-        <h3>Why Choose Generic?</h3>
-        <p>The primary advantage of generic medicines is cost savings without sacrificing quality or effectiveness. This makes healthcare more accessible and affordable for everyone.</p>
-        
-        <h3>When to Consider Brand Name</h3>
-        <p>In rare cases, patients may have allergies to inactive ingredients in generics or may respond differently to the medication. Always consult your healthcare provider if you have concerns.</p>
-        
-        <p><strong>Bottom Line:</strong> Generic medicines are safe, effective, and significantly more affordable than brand names. They're an excellent choice for most patients and conditions.</p>
-      `
+      image: online_coupon_discount,
+      content: <>
+  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+    Pharmacy Discount Coupons in India: A Complete 2025 Guide
+  </h1>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    In 2025, buying medicines online in India is no longer just about convenience —
+    it’s about <strong>saving money smartly</strong>. Prices can vary significantly across platforms,
+    and with the right coupon codes, you can often save 5% to 40% on your medicine bills.
+    This guide will walk you through where to find pharmacy discount coupons, how to use them,
+    and how <a href="https://medibachat.in/" target="_blank" style={{color:'blue'}}><b>MediBachat </b></a>
+    can help you compare prices and find the best deals — all in one place.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Why Pharmacy Coupons Matter in 2025
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Healthcare costs are on the rise, and medicines form a significant part of monthly
+    expenses for many households. With e-pharmacies like <strong>PharmEasy</strong>, 
+    <strong> Netmeds</strong>, <strong>Tata 1mg</strong>, and <strong>Apollo 24|7</strong>
+    competing for customers, coupon codes have become a smart way to cut costs without
+    compromising on quality or service.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Where to Find Pharmacy Discount Coupons
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    There are several reliable ways to discover the best pharmacy discounts:
+  </p>
+  <ul className="list-disc pl-6 text-lg text-gray-700 dark:text-gray-300 mb-6">
+    <li><strong>Official App & Website Offers</strong> – Check the “Offers” or “Deals” section on each pharmacy’s platform.</li>
+    <li><strong>Bank & Wallet Partnerships</strong> – Look for cashback offers from Paytm, PhonePe, and Amazon Pay.</li>
+    <li><strong>Festive & Seasonal Sales</strong> – Independence Day, Diwali, and New Year sales often bring the biggest discounts.</li>
+    <li><strong>Coupon Aggregator Platforms</strong> – Use tools like <a href="https://medibachat.in/" target="_blank" style={{color:'blue'}}><b>MediBachat</b></a> to see all active coupons in one place.</li>
+  </ul>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    How MediBachat Makes It Easier
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+     Instead of switching between multiple websites, <a href="https://medibachat.in/" target="_blank" style={{color:'blue'}}><b>MediBachat </b></a> 
+    lets you search for a medicine and instantly see prices across top platforms like 
+    <strong> Netmeds</strong>, <strong>PharmEasy</strong>, <strong>Tata 1mg</strong>, 
+    <strong> Truemeds</strong>, and <strong>Apollo Pharmacy</strong>. You also get a list 
+    of all currently active coupon codes for each platform, ensuring you combine the lowest 
+    price with the highest available discount.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    How to Use Coupons Effectively
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    To get the most out of your coupon codes:
+  </p>
+  <ul className="list-disc pl-6 text-lg text-gray-700 dark:text-gray-300 mb-6">
+    <li>Always read the terms and conditions — some require a minimum order value.</li>
+    <li>Look for stacking opportunities by combining coupons with bank cashback offers.</li>
+    <li>Apply coupons early — many deals have limited redemptions and expire quickly.</li>
+  </ul>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Common Mistakes to Avoid
+  </h2>
+  <ul className="list-disc pl-6 text-lg text-gray-700 dark:text-gray-300 mb-6">
+    <li>Forgetting to apply the coupon at checkout.</li>
+    <li>Assuming one platform is always cheapest — prices change daily.</li>
+    <li>Ignoring delivery charges, which can cancel out small discounts.</li>
+  </ul>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Final Thoughts
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pharmacy discount coupons can make a noticeable difference to your monthly healthcare budget.
+    By checking prices and coupons side by side on <a href="https://medibachat.in/" target="_blank" style={{color:'blue'}}><b>MediBachat</b></a>,
+    you ensure you never overpay for medicines. In 2025, saving on healthcare is all about being informed,
+    quick, and strategic — and a little bit of smart couponing can go a long way.
+  </p>
+</>
+
     },
     "3": {
       title: "How to Use Medicine Price Comparison Tools",

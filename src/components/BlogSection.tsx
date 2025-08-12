@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import online_medicine_buying from "@/assets/online medicine buying.png"
+import online_coupon_discount from "@/assets/online medicine coupon discount (433 x 192 px).png"
 
 const BlogSection = () => {
   const blogPosts = [
@@ -12,21 +13,21 @@ const BlogSection = () => {
       title: "Top 7 Online Medicine Shopping Hacks to Reduce Your Medicine Prices",
       excerpt: "Discover effective strategies to reduce your medical expenses without compromising on quality healthcare.",
       author: "Team Medibachat",
-      date: "March 15, 2024",
-      readTime: "5 min read",
+      date: "August 11, 2025",
+      readTime: "8 min read",
       category: "Health Tips",
       image: online_medicine_buying,
       featured: true
     },
     {
-      id: 2,
-      title: "Understanding Generic vs Brand Name Medicines",
-      excerpt: "Learn the key differences between generic and brand name medications and make informed choices.",
-      author: "Dr. Michael Chen",
-      date: "March 12, 2024",
+      id: "online-medicine-discount-coupons-in-india",
+      title: "Pharmacy Discount Coupons in India",
+      excerpt: "Discover the best pharmacy discount coupons in India for 2025 and learn how MediBachat helps you find it.",
+      author: "Team MediBachat",
+      date: "August 12, 2025",
       readTime: "4 min read",
       category: "Education",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop&crop=center"
+      image: online_coupon_discount
     },
     {
       id: 3,
