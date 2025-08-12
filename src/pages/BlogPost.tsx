@@ -13,7 +13,7 @@ const BlogPost = () => {
   
   const blogPosts = {
     "7-online-medicine-shopping-hacks-to-reduce-bills": {
-  title: "7 Online Shopping Hacks to Reduce Your Medicine Bill",
+  title: "Top 7 Online Medicine Shopping Hacks to Reduce Your Medicine Prices",
   author: "Team MediBachat",
   date: "August 11, 2025",
   readTime: "8 min read",

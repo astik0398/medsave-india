@@ -9,9 +9,9 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: "7-online-medicine-shopping-hacks-to-reduce-bills",
-      title: "Top 7 Online Shopping Hacks to Reduce Your Medicine Bill",
+      title: "Top 7 Online Medicine Shopping Hacks to Reduce Your Medicine Prices",
       excerpt: "Discover effective strategies to reduce your medical expenses without compromising on quality healthcare.",
-      author: "Dr. Sarah Johnson",
+      author: "Team Medibachat",
       date: "March 15, 2024",
       readTime: "5 min read",
       category: "Health Tips",
