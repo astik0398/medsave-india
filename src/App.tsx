@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AboutUs from "./pages/AboutUs";
 import TermsOfService from "./pages/TermsOfService";
 import BlogPost from "./pages/BlogPost";
+import ScrollHandler from "./components/ui/ScrollHandler";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,10 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+
+  <ScrollHandler />
+
+
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog/:id" element={<BlogPost />} />

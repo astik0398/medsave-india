@@ -23,16 +23,16 @@ const Header = () => {
   console.log('theme right now--------->', theme);
   
   const navItems = [
-    { label: "Home", href: "#home", icon: House },
-    { label: "Compare Price", href: "#price-comparison", icon: Scale },
-    { label: "Coupons", href: "#coupons", icon: TicketPercentIcon },
+    { label: "Home", href: "/#home", icon: House },
+    { label: "Compare Price", href: "/#price-comparison", icon: Scale },
+    { label: "Coupons", href: "/#coupons", icon: TicketPercentIcon },
     {
       label: "Price History",
-      href: "#price-history",
+      href: "/#price-history",
       icon: ChartNoAxesCombined,
     },
-    { label: "FAQ", href: "#faq", icon: HelpCircle },
-    { label: "Contact", href: "#contact", icon: Phone },
+    { label: "FAQ", href: "/#faq", icon: HelpCircle },
+    { label: "Contact", href: "/#contact", icon: Phone },
   ];
 
   return (
