@@ -8,8 +8,8 @@ import online_medicine_buying from "@/assets/online medicine buying.png"
 const BlogSection = () => {
   const blogPosts = [
     {
-      id: 1,
-      title: "Top 10 Ways to Save Money on Prescription Medications",
+      id: "7-online-medicine-shopping-hacks-to-reduce-bills",
+      title: "Top 7 Online Shopping Hacks to Reduce Your Medicine Bill",
       excerpt: "Discover effective strategies to reduce your medical expenses without compromising on quality healthcare.",
       author: "Dr. Sarah Johnson",
       date: "March 15, 2024",

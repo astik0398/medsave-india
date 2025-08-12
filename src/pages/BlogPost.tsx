@@ -9,8 +9,10 @@ import online_medicine_buying from "@/assets/online medicine buying.png"
 const BlogPost = () => {
   const { id } = useParams();
 
+  console.log('idddd', id);
+  
   const blogPosts = {
-    "1": {
+    "7-online-medicine-shopping-hacks-to-reduce-bills": {
   title: "7 Online Shopping Hacks to Reduce Your Medicine Bill",
   author: "Team MediBachat",
   date: "August 11, 2025",
@@ -413,7 +415,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <Badge className={`${getCategoryColor(post.category)} mb-4`}>
+            <Badge className={`${getCategoryColor(post.category)} mb-4 dark:bg-red-600`}>
               {post.category}
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">{post.title}</h1>
@@ -463,7 +465,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
           {/* Author Info */}
           <div className="border-t pt-8 mt-12">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary dark:from-blue-200 dark:to-blue-800 rounded-full flex items-center justify-center">
                 <User className="h-8 w-8 text-white" />
               </div>
               <div>
