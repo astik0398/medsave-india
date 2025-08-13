@@ -6,11 +6,51 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowLeft, Share2 } from "lucide-react";
 import online_medicine_buying from "@/assets/online medicine buying.png"
 import online_coupon_discount from "@/assets/online medicine coupon discount (433 x 192 px).png"
+import { Helmet } from "react-helmet-async"; // Import Helmet
+import { toast } from "@/components/ui/use-toast"; // Optional: For toast notifications
 
 const BlogPost = () => {
   const { id } = useParams();
 
   console.log('idddd', id);
+
+  const handleShare = async () => {
+    const shareData = {
+      title: post.title,
+      text: post.metaDescription,
+      url: `https://www.medibachat.in/blog/${id}`,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        console.log("Content shared successfully");
+      } catch (error) {
+        console.error("Error sharing:", error);
+        // Optional: Show a toast notification for errors
+        toast({
+          title: "Share Failed",
+          description: "Unable to share the post. Try copying the link instead.",
+          variant: "destructive",
+        });
+      }
+    } else {
+      // Fallback: Copy URL to clipboard
+      navigator.clipboard.writeText(shareData.url).then(() => {
+        toast({
+          title: "Link Copied",
+          description: "The blog post URL has been copied to your clipboard.",
+        });
+      }).catch((error) => {
+        console.error("Error copying URL:", error);
+        toast({
+          title: "Copy Failed",
+          description: "Unable to copy the URL. Please try again.",
+          variant: "destructive",
+        });
+      });
+    }
+  };
   
   const blogPosts = {
     "7-online-medicine-shopping-hacks-to-reduce-bills": {
@@ -20,6 +60,7 @@ const BlogPost = () => {
   readTime: "8 min read",
   category: "Money-Saving Tips",
   image: online_medicine_buying,
+  metaDescription: "Discover 7 proven hacks to save money on online medicine shopping in India. Compare prices, use netmeds coupons or pharmeasy coupons, and leverage generic medicines to cut costs.",
   content:   <>
   <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
     Introduction
@@ -146,6 +187,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
       readTime: "4 min read",
       category: "Education",
       image: online_coupon_discount,
+      metaDescription: "Learn how to find and use pharmacy discount coupons in India in 2025 to save up to 40% on medicines from top e-pharmacies like Netmeds Tata 1mg, Pharmeasy, Apollo Pharmacy and Truemeds",
       content: <>
   <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
     Pharmacy Discount Coupons in India: A Complete 2025 Guide
@@ -228,195 +270,195 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 </>
 
     },
-    "3": {
-      title: "How to Use Medicine Price Comparison Tools",
-      author: "MediBachat Team",
-      date: "March 10, 2024",
-      readTime: "3 min read",
-      category: "Guide",
-      image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>Medicine price comparison tools can help you save significant money on prescriptions. Here's a comprehensive guide on how to use these tools effectively.</p>
+    // "3": {
+    //   title: "How to Use Medicine Price Comparison Tools",
+    //   author: "MediBachat Team",
+    //   date: "March 10, 2024",
+    //   readTime: "3 min read",
+    //   category: "Guide",
+    //   image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&h=400&fit=crop&crop=center",
+    //   content: `
+    //     <p>Medicine price comparison tools can help you save significant money on prescriptions. Here's a comprehensive guide on how to use these tools effectively.</p>
         
-        <h3>Getting Started</h3>
-        <p>Most price comparison tools require basic information about your prescription: the medication name, dosage, quantity, and your location.</p>
+    //     <h3>Getting Started</h3>
+    //     <p>Most price comparison tools require basic information about your prescription: the medication name, dosage, quantity, and your location.</p>
         
-        <h3>Step-by-Step Guide</h3>
-        <ol>
-        <li><strong>Enter Medication Details:</strong> Type in the exact name of your medication</li>
-        <li><strong>Select Dosage:</strong> Choose the correct strength (mg) prescribed by your doctor</li>
-        <li><strong>Enter Quantity:</strong> Input the number of pills or amount prescribed</li>
-        <li><strong>Set Location:</strong> Enter your ZIP code to find nearby pharmacies</li>
-        <li><strong>Compare Results:</strong> Review prices from different pharmacies</li>
-        </ol>
+    //     <h3>Step-by-Step Guide</h3>
+    //     <ol>
+    //     <li><strong>Enter Medication Details:</strong> Type in the exact name of your medication</li>
+    //     <li><strong>Select Dosage:</strong> Choose the correct strength (mg) prescribed by your doctor</li>
+    //     <li><strong>Enter Quantity:</strong> Input the number of pills or amount prescribed</li>
+    //     <li><strong>Set Location:</strong> Enter your ZIP code to find nearby pharmacies</li>
+    //     <li><strong>Compare Results:</strong> Review prices from different pharmacies</li>
+    //     </ol>
         
-        <h3>What to Look For</h3>
-        <ul>
-        <li><strong>Total Cost:</strong> Some tools show per-pill costs, others show total cost</li>
-        <li><strong>Insurance Coverage:</strong> Check if the tool factors in your insurance</li>
-        <li><strong>Discounts Available:</strong> Look for additional coupon opportunities</li>
-        <li><strong>Pharmacy Distance:</strong> Consider travel costs and convenience</li>
-        </ul>
+    //     <h3>What to Look For</h3>
+    //     <ul>
+    //     <li><strong>Total Cost:</strong> Some tools show per-pill costs, others show total cost</li>
+    //     <li><strong>Insurance Coverage:</strong> Check if the tool factors in your insurance</li>
+    //     <li><strong>Discounts Available:</strong> Look for additional coupon opportunities</li>
+    //     <li><strong>Pharmacy Distance:</strong> Consider travel costs and convenience</li>
+    //     </ul>
         
-        <h3>Pro Tips</h3>
-        <ul>
-        <li>Compare both generic and brand name options</li>
-        <li>Check multiple tools for the most comprehensive results</li>
-        <li>Consider 90-day supplies for maintenance medications</li>
-        <li>Don't forget to factor in gas and time costs</li>
-        </ul>
+    //     <h3>Pro Tips</h3>
+    //     <ul>
+    //     <li>Compare both generic and brand name options</li>
+    //     <li>Check multiple tools for the most comprehensive results</li>
+    //     <li>Consider 90-day supplies for maintenance medications</li>
+    //     <li>Don't forget to factor in gas and time costs</li>
+    //     </ul>
         
-        <h3>Beyond Price</h3>
-        <p>While price is important, also consider pharmacy services, hours of operation, and customer service quality when making your decision.</p>
+    //     <h3>Beyond Price</h3>
+    //     <p>While price is important, also consider pharmacy services, hours of operation, and customer service quality when making your decision.</p>
         
-        <p><strong>Remember:</strong> Using price comparison tools regularly can save you hundreds of dollars annually on prescription medications.</p>
-      `
-    },
-    "4": {
-      title: "Medicine Storage Best Practices",
-      author: "Dr. Priya Sharma",
-      date: "March 8, 2024",
-      readTime: "4 min read",
-      category: "Safety",
-      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>Proper medication storage is crucial for maintaining drug effectiveness and ensuring your safety. Here are essential best practices for storing your medicines.</p>
+    //     <p><strong>Remember:</strong> Using price comparison tools regularly can save you hundreds of dollars annually on prescription medications.</p>
+    //   `
+    // },
+    // "4": {
+    //   title: "Medicine Storage Best Practices",
+    //   author: "Dr. Priya Sharma",
+    //   date: "March 8, 2024",
+    //   readTime: "4 min read",
+    //   category: "Safety",
+    //   image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=400&fit=crop&crop=center",
+    //   content: `
+    //     <p>Proper medication storage is crucial for maintaining drug effectiveness and ensuring your safety. Here are essential best practices for storing your medicines.</p>
         
-        <h3>General Storage Guidelines</h3>
-        <p>Most medications should be stored in a cool, dry place away from direct sunlight and moisture. Room temperature (68-77°F) is ideal for most drugs.</p>
+    //     <h3>General Storage Guidelines</h3>
+    //     <p>Most medications should be stored in a cool, dry place away from direct sunlight and moisture. Room temperature (68-77°F) is ideal for most drugs.</p>
         
-        <h3>Common Storage Mistakes</h3>
-        <ul>
-        <li><strong>Bathroom Medicine Cabinets:</strong> Heat and humidity can damage medications</li>
-        <li><strong>Car Storage:</strong> Extreme temperatures can render medicines ineffective</li>
-        <li><strong>Kitchen Counters:</strong> Heat from cooking can affect drug stability</li>
-        <li><strong>Refrigerator Door:</strong> Temperature fluctuations occur here frequently</li>
-        </ul>
+    //     <h3>Common Storage Mistakes</h3>
+    //     <ul>
+    //     <li><strong>Bathroom Medicine Cabinets:</strong> Heat and humidity can damage medications</li>
+    //     <li><strong>Car Storage:</strong> Extreme temperatures can render medicines ineffective</li>
+    //     <li><strong>Kitchen Counters:</strong> Heat from cooking can affect drug stability</li>
+    //     <li><strong>Refrigerator Door:</strong> Temperature fluctuations occur here frequently</li>
+    //     </ul>
         
-        <h3>Refrigerated Medications</h3>
-        <p>Some medications require refrigeration (36-46°F). Store these in the main body of the refrigerator, never in the freezer or door compartments.</p>
+    //     <h3>Refrigerated Medications</h3>
+    //     <p>Some medications require refrigeration (36-46°F). Store these in the main body of the refrigerator, never in the freezer or door compartments.</p>
         
-        <h3>Special Considerations</h3>
-        <ul>
-        <li><strong>Light-Sensitive Drugs:</strong> Keep in original dark containers</li>
-        <li><strong>Inhalers:</strong> Store at room temperature, never in extreme heat or cold</li>
-        <li><strong>Insulin:</strong> Unopened vials in refrigerator, opened vials at room temperature</li>
-        <li><strong>Liquid Medications:</strong> Check for specific storage instructions</li>
-        </ul>
+    //     <h3>Special Considerations</h3>
+    //     <ul>
+    //     <li><strong>Light-Sensitive Drugs:</strong> Keep in original dark containers</li>
+    //     <li><strong>Inhalers:</strong> Store at room temperature, never in extreme heat or cold</li>
+    //     <li><strong>Insulin:</strong> Unopened vials in refrigerator, opened vials at room temperature</li>
+    //     <li><strong>Liquid Medications:</strong> Check for specific storage instructions</li>
+    //     </ul>
         
-        <h3>Safety Tips</h3>
-        <ul>
-        <li>Keep medications in original containers with labels</li>
-        <li>Store out of reach of children and pets</li>
-        <li>Use child-resistant caps when available</li>
-        <li>Never mix different medications in the same container</li>
-        </ul>
+    //     <h3>Safety Tips</h3>
+    //     <ul>
+    //     <li>Keep medications in original containers with labels</li>
+    //     <li>Store out of reach of children and pets</li>
+    //     <li>Use child-resistant caps when available</li>
+    //     <li>Never mix different medications in the same container</li>
+    //     </ul>
         
-        <h3>Signs of Deterioration</h3>
-        <p>Watch for changes in color, smell, texture, or expiration dates. When in doubt, consult your pharmacist before taking any medication that seems different.</p>
+    //     <h3>Signs of Deterioration</h3>
+    //     <p>Watch for changes in color, smell, texture, or expiration dates. When in doubt, consult your pharmacist before taking any medication that seems different.</p>
         
-        <h3>Travel Storage</h3>
-        <p>When traveling, keep medications in carry-on luggage, maintain proper temperatures, and bring extra supplies in case of delays.</p>
+    //     <h3>Travel Storage</h3>
+    //     <p>When traveling, keep medications in carry-on luggage, maintain proper temperatures, and bring extra supplies in case of delays.</p>
         
-        <p><strong>Remember:</strong> Proper storage ensures your medications work as intended and keeps you safe from potential harm.</p>
-      `
-    },
-    "5": {
-      title: "Digital Health: The Future of Medicine Shopping",
-      author: "Tech Health Team",
-      date: "March 5, 2024",
-      readTime: "6 min read",
-      category: "Technology",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>The digital revolution is transforming how we purchase and manage medications. From online pharmacies to AI-powered health assistants, technology is making healthcare more accessible and affordable.</p>
+    //     <p><strong>Remember:</strong> Proper storage ensures your medications work as intended and keeps you safe from potential harm.</p>
+    //   `
+    // },
+    // "5": {
+    //   title: "Digital Health: The Future of Medicine Shopping",
+    //   author: "Tech Health Team",
+    //   date: "March 5, 2024",
+    //   readTime: "6 min read",
+    //   category: "Technology",
+    //   image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop&crop=center",
+    //   content: `
+    //     <p>The digital revolution is transforming how we purchase and manage medications. From online pharmacies to AI-powered health assistants, technology is making healthcare more accessible and affordable.</p>
         
-        <h3>Current Digital Health Trends</h3>
-        <ul>
-        <li><strong>Online Pharmacies:</strong> Convenient prescription delivery services</li>
-        <li><strong>Price Comparison Apps:</strong> Real-time pricing across multiple pharmacies</li>
-        <li><strong>Digital Prescriptions:</strong> Electronic prescribing reduces errors</li>
-        <li><strong>Medication Reminders:</strong> Smart apps ensure adherence</li>
-        </ul>
+    //     <h3>Current Digital Health Trends</h3>
+    //     <ul>
+    //     <li><strong>Online Pharmacies:</strong> Convenient prescription delivery services</li>
+    //     <li><strong>Price Comparison Apps:</strong> Real-time pricing across multiple pharmacies</li>
+    //     <li><strong>Digital Prescriptions:</strong> Electronic prescribing reduces errors</li>
+    //     <li><strong>Medication Reminders:</strong> Smart apps ensure adherence</li>
+    //     </ul>
         
-        <h3>Benefits of Digital Medicine Shopping</h3>
-        <p>Digital platforms offer transparency in pricing, convenience of home delivery, and access to a wider range of medications and pharmacies.</p>
+    //     <h3>Benefits of Digital Medicine Shopping</h3>
+    //     <p>Digital platforms offer transparency in pricing, convenience of home delivery, and access to a wider range of medications and pharmacies.</p>
         
-        <h3>AI and Machine Learning</h3>
-        <p>Artificial intelligence is being used to predict drug interactions, optimize treatment plans, and provide personalized health recommendations.</p>
+    //     <h3>AI and Machine Learning</h3>
+    //     <p>Artificial intelligence is being used to predict drug interactions, optimize treatment plans, and provide personalized health recommendations.</p>
         
-        <h3>Telemedicine Integration</h3>
-        <p>The integration of telemedicine with digital pharmacies creates a seamless healthcare experience from consultation to medication delivery.</p>
+    //     <h3>Telemedicine Integration</h3>
+    //     <p>The integration of telemedicine with digital pharmacies creates a seamless healthcare experience from consultation to medication delivery.</p>
         
-        <h3>Security and Privacy</h3>
-        <p>Digital health platforms employ advanced encryption and security measures to protect patient data and ensure HIPAA compliance.</p>
+    //     <h3>Security and Privacy</h3>
+    //     <p>Digital health platforms employ advanced encryption and security measures to protect patient data and ensure HIPAA compliance.</p>
         
-        <h3>What's Coming Next?</h3>
-        <ul>
-        <li><strong>Blockchain:</strong> Secure, transparent drug supply chains</li>
-        <li><strong>IoT Devices:</strong> Smart pill bottles and adherence monitoring</li>
-        <li><strong>Personalized Medicine:</strong> Treatments based on genetic profiles</li>
-        <li><strong>Predictive Analytics:</strong> Anticipating health needs before symptoms appear</li>
-        </ul>
+    //     <h3>What's Coming Next?</h3>
+    //     <ul>
+    //     <li><strong>Blockchain:</strong> Secure, transparent drug supply chains</li>
+    //     <li><strong>IoT Devices:</strong> Smart pill bottles and adherence monitoring</li>
+    //     <li><strong>Personalized Medicine:</strong> Treatments based on genetic profiles</li>
+    //     <li><strong>Predictive Analytics:</strong> Anticipating health needs before symptoms appear</li>
+    //     </ul>
         
-        <h3>Challenges to Consider</h3>
-        <p>While digital health offers many benefits, challenges include regulatory compliance, digital divide issues, and the need for healthcare provider adoption.</p>
+    //     <h3>Challenges to Consider</h3>
+    //     <p>While digital health offers many benefits, challenges include regulatory compliance, digital divide issues, and the need for healthcare provider adoption.</p>
         
-        <p><strong>The Future is Now:</strong> Digital health tools are already making healthcare more accessible, affordable, and personalized for millions of people worldwide.</p>
-      `
-    },
-    "6": {
-      title: "Common Medicine Side Effects and How to Manage Them",
-      author: "Dr. Amanda Rodriguez",
-      date: "March 3, 2024",
-      readTime: "7 min read",
-      category: "Health Tips",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=400&fit=crop&crop=center",
-      content: `
-        <p>Understanding and managing medication side effects is an important part of your healthcare journey. Here's what you need to know about common side effects and how to handle them.</p>
+    //     <p><strong>The Future is Now:</strong> Digital health tools are already making healthcare more accessible, affordable, and personalized for millions of people worldwide.</p>
+    //   `
+    // },
+    // "6": {
+    //   title: "Common Medicine Side Effects and How to Manage Them",
+    //   author: "Dr. Amanda Rodriguez",
+    //   date: "March 3, 2024",
+    //   readTime: "7 min read",
+    //   category: "Health Tips",
+    //   image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=400&fit=crop&crop=center",
+    //   content: `
+    //     <p>Understanding and managing medication side effects is an important part of your healthcare journey. Here's what you need to know about common side effects and how to handle them.</p>
         
-        <h3>Most Common Side Effects</h3>
-        <ul>
-        <li><strong>Gastrointestinal:</strong> Nausea, stomach upset, diarrhea</li>
-        <li><strong>Neurological:</strong> Dizziness, drowsiness, headaches</li>
-        <li><strong>Dermatological:</strong> Skin rashes, itching, sensitivity</li>
-        <li><strong>Cardiovascular:</strong> Changes in heart rate or blood pressure</li>
-        </ul>
+    //     <h3>Most Common Side Effects</h3>
+    //     <ul>
+    //     <li><strong>Gastrointestinal:</strong> Nausea, stomach upset, diarrhea</li>
+    //     <li><strong>Neurological:</strong> Dizziness, drowsiness, headaches</li>
+    //     <li><strong>Dermatological:</strong> Skin rashes, itching, sensitivity</li>
+    //     <li><strong>Cardiovascular:</strong> Changes in heart rate or blood pressure</li>
+    //     </ul>
         
-        <h3>Managing Gastrointestinal Side Effects</h3>
-        <p>Take medications with food when possible, stay hydrated, and consider probiotics to maintain gut health. Avoid alcohol and spicy foods.</p>
+    //     <h3>Managing Gastrointestinal Side Effects</h3>
+    //     <p>Take medications with food when possible, stay hydrated, and consider probiotics to maintain gut health. Avoid alcohol and spicy foods.</p>
         
-        <h3>Dealing with Drowsiness and Dizziness</h3>
-        <p>Take medications at bedtime when possible, avoid driving or operating machinery, and get up slowly from sitting or lying positions.</p>
+    //     <h3>Dealing with Drowsiness and Dizziness</h3>
+    //     <p>Take medications at bedtime when possible, avoid driving or operating machinery, and get up slowly from sitting or lying positions.</p>
         
-        <h3>Skin Reactions</h3>
-        <p>Use gentle, fragrance-free skincare products, apply moisturizer regularly, and protect skin from sun exposure. Report severe reactions immediately.</p>
+    //     <h3>Skin Reactions</h3>
+    //     <p>Use gentle, fragrance-free skincare products, apply moisturizer regularly, and protect skin from sun exposure. Report severe reactions immediately.</p>
         
-        <h3>When to Contact Your Doctor</h3>
-        <ul>
-        <li>Severe allergic reactions (difficulty breathing, swelling)</li>
-        <li>Persistent or worsening side effects</li>
-        <li>New symptoms that concern you</li>
-        <li>Side effects that interfere with daily activities</li>
-        </ul>
+    //     <h3>When to Contact Your Doctor</h3>
+    //     <ul>
+    //     <li>Severe allergic reactions (difficulty breathing, swelling)</li>
+    //     <li>Persistent or worsening side effects</li>
+    //     <li>New symptoms that concern you</li>
+    //     <li>Side effects that interfere with daily activities</li>
+    //     </ul>
         
-        <h3>Prevention Strategies</h3>
-        <ul>
-        <li>Follow dosing instructions exactly</li>
-        <li>Don't skip doses or stop medications suddenly</li>
-        <li>Inform doctors about all medications you're taking</li>
-        <li>Keep a side effect diary</li>
-        </ul>
+    //     <h3>Prevention Strategies</h3>
+    //     <ul>
+    //     <li>Follow dosing instructions exactly</li>
+    //     <li>Don't skip doses or stop medications suddenly</li>
+    //     <li>Inform doctors about all medications you're taking</li>
+    //     <li>Keep a side effect diary</li>
+    //     </ul>
         
-        <h3>Alternative Options</h3>
-        <p>If side effects are problematic, your doctor may adjust dosages, change timing, or switch to alternative medications with better tolerance profiles.</p>
+    //     <h3>Alternative Options</h3>
+    //     <p>If side effects are problematic, your doctor may adjust dosages, change timing, or switch to alternative medications with better tolerance profiles.</p>
         
-        <h3>The Risk-Benefit Balance</h3>
-        <p>Remember that medications are prescribed because the benefits outweigh the risks. Work with your healthcare team to find the best balance for your situation.</p>
+    //     <h3>The Risk-Benefit Balance</h3>
+    //     <p>Remember that medications are prescribed because the benefits outweigh the risks. Work with your healthcare team to find the best balance for your situation.</p>
         
-        <p><strong>Important:</strong> Never stop taking prescribed medications without consulting your healthcare provider, even if you experience side effects.</p>
-      `
-    }
+    //     <p><strong>Important:</strong> Never stop taking prescribed medications without consulting your healthcare provider, even if you experience side effects.</p>
+    //   `
+    // }
   };
 
   const post = blogPosts[id as keyof typeof blogPosts];
@@ -428,7 +470,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
         <div className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-2xl font-bold mb-4">Blog Post Not Found</h1>
           <Link to="/">
-            <Button>Return to Home</Button>
+            <Button className="dark:text-white">Return to Home</Button>
           </Link>
         </div>
         <Footer />
@@ -455,6 +497,21 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 
   return (
     <div className="min-h-screen">
+
+      {/* Add Helmet to set dynamic metadata */}
+      <Helmet>
+        <title>{post.title} | MediBachat</title>
+        <meta name="description" content={post.metaDescription} />
+        {/* Optional: Add Open Graph and Twitter Card tags for better social sharing */}
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.metaDescription} />
+        <meta property="og:image" content={post.image} />
+        <meta property="og:url" content={`https://www.medibachat.in/blog/${id}`} />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.metaDescription} />
+        <meta name="twitter:image" content={post.image} />
+      </Helmet>
+
       <Header />
       
       {/* Hero Section */}
@@ -500,7 +557,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
                 Back to Blog
               </Button>
             </Link>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={handleShare}>
               <Share2 className="mr-2 h-4 w-4" />
               Share
             </Button>
