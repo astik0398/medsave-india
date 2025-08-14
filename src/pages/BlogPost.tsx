@@ -270,50 +270,123 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 </>
 
     },
-    // "3": {
-    //   title: "How to Use Medicine Price Comparison Tools",
-    //   author: "MediBachat Team",
-    //   date: "March 10, 2024",
-    //   readTime: "3 min read",
-    //   category: "Guide",
-    //   image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&h=400&fit=crop&crop=center",
-    //   content: `
-    //     <p>Medicine price comparison tools can help you save significant money on prescriptions. Here's a comprehensive guide on how to use these tools effectively.</p>
-        
-    //     <h3>Getting Started</h3>
-    //     <p>Most price comparison tools require basic information about your prescription: the medication name, dosage, quantity, and your location.</p>
-        
-    //     <h3>Step-by-Step Guide</h3>
-    //     <ol>
-    //     <li><strong>Enter Medication Details:</strong> Type in the exact name of your medication</li>
-    //     <li><strong>Select Dosage:</strong> Choose the correct strength (mg) prescribed by your doctor</li>
-    //     <li><strong>Enter Quantity:</strong> Input the number of pills or amount prescribed</li>
-    //     <li><strong>Set Location:</strong> Enter your ZIP code to find nearby pharmacies</li>
-    //     <li><strong>Compare Results:</strong> Review prices from different pharmacies</li>
-    //     </ol>
-        
-    //     <h3>What to Look For</h3>
-    //     <ul>
-    //     <li><strong>Total Cost:</strong> Some tools show per-pill costs, others show total cost</li>
-    //     <li><strong>Insurance Coverage:</strong> Check if the tool factors in your insurance</li>
-    //     <li><strong>Discounts Available:</strong> Look for additional coupon opportunities</li>
-    //     <li><strong>Pharmacy Distance:</strong> Consider travel costs and convenience</li>
-    //     </ul>
-        
-    //     <h3>Pro Tips</h3>
-    //     <ul>
-    //     <li>Compare both generic and brand name options</li>
-    //     <li>Check multiple tools for the most comprehensive results</li>
-    //     <li>Consider 90-day supplies for maintenance medications</li>
-    //     <li>Don't forget to factor in gas and time costs</li>
-    //     </ul>
-        
-    //     <h3>Beyond Price</h3>
-    //     <p>While price is important, also consider pharmacy services, hours of operation, and customer service quality when making your decision.</p>
-        
-    //     <p><strong>Remember:</strong> Using price comparison tools regularly can save you hundreds of dollars annually on prescription medications.</p>
-    //   `
-    // },
+    "compare-medicine-prices-online-india": {
+      title: "How to Compare Medicine Prices Online in India",
+      author: "Team MediBachat",
+      date: "August 15, 2024",
+      readTime: "6 min read",
+      category: "Guide",
+      metaDescription: "Learn how to compare medicine prices online in India in minutes. Use a medicine price tracker India to find Tata 1mg, Netmeds, PharmEasy, and Apollo Pharmacy deals, track price history, and set alerts for the cheapest medicine online.",
+      image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&h=400&fit=crop&crop=center",
+      content: <>
+  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+    How to Compare Prices of Prescription Medicines Across Platforms in Minutes
+  </h1>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    When buying medicines online, prices can vary <b>drastically</b> from one platform to another.
+    A strip of tablets that costs ₹150 on one app might be available for ₹110 somewhere else — and you wouldn’t know unless you check.
+    That’s where <b>medicine price comparison</b> tools come in. In this guide, we’ll show you exactly
+    <b> how to compare medicine prices online in India</b> within minutes, so you always get the
+    <b> cheapest medicine online</b> without compromising on quality.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    1. Why Medicine Price Comparison Matters
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Many people still buy medicines from the first online pharmacy they open. But just like booking a flight or hotel,
+    comparing prices can save you <b>hundreds or even thousands of rupees</b> every year.
+    <br />
+    For example:
+    <ul className="list-disc list-inside mt-2">
+      <li><b>Tata 1mg medicine</b> price for a common antibiotic might be ₹210</li>
+      <li><b>Netmeds prices</b> for the same product could be ₹185</li>
+      <li><b>PharmEasy discounts</b> might drop it to ₹170</li>
+      <li><b>Apollo Pharmacy deals</b> could bring it down further during flash sales</li>
+    </ul>
+    Without a <b>medicine price tracker India</b>, you’d never know where the real savings are.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    2. Use an Online Medicine Price Comparison India Tool
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Platforms like <b><a href="https://medibachat.in/" target="_blank" className="text-blue-500">MediBachat</a></b> make this process instant. Instead of checking each website separately, you can search for your prescription once and get:
+    <ul className="list-disc list-inside mt-2">
+      <li>Prices from Tata 1mg, Netmeds, PharmEasy, Apollo Pharmacy, and more</li>
+      <li>Applicable <b>medicine discount</b> codes</li>
+      <li><b>Medicine price history India</b> so you can see if the current offer is actually worth it</li>
+      <li>A <b>drug price alert India</b> feature to notify you when your medicine drops in price</li>
+    </ul>
+    This means you’re not just comparing — you’re <b>timing your purchase for maximum savings</b>.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    3. Set a Medicine Price Alert India
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    If you take a medicine regularly, set up a <b>medicine price alert India</b> feature on your comparison tool.
+    This way, you’ll get an instant notification when the price drops, so you can stock up before it goes up again.
+    <br />
+    Pro tip: Look for tools that also send <b>drug price alert India</b> updates via WhatsApp or email.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    4. Check Coupons & Cashback
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Once you find the cheapest store, check for extra offers like:
+    <ul className="list-disc list-inside mt-2">
+      <li><b>PharmEasy discounts</b> up to 20%</li>
+      <li><b>Apollo Pharmacy deals</b> with instant cashback</li>
+      <li><b>Tata 1mg medicine</b> free delivery offers</li>
+      <li><b>Netmeds prices</b> combined with wallet cashback</li>
+    </ul>
+    By stacking <b>medicine discount</b> codes with platform offers, you can save even more.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    5. Avoid Fake Discounts
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Some platforms show inflated “MRPs” to make the discount look bigger.
+    That’s why checking <b>medicine price history India</b> is important.
+    If the regular price has always been ₹150 and suddenly shows ₹300 with “50% off,” you know it’s just a marketing trick.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    6. Steps to Compare Medicine Prices Online in Minutes
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <ol className="list-decimal list-inside mt-2">
+      <li>Go to an <b>online medicine price comparison India</b> website (e.g., MediBachat)</li>
+      <li>Enter your prescription medicine name</li>
+      <li>Instantly see prices from Tata 1mg, Netmeds, PharmEasy, Apollo Pharmacy, and others</li>
+      <li>Apply the best <b>medicine discount</b> coupon</li>
+      <li>Place your order from the platform with the lowest final price</li>
+    </ol>
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    7. Buy Medicine Online In India the Smart Way
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    When you <b>buy medicine online in India</b>, the goal is simple:
+    <ul className="list-disc list-inside mt-2">
+      <li><b>Spend less</b></li>
+      <li><b>Get genuine medicines</b></li>
+      <li><b>Enjoy quick delivery</b></li>
+    </ul>
+    With a <b>medicine price tracker India</b>, you’ll never overpay again.
+    You’ll know exactly when to buy, where to buy, and how much you’ll save.
+  </p>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+    💡 <b>Final Tip:</b> Bookmark your comparison site and set <b>medicine price alerts</b> for your regular prescriptions.
+    In the long run, these small steps can save you thousands of rupees every year.
+  </p>
+</>
+    },
     // "4": {
     //   title: "Medicine Storage Best Practices",
     //   author: "Dr. Priya Sharma",
@@ -524,7 +597,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <Badge className={`${getCategoryColor(post.category)} mb-4 dark:bg-red-600`}>
+            <Badge className={`${getCategoryColor(post.category)} mb-4 dark:bg-red-600 dark:text-white`}>
               {post.category}
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">{post.title}</h1>

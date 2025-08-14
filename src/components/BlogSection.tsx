@@ -30,12 +30,12 @@ const BlogSection = () => {
       image: online_coupon_discount
     },
     {
-      id: 3,
-      title: "How to Use Medicine Price Comparison Tools",
-      excerpt: "A comprehensive guide to finding the best deals on medications using online comparison platforms.",
-      author: "MediBachat Team",
-      date: "March 10, 2024",
-      readTime: "3 min read",
+      id: "compare-medicine-prices-online-india",
+      title: "How to Compare Medicine Prices Online in India?",
+      excerpt: "Compare medicine prices online in India instantly and find the cheapest medicine from Tata 1mg, Netmeds, PharmEasy.",
+      author: "Team MediBachat",
+      date: "August 15, 2024",
+      readTime: "6 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=500&h=300&fit=crop&crop=center"
     },
