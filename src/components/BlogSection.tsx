@@ -34,41 +34,41 @@ const BlogSection = () => {
       title: "How to Compare Medicine Prices Online in India?",
       excerpt: "Compare medicine prices online in India instantly and find the cheapest medicine from Tata 1mg, Netmeds, PharmEasy.",
       author: "Team MediBachat",
-      date: "August 15, 2024",
+      date: "August 15, 2025",
       readTime: "6 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=500&h=300&fit=crop&crop=center"
     },
     {
-      id: 4,
-      title: "Medicine Storage Best Practices",
-      excerpt: "Essential tips for properly storing your medications to maintain their effectiveness and safety.",
-      author: "Dr. Priya Sharma",
-      date: "March 8, 2024",
-      readTime: "4 min read",
-      category: "Safety",
+      id: "why-the-same-medicine-costs-different-on-every-app",
+      title: "Why the Same Medicine Costs Different?",
+      excerpt: "Ever wondered why the same medicine is priced differently on Tata 1mg, Netmeds, PharmEasy, and Apollo Pharmacy?",
+      author: "Team MediBachat",
+      date: "August 16, 2025",
+      readTime: "8 min read",
+      category: "Guide",
       image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&h=300&fit=crop&crop=center"
     },
-    {
-      id: 5,
-      title: "Digital Health: The Future of Medicine Shopping in India",
-      excerpt: "Explore how technology is revolutionizing the way we purchase and manage our medications.",
-      author: "Tech Health Team",
-      date: "March 5, 2024",
-      readTime: "6 min read",
-      category: "Technology",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop&crop=center"
-    },
-    {
-      id: 6,
-      title: "Common Medicine Side Effects and How to Manage Them",
-      excerpt: "Understanding potential side effects and when to consult your healthcare provider.",
-      author: "Dr. Amanda Rodriguez",
-      date: "March 3, 2024",
-      readTime: "7 min read",
-      category: "Health Tips",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&h=300&fit=crop&crop=center"
-    }
+    // {
+    //   id: 5,
+    //   title: "Digital Health: The Future of Medicine Shopping in India",
+    //   excerpt: "Explore how technology is revolutionizing the way we purchase and manage our medications.",
+    //   author: "Tech Health Team",
+    //   date: "March 5, 2024",
+    //   readTime: "6 min read",
+    //   category: "Technology",
+    //   image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop&crop=center"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Common Medicine Side Effects and How to Manage Them",
+    //   excerpt: "Understanding potential side effects and when to consult your healthcare provider.",
+    //   author: "Dr. Amanda Rodriguez",
+    //   date: "March 3, 2024",
+    //   readTime: "7 min read",
+    //   category: "Health Tips",
+    //   image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&h=300&fit=crop&crop=center"
+    // }
   ];
 
   const getCategoryColor = (category: string) => {
