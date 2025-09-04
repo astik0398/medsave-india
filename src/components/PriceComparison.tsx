@@ -8,6 +8,7 @@ import onemg from "../assets/1mg trans.png";
 import truemeds from "../assets/truemeds trans.png";
 import pharmeasy from "../assets/pharmeasy trans.png";
 import apollo from "../assets/apllo pharmacy trans.png";
+import medkart from "../assets/medkart_pharmacy_logo-removebg-preview.png"
 
 const PriceComparison = () => {
   const [priceData, setPriceData] = useState([]);
@@ -71,6 +72,7 @@ const PriceComparison = () => {
         pharmeasy: "PharmEasy",
         apollopharmacy: "Apollo Pharmacy",
         truemeds: "Truemeds",
+        medkart: "Medkart"
       };
 
       const logoMap = {
@@ -79,6 +81,7 @@ const PriceComparison = () => {
         pharmeasy: pharmeasy,
         apollopharmacy: apollo,
         truemeds: truemeds,
+        medkart: medkart
       };
 
       const transformed = Object.entries(savedPriceData).map(
@@ -108,11 +111,11 @@ const PriceComparison = () => {
               : 0,
             couponCode: platformMap[key] === 'Netmeds' ? "SAVE200" : platformMap[key] === 'Tata 1mg' ? '1MGNEW' : 
             platformMap[key] === 'PharmEasy' ? '23PYFIT' : platformMap[key]=== 'Apollo Pharmacy' ? 'PHARMA10' : 
-            platformMap[key] === 'Truemeds' ? 'FIRST25' : null,
+            platformMap[key] === 'Truemeds' ? 'FIRST25' : 'NEWUSER',
             rating: value.rating,
             deliveryTime: platformMap[key] === 'Netmeds' ? "By Tomorrow" : platformMap[key] === 'Tata 1mg' ? 'By Today' : 
             platformMap[key] === 'PharmEasy' ? 'By Tomorrow' : platformMap[key]=== 'Apollo Pharmacy' ? '1-2 days' : 
-            platformMap[key] === 'Truemeds' ? '2-3 days' : '',
+            platformMap[key] === 'Truemeds' ? '2-3 days' : 'By Tomorrow',
             inStock: !!cleanPrice,
             buyUrl: value.url,
             name: value.name,
