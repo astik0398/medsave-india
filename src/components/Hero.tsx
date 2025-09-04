@@ -20,9 +20,36 @@ const Hero = () => {
     "0"
   )}-${currentDate.getFullYear()}`;
 
+  const finalDateTime = new Date()
+  .toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Kolkata",
+  })
+  .replace(",", "")
+  .replace(/\//g, "-");
+
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
+
+     // Insert into all_qwery (always log the search query + date)
+  const { error: logError } = await supabase
+    .from("all_qwery")
+    .insert([
+      {
+        searchQuery: searchQuery,   // the term user typed
+        searched_at: finalDateTime
+      },
+    ]);
+
+  if (logError) {
+    console.error("Supabase log error:", logError);
+  }
 
     setLoading(true);
     setError("");
