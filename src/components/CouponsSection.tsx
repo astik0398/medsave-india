@@ -79,7 +79,7 @@ const CouponsSection = () => {
               <CardContent >
                <div className="max-h-[400px] overflow-y-auto pr-2 space-y-4">
                  {platform.coupons.map((coupon, couponIndex) => (
-                  <div
+                  coupon.couponCode && <div
                     key={couponIndex}
                     className="p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors group"
                   >
