@@ -49,16 +49,16 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&h=300&fit=crop&crop=center"
     },
-    // {
-    //   id: 5,
-    //   title: "Digital Health: The Future of Medicine Shopping in India",
-    //   excerpt: "Explore how technology is revolutionizing the way we purchase and manage our medications.",
-    //   author: "Tech Health Team",
-    //   date: "March 5, 2024",
-    //   readTime: "6 min read",
-    //   category: "Technology",
-    //   image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop&crop=center"
-    // },
+    {
+      id: "ai-in-online-medicine-shopping-india",
+      title: "AI Changing Online Medicine Shopping in India",
+      excerpt: "Discover how AI is revolutionizing online pharmacies in India with price comparison and smarter ways to buy medicine.",
+      author: "Team MediBachat",
+      date: "September 05, 2025",
+      readTime: "8 min read",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
     // {
     //   id: 6,
     //   title: "Common Medicine Side Effects and How to Manage Them",
