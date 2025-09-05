@@ -59,16 +59,16 @@ const BlogSection = () => {
       category: "Technology",
       image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-    // {
-    //   id: 6,
-    //   title: "Common Medicine Side Effects and How to Manage Them",
-    //   excerpt: "Understanding potential side effects and when to consult your healthcare provider.",
-    //   author: "Dr. Amanda Rodriguez",
-    //   date: "March 3, 2024",
-    //   readTime: "7 min read",
-    //   category: "Health Tips",
-    //   image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&h=300&fit=crop&crop=center"
-    // }
+    {
+      id: "global-vs-indian-online-pharmacies",
+      title: "Global vs Indian Online Pharmacies",
+      excerpt: "Discover how online pharmacies in India differ from global players in affordability, speed, and innovation.",
+      author: "Team MediBachat ",
+      date: "September 06, 2025",
+      readTime: "8 min read",
+      category: "Health Tips",
+      image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
   ];
 
   const getCategoryColor = (category: string) => {
