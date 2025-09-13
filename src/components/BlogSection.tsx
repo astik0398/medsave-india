@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import online_medicine_buying from "@/assets/online medicine buying.png"
@@ -209,12 +210,68 @@ const BlogSection = () => {
             </Card>
           ))}
           
-           {/* View All Button */}
+           {/* View All Button with Modal */}
        
        <div className="flex justify-center items-center mt-6">
-          <button className="flex items-center justify-center w-20 h-20 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">
-    <ArrowRight className="w-10 h-10" />
-  </button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button className="flex items-center justify-center w-20 h-20 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+                <ArrowRight className="w-10 h-10" />
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold">All Blog Posts</DialogTitle>
+                <DialogDescription>
+                  Explore all our latest articles and insights about healthcare and medicine.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                {blogPosts.map(post => (
+                  <Card key={post.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-2 left-2">
+                        <Badge className={getCategoryColor(post.category)}>
+                          {post.category}
+                        </Badge>
+                      </div>
+                    </div>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-base group-hover:text-primary transition-colors line-clamp-2">
+                        {post.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <CardDescription className="mb-3 line-clamp-2 text-sm">
+                        {post.excerpt}
+                      </CardDescription>
+                      <div className="flex items-center justify-between text-xs text-muted-foreground mb-3">
+                        <div className="flex items-center space-x-1">
+                          <User className="h-3 w-3" />
+                          <span>{post.author}</span>
+                        </div>
+                        <div className="flex items-center space-x-1">
+                          <Clock className="h-3 w-3" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      </div>
+                      <Link to={`/blog/${post.id}`}>
+                        <Button variant="outline" size="sm" className="w-full group/btn">
+                          Read More
+                          <ArrowRight className="ml-2 h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
        </div>
         </div>
 
