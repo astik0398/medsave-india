@@ -93,6 +93,18 @@ const BlogSection = () => {
       readTime: "14 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1707999558198-d5f93aafa75b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+
+         {
+      id: "telemedicine-india-online-consultations",
+      title: "Telemedicine in India: How Online Consultations Save Time and Money?",
+      excerpt: "Discover how telemedicine in India makes healthcare affordable and accessible. Learn how online consultations save both time and money for patients.",
+      author: "Team MediBachat ",
+      date: "September 14, 2025",
+      readTime: "10 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1675270855267-3c73bfd13849?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
