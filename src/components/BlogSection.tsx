@@ -81,6 +81,18 @@ const BlogSection = () => {
       readTime: "9 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1710922962986-a9e8de6dbb68?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+
+     {
+      id: "gst-2-health-insurance-premiums-india",
+      title: "Will GST 2.0 Make Health Insurance Premiums More Expensive in India?",
+      excerpt: "Explore how GST 2.0 impacts health insurance premiums in India. Learn if policyholders will face higher costs and what it means for affordable coverage.",
+      author: "Team MediBachat ",
+      date: "September 13, 2025",
+      readTime: "14 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1707999558198-d5f93aafa75b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
