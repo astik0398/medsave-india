@@ -69,6 +69,18 @@ const BlogSection = () => {
       readTime: "8 min read",
       category: "Health Tips",
       image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+
+      {
+      id: "gst-2-impact-online-pharmacy-prices-india",
+      title: "How GST 2.0 Will Impact Online Pharmacy Prices in India?",
+      excerpt: "Discover how GST 2.0 changes medicine prices in India. Learn its impact on online pharmacies and healthcare affordability",
+      author: "Team MediBachat ",
+      date: "September 13, 2025",
+      readTime: "9 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1710922962986-a9e8de6dbb68?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
@@ -161,7 +173,7 @@ const BlogSection = () => {
 
         {/* Regular Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.filter(post => !post.featured).map(post => (
+          {blogPosts.filter(post => !post.featured).slice(0, 5).map(post => (
             <Card key={post.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="relative overflow-hidden">
                 <img
