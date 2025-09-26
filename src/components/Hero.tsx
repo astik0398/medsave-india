@@ -80,13 +80,13 @@ const Hero = () => {
       const firstMedicineName = (validEntries as any)[0][1].name;
       localStorage.setItem("price_history_name", firstMedicineName);
 
-      // Build prices array
-      const pricesArray = validEntries.map(([platform, data]) => {
-        const numericPrice = parseFloat(
-          (data as any).price.replace(/[^\d.]/g, "")
-        );
-        return { [platform]: numericPrice };
-      });
+      // Build prices array with null safety
+const pricesArray = validEntries.map(([platform, data]) => {
+  const numericPrice = parseFloat(
+    ((data as any).price?.replace(/[^\d.]/g, "") ?? "0")
+  );
+  return { [platform]: numericPrice };
+});
 
       // Check if record already exists
       const { data: existingRecords, error: selectError } = await supabase
