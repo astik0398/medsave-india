@@ -105,6 +105,18 @@ const BlogSection = () => {
       readTime: "10 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1675270855267-3c73bfd13849?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+
+         {
+      id: "top-online-doctor-consultation-apps-india-2025",
+      title: "Top 10 Online Doctor Consultation Apps in India (2025 Guide)",
+      excerpt: "Discover the top 10 online doctor consultation apps in India (2025). Compare Practo, Apollo 24/7, Tata 1mg, PharmEasy, Mfine & more for affordable, instant healthcare.",
+      author: "Team MediBachat ",
+      date: "October 02, 2025",
+      readTime: "4 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9ubGluZSUyMGRvY3RvcnxlbnwwfHwwfHx8Mg%3D%3D"
     }
   ];
 

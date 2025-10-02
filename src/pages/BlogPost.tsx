@@ -1607,6 +1607,537 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
  This article draws from personal interviews, government reports, and industry analyses for authenticity. Always consult a healthcare professional for medical advice.*
   </p>
 </>
+    },
+
+                 "top-online-doctor-consultation-apps-india-2025": {
+      title: "Top 10 Online Doctor Consultation Apps in India (2025 Guide)",
+      author: "Team MediBachat",  
+      date: "October 02, 2025",
+      readTime: "4 min read",
+      metaDescription: "Discover the top 10 online doctor consultation apps in India (2025). Compare Practo, Apollo 24/7, Tata 1mg, PharmEasy, Mfine & more for affordable, instant healthcare.",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9ubGluZSUyMGRvY3RvcnxlbnwwfHwwfHx8Mg%3D%3D",
+      content: <>
+  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+    Top 10 Online Doctor Consultation Apps in India (2025 Guide)
+  </h1>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Healthcare in India is changing rapidly. Gone are the days when you had to stand in long queues outside clinics, travel for hours to find a specialist, or wait weeks for an appointment. Thanks to online doctor consultation apps, you can now connect with certified doctors instantly — anytime, anywhere.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    In 2025, India’s digital healthcare ecosystem is booming. Platforms like Practo, Apollo 24/7, Tata 1mg, PharmEasy, and Mfine are transforming the way patients consult doctors, access medicines, and manage health records.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    This guide gives you a comprehensive review of the 10 best online consultation apps in India (2025) — with their features, pros, cons, pricing, and what makes each platform unique.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Why Online Doctor Consultation is Rising in India?
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Before we jump into the list, let’s understand why online doctor consultation is becoming mainstream:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Convenience: Consult doctors from home, no waiting rooms.</li>
+    <li>Accessibility: Patients in rural India can reach specialists in big cities.</li>
+    <li>Affordability: Online consultations often cost less than hospital visits.</li>
+    <li>24/7 Availability: Many apps offer round-the-clock doctors.</li>
+    <li>Digital Prescriptions: E-prescriptions are legally valid and easy to store.</li>
+    <li>Integration with Pharmacies & Labs: Order medicines or book tests instantly.</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    With India’s growing smartphone penetration and government’s support for digital health, these apps are set to become the primary healthcare access point for millions.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    🏆 Top 10 Online Doctor Consultation Apps in India (2025)
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    1. Practo
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: All-in-one healthcare services (consultations, diagnostics, medicines, surgeries)
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Practo has been India’s pioneer in online consultations. With over a decade in the telemedicine space, it connects patients to 70,000+ verified doctors across 25+ specialties.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Video/audio/chat consultations</li>
+    <li>Verified doctors with ratings & reviews</li>
+    <li>Digital prescriptions & medicine ordering</li>
+    <li>Lab tests at home</li>
+    <li>Practo Care Surgeries (specialised surgery assistance)</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Large network of doctors</li>
+    <li>✅ Easy-to-use app with detailed doctor profiles</li>
+    <li>✅ Integration with diagnostic tests & pharmacies</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Some users find consultations shorter than expected</li>
+    <li>❌ Pricing varies by doctor specialty</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: Starts at ₹199
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    2. Apollo 24/7
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Reliable consultations backed by India’s leading hospital chain
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Apollo 24/7 combines Apollo Hospitals’ decades of expertise with digital-first care. It offers 24x7 consultations with Apollo doctors and connects patients to over 5000+ specialists.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>24/7 instant doctor consultation</li>
+    <li>Health records stored in Apollo’s digital vault</li>
+    <li>Priority access to Apollo Hospitals for offline visits</li>
+    <li>Medicine ordering & lab tests integration</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Backed by India’s most trusted hospital group</li>
+    <li>✅ Seamless transition from online to offline care</li>
+    <li>✅ Medicine packages & wellness programs</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Consultation costs slightly higher</li>
+    <li>❌ Some services limited outside metro cities</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹250–₹600
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    3. Tata 1mg
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Affordable consultations + medicine price comparison
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Tata 1mg is widely known for medicine delivery and price comparison, but it also offers online consultations with licensed doctors.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Specialties like dermatology, gynecology, general physician</li>
+    <li>24/7 availability of doctors</li>
+    <li>Symptom checker + AI-driven suggestions</li>
+    <li>Huge discounts on medicine + lab tests</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Very affordable consultations</li>
+    <li>✅ Trusted Tata brand with transparent pricing</li>
+    <li>✅ Integrated with medicine discounts</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Not as many specialists as Practo or Apollo</li>
+    <li>❌ Limited personalized follow-up</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: Starting ₹100
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    4. PharmEasy
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Consultation + medicine ordering in one place
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    PharmEasy, India’s biggest online pharmacy, also offers doctor consultations. Patients can quickly get prescriptions and order medicines at discounted rates.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Chat & call consultations</li>
+    <li>Specialists in dermatology, orthopedics, pediatrics</li>
+    <li>Digital prescriptions + instant ordering</li>
+    <li>Regular discounts on follow-up consultations</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Low-cost consultations bundled with medicine offers</li>
+    <li>✅ Quick e-prescriptions</li>
+    <li>✅ Easy follow-ups</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Focus is more on pharmacy than consultation</li>
+    <li>❌ Limited in-depth specialization</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹149–₹299
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    5. Mfine
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: AI-driven health checks + hospital tie-ups
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Mfine connects users with doctors from top hospitals across India. It uses AI to track symptoms, generate health reports, and assist doctors in diagnosis.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>AI-based health monitoring</li>
+    <li>Doctors from 600+ hospitals</li>
+    <li>Corporate health packages</li>
+    <li>At-home lab tests</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ High-quality doctors from reputed hospitals</li>
+    <li>✅ AI tools for better symptom tracking</li>
+    <li>✅ Good for chronic patients needing regular monitoring</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Consultation fees higher</li>
+    <li>❌ App interface can be complex for elderly users</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹250 onwards
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    6. DocsApp (Now merged with MediBuddy)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Instant chat consultations + insurance integration
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    DocsApp (merged with MediBuddy) focuses on chat-first consultations, making it quick for patients who prefer text over video.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Chat/audio/video consultations</li>
+    <li>Specialties like psychiatry, dermatology, gynecology</li>
+    <li>Health insurance tie-ups for cashless consultations</li>
+    <li>24x7 doctor availability</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Great for quick, text-based consultations</li>
+    <li>✅ Insurance coverage for many corporates</li>
+    <li>✅ User-friendly interface</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Limited offline hospital support</li>
+    <li>❌ Some doctors only available for short slots</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹150–₹500
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    7. Lybrate
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Doctor Q&A + preventive care
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Lybrate is different from other apps. It allows patients to ask free health questions to doctors and get responses before booking full consultations.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Free health Q&A forum</li>
+    <li>Multiple specialists available</li>
+    <li>Preventive health tips & wellness guidance</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Free Q&A makes it beginner-friendly</li>
+    <li>✅ Affordable follow-ups</li>
+    <li>✅ Large pool of doctors</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Sometimes response time for Q&A is slow</li>
+    <li>❌ Limited direct hospital tie-ups</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹200 onwards
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    8. Medibuddy
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Corporate health & wellness
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    MediBuddy specializes in corporate health benefits, offering online consultations, insurance integration, and preventive health packages.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Doctor consultations across 18+ specialties</li>
+    <li>Integration with corporate insurance</li>
+    <li>Health checkup & wellness camps</li>
+    <li>Teleconsultation + hospitalization support</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Excellent for employees under insurance plans</li>
+    <li>✅ Easy integration with health benefits</li>
+    <li>✅ Wide doctor network</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ More useful for corporates than individual users</li>
+    <li>❌ Some features locked behind insurance tie-ups</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹200–₹600
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    9. CallHealth
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Hybrid home healthcare services
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    CallHealth provides end-to-end healthcare at home, from online doctor consultations to home sample collection and nursing.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Online consultations</li>
+    <li>Home collection for lab tests</li>
+    <li>At-home nurse & physiotherapy services</li>
+    <li>Medicine delivery</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Complete healthcare ecosystem</li>
+    <li>✅ Great for elderly or bedridden patients</li>
+    <li>✅ Easy follow-ups</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Limited to selected cities</li>
+    <li>❌ Costs higher than basic apps</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹300+
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    10. CureBay (Emerging Player)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Best for: Rural and semi-urban India
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    CureBay is a rising platform focused on bringing telemedicine to underserved regions. They combine online consultations with local health workers to bridge the digital gap.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Key Features:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Consultations in semi-urban & rural areas</li>
+    <li>Assisted telemedicine through health workers</li>
+    <li>Integration with medicine delivery & diagnostics</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pros:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>✅ Expanding healthcare access beyond metros</li>
+    <li>✅ Affordable consultations</li>
+    <li>✅ Localized support</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Cons:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>❌ Still growing, not available everywhere</li>
+    <li>❌ Smaller doctor pool compared to big players</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Consultation Fees: ₹100–₹250
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    ✅ Comparison Table — Best Online Consultation Apps in India (2025)
+  </h2>
+  <table className="min-w-full border border-gray-300 mb-6">
+    <thead>
+      <tr className="bg-gray-100 dark:bg-gray-800">
+        <th className="border border-gray-300 px-4 py-2">App</th>
+        <th className="border border-gray-300 px-4 py-2">Best For</th>
+        <th className="border border-gray-300 px-4 py-2">Starting Fee</th>
+        <th className="border border-gray-300 px-4 py-2">Specialty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Practo</td>
+        <td className="border border-gray-300 px-4 py-2">All-rounder</td>
+        <td className="border border-gray-300 px-4 py-2">₹199</td>
+        <td className="border border-gray-300 px-4 py-2">Multi-specialty</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Apollo 24/7</td>
+        <td className="border border-gray-300 px-4 py-2">Trusted hospital care</td>
+        <td className="border border-gray-300 px-4 py-2">₹250</td>
+        <td className="border border-gray-300 px-4 py-2">Multi-specialty</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Tata 1mg</td>
+        <td className="border border-gray-300 px-4 py-2">Affordable + pharmacy</td>
+        <td className="border border-gray-300 px-4 py-2">₹100</td>
+        <td className="border border-gray-300 px-4 py-2">GP + few specialties</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">PharmEasy</td>
+        <td className="border border-gray-300 px-4 py-2">Consult + order meds</td>
+        <td className="border border-gray-300 px-4 py-2">₹149</td>
+        <td className="border border-gray-300 px-4 py-2">GP, pediatrics, ortho</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Mfine</td>
+        <td className="border border-gray-300 px-4 py-2">AI + hospital tie-ups</td>
+        <td className="border border-gray-300 px-4 py-2">₹250</td>
+        <td className="border border-gray-300 px-4 py-2">Chronic conditions</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">DocsApp/MediBuddy</td>
+        <td className="border border-gray-300 px-4 py-2">Chat-first + insurance</td>
+        <td className="border border-gray-300 px-4 py-2">₹150</td>
+        <td className="border border-gray-300 px-4 py-2">Multi-specialty</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Lybrate</td>
+        <td className="border border-gray-300 px-4 py-2">Free Q&A + affordable</td>
+        <td className="border border-gray-300 px-4 py-2">₹200</td>
+        <td className="border border-gray-300 px-4 py-2">Preventive care</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">MediBuddy</td>
+        <td className="border border-gray-300 px-4 py-2">Corporate health</td>
+        <td className="border border-gray-300 px-4 py-2">₹200</td>
+        <td className="border border-gray-300 px-4 py-2">Insurance users</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">CallHealth</td>
+        <td className="border border-gray-300 px-4 py-2">At-home healthcare</td>
+        <td className="border border-gray-300 px-4 py-2">₹300</td>
+        <td className="border border-gray-300 px-4 py-2">Elderly care</td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">CureBay</td>
+        <td className="border border-gray-300 px-4 py-2">Rural healthcare</td>
+        <td className="border border-gray-300 px-4 py-2">₹100</td>
+        <td className="border border-gray-300 px-4 py-2">Primary care</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    🔍 How to Choose the Right Online Consultation App?
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Budget-conscious? 👉 Go for Tata 1mg, PharmEasy, CureBay
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Trust & reliability? 👉 Apollo 24/7, Practo
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Corporate employees? 👉 MediBuddy
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Rural or underserved areas? 👉 CureBay
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Chronic conditions & AI? 👉 Mfine
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Quick text consultation? 👉 DocsApp
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    📌 Final Thoughts
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    In 2025, online doctor consultation apps in India are no longer optional — they’re essential. Whether you need a quick GP visit, a specialized dermatologist, or a follow-up for chronic care, these apps make healthcare affordable, accessible, and convenient.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    For most patients, Practo, Apollo 24/7, and Tata 1mg remain the safest bets. But emerging players like CureBay are equally important for bridging the rural healthcare gap.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    👉 If you’re someone who buys medicines online, combining apps like Tata 1mg or PharmEasy with consultation features can save both time and money.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+    Healthcare is going digital, and India is at the forefront of this transformation. So the next time you need a doctor — all you may need is your smartphone.
+  </p>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">For detailed guide on how online consultation will save your time and money in upcoming years feel free to check out our blog <a target='_blank' style={{fontWeight:'600', color:'blue'}} href="https://www.medibachat.in/blog/telemedicine-india-online-consultations">How Online Consultations Save Time and Money?</a></p>
+</>
     }
   };
 
