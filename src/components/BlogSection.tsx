@@ -128,6 +128,17 @@ const BlogSection = () => {
       readTime: "12 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+             {
+      id: "drone-delivery-of-medicines-india-2030",
+      title: "Will Drone Delivery of Medicines Become a Reality in India by 2030?",
+      excerpt: "Explore if drone delivery of medicines will become a reality in India by 2030. Learn about regulations, benefits, challenges, and the future of e-pharmacy logistics.",
+      author: "Team MediBachat ",
+      date: "October 02, 2025",
+      readTime: "7 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1630428312167-4693ac0189fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZHJvbmUlMjBkZWxpdmVyeXxlbnwwfHwwfHx8Mg%3D%3D"
     }
   ];
 
