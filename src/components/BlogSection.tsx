@@ -117,6 +117,17 @@ const BlogSection = () => {
       readTime: "4 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9ubGluZSUyMGRvY3RvcnxlbnwwfHwwfHx8Mg%3D%3D"
+    },
+
+           {
+      id: "first-time-online-doctor-consultation-guide-2025",
+      title: "First-Time User Guide: What to Expect in Your First Online Doctor Consultation?",
+      excerpt: "Nervous about your first online doctor consultation? This 2025 guide walks you through what to expect, how to prepare, costs, and tips for a smooth telemedicine experience.",
+      author: "Team MediBachat ",
+      date: "October 02, 2025",
+      readTime: "12 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
