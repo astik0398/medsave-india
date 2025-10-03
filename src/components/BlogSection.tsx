@@ -139,6 +139,17 @@ const BlogSection = () => {
       readTime: "7 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1630428312167-4693ac0189fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZHJvbmUlMjBkZWxpdmVyeXxlbnwwfHwwfHx8Mg%3D%3D"
+    },
+
+               {
+      id: "gamification-in-healthcare-apps-reward-healthy-lifestyle",
+      title: "Gamification in Healthcare: Apps That Reward You for Staying Healthy",
+      excerpt: "Discover how gamification in healthcare apps motivates you to stay fit. Explore top apps in India that reward healthy habits with points, perks & savings",
+      author: "Team MediBachat ",
+      date: "October 03, 2025",
+      readTime: "9 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1661160094555-a798a7df499f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwc3xlbnwwfHwwfHx8Mg%3D%3D"
     }
   ];
 
