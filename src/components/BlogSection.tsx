@@ -161,6 +161,18 @@ const BlogSection = () => {
       readTime: "11 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDI%3D"
+    },
+
+
+                       {
+      id: "online-pharmacies-health-insurance-guide",
+      title: "Do Online Pharmacies Accept Health Insurance? A Complete Guide",
+      excerpt: "Wondering if online pharmacies in India accept health insurance? This complete guide explains coverage, rules, and how to save money on digital healthcare.",
+      author: "Team MediBachat ",
+      date: "October 04, 2025",
+      readTime: "11 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhbHRoJTIwaW5zdXJhbmNlLnxlbnwwfHwwfHx8Mg%3D%3D"
     }
   ];
 
