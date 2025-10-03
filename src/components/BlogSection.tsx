@@ -150,6 +150,17 @@ const BlogSection = () => {
       readTime: "9 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1661160094555-a798a7df499f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwc3xlbnwwfHwwfHx8Mg%3D%3D"
+    },
+
+                   {
+      id: "decoding-medicine-labels-mrp-batch-expiry",
+      title: "Decoding Medicine Labels: What Do MRP, Batch Number, and Expiry Really Mean",
+      excerpt: "Confused by medicine labels? Learn what MRP, batch number, expiry date, and other details really mean so you can buy medicines safely and smartly.",
+      author: "Team MediBachat ",
+      date: "October 03, 2025",
+      readTime: "11 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDI%3D"
     }
   ];
 

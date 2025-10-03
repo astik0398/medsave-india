@@ -3028,6 +3028,405 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
     The future of healthcare lies not just in advanced treatments but in preventing illness through sustained healthy behaviors. Gamification provides the psychological tools necessary to bridge the gap between knowing what's healthy and actually doing it, creating a world where staying healthy becomes its own reward.
   </p>
 </>
+    },
+
+                               "decoding-medicine-labels-mrp-batch-expiry": {
+      title: "Decoding Medicine Labels: What Do MRP, Batch Number, and Expiry Really Mean",
+      author: "Team MediBachat",  
+      date: "October 03, 2025",
+      readTime: "11 min read",
+      metaDescription: "Confused by medicine labels? Learn what MRP, batch number, expiry date, and other details really mean so you can buy medicines safely and smartly.",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDI%3D",
+      content: <>
+  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+    Decoding Medicine Labels: What Do MRP, Batch Number, and Expiry Really Mean
+  </h1>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Understanding medicine labels might seem straightforward, but the small print on pharmaceutical packages contains crucial information that can impact your health, safety, and wallet. Each element on a medicine label serves a specific purpose, from ensuring product authenticity to guaranteeing therapeutic effectiveness. This comprehensive guide decodes the essential components of medicine labels, helping you become an informed healthcare consumer.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    The Regulatory Foundation of Medicine Labeling
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Medicine labeling in India operates under strict regulatory frameworks established by the Central Drugs Standard Control Organization (CDSCO). The Drugs and Cosmetics Act of 1940 and Drugs and Cosmetics Rules of 1945 mandate specific labeling requirements that manufacturers must follow. These regulations ensure that every medicine package contains essential information for patient safety and regulatory compliance.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The CDSCO oversees labeling compliance for new drugs, subsequent new drugs, fixed-dose combinations, and imported products. Schedule 96 outlines minimum labeling information requirements, while Schedules H and H1 govern prescription-only medications. Non-compliance with these labeling standards can result in product recalls, license suspension, and significant penalties.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Understanding Maximum Retail Price (MRP)
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    What is MRP?
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Maximum Retail Price represents the highest price at which a product can be legally sold to consumers in India. This price-control mechanism, introduced through amendments to the Standards of Weights and Measures Act in 1990, protects consumers from price exploitation and ensures transparency in pharmaceutical pricing.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The MRP includes all applicable taxes, particularly GST, and must be clearly printed on every medicine package. Unlike suggested retail prices in many countries, MRP in India is legally binding—retailers cannot charge above this printed price without facing legal consequences.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    How is MRP Calculated?
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pharmaceutical MRP calculation involves multiple cost components and profit margins throughout the supply chain:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Manufacturing costs: Raw materials, active pharmaceutical ingredients (APIs), production expenses</li>
+    <li>Packaging and presentation costs: Container, label, and outer packaging expenses</li>
+    <li>Distribution margins: Carry and Forward (C&F) agent commissions, stockist margins</li>
+    <li>Retail margins: Pharmacy and retail outlet profit margins</li>
+    <li>Regulatory costs: Licensing, testing, and compliance expenses</li>
+    <li>Marketing expenses: Promotional activities and advertising costs</li>
+    <li>Taxes: GST and other applicable levies</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The formula typically follows: MRP = Manufacturing Cost + Packaging Cost + Profit Margin + Distribution Margins + Marketing Expenses + Taxes + Transportation Costs.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Price Control Mechanisms
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Certain essential medicines fall under the Drug Price Control Order (DPCO), where the National Pharmaceutical Pricing Authority (NPPA) regulates maximum prices. These controlled drugs have ceiling prices that manufacturers cannot exceed, ensuring affordability of critical medications.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    For non-scheduled medicines, manufacturers have flexibility in MRP determination based on market dynamics, production costs, and competitive positioning. However, once printed, the MRP becomes the legal maximum selling price throughout the distribution chain.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Decoding Batch Numbers: Your Medicine's DNA
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    What is a Batch Number?
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    A batch number, also called a lot number, serves as a unique identifier for a specific quantity of medicine produced under identical manufacturing conditions. According to the US FDA definition, a batch represents "a specific quantity of a drug or other material that is intended to have uniform character and quality, within specified limits, and is produced according to a single manufacturing order during the same cycle of manufacture".
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    This alphanumeric code typically appears near the expiry date and provides complete traceability of the medicine's production history. Each batch number is unique and cannot be repeated, ensuring that every medicine package can be traced back to its manufacturing source.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Critical Functions of Batch Numbers
+  </h3>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Quality Control and Safety
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Batch numbers enable pharmaceutical companies to track manufacturing parameters, ingredient sources, and production conditions. If quality issues arise, manufacturers can quickly identify and isolate affected products without impacting the entire product line. The batch number links directly to:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Exact quantities of active ingredients used</li>
+    <li>Complete list of excipients and their sources</li>
+    <li>Manufacturing date and production facility</li>
+    <li>Quality control test results and stability data</li>
+    <li>Environmental conditions during production</li>
+  </ul>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Regulatory Compliance
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Regulatory authorities require detailed batch records for every pharmaceutical product. These records must include manufacturing procedures, quality control results, and distribution information. The batch number serves as the key identifier connecting products to their complete regulatory documentation.
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Product Recall Management
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    When safety concerns arise, batch numbers facilitate precise product recalls. Instead of recalling entire product lines, manufacturers can target specific batches, minimizing economic impact while ensuring patient safety. Recent examples include recalls where manufacturers identified potentially counterfeit products by batch number verification.
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Anti-Counterfeiting Measures
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Authentic batch numbers help identify counterfeit medicines. Legitimate pharmaceutical companies maintain detailed batch records, making it difficult for counterfeiters to replicate authentic batch information. Consumer verification of batch numbers against manufacturer databases can reveal counterfeit products.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Expiry Dates: Beyond the Calendar
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Understanding Expiry Date Science
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Medicine expiry dates represent the last day manufacturers can guarantee full potency, safety, and effectiveness when stored under recommended conditions. These dates result from extensive stability testing that demonstrates how long medicines maintain their therapeutic properties.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The expiry date doesn't mean medicines become immediately dangerous after this date, but rather that pharmaceutical companies cannot guarantee the stated potency levels. Most medicines retain significant effectiveness well beyond expiry dates, though potency may gradually decline.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Stability Testing and Shelf Life Determination
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pharmaceutical companies conduct rigorous stability studies to establish expiry dates. These studies involve:
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Real-Time Stability Testing
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Long-term studies at recommended storage conditions (typically 25°C ± 2°C with 60% ± 5% relative humidity) continue throughout the proposed shelf life. Testing occurs every three months during the first year, every six months during the second year, and annually thereafter.
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Accelerated Stability Testing
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Elevated temperature and humidity conditions (typically 40°C ± 2°C with 75% ± 5% relative humidity) simulate long-term storage effects in shorter timeframes. These studies help predict long-term stability and identify potential degradation products.
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Shelf Life Calculation
+  </h4>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Shelf life typically represents the time required for medicine to degrade to 90% of its original potency. Statistical analysis of stability data, using regression analysis and confidence intervals, determines the expiry date where manufacturers can guarantee therapeutic effectiveness.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Manufacturing Date vs. Expiry Date
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The manufacturing date indicates when the medicine was produced, while the expiry date represents the end of guaranteed potency. The time between these dates reflects the medicine's established shelf life based on stability studies. Understanding both dates helps consumers assess medicine freshness and remaining shelf life.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Essential Storage Information
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Temperature Requirements
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Proper storage conditions are critical for maintaining medicine effectiveness. Most medicines require storage at controlled room temperature between 15°C and 30°C (59°F to 86°F). Specific storage categories include:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Room Temperature: 20°C to 25°C (68°F to 77°F) with excursions allowed between 15°C to 30°C</li>
+    <li>Cool Storage: 8°C to 15°C (46°F to 59°F)</li>
+    <li>Refrigerated: 2°C to 8°C (36°F to 46°F)</li>
+    <li>Frozen: -25°C to -10°C (-13°F to 14°F)</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Humidity Control
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Relative humidity significantly affects medicine stability. Most medicines should be stored at humidity levels below 60% to prevent degradation. High humidity can cause:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Chemical degradation of active ingredients</li>
+    <li>Physical changes in tablet and capsule formulations</li>
+    <li>Microbial growth in liquid preparations</li>
+    <li>Packaging deterioration</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Light and Air Protection
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Many medicines degrade when exposed to light and air. Labels often specify storage requirements such as "store in original container," "protect from light," or "keep container tightly closed" to maintain medicine stability.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Active Ingredients and Formulation Details
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Understanding Active Ingredients
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Active ingredients represent the therapeutic components responsible for medicine's healing effects. Medicine labels must clearly display the name and quantity of all active ingredients, typically listed by their international nonproprietary name (INN) or generic name.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    For prescription medicines, the generic name must appear prominently, often in larger font than brand names. This requirement helps healthcare providers and patients identify medicines by their chemical composition rather than marketing names.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Inactive Ingredients and Excipients
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Inactive ingredients, also called excipients, don't provide therapeutic effects but serve important functions:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Binders: Hold tablets together</li>
+    <li>Fillers: Provide bulk and shape</li>
+    <li>Disintegrants: Help tablets dissolve</li>
+    <li>Coatings: Protect from moisture and improve appearance</li>
+    <li>Preservatives: Prevent microbial growth</li>
+    <li>Colors and flavors: Enhance appearance and palatability</li>
+  </ul>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Patients with allergies must carefully review inactive ingredients, as these components can trigger allergic reactions even though they don't provide therapeutic benefits.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Manufacturer Information and Licensing
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Manufacturer Identification
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Medicine labels must display complete manufacturer information, including company name, manufacturing facility address, and contact details. For imported medicines, both the foreign manufacturer and Indian importer information must appear on labels.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    License Numbers and Regulatory Codes
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pharmaceutical manufacturers must display relevant license numbers and regulatory approval codes. These identifiers help regulatory authorities track products and verify manufacturing authorization. Import licenses, manufacturing licenses, and drug approval numbers provide transparency in the pharmaceutical supply chain.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Country of Origin
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Labels must clearly indicate where medicines are manufactured. This information helps consumers and healthcare providers understand product origins and make informed decisions about medicine selection.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Reading Warning Labels and Precautions
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Prescription Drug Classifications
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Indian medicine labels use specific symbols and warnings to indicate prescription requirements:
+  </p>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Schedule G: "SCHEDULE G PRESCRIPTION DRUG - CAUTION: It is dangerous to take this preparation except under medical supervision"</li>
+    <li>Schedule H: Shows "Rx" symbol and "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner"</li>
+    <li>Schedule H1: Requires additional tracking and reporting</li>
+    <li>Schedule X: Displays "XRx" symbol for controlled substances</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Safety Warnings
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Medicine labels include critical safety information about contraindications, side effects, and drug interactions. Common warnings address pregnancy safety, pediatric use restrictions, and conditions requiring medical supervision before use.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Identifying Counterfeit Medicines
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Common Signs of Fake Medicines
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Counterfeit medicines pose serious health risks and can be identified through careful label examination:
+  </p>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Packaging Red Flags
+  </h4>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Spelling errors in medicine names, ingredients, or manufacturer information</li>
+    <li>Poor print quality, blurred text, or faded colors</li>
+    <li>Unusual packaging materials or design inconsistencies</li>
+    <li>Missing or altered batch numbers and expiry dates</li>
+  </ul>
+  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Physical Characteristics
+  </h4>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Changes in tablet or capsule size, shape, color, or markings</li>
+    <li>Weight variations compared to authentic products</li>
+    <li>Unusual taste, smell, or dissolution properties</li>
+    <li>Inconsistent product appearance between batches</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Verification Methods
+  </h3>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Cross-reference batch numbers with manufacturer databases</li>
+    <li>Scan QR codes on packaging for product authentication</li>
+    <li>Purchase only from licensed pharmacies and authorized distributors</li>
+    <li>Report suspected counterfeit medicines to regulatory authorities</li>
+  </ul>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Special Considerations for Different Medicine Types
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Liquid Medications
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Liquid medicines often have shorter shelf lives after opening compared to their printed expiry dates. Once opened, oral suspensions typically remain stable for 14-30 days, while eye drops may only last 28 days due to sterility concerns.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Controlled Release Formulations
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Extended-release and modified-release medicines require special attention to dosing instructions and administration timing. These formulations cannot be crushed, chewed, or split without destroying their controlled-release properties.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Biological Products
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Vaccines, blood products, and biotechnology medicines often have unique identification systems beyond traditional batch numbers. These products may use ISBT 128 standards or other specialized tracking systems due to their complex manufacturing and storage requirements.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Digital Age Enhancements
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    QR Codes and Digital Verification
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Modern medicine packages increasingly include QR codes that link to digital product information, authentication databases, and patient resources. Scanning these codes can verify product authenticity and provide additional safety information.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Serialization and Track-and-Trace
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Pharmaceutical serialization assigns unique identifiers to individual medicine packages, enabling complete supply chain traceability. This technology helps combat counterfeiting and facilitates rapid recall procedures when necessary.
+  </p>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Electronic Health Integration
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Some medicine labels now include information formatted for electronic health record integration, helping healthcare providers maintain accurate medication histories and identify potential drug interactions.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Consumer Action Steps
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    Before Purchase
+  </h3>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Verify pharmacy licensing and reputation</li>
+    <li>Compare MRP across different outlets to avoid overcharging</li>
+    <li>Check medicine packaging for tamper evidence</li>
+    <li>Ensure proper storage conditions at point of sale</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    At Home
+  </h3>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Store medicines according to label instructions</li>
+    <li>Regularly check expiry dates and dispose of expired products safely</li>
+    <li>Keep medicines in original packaging with intact labels</li>
+    <li>Maintain a medication inventory with batch numbers for recall reference</li>
+  </ul>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    When Concerns Arise
+  </h3>
+  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+    <li>Report suspected counterfeit medicines to CDSCO</li>
+    <li>Contact manufacturers directly for product verification</li>
+    <li>Consult healthcare providers about unusual side effects or efficacy concerns</li>
+    <li>Document adverse events with complete product identification information</li>
+  </ul>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Disposal Guidelines
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    The CDSCO provides specific guidance for expired medicine disposal. Consumers should return expired medicines to pharmacies or participate in drug take-back programs organized by local authorities. Certain high-risk medicines may require special disposal procedures to prevent environmental contamination or accidental ingestion.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Staying Informed in an Evolving Landscape
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Medicine labeling continues evolving with technological advances and regulatory updates. Staying informed about labeling changes helps consumers make better healthcare decisions. Recent developments include enhanced anti-counterfeiting measures, improved readability requirements, and digital integration capabilities.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+    Understanding medicine labels empowers consumers to make informed healthcare decisions, identify potential safety issues, and ensure they receive authentic, effective medications. The seemingly simple information printed on medicine packages represents a complex system designed to protect public health while enabling informed medical treatment.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+    By decoding MRP, batch numbers, expiry dates, and other label elements, consumers become active participants in their healthcare safety. This knowledge helps prevent medication errors, avoid counterfeit products, and maximize therapeutic benefits while minimizing risks.
+  </p>
+</>
     }
   };
 
