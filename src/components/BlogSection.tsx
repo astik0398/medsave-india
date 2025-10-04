@@ -173,6 +173,17 @@ const BlogSection = () => {
       readTime: "11 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhbHRoJTIwaW5zdXJhbmNlLnxlbnwwfHwwfHx8Mg%3D%3D"
+    },
+
+                           {
+      id: "why-do-medicine-prices-differ-between-online-and-offline-pharmacies",
+      title: "Why Do Medicine Prices Differ Between Online and Offline Pharmacies?",
+      excerpt: "Wondering why medicines cost less online than at local chemists? Discover key factors like discounts, margins, and regulations behind the price gap.",
+      author: "Team MediBachat ",
+      date: "October 04, 2025",
+      readTime: "8 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBoYXJtYWN5fGVufDB8fDB8fHwy"
     }
   ];
 
