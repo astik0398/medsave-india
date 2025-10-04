@@ -184,6 +184,18 @@ const BlogSection = () => {
       readTime: "8 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBoYXJtYWN5fGVufDB8fDB8fHwy"
+    },
+
+
+                               {
+      id: "does-homeopathy-really-work-or-placebo",
+      title: "Does Homeopathy Really Work or Is It Just a Placebo?",
+      excerpt: "Is homeopathy effective or just a placebo? Explore scientific evidence, myths, and real-world experiences to understand the truth behind homeopathic medicine.",
+      author: "Team MediBachat ",
+      date: "October 04, 2025",
+      readTime: "12 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1725267882596-2d08e560b250?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZW9wYXRoeXxlbnwwfHwwfHx8Mg%3D%3D"
     }
   ];
 
