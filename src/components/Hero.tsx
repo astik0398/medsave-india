@@ -79,6 +79,7 @@ const Hero = () => {
       // Get the first valid medicine name
       const firstMedicineName = (validEntries as any)[0][1].name;
       localStorage.setItem("price_history_name", firstMedicineName);
+      localStorage.setItem("med_qwery", searchQuery);
 
       // Build prices array with null safety
 const pricesArray = validEntries.map(([platform, data]) => {
@@ -243,7 +244,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
             <div className="relative z-10">
               <img
                 src={heroImage}
-                alt="Compare medicine prices, discounts, and coupon codes online"
+                alt="Compare medicine prices online India, check medicine price tracker, avail medicine discounts and coupon codes from Netmeds, Truemeds, PharmEasy, Apollo Pharmacy"
                 className="w-full h-auto rounded-2xl shadow-strong"
               />
             </div>

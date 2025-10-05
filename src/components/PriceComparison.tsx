@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Star, Truck, Clock } from "lucide-react";
+import { ExternalLink, Star, Truck, Clock, Bell } from "lucide-react";
 import { useEffect, useState } from "react";
 import netmeds from "../assets/netmeds trans.png";
 import onemg from "../assets/1mg trans.png";
@@ -9,12 +9,67 @@ import truemeds from "../assets/truemeds trans.png";
 import pharmeasy from "../assets/pharmeasy trans.png";
 import apollo from "../assets/apllo pharmacy trans.png";
 import medkart from "../assets/medkart_pharmacy_logo-removebg-preview.png"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@radix-ui/react-label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import whatsappIcon from '../assets/whatsapp.svg'
+import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
+import { toast } from "@/hooks/use-toast";
 
 const PriceComparison = () => {
   const [priceData, setPriceData] = useState([]);
   const [medicineName, setMedicineName] = useState("Loading...");
   const [platformName, setPlatformName] = useState("");
   const [deliveryTime, setDeliveryTime] = useState("");
+
+  const [whatsappNumber, setWhatsappNumber] = useState("");
+  const [priceDropPercentage, setPriceDropPercentage] = useState("");
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handleConfirm = async () => {
+     let med_qwery = localStorage.getItem("med_qwery")
+
+    console.log("WhatsApp Number:", `+91${whatsappNumber}`);
+    console.log("Price Drop Percentage:", priceDropPercentage);
+    console.log("MEDICINE NAME---:", med_qwery);
+    // Here you would typically send this data to your backend
+
+     try {
+    // Insert data into 'price_alert' table
+    const { data, error } = await supabase
+      .from("price_alert")
+      .insert([
+        {
+          med_qwery: med_qwery,
+          percentage_drop: priceDropPercentage,
+          whatsapp_number: `+91${whatsappNumber}`,
+          created_at: new Date().toISOString(), // optional, if you want timestamp
+        },
+      ]);
+
+    if (error) {
+      console.error("Error inserting data:", error);
+      toast({
+              title: "❌ Alert Failed!",
+              description: " Failed to save an alert. Try again!",
+            });
+    } else {
+      console.log("✅ Price alert saved successfully:", data);
+       toast({
+              title: "✅ Alert Saved!",
+              description: `Thank you! You'll get an alert when the price drops by ${priceDropPercentage}%.`,
+            });
+    }
+  } catch (err) {
+    console.error("Unexpected error:", err);
+    alert("⚠️ Something went wrong. Please try again later.");
+  }
+
+    setIsDialogOpen(false);
+    setWhatsappNumber("");
+    setPriceDropPercentage("");
+  };
 
   const dummyData = {
   netmeds: {
@@ -306,8 +361,88 @@ if (transformed.length > 0) {
               </CardContent>
             </Card>
           ))}
+
+<div
+style={{maxHeight:'fit-content', marginTop:'80px', padding:'30px'}}
+  className="flex flex-col justify-center items-center text-center space-y-4 bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 rounded-2xl"
+>
+  <p className="text-sm text-muted-foreground">
+    Prices are updated every hour. Last updated: 2 hours ago
+  </p>
+
+  <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+    <DialogTrigger asChild>
+      <Button variant="hero" className="bg-green-600 hover:bg-green-700 text-white">
+        <img src={whatsappIcon} alt="whatsapp-icon" className="h-8 w-8" />
+        Get Price Alert on WhatsApp
+      </Button>
+    </DialogTrigger>
+
+    <DialogContent className="sm:max-w-md">
+      <DialogHeader>
+        <DialogTitle className="text-xl">
+          Set Price Alert on <span className="text-success text-green-400">WhatsApp</span>
+        </DialogTitle>
+      </DialogHeader>
+
+      <div className="space-y-6 py-4">
+        <div className="space-y-2">
+          <Label htmlFor="whatsapp">WhatsApp Number</Label>
+           <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground select-none">
+                      +91
+                    </span>
+                    <Input
+                      id="whatsapp"
+                      placeholder="Enter your number"
+                      type="phone"
+                      value={whatsappNumber}
+                     onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, '');
+                        if (value.length <= 10) {
+                          setWhatsappNumber(value);
+                        }
+                      }}
+                      maxLength={10}
+                      className="pl-12"
+                    />
+                  </div>
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="percentage">Price Drop Percentage</Label>
+          <Select
+            value={priceDropPercentage}
+            onValueChange={setPriceDropPercentage}
+          >
+            <SelectTrigger id="percentage">
+              <SelectValue placeholder="Select percentage" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="5">5%</SelectItem>
+              <SelectItem value="15">15%</SelectItem>
+              <SelectItem value="25">25%</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
+        <Button
+          variant="hero"
+          className="w-full"
+          onClick={handleConfirm}
+          disabled={!whatsappNumber || !priceDropPercentage}
+        >
+          Confirm Alert
+        </Button>
+      </div>
+    </DialogContent>
+  </Dialog>
+</div>
+
         </div>
       </div>
+
+   
     </section>
   );
 };
