@@ -163,11 +163,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                Compare prices for any medicine across India's top e-pharmacy
-                platforms like Netmeds, Tata 1mg, PharmEasy, Apollo Pharmacy,
-                and Truemeds. Get exclusive{" "}
-                <strong>online medicine discounts.</strong>
-                
+               Use our <strong>medicine price comparison app</strong> to <strong>compare medicine prices online</strong>, get the <strong>highest discount on medicines</strong>, and access <strong><a href="https://www.netmeds.com/" style={{color:'#004FB7'}} target="_blank">Netmeds</a>, <a style={{color:'#004FB7'}} href="https://pharmeasy.in/" target="_blank">PharmEasy</a>, <a style={{color:'#004FB7'}} href="https://www.1mg.com/" target="_blank">Tata 1mg</a> </strong> deals instantly. Buy medicines online India with exclusive pharmacy coupons. 
               </p>
             </div>
 

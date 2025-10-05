@@ -38,10 +38,10 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How MedSave India Works
+            How MediBachat Medicine Price Tracker Works?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Save money on your medicines in just 4 simple steps
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Track medicine prices online, compare medicine prices, and get the highest discounts on medicines in India in just 4 simple steps.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const HowItWorks = () => {
               <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-3/4 h-[2px] bg-gradient-to-r from-[#005CD4] to-[#11B77F] opacity-40"></div>
               
               {steps.map((step, index) => (
-                <div key={index} className="relative">
+                <article key={index} className="relative">
                   <Card className="text-center shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
                     <CardContent className="p-8">
                       {/* Step Number */}
@@ -71,7 +71,7 @@ const HowItWorks = () => {
                       <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
                     </CardContent>
                   </Card>
-                </div>
+                </article >
               ))}
             </div>
           </div>

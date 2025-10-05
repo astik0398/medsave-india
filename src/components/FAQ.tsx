@@ -6,32 +6,37 @@ const FAQ = () => {
 
   const faqData = [
   {
-    question: "How do you collect the online medicine price comparison data?",
-    answer: "We collect online medicine price comparison data from multiple trusted e-pharmacy platforms in India. Our automated systems track prices in real time, and we manually verify them to ensure you always see the most accurate and updated rates before buying medicines online."
+    question: "What is a medicine price tracker and how does it help in finding the cheapest medicine online?",
+    answer: "A medicine price tracker monitors fluctuations in drug costs across various platforms. At MediBachat, our medicine price tracker helps you find the cheapest medicine online by comparing real-time prices from top e-pharmacies in India, ensuring you buy medicine online in India at the lowest rates."
   },
   {
-    question: "Is MedSave India affiliated with the best e-pharmacies in India?",
-    answer: "No, MedSave India is completely independent. We are not owned by any pharmacy platform, ensuring unbiased comparisons. This way, when you search for the best e-pharmacy in India, you can trust our results are purely based on price, discounts, and reliability."
+    question: "Is there a medicine price comparison app for India?",
+    answer: "While MediBachat is a web-based platform, it functions like a medicine price comparison app for India, allowing you to compare medicine prices online from anywhere. Access our site on mobile for quick medicine price checks and to find the cheapest medicine online."
   },
   {
-    question: "Do you offer discount coupons for medicines?",
-    answer: "Yes, we regularly update and verify exclusive discount coupons for medicines from India's top online pharmacies. You can apply these e-pharmacy promo codes at checkout to save more on your orders."
+    question: "What are the best pharmacy online coupons available?",
+    answer: "MediBachat curates the best pharmacy online coupons from top e-pharmacies. Look for codes like 1mglabs coupon codes or those offering the highest discount on medicines, and apply them when you buy medicine online in India."
   },
   {
     question: "Can I buy medicines directly through MedSave India?",
     answer: "We don’t sell medicines directly. Instead, we connect you to verified e-pharmacies where you can complete your purchase. This ensures you still get the full benefits, customer service, and delivery from the original seller."
   },
   {
-    question: "Are your online pharmacy discounts always valid?",
-    answer: "We regularly check and update our online pharmacy discounts and coupons to ensure they work. However, some may have usage limits or be available only for specific medicines, so always check the terms before applying them."
+    question: "How to buy medicine online in India safely?",
+    answer: "To buy medicine online in India safely, use MediBachat to compare medicine prices online and select licensed pharmacies. We ensure partners offer valid medicine discounts and reliable service, helping you get the highest discount on medicines without compromising quality."
   },
      {
-      question: "How do you ensure the quality of partner pharmacies?",
-      answer: "All our partner e-pharmacies are licensed by the appropriate authorities and follow strict quality standards. We only work with well-established platforms that have good customer reviews and reliable service records."
+      question: "How can I find the highest discount on medicines?",
+      answer: "To find the highest discount on medicines, use MediBachat's comparison tools that scan deals from pharmacies like Apollo Pharmacy and Netmeds. We highlight the highest discount on medicines available, along with exclusive pharmacy online coupons to maximize your savings."
     },
   {
     question: "Can I track medicine price history before I buy?",
     answer: "Yes, you can view the price history for medicines across different e-pharmacies. Our charts help you find the best time to buy and make sure you’re getting the best online medicine deals in India."
+  },
+
+   {
+    question: "Are your online pharmacy discounts always valid?",
+    answer: "We regularly check and update our online pharmacy discounts and coupons to ensure they work. However, some may have usage limits or be available only for specific medicines, so always check the terms before applying them."
   }
 ];
 
@@ -42,11 +47,11 @@ const FAQ = () => {
           <div className="flex items-center justify-center space-x-2 mb-4">
             <HelpCircle className="h-8 w-8 mr-2 text-primary dark:text-[#0A54B6]" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Frequently Asked Questions
+              Frequently Asked Questions on Medicine Price Comparison
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Find answers about online medicine price comparison, best e-pharmacies in India, and exclusive pharmacy discount coupons
+          <p className="text-lg text-muted-foreground max-w-5xl mx-auto">
+            Find about medicine price comparison, medicine price tracker in India, comparing medicine prices online, highest discount on medicines, pharmacy online coupons, and more from top e-pharmacies like Netmeds, Truemeds, and Apollo.
           </p>
         </div>
 
@@ -61,7 +66,7 @@ const FAQ = () => {
                     className="border border-border rounded-lg px-4"
                   >
                     <AccordionTrigger className="text-left hover:no-underline py-4">
-                      <span className="font-semibold text-foreground">{faq.question}</span>
+                      <h3 className="font-semibold text-foreground m-0">{faq.question}</h3>
                     </AccordionTrigger>
                     <AccordionContent className="pb-4">
                       <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
