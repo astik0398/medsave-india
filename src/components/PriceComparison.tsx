@@ -321,7 +321,7 @@ if (transformed.length > 0) {
                     ₹{lowestPrice}
                   </p>
                   <Badge variant="secondary" className="mt-1 dark:bg-[#10B77F]">
-                    Best Deals
+                    Best Dealssss
                   </Badge>
                 </div>
               </div>
