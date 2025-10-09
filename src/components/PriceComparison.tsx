@@ -238,6 +238,7 @@ if (transformed.length > 0) {
 
     console.log('item--', item);
     
+    
    try {
     // Get the column name for the platform
     const columnName = platformToColumn[item.platform];
