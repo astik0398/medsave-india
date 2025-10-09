@@ -225,7 +225,11 @@ if (transformed.length > 0) {
   if (priceData.length === 0)
     return <p className="text-center py-10">Loading comparison data...</p>;
 
-  const platformToColumn = {
+  const handleBuyNow = async (item) => {
+
+    console.log('item--', item);
+    
+      const platformToColumn = {
   Netmeds: 'netmeds',
   "Tata 1mg": '1mg',
   "Apollo Pharmacy": 'apollo',
@@ -234,11 +238,6 @@ if (transformed.length > 0) {
   Medkart: 'medkart',
 };
 
-  const handleBuyNow = async (item) => {
-
-    console.log('item--', item);
-    
-    
    try {
     // Get the column name for the platform
     const columnName = platformToColumn[item.platform];
