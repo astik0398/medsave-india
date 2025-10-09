@@ -225,8 +225,6 @@ if (transformed.length > 0) {
   if (priceData.length === 0)
     return <p className="text-center py-10">Loading comparison data...</p>;
 
-  console.log(lowestPrice);
-
   const platformToColumn = {
   Netmeds: 'netmeds',
   "Tata 1mg": '1mg',
