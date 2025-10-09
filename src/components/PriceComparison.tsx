@@ -229,8 +229,8 @@ if (transformed.length > 0) {
 
   const platformToColumn = {
   Netmeds: 'netmeds',
-  Tata1mg: '1mg',
-  ApolloPharmacy: 'apollo',
+  "Tata 1mg": '1mg',
+  "Apollo Pharmacy": 'apollo',
   PharmEasy: 'pharmeasy',
   Truemeds: 'truemeds',
   Medkart: 'medkart',
@@ -321,7 +321,7 @@ if (transformed.length > 0) {
                     ₹{lowestPrice}
                   </p>
                   <Badge variant="secondary" className="mt-1 dark:bg-[#10B77F]">
-                    Best Dealssss
+                    Best Deals
                   </Badge>
                 </div>
               </div>
