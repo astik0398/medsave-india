@@ -227,6 +227,63 @@ if (transformed.length > 0) {
 
   console.log(lowestPrice);
 
+  const platformToColumn = {
+  Netmeds: 'netmeds',
+  Tata1mg: '1mg',
+  ApolloPharmacy: 'apollo',
+  PharmEasy: 'pharmeasy',
+  Truemeds: 'truemeds',
+  Medkart: 'medkart',
+};
+
+  const handleBuyNow = async (item) => {
+
+    console.log('item--', item);
+    
+   try {
+    // Get the column name for the platform
+    const columnName = platformToColumn[item.platform];
+    
+    // Check if the platform is mapped
+    if (!columnName) {
+      console.error(`No column mapping found for platform: ${item.platform}`);
+      return;
+    }
+
+    console.log('item.platform:', item.platform, 'Mapped columnName:', columnName);
+
+    // Get the current click count for the platform
+    const { data, error } = await supabase
+      .from('total_clicks')
+      .select(columnName)
+      .eq('id', 1)
+      .single();
+
+    if (error) {
+      console.error('Error fetching click count:', error);
+      return;
+    }
+
+    // Increment the click count
+    const currentCount = data[columnName] || 0; // Default to 0 if null
+    const newCount = currentCount + 1;
+
+    // Update the platform's click count
+    const { error: updateError } = await supabase
+      .from('total_clicks')
+      .update({ [columnName]: newCount })
+      .eq('id', 1);
+
+    if (updateError) {
+      console.error('Error updating click count:', updateError);
+    } else {
+      console.log(`Updated ${columnName} click count to ${newCount}`);
+    }
+  } catch (err) {
+    console.error('Unexpected error:', err);
+  }
+  }
+
   return (
     <section id="price-comparison" className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
@@ -347,6 +404,7 @@ if (transformed.length > 0) {
                       className="w-full mt-4"
                       variant={item.inStock ? "default" : "outline"}
                       disabled={!item.inStock}
+                      onClick={()=> handleBuyNow(item)}
                     >
                       {item.inStock ? (
                         <>
