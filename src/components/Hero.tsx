@@ -163,9 +163,12 @@ const pricesArray = validEntries.map(([platform, data]) => {
                   Save Up to 70%
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">
-               Use our <strong>medicine price comparison app</strong> to <strong>compare medicine prices online</strong>, get the <strong>highest discount on medicines</strong>, and access <strong><a href="https://www.netmeds.com/" style={{color:'#004FB7'}} target="_blank">Netmeds</a>, <a style={{color:'#004FB7'}} href="https://pharmeasy.in/" target="_blank">PharmEasy</a>, <a style={{color:'#004FB7'}} href="https://www.1mg.com/" target="_blank">Tata 1mg</a> </strong> deals instantly. Buy medicines online India with exclusive pharmacy coupons. 
-              </p>
+                  <h2 className="sr-only">Online Medicine Price Comparison Tool in India</h2>
+
+              <p className="text-xl text-base text-muted-foreground max-w-2xl">
+  Compare drug prices across <strong>PharmEasy</strong>, <strong>Netmeds</strong>, <strong>Tata 1mg</strong>, and more. 
+  Find <strong>medicine substitutes with price</strong>, check <strong>drug cost comparisons</strong>, and discover the <strong>cheapest medicine online</strong> before buying.
+</p>
             </div>
 
             {/* Search Form */}
@@ -187,12 +190,12 @@ const pricesArray = validEntries.map(([platform, data]) => {
               <Button
                 type="submit"
                 variant="hero"
-                className="h-12 px-8 dark:text-white"
+                className="h-12 px-3 dark:text-white"
               >
                 {loading ? (
                   <span className="w-6 h-6 inline-block rounded-full border-t-4 border-r-4 border-white border-r-transparent box-border animate-spin"></span>
                 ) : (
-                  "Compare Prices"
+                  "Compare Medicine Prices Now"
                 )}
               </Button>
             </form>
@@ -244,7 +247,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
             <div className="relative z-10">
               <img
                 src={heroImage}
-                alt="Compare medicine prices online India, check medicine price tracker, avail medicine discounts and coupon codes from Netmeds, Truemeds, PharmEasy, Apollo Pharmacy"
+                alt="Compare medicine prices in India | Medicine substitute price comparison tool – Medibachat"
                 className="w-full h-auto rounded-2xl shadow-strong"
               />
             </div>

@@ -73,40 +73,40 @@ const PriceComparison = () => {
 
   const dummyData = {
   netmeds: {
-    name: "Cetaphil Syndet Bar 75gm",
-    price: "₹189.00",
-    finalPrice: "₹189.00",
-    originalPrice: "₹225.00",
-    image: "https://www.netmeds.com/images/product-v1/150x150/379578/cetaphil_syndet_bar_75gm_45420_0_3.jpg",
+    name: "​rozagold 20,",
+    price: "₹305.25",
+    finalPrice: "₹305.25",
+    originalPrice: "₹346.87",
+    image: "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/resize-w:400/TSbIPVuhdS-rozagold_20mg_capsule_10s_52449_0_3.jpg",
     rating: 4.8,
-    url: "https://www.netmeds.com/non-prescriptions/cetaphil-syndet-bar-75gm"
+    url: "https://www.netmeds.com/product/rozagold-20mg-capsule-10s-luftwj-7504814?srsltid=AfmBOooOeZMBBTI8LtbB32fMhkcSrFHhFF4eFtS5mlPi5ahqXTO5bWAu"
   },
   pharmeasy: {
-    name: "Cetaphil Gentle Skin Cleanser | Dry To Normal Sensitive Skin | 125 Ml",
-    price: "₹390.39",
-    finalPrice: "₹390.39",
-    originalPrice: "₹429.00",
-    image: "https://cdn01.pharmeasy.in/dam/products_otc/I00623/cetaphil-gentle-skin-cleanser-125ml-2-1671740876.jpg?dim=256x256&q=75",
+    name: "Rozagold 20 Capsule",
+    price: "₹253.22",
+    finalPrice: "₹253.22",
+    originalPrice: "₹346.87",
+    image: "https://cdn01.pharmeasy.in/dam/products/331750/rozagold-20mg-strip-of-10-capsules-1-1717587659.jpg?dim=320x320&dpr=1&q=100",
     rating: 4,
-    url: "https://pharmeasy.in/health-care/products/cetaphil-gentle-skin-cleanser---125ml-11064"
+    url: "https://pharmeasy.in/online-medicine-order/rozagold-20mg-capsule-25733"
   },
   tata1mg: {
-    name: "Cetaphil Gentle Skin Cleanser | For Dry to Normal, Sensitive Skin",
-    price: "₹399",
-    finalPrice: "₹399",
-    originalPrice: "₹429",
-    image: null,
+    name: "Rozat Gold 20 Capsule",
+    price: "₹362",
+    finalPrice: "₹362",
+    originalPrice: "₹402.19",
+    image: "https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/4480877781e34ea888c908ef0afe149e.jpg",
     rating: "4.4",
-    url: "https://www.1mg.com/otc/cetaphil-gentle-skin-cleanser-for-dry-to-normal-sensitive-skin-otc533388"
+    url: "https://www.1mg.com/drugs/rozat-gold-20-capsule-611744?srsltid=AfmBOopP3oVRxxU4IXFsX_BlpJFbLN2OF9EjAfTxdxVYRmsxPGy0_ucy&wpsrc=Google+Organic+Search"
   },
   truemeds: {
-    name: "Cetaphil Gentle Skin Cleanser 125ml",
-    price: "₹398.97",
-    finalPrice: "₹398.97",
-    originalPrice: "MRP ₹429",
-    image: "https://assets.truemeds.in/Images/ProductImage/TM-LOES1-000749/cetaphil-gentle-skin-cleanser-125ml_cetaphil-gentle-skin-cleanser-125ml--TM-LOES1-000749_1.png?width=240",
+    name: "Rozagold 20 Capsule 10",
+    price: "₹277.5",
+    finalPrice: "₹277.5",
+    originalPrice: "MRP ₹346.88",
+    image: "https://assets.truemeds.in/Images/ProductImage/TM-CACR1-005448/rozagold-20-capsule-10_rozagold-20-capsule-10--TM-CACR1-005448_1.png?width=320",
     rating: 4.9,
-    url: "https://www.truemeds.in/otc/cetaphil-gentle-skin-cleanser-125ml_cetaphil-gentle-skin-cleanser-125ml-tm-loes1-000749"
+    url: "https://www.truemeds.in/medicine/rozagold-752075-mg-capsule-10-tm-cacr1-005448"
   }
 };
 
@@ -287,7 +287,7 @@ if (transformed.length > 0) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Price Comparison Results
+            Medicine Price Comparison Results
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Compare prices for{" "}
@@ -345,7 +345,7 @@ if (transformed.length > 0) {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
-                    <img src={item.logo} width="45px" />
+                    <img src={item.logo} width="45px"   alt={`${item.platform} medicine price logo`} />
                     <h3 className="font-semibold text-foreground">
                       {item.platform}
                     </h3>
