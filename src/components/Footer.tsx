@@ -20,9 +20,9 @@ const Footer = () => {
       { label: "Terms of Service", href: "/terms-of-service" },
     ],
     features: [
-      { label: "Price Comparison", href: "#price-comparison" },
+      { label: "Medicine Price Comparison", href: "#price-comparison" },
       // { label: "Coupons & Offers", href: "#coupons" },
-      { label: "Price History", href: "#price-history" },
+      { label: "Medicine Price History", href: "#price-history" },
       { label: "Medicine Search", href: "#home" },
     ],
     support: [

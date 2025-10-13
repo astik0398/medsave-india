@@ -224,8 +224,8 @@ const BlogSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
           Our Latest Blog
         </h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Stay informed with expert insights, health tips, and the latest trends in medicine and healthcare.
+        <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+            Stay informed with expert insights, health tips, and latest trends in medicine prices and healthcare.
         </p>
       </div>
 

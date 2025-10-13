@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, TrendingDown, Shield, Clock } from "lucide-react";
-import heroImage from "@/assets/hero-medicines.png";
+import heroImage from "@/assets/medicine price comparison.png";
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 
 const Hero = () => {
@@ -147,6 +147,30 @@ const pricesArray = validEntries.map(([platform, data]) => {
     };
   }, []);
 
+  useEffect(() => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.medibachat.in/",
+    "name": "MediBachat",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.medibachat.in/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.text = JSON.stringify(schemaData);
+  document.head.appendChild(script);
+
+  // ✅ Correct cleanup: explicitly returns void
+  return () => {
+    document.head.removeChild(script);
+  };
+}, []);
+
   return (
     <section
       id="home"
@@ -163,18 +187,26 @@ const pricesArray = validEntries.map(([platform, data]) => {
                   Save Up to 70%
                 </span>
               </h1>
-                  <h2 className="sr-only">Online Medicine Price Comparison Tool in India</h2>
+                  <h2 className="text-2xl font-semibold text-muted-foreground sr-only">
+  India’s trusted online medicine price comparison tool for branded, generic, and pet medicines.
+</h2>
 
-              <p className="text-xl text-base text-muted-foreground max-w-2xl">
-  Compare drug prices across <strong>PharmEasy</strong>, <strong>Netmeds</strong>, <strong>Tata 1mg</strong>, and more. 
-  Find <strong>medicine substitutes with price</strong>, check <strong>drug cost comparisons</strong>, and discover the <strong>cheapest medicine online</strong> before buying.
+
+             <p className="text-xl text-base text-muted-foreground max-w-2xl">
+  Compare drug prices across <strong>PharmEasy</strong>, <strong>Tata 1mg</strong>, and more. 
+  Find <strong>medicine substitutes with price</strong>, do a quick <strong>medicine price check</strong>, 
+  and discover the <strong>cheapest medicine online</strong> — whether you’re buying 
+  <strong> piles medicine</strong>, the <strong>best cough medicine</strong>, or even <strong>pet medicine online</strong>. 
+  MediBachat <strong><a style={{color:'blue'}} href="#price-comparison">drug cost comparisons</a></strong> tool can help!
 </p>
+
             </div>
 
             {/* Search Form */}
             <form
               onSubmit={handleSearch}
               className="flex flex-col sm:flex-row gap-4 max-w-lg"
+              aria-label="Medicine price comparison search form"
             >
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -209,7 +241,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                 <div>
                   <h3 className="font-semibold text-foreground">Best Prices</h3>
                   <p className="text-sm text-muted-foreground">
-                    Compare platforms
+                    Compare medicine across platforms
                   </p>
                 </div>
               </div>
@@ -223,7 +255,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                     Verified Sources
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Trusted e-pharmacies
+                    Trusted e-pharmacies for discounts
                   </p>
                 </div>
               </div>
@@ -233,9 +265,9 @@ const pricesArray = validEntries.map(([platform, data]) => {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Real-time</h3>
+                  <h3 className="font-semibold text-foreground">Real-time Updates</h3>
                   <p className="text-sm text-muted-foreground">
-                    Updated prices
+                    Live drug cost comparisons
                   </p>
                 </div>
               </div>
@@ -248,7 +280,8 @@ const pricesArray = validEntries.map(([platform, data]) => {
               <img
                 src={heroImage}
                 alt="Compare medicine prices in India | Medicine substitute price comparison tool – Medibachat"
-                className="w-full h-auto rounded-2xl shadow-strong"
+                className="w-[95%] h-auto rounded-none drop-shadow-[0_0_25px_rgba(0,92,212,0.8)] bg-transparent"
+                loading="lazy"
               />
             </div>
             {/* Background decorations */}

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, BarChart3, Tag, Wallet } from "lucide-react";
+import { useEffect } from "react";
 
 const HowItWorks = () => {
   const steps = [
@@ -14,14 +15,14 @@ const HowItWorks = () => {
       step: 2,
       icon: BarChart3,
       title: "Compare Prices",
-      description: "View real-time price comparison for medicines from multiple trusted online pharmacies in India.",
+      description: "View real-time drug prices for medicines from multiple trusted online pharmacies in India.",
       color: "text-secondary dark:text-primary"
     },
     {
       step: 3,
       icon: Tag,
       title: "Apply Coupons",
-      description: "Get exclusive medicine discount coupons and promotional offers to maximize your savings.",
+      description: "Get exclusive online medicine discount coupons and promotional offers to maximize your savings.",
       color: "text-accent dark:text-primary"
     },
     {
@@ -33,15 +34,55 @@ const HowItWorks = () => {
     }
   ];
 
+  const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How MediBachat Medicine Price Tracker Works",
+  "description": "Learn how to search, compare, apply coupons, and save money on medicines online in India using MediBachat.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Search Medicine",
+      "text": "Enter the name of your branded or generic medicine in the MediBachat search bar to find the best prices."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Compare Prices",
+      "text": "View real-time price comparison for medicines from multiple trusted online pharmacies in India."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Apply Coupons",
+      "text": "Use exclusive medicine discount coupons and offers to maximize your savings."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Save Money",
+      "text": "Purchase from the pharmacy with the best deal and enjoy significant savings on your medicines."
+    }
+  ]
+};
+
+useEffect(() => {
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.text = JSON.stringify(schemaData);
+  document.head.appendChild(script);
+  return () => {
+    document.head.removeChild(script);
+  };
+}, []);
+
   return (
     <section className="py-10 bg-background mb-10">
+      <h1 className="sr-only">How MediBachat Works — Medicine Price Comparison Tool in India</h1>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             How MediBachat Medicine Price Tracker Works?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Track medicine prices online, compare medicine prices, and get the highest discounts on medicines in India in just 4 simple steps.
+            Track <a style={{color:'blue'}} href="#">medicine prices online</a>, compare medicine prices, and get the highest discounts on medicines in India in just 4 simple steps.
           </p>
         </div>
 

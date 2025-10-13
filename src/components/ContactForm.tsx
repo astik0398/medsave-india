@@ -78,8 +78,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             Get in Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions about medicine prices or need help? We're here to
-            assist you.
+            Have questions about medicine price comparison in India or need help? 
           </p>
         </div>
 

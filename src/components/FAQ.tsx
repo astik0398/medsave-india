@@ -1,6 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { HelpCircle } from "lucide-react";
+import { useEffect } from "react";
 
 const FAQ = () => {
 
@@ -40,6 +41,33 @@ const FAQ = () => {
   }
 ];
 
+ // --- ✅ FAQ Structured Data (JSON-LD) for SEO ---
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+
+  // Inject JSON-LD script for SEO
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+
   return (
     <section id="faq" className="py-20 bg-[#F2F5F9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
@@ -47,11 +75,12 @@ const FAQ = () => {
           <div className="flex items-center justify-center space-x-2 mb-4">
             <HelpCircle className="h-8 w-8 mr-2 text-primary dark:text-[#0A54B6]" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Frequently Asked Questions on Medicine Price Comparison
+              FAQs on Medicine Price Comparison in India
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-5xl mx-auto">
-            Learn about medicine price comparison, MediBachat’s price tracker in India, verified pharmacy discounts, and more from top e-pharmacies like Netmeds, Apollo, and Truemeds.
+            Explore answers about MediBachat’s medicine price tracker, compare medicine prices online, pharmacy coupons, and the highest medicine discounts from trusted Indian pharmacies like Netmeds, Apollo, and Truemeds.
+
           </p>
         </div>
 

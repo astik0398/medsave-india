@@ -22,7 +22,7 @@ const CouponsSection = () => {
     const { data, error } = await supabase
       .from('coupons')
       .select('data')
-      .order('fetched_at', { ascending: false })
+      .order('fetched_at', { ascending: true })
       .limit(1)
       .single();
 
