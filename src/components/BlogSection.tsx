@@ -196,6 +196,17 @@ const BlogSection = () => {
       readTime: "12 min read",
       category: "Education",
       image: "https://images.unsplash.com/photo-1725267882596-2d08e560b250?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZW9wYXRoeXxlbnwwfHwwfHx8Mg%3D%3D"
+    },
+
+                             {
+      id: "best-cough-medicine-india-price-comparison-guide",
+      title: "Best Cough Medicine in India: Price Comparison & Effectiveness Guide 2025",
+      excerpt: "Discover India’s top cough syrups—compare prices (₹66–₹159/100ml), ingredients, and effectiveness for dry, wet, and chronic coughs. Find budget and premium picks, plus safety tips.",
+      author: "Team MediBachat ",
+      date: "October 13, 2025",
+      readTime: "07 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1635166304271-04931640a450?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291Z2glMjBzeXJ1cHxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=600"
     }
   ];
 
