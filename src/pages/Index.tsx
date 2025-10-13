@@ -10,6 +10,7 @@ import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
+import Testimonials from "@/components/Testimonials";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <PriceComparison />
             {/* <FlashDeals /> */}
       <CouponsSection />
+      <Testimonials/>
       <PriceHistory />
       <HowItWorks />
       <BlogSection />
