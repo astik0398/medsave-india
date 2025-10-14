@@ -4375,16 +4375,16 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
     },
 
                                               "best-cough-medicine-india-price-comparison-guide": {
-      title: "Best Cough Medicine in India: Price Comparison & Effectiveness Guide 2025",
+      title: "Best Cough Medicine in India: Price & Effectiveness Guide",
       author: "Team MediBachat",  
       date: "October 13, 2025",
       readTime: "07 min read",
-      metaDescription: "Compare India’s best cough medicines by price, ingredients, and effectiveness. From budget to premium syrups, get dry/wet cough relief tips and safety guidelines.",
+      metaDescription: "Find the best cough medicines in India with price comparison, ingredients and effectiveness for dry and wet cough. Includes safe picks, dosing tips and doctor advice.",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1635166304271-04931640a450?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291Z2glMjBzeXJ1cHxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=600",
       content: <>
   <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-    Best Cough Medicine in India: Price Comparison & Effectiveness Guide 2024
+    Best Cough Medicine in India: Price & Effectiveness Guide
   </h1>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">

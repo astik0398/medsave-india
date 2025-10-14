@@ -200,8 +200,8 @@ const BlogSection = () => {
 
                              {
       id: "best-cough-medicine-india-price-comparison-guide",
-      title: "Best Cough Medicine in India: Price Comparison & Effectiveness Guide 2025",
-      excerpt: "Discover India’s top cough syrups—compare prices (₹66–₹159/100ml), ingredients, and effectiveness for dry, wet, and chronic coughs. Find budget and premium picks, plus safety tips.",
+      title: "Best Cough Medicine in India: Price & Effectiveness Guide",
+      excerpt: "Compare India’s best cough medicines by price (₹66–₹159/100ml), ingredients and effectiveness for dry and wet cough, plus safe picks, dosing and when to see a doctor.",
       author: "Team MediBachat ",
       date: "October 13, 2025",
       readTime: "07 min read",
