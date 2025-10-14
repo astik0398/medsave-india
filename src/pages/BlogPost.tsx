@@ -4798,6 +4798,435 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
     Disclaimer: This article provides general information about over-the-counter throat lozenges and should not replace professional medical advice. Always consult qualified healthcare providers for persistent sore throat, underlying health conditions, or when treating children. Prices mentioned are based on current market analysis as of October 2024 and may vary by location and retailer.
   </p>
 </>
+    },
+
+
+                                                   "essential-general-medicines-list-prices-india": {
+      title: "Essential General Medicines List for Home: Prices & Uses",
+      author: "Team MediBachat",  
+      date: "October 15, 2025",
+      readTime: "10 min read",
+      metaDescription: "Discover 20+ essential general medicines every Indian home needs. Compare prices, uses, dosages & safety tips with our complete guide and medicine price comparison tool.",
+      category: "Guide",
+      image: "https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+      content: <>
+  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+    Essential General Medicines Every Indian Home Should Have: Complete Guide with Prices 2024
+  </h1>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Picture this: It's 2 AM, and your child spikes a sudden fever. Or perhaps you wake up with a pounding headache on a Sunday when pharmacies are closed. These scenarios happen in every household, yet most Indian families remain unprepared with basic medicines at home. With medical emergencies striking without warning and pharmacy markup prices during odd hours reaching 20-30% higher than regular rates, maintaining a well-stocked home medicine cabinet isn't just convenient—it's essential for your family's health and your wallet.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    This comprehensive guide covers everything you need to build a complete home medicine kit, from understanding general medicine categories to comparing prices across brands. Whether you're setting up your first home or upgrading your existing medicine stock, knowing what to keep, how much to spend, and when to use each medicine can save precious time and money when health issues arise.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Why Every Home Needs Essential Medicines
+  </h2>
+
+  <img src="https://images.unsplash.com/photo-1522335579687-9c718c5184d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1lZGljaW5lfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="medicine price comparison" />
+ <br />
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    India's out-of-pocket healthcare expenditure remains among the highest globally, with over 55 million people pushed into poverty annually due to medical costs. A significant portion of this burden comes from preventable emergency pharmacy visits for common ailments that could easily be managed at home with the right medicines. Having essential general medicines readily available offers multiple advantages: immediate relief for common symptoms like fever, pain, and indigestion; avoidance of inflated emergency pharmacy prices during odd hours; reduced anxiety knowing you're prepared for minor health issues; and most importantly, the ability to provide first response treatment while arranging proper medical consultation when needed.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Understanding General Medicine Categories
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Before diving into specific medicines, understanding basic categories helps you build a logical, comprehensive home pharmacy. <strong>Pain relievers and fever reducers</strong> (analgesics and antipyretics) form your first line of defense against common discomforts. <strong>Cold and cough medicines</strong> address respiratory symptoms that affect Indians frequently, especially during seasonal changes. <strong>Digestive health medicines</strong> tackle everything from acidity to diarrhea—extremely common in Indian households. <strong>Allergy medications</strong> provide relief from seasonal allergies, insect bites, and skin reactions. Finally, <strong>first aid essentials</strong> including antiseptics and wound care products complete your medical preparedness toolkit.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Pain Relief & Fever Management Medicines
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Paracetamol (Acetaminophen)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Brand Names:</strong> Crocin, Dolo 650, Calpol, Metacin
+    <br /><strong>Price Range:</strong> ₹1.59-5 per 500mg tablet
+    <br /><strong>Primary Uses:</strong> Fever reduction, headache, body pain, toothache, mild to moderate pain
+    <br /><strong>Adult Dosage:</strong> 500-650mg every 4-6 hours (maximum 4,000mg per day)
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Paracetamol remains India's most trusted fever reducer and pain reliever, offering gentle yet effective relief with minimal side effects when used correctly. Recent government price controls have made paracetamol incredibly affordable, with some brands now costing just ₹1.59 per tablet. The medicine works by blocking pain signals in the brain and reducing fever through the body's temperature regulation center. What makes paracetamol particularly valuable for home use is its safety profile—it's gentle on the stomach unlike NSAIDs, safe during pregnancy when needed, and suitable for children with appropriate dosing. However, never exceed the recommended daily dose as excessive paracetamol can cause serious liver damage.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Ibuprofen
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Brand Names:</strong> Brufen, Advil, Ibupara
+    <br /><strong>Price Range:</strong> ₹3-8 per 400mg tablet
+    <br /><strong>Primary Uses:</strong> Pain, inflammation, fever, menstrual cramps, dental pain, muscle aches
+    <br /><strong>Adult Dosage:</strong> 400mg every 4-6 hours (maximum 1,200mg per day for OTC use)
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Ibuprofen belongs to the NSAID (non-steroidal anti-inflammatory drug) family and provides stronger pain relief than paracetamol, especially for inflammatory conditions. It's particularly effective for dental pain, menstrual cramps, sports injuries, and fever that doesn't respond well to paracetamol alone. Many doctors recommend alternating between paracetamol and ibuprofen for stubborn fevers. However, ibuprofen should be taken with food to prevent stomach irritation, avoided by people with kidney problems or stomach ulcers, and not used during the third trimester of pregnancy.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Combination: Paracetamol + Ibuprofen
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Combiflam, Ibugesic Plus, Flexon
+    <br /><strong>Price Range:</strong> ₹1.59-6 per tablet (prices recently slashed by government)
+    <br /><strong>Uses:</strong> Moderate to severe pain, high fever, post-operative pain, severe headaches
+    <br />
+    These combination tablets provide dual-action relief, with paracetamol and ibuprofen working through different mechanisms for superior pain control. Recent NPPA price regulations have made these combinations remarkably affordable—from ₹6 per tablet down to just ₹1.59 in many cases. Keep these on hand for situations when single-ingredient painkillers aren't sufficient, but remember they count toward your daily limits for both medicines.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Cold, Cough & Respiratory Medicines
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Antihistamines (Cetirizine, Levocetirizine)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Brand Names:</strong> Alerid, Levorid, Zyrtec, Cetrizine
+    <br /><strong>Price Range:</strong> ₹2-6 per 10mg tablet
+    <br /><strong>Uses:</strong> Allergic rhinitis, hay fever, runny nose, sneezing, itching, hives, insect bite reactions
+    <br /><strong>Dosage:</strong> One 10mg tablet daily, preferably at bedtime
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Antihistamines block histamine release, stopping allergic reactions in their tracks. These second-generation antihistamines cause less drowsiness than older versions, making them suitable for daytime use. Keep these handy during seasonal changes when pollen allergies spike, or for unexpected allergic reactions to food, insect bites, or new products. Levocetirizine is slightly more potent than cetirizine and may work better for some people, though it costs marginally more.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Cough Syrups
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Recommended Options:</strong> Dabur Honitus (₹92-103 per 100ml), Ascoril LS (₹138-145 per 100ml), Benadryl CR (₹135-159 per 100ml)
+    <br />For detailed guidance on choosing the right cough medicine based on your symptoms, refer to our comprehensive <strong><a href="https://medibachat.in/blog/best-cough-medicine-india-price-comparison-guide" target="_blank" style={{color:'blue'}}>Best Cough Medicine Guide</a></strong> which covers dry vs wet cough treatments with complete medicine price comparison.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Decongestants & Nasal Sprays
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Otrivin nasal spray, Nasivion drops, Sinarest tablets
+    <br /><strong>Price Range:</strong> ₹80-150 for nasal sprays; ₹20-40 for oral tablets
+    <br /><strong>Uses:</strong> Blocked nose, nasal congestion, sinusitis symptoms
+    <br />
+    Nasal decongestant sprays provide immediate relief by shrinking swollen blood vessels in nasal passages. However, never use them for more than 3-5 consecutive days as they can cause rebound congestion. Oral decongestants like pseudoephedrine work more slowly but can be used longer. People with high blood pressure should consult doctors before using decongestants.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Digestive Health Essentials
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Antacids
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Brand Names:</strong> ENO fruit salt, Digene tablets/gel, Gelusil, Gaviscon
+    <br /><strong>Price Range:</strong> ₹10-25 per sachet or dose
+    <br /><strong>Uses:</strong> Acidity, heartburn, indigestion, gas, bloating
+    <br /><strong>How it Works:</strong> Neutralizes excess stomach acid for quick relief
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Antacids provide the fastest relief for acidity—often within minutes. ENO fruit salt dissolved in water works almost instantly for sudden acid reflux. Chewable tablets like Digene offer longer-lasting relief and are more convenient for on-the-go situations. Keep both liquid and tablet forms stocked. While generally safe, regular antacid use (daily for weeks) requires medical evaluation as it might mask serious conditions like ulcers.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Anti-Diarrheal Medicines
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Brand Names:</strong> Eldoper, Lomotil, Imodium
+    <br /><strong>Price Range:</strong> ₹5-12 per tablet
+    <br /><strong>Uses:</strong> Acute diarrhea, loose motions, traveler's diarrhea
+    <br /><strong>Important:</strong> Always maintain hydration with ORS (Oral Rehydration Solution)
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Anti-diarrheal medicines slow intestinal movement, giving your body time to absorb water and solidify stools. However, they treat symptoms, not causes. If diarrhea accompanies high fever, blood in stools, or severe abdominal pain, skip these medicines and seek immediate medical care—you might have a bacterial infection requiring antibiotics. Always keep ORS sachets alongside anti-diarrheal medicines, as dehydration poses the real danger in diarrhea cases.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Laxatives (for Constipation)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Dulcolax, Cremaffin, Isabgol (Psyllium husk)
+    <br /><strong>Price Range:</strong> ₹8-15 per dose for stimulant laxatives; ₹40-80 for 100g Isabgol
+    <br /><strong>Uses:</strong> Occasional constipation relief
+    <br />
+    Start with natural fiber supplements like Isabgol before moving to stimulant laxatives. Isabgol (psyllium husk) is gentle, safe for regular use, and works by adding bulk to stools. Stimulant laxatives like Dulcolax work faster but shouldn't be used routinely as they can cause dependency. Chronic constipation requires medical evaluation and dietary changes rather than continuous laxative use.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Allergy & Skin Care Medicines
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Topical Antihistamine Creams
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Caladryl lotion, Calamine lotion, Lacto Calamine
+    <br /><strong>Price Range:</strong> ₹50-120 per bottle
+    <br /><strong>Uses:</strong> Insect bites, minor rashes, itching, sunburn, prickly heat
+    <br />
+    These cooling lotions provide immediate itch relief and reduce skin inflammation. Calamine-based products are particularly safe for children and pregnant women. Keep a bottle handy during summer months when insect bites and heat rashes become common. The pink calamine lotion also has mild antiseptic properties that help prevent infection in minor scratches.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Antifungal Creams
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Candid cream, Clotrimazole cream, Luliconazole cream
+    <br /><strong>Price Range:</strong> ₹45-90 per 15g tube
+    <br /><strong>Uses:</strong> Athlete's foot, ringworm, jock itch, fungal infections
+    <br />
+    India's humid climate makes fungal skin infections extremely common, especially during monsoon. Keep an antifungal cream ready for quick treatment at the first sign of infection—usually circular, itchy patches. Apply twice daily for at least two weeks even after symptoms disappear to prevent recurrence. If the rash spreads rapidly or doesn't improve within a week, consult a dermatologist.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    First Aid & Wound Care Essentials
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Antiseptic Solutions
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Options:</strong> Dettol liquid, Savlon liquid, Betadine solution
+    <br /><strong>Price Range:</strong> ₹40-150 per bottle (various sizes)
+    <br /><strong>Uses:</strong> Wound cleaning, cut disinfection, surface sanitization
+    <br />
+    Antiseptics kill bacteria and prevent infection in cuts, scrapes, and wounds. Dettol and Savlon need dilution (usually 1:20 with water) before use. Betadine (povidone-iodine) is stronger and used undiluted for deeper cuts. Never pour undiluted Dettol directly on wounds—it can damage tissue. For everyday minor cuts, diluted antiseptic followed by a bandage provides adequate protection.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Bandages & Wound Dressings
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Essential Items:</strong> Adhesive bandages (various sizes), sterile gauze pads, cotton rolls, medical tape
+    <br /><strong>Budget:</strong> ₹100-200 for a complete basic kit
+    <br />
+    Stock multiple bandage sizes—small ones for minor cuts, larger ones for scrapes. Sterile gauze pads are crucial for wounds too large for regular bandages. Cotton wool helps apply antiseptics and clean wounds. Medical tape holds gauze in place. Consider waterproof bandages for fingers and areas that get wet frequently.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Burn Ointment
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Burnol cream, Silver sulfadiazine cream
+    <br /><strong>Price Range:</strong> ₹40-80 per tube
+    <br /><strong>Uses:</strong> First-degree burns, minor kitchen burns, scalds
+    <br />
+    Kitchen burns happen in every household. Burnol provides immediate cooling relief and prevents infection. For best results, cool the burn under running water for 10-15 minutes first, then apply burn cream. Never apply ice directly, butter, or toothpaste—these old home remedies can worsen burns. Second or third-degree burns (blistering, white/charred skin) require immediate medical attention, not home treatment.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Essential Supplements & Vitamins
+  </h2>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Vitamin C Supplements
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Limcee, Celin, Redoxon
+    <br /><strong>Price Range:</strong> ₹2-4 per 500mg tablet
+    <br /><strong>Uses:</strong> Immune support, wound healing, antioxidant protection, cold prevention
+    <br />
+    Vitamin C boosts immunity and helps fight infections. Many doctors recommend taking it during cold season or when you feel a cold coming on. While vitamin C won't cure colds, it may reduce duration and severity. The body doesn't store vitamin C, so regular intake matters more than high doses. Chewable orange-flavored tablets make it easy for children to take.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Vitamin D3 Supplements
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Brand Names:</strong> Calcirol, Uprise D3, Shelcal D3
+    <br /><strong>Price Range:</strong> ₹6-15 per capsule (60,000 IU weekly dose)
+    <br /><strong>Uses:</strong> Bone health, calcium absorption, immune function
+    <br />
+    Vitamin D deficiency affects 70-80% of Indians despite abundant sunshine, mainly due to indoor lifestyles and skin coverage. Deficiency causes fatigue, bone pain, frequent infections, and mood issues. Get tested before supplementing—most people need weekly 60,000 IU doses for 8-12 weeks initially, then maintenance doses. Vitamin D3 with calcium is especially important for women over 40 and elderly family members.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Complete Medicine Price Comparison Table
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    When building your home medicine kit, medicine price comparison across brands can save 30-50% on your overall costs. Here's a detailed look at prices across different pharmacies:
+  </p>
+  <div className="overflow-x-auto mb-6">
+    <table className="min-w-full border-collapse border border-gray-300 dark:border-gray-600">
+      <thead className="bg-gray-100 dark:bg-gray-800">
+        <tr>
+          <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Medicine Type</th>
+          <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Brand Examples</th>
+          <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Price Range</th>
+          <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Primary Use</th>
+          <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Prescription?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Paracetamol 500mg</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Crocin, Dolo, Calpol</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹1.59-5/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Fever, Pain</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr className="bg-gray-50 dark:bg-gray-700">
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Ibuprofen 400mg</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Brufen, Advil</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹3-8/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Pain, Inflammation</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Paracetamol+Ibuprofen</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Combiflam, Flexon</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹1.59-6/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Severe Pain, Fever</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr className="bg-gray-50 dark:bg-gray-700">
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Cetirizine 10mg</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Alerid, Zyrtec</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹2-6/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Allergies, Cold</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Antacid Tablets</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Digene, Gelusil</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹10-25/dose</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Acidity, Heartburn</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr className="bg-gray-50 dark:bg-gray-700">
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Anti-Diarrheal</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Eldoper, Lomotil</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹5-12/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Diarrhea</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Antifungal Cream</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Candid, Clotrimazole</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹45-90/tube</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Fungal Infections</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr className="bg-gray-50 dark:bg-gray-700">
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Antiseptic Liquid</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Dettol, Savlon</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹40-150/bottle</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Wound Cleaning</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Burn Ointment</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Burnol, Silver sulfadiazine</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹40-80/tube</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Minor Burns</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+        <tr className="bg-gray-50 dark:bg-gray-700">
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Vitamin C</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Limcee, Celin</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">₹2-4/tablet</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Immunity Boost</td>
+          <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    To medicine price compare across multiple online pharmacies instantly and find the lowest prices for all these essential medicines, visit <strong><a href="https://medibachat.in/" target="_blank" style={{color:'blue'}}>MediBachat</a></strong>. Our platform shows real-time pricing from 1mg, PharmEasy, Netmeds, Apollo Pharmacy, and Truemeds, helping you save 20-40% on your complete home medicine kit.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Building Your Home Medicine Kit on a Budget
+  </h2>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Priority Tier 1: Absolute Essentials (Under ₹500)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Start with these critical items: Paracetamol 500mg (10 tablets) - ₹20, Ibuprofen 400mg (10 tablets) - ₹50, Cetirizine 10mg (10 tablets) - ₹40, Antacid tablets/ENO - ₹80, Antiseptic liquid (100ml) - ₹50, Basic bandages and gauze - ₹100, ORS sachets (10 packs) - ₹60, Calamine lotion - ₹60. Total: ₹460. This basic kit handles the most common emergencies—fever, pain, allergies, acidity, minor wounds, and dehydration.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Priority Tier 2: Extended Coverage (₹500-1,000)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Add these to your basic kit: Anti-diarrheal (10 tablets) - ₹80, Cough syrup (100ml) - ₹100, Antifungal cream - ₹70, Burn ointment - ₹60, Nasal decongestant - ₹90, Vitamin C (30 tablets) - ₹80, Digital thermometer - ₹150. Total additional: ₹630 (combined total: ₹1,090). This mid-level kit covers most minor illnesses and injuries requiring home treatment.
+  </p>
+
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
+    Priority Tier 3: Complete Home Pharmacy (₹1,000-2,000)
+  </h3>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Complete your kit with: Combination pain reliever - ₹100, Laxative/Isabgol - ₹70, Multivitamin (30 tablets) - ₹300, Blood pressure monitor - ₹800, Additional wound care supplies - ₹150, Pain relief spray/gel - ₹120, Eye drops (for irritation) - ₹80. This comprehensive kit prepares you for nearly any minor health issue, reducing emergency pharmacy visits significantly.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Smart Buying Strategies for Maximum Savings
+  </h2>
+
+  <img src="https://plus.unsplash.com/premium_photo-1681966907271-1e350ec3bb95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="General Medicine" />
+<br />
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Generic vs Branded Choices:</strong> Generic medicines contain identical active ingredients at 30-70% lower prices. For example, generic paracetamol costs ₹1.59 per tablet versus ₹4-5 for branded versions. Since they're chemically identical and manufactured under the same quality standards, generics offer excellent value for money. Jan Aushadhi Kendras across India stock quality generics at unbeatable prices.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Bulk Buying Benefits:</strong> Purchase larger strip sizes (15-30 tablets instead of 10) to reduce per-unit costs. Many online pharmacies offer 15-25% discounts on orders above ₹500. Stock up during festive sales when pharmacies run promotional campaigns. However, always check expiry dates—buying 100 tablets that expire in 6 months makes no sense if you'll only use 20.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Online vs Offline Shopping:</strong> Online pharmacies typically offer 10-20% lower prices than physical stores, plus home delivery convenience. Platforms like 1mg, PharmEasy, and Netmeds run frequent discount campaigns. However, for immediate needs or single-medicine purchases, local pharmacies avoid delivery charges. The smart approach is to medicine price compare online through aggregators like MediBachat, identify the best deals, and order in bulk to offset delivery costs.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Storage & Safety Guidelines
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Proper Storage Conditions:</strong> Store medicines in a cool, dry place away from direct sunlight. Contrary to popular belief, bathrooms make terrible medicine storage locations due to heat and humidity. A bedroom closet or kitchen cabinet (away from the stove) works much better. Some medicines require refrigeration—always check packaging instructions.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Child Safety:</strong> Keep all medicines in a locked cabinet or on high shelves beyond children's reach. Colorful tablets and flavored syrups look like candy to young children. Never tell children medicine is candy to make them take it—this creates dangerous confusion. Ensure visitors' bags containing medicines stay out of reach.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Expiry Date Management:</strong> Check expiry dates monthly and rotate stock—use older medicines first. Most medicines remain effective 6-12 months past expiry for emergencies, but potency decreases. Expired antibiotics and liquid medicines lose effectiveness faster. Mark purchase dates on packages to track age.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Proper Disposal:</strong> Don't flush expired medicines down toilets or throw in regular trash where children or animals might access them. Many pharmacies accept expired medicines for proper disposal. Alternatively, mix medicines with coffee grounds or dirt in a sealed bag before disposing. Remove personal information from packaging before disposal.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    When General Medicines Aren't Enough: Red Flags
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    Seek immediate medical attention if you experience: High fever above 103°F (39.4°C) lasting more than 48 hours or recurring after initial improvement; severe abdominal pain, especially if localized to the lower right side; chest pain, pressure, or difficulty breathing; uncontrolled bleeding that doesn't stop with pressure after 10 minutes; signs of severe allergic reactions (throat swelling, difficulty breathing, widespread hives); persistent vomiting preventing fluid intake; severe headache with stiff neck, confusion, or vision changes; any symptom that worsens despite home treatment. Home medicines manage common, minor ailments—they're not substitutes for professional medical care when serious conditions arise.
+  </p>
+
+  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+    Legal & Safety Considerations
+  </h2>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>OTC vs Prescription Medicines:</strong> Over-the-counter (OTC) medicines can be purchased without prescriptions and are generally safe for self-medication when used as directed. Prescription medicines require doctor authorization because they carry higher risks, need professional diagnosis, or have potential for misuse. Never share prescription medicines, even if someone has "the same symptoms."
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    <strong>Antibiotic Misuse Dangers:</strong> Antibiotics require prescriptions in India for good reason. Taking them without proper diagnosis leads to antibiotic resistance, making future infections harder to treat. Incomplete antibiotic courses (stopping when you feel better) breed resistant bacteria. Never use leftover antibiotics from previous illnesses or share them with family members.
+  </p>
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+    <strong>Reading Medicine Labels:</strong> Always read labels completely before first use. Check active ingredients (especially important if taking multiple medicines), dosage instructions, contraindications (who shouldn't take it), potential side effects, and storage requirements. When in doubt, consult a pharmacist—they're trained healthcare professionals available to answer questions about OTC medicines.
+  </p>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+    <strong>Conclusion:</strong> Building a well-stocked home medicine cabinet with essential general medicines doesn't require a massive investment—a basic kit costs under ₹500, a comprehensive one around ₹1,500-2,000. Smart medicine price comparison across online and offline pharmacies can reduce these costs further by 20-40%. The peace of mind knowing you can handle common health issues immediately, avoid inflated emergency pharmacy prices, and provide quick relief to family members makes this small investment invaluable. Review your medicine stock quarterly, check expiry dates, replace used items, and adjust based on your family's specific needs. Remember that home medicines complement, not replace, professional medical care—know when to self-treat and when to seek medical help. By maintaining a sensible medicine cabinet and using medicines responsibly, you're taking an important step toward better health management and significant healthcare savings for your family.
+  </p>
+
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+    So that was it for this post, hope you got your desired answer. Also, if you want to save regularly and big on your medicine then follow our guid <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/blog/compare-medicine-prices-online-india"><b>How to Compare Medicine Prices Online?</b></a> on how you can get medicine at cheapest price across all the online pharmacies.
+  </p>
+
+  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-6 italic">
+    Disclaimer: This article provides general information about over-the-counter medicines and should not replace professional medical advice. Always read medicine labels carefully, follow dosing instructions, and consult qualified healthcare providers for persistent symptoms, underlying health conditions, or when treating children and elderly family members. Prices mentioned are based on current market analysis as of October 2024 and may vary by location, retailer, and time. Medicine availability and pricing are subject to change based on government regulations and pharmacy stock.
+  </p>
+</>
     }
   };
 

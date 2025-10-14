@@ -218,6 +218,17 @@ const BlogSection = () => {
       readTime: "10 min read",
       category: "Guide",
       image: "https://t3.ftcdn.net/jpg/09/27/53/74/360_F_927537428_CHA1F70qZhjkQGhTdhHVlao1xaMvsW6O.jpg"
+    },
+
+                                    {
+      id: "essential-general-medicines-list-prices-india",
+      title: "Essential General Medicines List for Home: Prices & Uses",
+      excerpt: "Discover 20+ essential general medicines every Indian home needs. Compare prices, uses, dosages & safety tips with our complete guide and medicine price comparison tool.",
+      author: "Team MediBachat ",
+      date: "October 15, 2025",
+      readTime: "10 min read",
+      category: "Guide",
+      image: "https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
     }
   ];
 
