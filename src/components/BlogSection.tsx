@@ -207,6 +207,17 @@ const BlogSection = () => {
       readTime: "07 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1635166304271-04931640a450?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291Z2glMjBzeXJ1cHxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=600"
+    },
+
+                                 {
+      id: "strepsils-price-alternatives-throat-lozenges-india",
+      title: "Strepsils Price & Alternatives: Throat Lozenges Guide",
+      excerpt: "Compare Strepsils, Cofsils, Vicks & Halls lozenges by price and effectiveness. Find best throat relief options from ₹1.63-₹27 per lozenge with buying tips.",
+      author: "Team MediBachat ",
+      date: "October 14, 2025",
+      readTime: "10 min read",
+      category: "Guide",
+      image: "https://t3.ftcdn.net/jpg/09/27/53/74/360_F_927537428_CHA1F70qZhjkQGhTdhHVlao1xaMvsW6O.jpg"
     }
   ];
 
