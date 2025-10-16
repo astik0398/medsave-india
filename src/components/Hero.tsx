@@ -68,10 +68,10 @@ const [userLoggedIn, setUserLoggedIn] = useState(false);
     e.preventDefault();
     if (!searchQuery.trim()) return;
 
-      if (!canCompare) {
-    setIsAuthOpen(true);
-    return;
-  }
+      if (!userLoggedIn && !canCompare) {
+  setIsAuthOpen(true);
+  return;
+}
 
      // Insert into all_qwery (always log the search query + date)
   const { error: logError } = await supabase
