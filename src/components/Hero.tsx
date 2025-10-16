@@ -4,12 +4,43 @@ import { Input } from "@/components/ui/input";
 import { Search, TrendingDown, Shield, Clock } from "lucide-react";
 import heroImage from "@/assets/medicine price comparison.png";
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
+import useVisitorLimit from "../hooks/useVisitorLimit";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Label } from "@/components/ui/label";
+import { toast } from "@/hooks/use-toast";
 
-const Hero = () => {
+interface HeroProps {
+  setUser: React.Dispatch<React.SetStateAction<{ full_name: string; email: string } | null>>;
+}
+
+const Hero = ({ setUser }: HeroProps) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+
+  // signup management
+const [signupName, setSignupName] = useState("");
+const [signupEmail, setSignupEmail] = useState("");
+const [signupPassword, setSignupPassword] = useState("");
+const [authLoading, setAuthLoading] = useState(false);
+const [authMessage, setAuthMessage] = useState("");
+
+// login
+const [loginEmail, setLoginEmail] = useState("");
+const [loginPassword, setLoginPassword] = useState("");
+const [userLoggedIn, setUserLoggedIn] = useState(false);
+
+  const { visitorId, compareCount, canCompare, resetCompareCount, incrementCompareCount, MAX_FREE_COMPARISONS } = useVisitorLimit();
+  const [message, setMessage] = useState(`Only ${compareCount} search(es) left! Unlock unlimited searches by logging in`);
 
   const currentDate = new Date();
   const formattedDate = `${String(currentDate.getDate()).padStart(
@@ -36,6 +67,11 @@ const Hero = () => {
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
+
+      if (!canCompare) {
+    setIsAuthOpen(true);
+    return;
+  }
 
      // Insert into all_qwery (always log the search query + date)
   const { error: logError } = await supabase
@@ -128,6 +164,12 @@ const pricesArray = validEntries.map(([platform, data]) => {
       document
         .getElementById("price-comparison")
         ?.scrollIntoView({ behavior: "smooth" });
+
+      incrementCompareCount();
+            const remaining = MAX_FREE_COMPARISONS - (compareCount + 1);
+
+      setMessage(`${Math.max(remaining, 0)} search(es) left! Unlock unlimited searches by logging in`);
+
     } catch (err) {
       console.error(err);
       setError("Something went wrong while fetching medicine data.");
@@ -135,6 +177,23 @@ const pricesArray = validEntries.map(([platform, data]) => {
       setLoading(false);
     }
   };
+
+    useEffect(() => {
+
+        if (userLoggedIn) {
+    setMessage(""); // Clear message for logged-in users
+    return;
+  }
+    
+        const remaining = MAX_FREE_COMPARISONS - compareCount;
+
+        if (remaining <= 0) {
+    setMessage(`No searches left! Unlock unlimited searches by logging in`);
+  } else {
+    setMessage(`Only ${remaining} searches left! Unlock unlimited searches by logging in`);
+  }
+
+  }, [compareCount, MAX_FREE_COMPARISONS, userLoggedIn]);
 
   useEffect(() => {
     const handleFocusEvent = () => {
@@ -168,6 +227,117 @@ const pricesArray = validEntries.map(([platform, data]) => {
   // ✅ Correct cleanup: explicitly returns void
   return () => {
     document.head.removeChild(script);
+  };
+}, []);
+
+const handleSignUp = async () => {
+  setAuthLoading(true);
+  setAuthMessage("");
+
+  if (!signupName || !signupEmail || !signupPassword) {
+    setAuthMessage("Please fill in all fields.");
+    setAuthLoading(false);
+    return;
+  }
+
+  try {
+    const { data, error } = await supabase.auth.signUp({
+      email: signupEmail,
+      password: signupPassword,
+      options: {
+        data: { full_name: signupName },
+        emailRedirectTo: window.location.origin,
+      },
+    });
+
+    if (error) throw error;
+
+    console.log('data.user---', data.user);
+    
+    if (data.user) {
+  await supabase.from("user_profiles").insert([
+    {
+      user_id: data.user.id,
+      full_name: signupName,
+      email: signupEmail,
+      created_at: new Date(),
+    },
+  ]);
+}
+
+     toast({
+            title: "Sign-up successful!",
+            description: "Sign-up successful! Please proceed to login",
+          });
+
+  } catch (error) {
+    console.error("Signup error:", error);
+    setAuthMessage(error.message || "Error signing up. Please try again.");
+  } finally {
+    setAuthLoading(false);
+  }
+};
+
+const handleLogin = async () => {
+  if (!loginEmail || !loginPassword) {
+    alert("Please enter email and password");
+    return;
+  }
+
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email: loginEmail,
+    password: loginPassword,
+  });
+
+  if (error) {
+    console.error("Login error:", error.message);
+    toast({
+        title: "Login Failed!",
+        description: "Invalid Credentials! Check your email or password",
+      });
+  } else {
+     toast({
+        title: "Login Successful!",
+        description: "You have logged in successfully!",
+      });
+
+       // Set the logged-in user state for Header
+    if (data.user) {
+      const { email, user_metadata } = data.user;
+      setUser({ full_name: user_metadata.full_name || "", email });
+    }
+
+    setIsAuthOpen(false);
+
+    // ✅ Mark user as logged in and reset visitor count
+    setUserLoggedIn(true);
+    resetCompareCount(); // Optional: clears local visitor count
+  }
+};
+
+useEffect(() => {
+  const getSession = async () => {
+    const { data } = await supabase.auth.getSession();
+    if (data.session) {
+      const user = data.session.user;
+      setUser({ full_name: user.user_metadata.full_name || "", email: user.email });
+      setUserLoggedIn(true); // mark as logged in
+      resetCompareCount(); // optional: reset visitor limit
+    }
+  };
+
+  getSession();
+}, []);
+
+useEffect(() => {
+  const handleOpenLoginModal = () => {
+    setIsAuthOpen(true);
+  };
+
+  window.addEventListener("openLoginModal", handleOpenLoginModal);
+
+  return () => {
+    window.removeEventListener("openLoginModal", handleOpenLoginModal);
   };
 }, []);
 
@@ -232,8 +402,19 @@ const pricesArray = validEntries.map(([platform, data]) => {
               </Button>
             </form>
 
+           <p
+                        style={{ marginTop: "15px" }}
+
+  className={`animate-bounce font-semibold text-[13px] ${
+   ( MAX_FREE_COMPARISONS - compareCount) <= 1 ? "text-red-500" : "text-green-400"
+  }`}
+>
+  {message}
+</p>
+
+
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
               <div className="flex items-center space-x-3">
                 <div className="p-2 bg-primary-glow rounded-lg dark:bg-[#0A54B6]">
                   <TrendingDown className="h-5 w-5 text-primary" />
@@ -241,7 +422,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                 <div>
                   <h3 className="font-semibold text-foreground">Best Prices</h3>
                   <p className="text-sm text-muted-foreground">
-                    Compare medicine across platforms
+                    Compare medicine Now!
                   </p>
                 </div>
               </div>
@@ -255,7 +436,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                     Verified Sources
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Trusted e-pharmacies for discounts
+                    Trusted e-pharmacies
                   </p>
                 </div>
               </div>
@@ -267,7 +448,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
                 <div>
                   <h3 className="font-semibold text-foreground">Real-time Updates</h3>
                   <p className="text-sm text-muted-foreground">
-                    Live drug cost comparisons
+                    Drug cost comparisons
                   </p>
                 </div>
               </div>
@@ -290,6 +471,72 @@ const pricesArray = validEntries.map(([platform, data]) => {
           </div>
         </div>
       </div>
+
+       <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Welcome to MediPrice Spy</DialogTitle>
+            <DialogDescription>
+              Sign in to your account or create a new one to start comparing medicine prices.
+            </DialogDescription>
+          </DialogHeader>
+          
+          <Tabs defaultValue="signin" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="signin">Sign In</TabsTrigger>
+              <TabsTrigger value="signup">Sign Up</TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="signin" className="space-y-4 mt-4">
+              <div className="space-y-2">
+                <Label htmlFor="signin-email">Email</Label>
+                <Input id="signin-email" type="email" placeholder="Enter your email" 
+                 value={loginEmail}
+      onChange={(e) => setLoginEmail(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="signin-password">Password</Label>
+                <Input id="signin-password" type="password" placeholder="Enter your password" 
+                value={loginPassword}
+      onChange={(e) => setLoginPassword(e.target.value)}
+
+                />
+              </div>
+              <Button className="w-full" variant="hero" onClick={handleLogin}>Sign In</Button>
+            </TabsContent>
+            
+            <TabsContent value="signup" className="space-y-4 mt-4">
+              <div className="space-y-2">
+                <Label htmlFor="signup-name">Full Name</Label>
+                <Input id="signup-name" type="text" placeholder="Enter your full name" 
+                value={signupName}
+    onChange={(e) => setSignupName(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="signup-email">Email</Label>
+                <Input id="signup-email" type="email" placeholder="Enter your email" 
+                 value={signupEmail}
+    onChange={(e) => setSignupEmail(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="signup-password">Password</Label>
+                <Input id="signup-password" type="password" placeholder="Create a password" 
+                    value={signupPassword}
+                    onChange={(e) => setSignupPassword(e.target.value)}
+
+                />
+              </div>
+              <Button 
+               onClick={handleSignUp}
+  disabled={authLoading}
+              className="w-full" variant="hero">  {authLoading ? "Signing Up..." : "Sign Up"}</Button>
+            </TabsContent>
+          </Tabs>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

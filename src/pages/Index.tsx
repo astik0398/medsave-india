@@ -11,12 +11,16 @@ import Footer from "@/components/Footer";
 import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
+import { useState } from "react";
 
 const Index = () => {
+
+    const [user, setUser] = useState<{ full_name: string; email: string } | null>(null);
+
   return (
     <div className="min-h-screen">
-      <Header />
-      <Hero />
+      <Header user={user} />
+      <Hero setUser={setUser}  />
       <PriceComparison />
             {/* <FlashDeals /> */}
       <CouponsSection />

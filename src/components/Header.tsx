@@ -13,10 +13,26 @@ import {
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/medi bachat dark mode (1).png";
 import logoLight from "@/assets/medibachat all images (3).png"
+import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 
 import { useTheme } from "next-themes";
 
-const Header = () => {
+interface HeaderProps {
+  user?: { full_name: string; email: string } | null;
+}
+
+const Header = ({ user }: HeaderProps) => {
+
+    const getInitials = (fullName: string) => {
+
+      console.log('fullName--', fullName);
+      
+    if (!fullName) return "";
+    const names = fullName.split(" ");
+    const initials = names.map(n => n[0].toUpperCase()).slice(0, 2);
+    return initials.join("");
+  };
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme } = useTheme(); // get current theme
 
@@ -60,28 +76,52 @@ const Header = () => {
         {/* Desktop Controls */}
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
-          <Button
-            variant="hero"
-            size="sm"
-            className="dark:text-white"
-            onClick={() => {
-              const target = document.getElementById("home");
-              if (target) {
-                target.scrollIntoView({ behavior: "smooth" });
-                // Wait ~600ms to allow scroll animation to complete
-                setTimeout(() => {
-                  window.dispatchEvent(new Event("focusSearchInput"));
-                }, 600);
-              }
-            }}
-          >
-            Get Started
-          </Button>
+          {user ? (
+    <>
+      {/* Profile Icon */}
+      <div style={{marginRight:'10px', boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold">
+        {getInitials(user.full_name)}
+      </div>
+
+      {/* Logout Button */}
+      <Button
+        variant="hero"
+        size="sm"
+        className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white"
+
+        onClick={async () => {
+          await supabase.auth.signOut(); // Logout from Supabase
+          window.location.reload(); // refresh to reset state
+        }}
+      >
+        Log Out
+      </Button>
+    </>
+  ) : (
+    /* Login Button */
+    <Button
+      variant="hero"
+      size="sm"
+      className="dark:text-white pl-4 pr-4"
+      onClick={() => {
+        // Trigger your login modal
+        window.dispatchEvent(new Event("openLoginModal"));
+      }}
+    >
+      Log In
+    </Button>
+  )}
+
         </div>
 
         {/* Mobile Controls */}
         <div className="md:hidden flex items-center space-x-2">
           <ThemeToggle />
+
+          {user && 
+      <div style={{marginRight:'10px', boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold">
+        {getInitials(user.full_name)}
+      </div>}
           <button
             className="p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -112,23 +152,36 @@ const Header = () => {
               </a>
             ))}
             <div className="pt-4">
-              <Button
-                variant="hero"
-                size="sm"
-                className="w-full dark:text-white"
-                onClick={() => {
-                  const target = document.getElementById("home");
-                  if (target) {
-                    target.scrollIntoView({ behavior: "smooth" });
-                    // Wait ~600ms to allow scroll animation to complete
-                    setTimeout(() => {
-                      window.dispatchEvent(new Event("focusSearchInput"));
-                    }, 600);
-                  }
-                }}
-              >
-                Get Started
-              </Button>
+              {user ? (
+    <>
+      {/* Logout Button */}
+      <Button
+        variant="hero"
+        size="sm"
+        className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white w-full"
+
+        onClick={async () => {
+          await supabase.auth.signOut(); // Logout from Supabase
+          window.location.reload(); // refresh to reset state
+        }}
+      >
+        Log Out
+      </Button>
+    </>
+  ) : (
+    /* Login Button */
+    <Button
+      variant="hero"
+      size="sm"
+      className="dark:text-white w-full"
+      onClick={() => {
+        // Trigger your login modal
+        window.dispatchEvent(new Event("openLoginModal"));
+      }}
+    >
+      Log In
+    </Button>
+  )}
             </div>
           </nav>
         </div>
