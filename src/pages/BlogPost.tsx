@@ -5279,25 +5279,6 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.metaDescription} />
         <meta name="twitter:image" content={post.image} />
-
-          {/* Simplified JSON-LD Schema */} 
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": post.title,
-      "description": post.metaDescription,
-      "image": post.image,
-      "author": {
-        "@type": "Person",
-        "name": 'Team Medibachat'
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "MediBachat"
-      }
-    })}
-  </script>
       </Helmet>
 
       <Header />
