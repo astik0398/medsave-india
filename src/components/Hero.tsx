@@ -311,7 +311,6 @@ const handleLogin = async () => {
 
     // ✅ Mark user as logged in and reset visitor count
     setUserLoggedIn(true);
-    resetCompareCount(); // Optional: clears local visitor count
   }
 };
 
@@ -322,7 +321,6 @@ useEffect(() => {
       const user = data.session.user;
       setUser({ full_name: user.user_metadata.full_name || "", email: user.email });
       setUserLoggedIn(true); // mark as logged in
-      resetCompareCount(); // optional: reset visitor limit
     }
   };
 
