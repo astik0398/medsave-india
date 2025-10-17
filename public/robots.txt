@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.medibachat.in/sitemap.xml
+Sitemap: https://medibachat.in/sitemap.xml

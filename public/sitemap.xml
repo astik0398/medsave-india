@@ -7,24 +7,11 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.medibachat.in/</loc>
-  <lastmod>2025-08-09T20:47:58+00:00</lastmod>
-</url>
-
- <!-- Individual blog posts -->
   <url>
-    <loc>https://www.medibachat.in/blog/top-online-doctor-consultation-apps-india-2025</loc>
-    <lastmod>2025-10-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.medibachat.in/blog/telemedicine-india-online-consultations</loc>
-    <lastmod>2025-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://medibachat.in/</loc>
+    <lastmod>2025-08-09T20:47:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
 </urlset>
