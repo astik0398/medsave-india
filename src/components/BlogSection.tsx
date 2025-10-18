@@ -229,6 +229,17 @@ const BlogSection = () => {
       readTime: "10 min read",
       category: "Guide",
       image: "https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+    },
+
+                                        {
+      id: "how-much-discount-medicine-online-india",
+      title: "How Much Discount on Medicine You Can Expect In 2025?",
+      excerpt: "How much discount on medicine can you get? Real breakdown: 10-15% basic discounts, 25-35% with smart shopping, 40-60% with generics. See actual savings.",
+      author: "Team MediBachat ",
+      date: "October 18, 2025",
+      readTime: "12 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaWNpbmV8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=600"
     }
   ];
 
