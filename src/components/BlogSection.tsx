@@ -240,6 +240,17 @@ const BlogSection = () => {
       readTime: "12 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaWNpbmV8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=600"
+    },
+
+                                          {
+      id: "pet-medicine-online-price-comparison-india",
+      title: "Pet Medicine Online India: Complete Guide with Price Comparison 2025",
+      excerpt: "Buy pet medicine online in India: Compare prices across top platforms, find dog & cat medicines, save 20-40% with our guide. Safe online pet pharmacy options.",
+      author: "Team MediBachat ",
+      date: "October 19, 2025",
+      readTime: "8 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1632236542159-809925d85fc0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     }
   ];
 
