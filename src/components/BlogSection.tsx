@@ -263,6 +263,17 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.pexels.com/photos/5910953/pexels-photo-5910953.jpeg"
     },
+
+                                              {
+      id: "home-remedies-for-dry-and-frizzy-hair",
+      title: "Home Remedies for Dry and Frizzy Hair: Solutions That Actually Work",
+      excerpt: "Discover simple home remedies for dry and frizzy hair: coconut oil treatments, avocado masks, ACV rinses & more. Plus top shampoo & serum tips for smooth locks.",
+      author: "Team MediBachat ",
+      date: "October 22, 2025",
+      readTime: "10 min read",
+      category: "Guide",
+      image: "https://images.pexels.com/photos/34352584/pexels-photo-34352584.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
