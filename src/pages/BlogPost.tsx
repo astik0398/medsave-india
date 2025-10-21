@@ -5681,7 +5681,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    With over 10,000 Jan Aushadhi stores now operational nationwide[223], these pharmacies have become a lifeline for millions of Indians struggling with rising healthcare costs. Whether you're a patient looking to save money or an entrepreneur considering this as a business opportunity, understanding what Jan Aushadhi is and how it works matters more than ever.
+    With over 10,000 Jan Aushadhi stores now operational nationwide, these pharmacies have become a lifeline for millions of Indians struggling with rising healthcare costs. Whether you're a patient looking to save money or an entrepreneur considering this as a business opportunity, understanding what Jan Aushadhi is and how it works matters more than ever.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
@@ -5692,7 +5692,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 
 <br />
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Jan Aushadhi translates to "People's Medicine," and that name captures its purpose perfectly. Launched in 2008 by India's Department of Pharmaceuticals, the Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP) aims to make quality generic medicines accessible and affordable to every Indian, especially those in rural and semi-rural areas where healthcare costs hit hardest[223].
+    Jan Aushadhi translates to "People's Medicine," and that name captures its purpose perfectly. Launched in 2008 by India's Department of Pharmaceuticals, the Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP) aims to make quality generic medicines accessible and affordable to every Indian, especially those in rural and semi-rural areas where healthcare costs hit hardest.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
@@ -5704,11 +5704,11 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h2>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Let's get specific about pricing because that's where Jan Aushadhi truly shines. A typical paracetamol 500mg strip costs ₹7 at a Jan Aushadhi store versus ₹30-40 for branded versions[218]. Blood pressure medicine that normally costs ₹200 sells for ₹40-60. Diabetes medications see similar dramatic savings. For someone managing chronic conditions requiring daily medications, these price differences translate to annual savings of ₹15,000-40,000.
+    Let's get specific about pricing because that's where Jan Aushadhi truly shines. A typical paracetamol 500mg strip costs ₹7 at a Jan Aushadhi store versus ₹30-40 for branded versions. Blood pressure medicine that normally costs ₹200 sells for ₹40-60. Diabetes medications see similar dramatic savings. For someone managing chronic conditions requiring daily medications, these price differences translate to annual savings of ₹15,000-40,000.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Currently, Jan Aushadhi kendras stock over 1,600 different medicines covering almost all therapeutic categories—from common pain relievers to specialized cardiac drugs, diabetes medications, antibiotics, and even surgical items[218][221]. Popular products include the Jan Aushadhi multivitamin range, Jan Aushadhi protein powder for nutritional supplementation, and comprehensive diabetes care products—all at unbeatable prices.
+    Currently, Jan Aushadhi kendras stock over 1,600 different medicines covering almost all therapeutic categories—from common pain relievers to specialized cardiac drugs, diabetes medications, antibiotics, and even surgical items. Popular products include the Jan Aushadhi multivitamin range, Jan Aushadhi protein powder for nutritional supplementation, and comprehensive diabetes care products—all at unbeatable prices.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
@@ -5716,11 +5716,11 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h2>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    If you're searching for a "Jan Aushadhi kendra near me," the government has made it remarkably easy. The official Jan Aushadhi Sugam mobile app (available on Google Play) helps you locate the nearest Jan Aushadhi store with just a few taps[222][229]. The app shows store locations, contact details, and even allows you to search which specific medicines each store stocks before visiting.
+    If you're searching for a "Jan Aushadhi kendra near me," the government has made it remarkably easy. The official Jan Aushadhi Sugam mobile app (available on Google Play) helps you locate the nearest Jan Aushadhi store with just a few taps. The app shows store locations, contact details, and even allows you to search which specific medicines each store stocks before visiting.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    For those preferring online shopping, several platforms now offer Jan Aushadhi online order services. Websites like janaushadhivitran.com provide home delivery of Jan Aushadhi products across India, with free delivery on orders above ₹499[219]. This solves the accessibility issue for people in remote areas without nearby Jan Aushadhi stores.
+    For those preferring online shopping, several platforms now offer Jan Aushadhi online order services. Websites like janaushadhivitran.com provide home delivery of Jan Aushadhi products across India, with free delivery on orders above ₹499. This solves the accessibility issue for people in remote areas without nearby Jan Aushadhi stores.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
@@ -5736,7 +5736,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h3>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Almost anyone can apply—individual entrepreneurs, partnership firms, NGOs, trusts, charitable hospitals, or even government agencies[220]. You don't personally need to be a pharmacist, but you must employ someone with either a B.Pharm or D.Pharm qualification, as required by Indian drug regulations for any medical store. Doctors, nurses, and paramedical professionals can absolutely open Jan Aushadhi stores, though they still need to employ a qualified pharmacist[220].
+    Almost anyone can apply—individual entrepreneurs, partnership firms, NGOs, trusts, charitable hospitals, or even government agencies. You don't personally need to be a pharmacist, but you must employ someone with either a B.Pharm or D.Pharm qualification, as required by Indian drug regulations for any medical store. Doctors, nurses, and paramedical professionals can absolutely open Jan Aushadhi stores, though they still need to employ a qualified pharmacist.
   </p>
 
   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
@@ -5744,7 +5744,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h3>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    You need a minimum of 120 square feet of space—that's it[220]. This can be owned, rented, or leased property; you just need proper documentation (rental agreement or lease deed plus an NOC from the property owner). The space should be in a location with good footfall—near hospitals, clinics, residential areas, or main markets work best.
+    You need a minimum of 120 square feet of space—that's it. This can be owned, rented, or leased property; you just need proper documentation (rental agreement or lease deed plus an NOC from the property owner). The space should be in a location with good footfall—near hospitals, clinics, residential areas, or main markets work best.
   </p>
 
   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
@@ -5755,7 +5755,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   <br />
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-    **Step 1:** Visit the official PMBI website at janaushadhi.gov.in and click on "Apply for Kendra"[223].
+    **Step 1:** Visit the official PMBI website at janaushadhi.gov.in and click on "Apply for Kendra".
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
@@ -5763,11 +5763,11 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-    **Step 3:** Pay the non-refundable application fee of ₹5,000 through online transfer (NEFT/RTGS/UPI) to the PMBI virtual account. Important: Women entrepreneurs, Divyaang individuals, SC/ST applicants, and those opening stores in aspirational districts are exempt from this fee[220].
+    **Step 3:** Pay the non-refundable application fee of ₹5,000 through online transfer (NEFT/RTGS/UPI) to the PMBI virtual account. Important: Women entrepreneurs, Divyaang individuals, SC/ST applicants, and those opening stores in aspirational districts are exempt from this fee.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-    **Step 4:** Upload required documents—Aadhaar card, PAN card, 6-month bank statement, pharmacist registration certificate, affidavits (templates provided on the website), and property documents. GST and ITR are optional for individual applicants[220].
+    **Step 4:** Upload required documents—Aadhaar card, PAN card, 6-month bank statement, pharmacist registration certificate, affidavits (templates provided on the website), and property documents. GST and ITR are optional for individual applicants.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
@@ -5779,11 +5779,11 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h2>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Here's what makes opening a Jan Aushadhi kendra financially attractive. The government provides a ₹5 lakh incentive—though it's not a lump sum payment. Instead, you receive 15% of your monthly purchases (from authorized distributors or PMBI) as direct bank transfers until you reach the total ₹5 lakh cap[220]. If you purchase ₹1 lakh worth of medicines monthly, you get ₹15,000 deposited into your account. The maximum monthly incentive caps at ₹15,000, so even if you buy ₹5 lakh worth in one month, you still receive only ₹15,000 that month.
+    Here's what makes opening a Jan Aushadhi kendra financially attractive. The government provides a ₹5 lakh incentive—though it's not a lump sum payment. Instead, you receive 15% of your monthly purchases (from authorized distributors or PMBI) as direct bank transfers until you reach the total ₹5 lakh cap. If you purchase ₹1 lakh worth of medicines monthly, you get ₹15,000 deposited into your account. The maximum monthly incentive caps at ₹15,000, so even if you buy ₹5 lakh worth in one month, you still receive only ₹15,000 that month.
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Special categories receive additional benefits. Women entrepreneurs, Divyaang individuals, SC/ST applicants, and stores in aspirational districts (backward areas identified by NITI Aayog) or Himalayan/North-Eastern states/island territories get an extra ₹2 lakh incentive[220]. Of this, ₹1.5 lakh reimburses furniture and interior costs (submit bills), and ₹50,000 covers computer and printer expenses (again, on bill submission).
+    Special categories receive additional benefits. Women entrepreneurs, Divyaang individuals, SC/ST applicants, and stores in aspirational districts (backward areas identified by NITI Aayog) or Himalayan/North-Eastern states/island territories get an extra ₹2 lakh incentive. Of this, ₹1.5 lakh reimburses furniture and interior costs (submit bills), and ₹50,000 covers computer and printer expenses (again, on bill submission).
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
@@ -5803,7 +5803,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h2>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Beyond regular medicines, Jan Aushadhi has expanded into wellness products. The Jan Aushadhi multivitamin tablets (₹16 for 10 tablets versus ₹60-80 for branded equivalents) sell incredibly well[218]. Jan Aushadhi protein powder competes with expensive brands at a fraction of the cost. Surgical items, sanitary napkins (₹1 per pad versus ₹5-8 for branded options), and over-the-counter medicines form significant revenue streams alongside prescription drugs.
+    Beyond regular medicines, Jan Aushadhi has expanded into wellness products. The Jan Aushadhi multivitamin tablets (₹16 for 10 tablets versus ₹60-80 for branded equivalents) sell incredibly well. Jan Aushadhi protein powder competes with expensive brands at a fraction of the cost. Surgical items, sanitary napkins (₹1 per pad versus ₹5-8 for branded options), and over-the-counter medicines form significant revenue streams alongside prescription drugs.
   </p>
 
   <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
