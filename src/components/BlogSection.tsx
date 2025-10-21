@@ -251,7 +251,18 @@ const BlogSection = () => {
       readTime: "8 min read",
       category: "Guide",
       image: "https://images.unsplash.com/photo-1632236542159-809925d85fc0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-    }
+    },
+
+                                          {
+      id: "what-is-jan-aushadhi-kendra-how-to-open",
+      title: "What is Jan Aushadhi Kendra? How to Open Jan Aushadhi Kendra in 2025?",
+      excerpt: "Discover what Jan Aushadhi Kendra is, find a Jan Aushadhi store near me, and learn how to open one in 2025. Compare multivitamin, protein offerings & online order options",
+      author: "Team MediBachat ",
+      date: "October 21, 2025",
+      readTime: "11 min read",
+      category: "Guide",
+      image: "https://images.pexels.com/photos/5910953/pexels-photo-5910953.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
