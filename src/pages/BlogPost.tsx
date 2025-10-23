@@ -5430,10 +5430,10 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
 </>
     },
 
-                                                        "pet-medicine-online-price-comparison-india": {
-      title: "Pet Medicine Online India: A Complete Guide",
+                                                        "pet-medicine-online-guide-india": {
+      title: "Pet Medicine Online India: Complete Buying Guide 2025",
       author: "Team MediBachat",  
-      date: "October 19, 2025",
+      date: "October 23, 2025",
       readTime: "8 min read",
       metaDescription: "Buy pet medicine online in India: Compare prices across top platforms, find dog & cat medicines, save 20-40% with our guide. Safe online pet pharmacy options.",
       category: "Guide",
