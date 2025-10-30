@@ -274,6 +274,17 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.pexels.com/photos/34352584/pexels-photo-34352584.jpeg"
     },
+
+                                                  {
+      id: "vitamin-d-deficiency-in-india-causes",
+      title: "Why 70% of Indians Have Vitamin D Deficiency Despite Living in a Sunny Country?",
+      excerpt: "Why 70% Indians have vitamin D deficiency despite sunshine. Learn about vitamin D test cost, injection price, vegetarian food sources & treatment options in India.",
+      author: "Team MediBachat ",
+      date: "October 30, 2025",
+      readTime: "7 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1581182800629-7d90925ad072?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dml0YW1pbiUyMGR8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=600"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
