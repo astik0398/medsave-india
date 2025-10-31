@@ -285,6 +285,18 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.unsplash.com/photo-1581182800629-7d90925ad072?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dml0YW1pbiUyMGR8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=600"
     },
+
+
+                                                    {
+      id: "best-whey-protein-plant-based-protein-powder-india",
+      title: "Best Whey Protein vs Plant-Based Protein Powder in India: Complete Comparison",
+      excerpt: "Compare best whey protein & plant-based protein powder in India: MuscleBlaze, Amul, Oziva prices & effectiveness. Whey vs plant protein comparison guide 2025.",
+      author: "Team MediBachat ",
+      date: "October 31, 2025",
+      readTime: "9 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1693996046865-19217d179161?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
