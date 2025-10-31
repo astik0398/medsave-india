@@ -297,6 +297,18 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.unsplash.com/photo-1693996046865-19217d179161?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     },
+
+
+                                                    {
+      id: "brown-sugar-vs-jaggery-vs-white-sugar-comparison",
+      title: "Brown Sugar vs Jaggery vs White Sugar: Taste & Benefits",
+      excerpt: "Compare brown sugar, jaggery powder, & white sugar: taste, cooking uses, blood sugar impact. Brown sugar benefits, jaggery powder benefits & pricing in India.",
+      author: "Team MediBachat ",
+      date: "October 31, 2025",
+      readTime: "11 min read",
+      category: "Guide",
+      image: "https://images.pexels.com/photos/141815/pexels-photo-141815.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
