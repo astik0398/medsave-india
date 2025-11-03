@@ -320,6 +320,17 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.unsplash.com/photo-1573812461383-e5f8b759d12e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     },
+
+                                                          {
+      id: "how-to-make-neem-juice-at-home-benefits-recipe",
+      title: "How to Make Neem Juice at Home: Step-by-Step Recipe with Benefits",
+      excerpt: "Learn how to make neem juice at home with easy recipe. Discover neem juice benefits, can you drink it at night, and complete guide to benefits of neem leaves juice",
+      author: "Team MediBachat ",
+      date: "November 04, 2025",
+      readTime: "8 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1564505676257-57af8f7e43ab?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
