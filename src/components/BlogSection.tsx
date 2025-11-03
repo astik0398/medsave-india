@@ -309,6 +309,17 @@ const BlogSection = () => {
       category: "Guide",
       image: "https://images.pexels.com/photos/141815/pexels-photo-141815.jpeg"
     },
+
+                                                      {
+      id: "a2-ghee-vs-normal-ghee-differences-digestion-health",
+      title: "A2 Ghee vs Normal Ghee: What's the Real Difference in Digestion and Health?",
+      excerpt: "A2 ghee vs normal ghee: understand protein differences, digestion, nutrition & cholesterol impact. Compare desi ghee, Amul, Patanjali, and find the best ghee.",
+      author: "Team MediBachat ",
+      date: "November 03, 2025",
+      readTime: "15 min read",
+      category: "Guide",
+      image: "https://images.unsplash.com/photo-1573812461383-e5f8b759d12e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
