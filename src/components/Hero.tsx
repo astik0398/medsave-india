@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, TrendingDown, Shield, Clock } from "lucide-react";
+import { Search, TrendingDown, Shield, Clock, Camera } from "lucide-react";
 import heroImage from "@/assets/medicine price comparison.png";
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 import useVisitorLimit from "../hooks/useVisitorLimit";
@@ -25,6 +25,7 @@ const Hero = ({ setUser }: HeroProps) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
 
   // signup management
@@ -339,6 +340,27 @@ useEffect(() => {
   };
 }, []);
 
+const handleFileChange = async (event) => {
+  const file = event.target.files?.[0];
+
+  console.log('im here at 1');
+  
+  if (!file) return;
+
+    console.log('im here at 2');
+
+  const formData = new FormData();
+  formData.append("image", file);
+
+  const res = await fetch("https://medicompare-production.up.railway.app/api/extract-medicine", {
+    method: "POST",
+    body: formData,
+  });
+
+  const data = await res.json();
+  console.log("Extracted medicine names:", data.medicines);
+};
+
   return (
     <section
       id="home"
@@ -384,8 +406,31 @@ useEffect(() => {
                   placeholder="Enter medicine name (e.g., Himalaya Liv 52)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 h-12 text-base"
+                  className="pl-10 h-12 text-base pr-14"
                 />
+
+                {/* Hidden file input for camera */}
+<input
+  type="file"
+  accept="image/*"
+  capture="environment" // opens back camera on mobile
+  className="hidden"
+  ref={fileInputRef}
+  onChange={handleFileChange}
+/>
+
+{/* Camera icon inside the input */}
+
+                  <Camera
+        className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer h-6 w-6" // ⬅️ Increased size
+
+ onClick={() => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ""; // ✅ important: reset old file
+      fileInputRef.current.click();    // open camera
+    }
+  }}
+  />
               </div>
               <Button
                 type="submit"
