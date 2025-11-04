@@ -358,7 +358,26 @@ const handleFileChange = async (event) => {
   });
 
   const data = await res.json();
-  console.log("Extracted medicine names:", data.medicines);
+  
+  let text = data.medicines || "";
+
+// extract last non-empty line and clean it
+const medicine = text
+  .split("\n")
+  .map(line => line.replace(/[-*]/g, "").trim())
+  .filter(Boolean)
+  .pop();
+
+console.log("Extracted medicine names----:", medicine);
+
+setSearchQuery(medicine)
+
+setTimeout(() => {
+  document.querySelector("form[aria-label='Medicine price comparison search form']")?.dispatchEvent(
+    new Event("submit", { bubbles: true, cancelable: true })
+  );
+}, 200);
+
 };
 
   return (
