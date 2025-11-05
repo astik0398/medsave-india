@@ -14,64 +14,74 @@ const FlashDeals = () => {
   const flashDeals = [
     {
       id: 1,
-      medicineName: "Paracetamol 500mg",
-      originalPrice: 150,
-      discountedPrice: 89,
-      discount: 40,
+      medicineName: <>Microtek Non Contact Infrared <br /> Thermometer (IT - 1520)</>,
+      originalPrice: 1778,
+      discountedPrice: 1245,
+      discount: 30,
       timeLeft: "2h 15m",
       platform: "Netmeds",
-      stock: "Limited Stock"
+      stock: "Limited Stock",
+      image: "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/products/pictures/item/free/resize-w:400/B5YIxugE0x-microtek_non_contact_infrared_thermometer_it_1520_0_0.jpg",
+      product_url: "https://bitli.in/FyJ6upY"
     },
     {
       id: 2,
-      medicineName: "Vitamin D3 Tablets",
-      originalPrice: 299,
-      discountedPrice: 199,
-      discount: 33,
+      medicineName: <>AccuSure Finger Tip <br /> Pulse Oximeter</>,
+      originalPrice: 1228,
+      discountedPrice: 921,
+      discount: 25,
       timeLeft: "4h 30m",
-      platform: "PharmEasy",
-      stock: "Only 12 left"
+      platform: "Netmeds",
+      stock: "In Stock",
+      image: "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/resize-w:400/0OFPfpj_q2-accusure_pulse_oximeter_117144_0_6.jpg",
+      product_url: "https://bitli.in/G7BRbYI"
     },
     {
       id: 3,
-      medicineName: "Azithromycin 500mg",
-      originalPrice: 180,
-      discountedPrice: 125,
-      discount: 30,
+      medicineName: <>Cetaphil Gentle Cleanser For  <br /> Dry to Normal Skin 250 ml</>,
+      originalPrice: 769,
+      discountedPrice: 553,
+      discount: 28,
       timeLeft: "1h 45m",
-      platform: "1mg",
-      stock: "Hurry! 5 left"
+      platform: "Netmeds",
+      stock: "In Stock",
+      image: "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/resize-w:400/-ZJepyUvot-cetaphil_gentle_skin_cleanser_for_dry_to_normal_sensitive_skin_250_ml_418417_0_1.jpg",
+      product_url: "https://bitli.in/ZwxvmU0"
     },
     {
       id: 4,
-      medicineName: "Omeprazole 20mg",
-      originalPrice: 120,
-      discountedPrice: 79,
-      discount: 34,
+      medicineName: <>Omron Hem 7121j Blood <br /> Pressure Monitor 1</>,
+      originalPrice: 2315,
+      discountedPrice: 2264,
+      discount: 2.2,
       timeLeft: "3h 20m",
       platform: "Truemeds",
-      stock: "Limited Stock"
+      stock: "Limited Stock",
+      image: "https://m.media-amazon.com/images/I/411E+BZqduL._SY300_SX300_QL70_FMwebp_.jpg",
+      product_url: "https://bitli.in/hm4fTy1"
     },
     {
       id: 5,
-      medicineName: "Calcium + Vitamin D",
-      originalPrice: 250,
-      discountedPrice: 175,
-      discount: 30,
+      medicineName: <>Boroline Sx Antiseptic <br />Ayurvedic Cream 40gm</>,
+      originalPrice: 79,
+      discountedPrice: 70,
+      discount: 11,
       timeLeft: "5h 10m",
-      platform: "Apollo",
-      stock: "Only 8 left"
+      platform: "Truemeds",
+      stock: "In Stock",
+      image: "https://m.media-amazon.com/images/I/81l1oUdZG8L._SX679_.jpg",
+      product_url: "https://bitli.in/Bo91ch2"
     }
   ];
 
   return (
-    <section className="py-16 bg-gradient-subtle">
+    <section className="py-16 bg-[#F2F5F9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Zap className="h-8 w-8 text-primary animate-pulse" />
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Flash Deals
             </h2>
             <Zap className="h-8 w-8 text-primary animate-pulse" />
@@ -107,16 +117,27 @@ const FlashDeals = () => {
                       </div>
 
                       {/* Medicine Info */}
-                      <div className="mb-4">
-                        <h3 className="font-semibold text-lg mb-2 text-foreground">
+                      <div className="mb-4 flex justify-between">
+                       <div>
+                         <h3 className="font-semibold text-lg mb-2 text-foreground">
                           {deal.medicineName}
                         </h3>
                         <p className="text-sm text-muted-foreground mb-2">
                           Available on {deal.platform}
                         </p>
-                        <p className="text-xs text-destructive font-medium">
-                          {deal.stock}
-                        </p>
+                        <p
+  className={`text-xs font-medium ${
+    deal.stock === "Limited Stock" ? "text-red-500" : "text-green-500"
+  }`}
+>
+  {deal.stock}
+</p>
+
+                       </div>
+
+                       <div>
+                        <img className="border-gray-300 rounded-lg" width={'100px'} src={deal.image} alt="" />
+                       </div>
                       </div>
 
                       {/* Price */}
@@ -135,12 +156,14 @@ const FlashDeals = () => {
                       </div>
 
                       {/* CTA Button */}
-                      <Button 
+                     <a target="_blank" href={deal.product_url}>
+                       <Button 
                         className="w-full bg-gradient-primary hover:opacity-90 transition-all duration-300 font-semibold"
                         size="sm"
                       >
                         Grab Deal Now
                       </Button>
+                     </a>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -152,11 +175,11 @@ const FlashDeals = () => {
         </div>
 
         {/* View All Deals */}
-        <div className="text-center mt-8">
+        {/* <div className="text-center mt-8">
           <Button variant="outline" className="border-primary/30 hover:border-primary/50">
             View All Flash Deals
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

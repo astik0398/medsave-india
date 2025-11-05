@@ -22,7 +22,7 @@ const Index = () => {
       <Header user={user} />
       <Hero setUser={setUser}  />
       <PriceComparison />
-            {/* <FlashDeals /> */}
+      <FlashDeals />
       <CouponsSection />
       <Testimonials/>
       <PriceHistory />
