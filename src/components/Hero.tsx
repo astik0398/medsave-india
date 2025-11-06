@@ -40,6 +40,12 @@ const [loginEmail, setLoginEmail] = useState("");
 const [loginPassword, setLoginPassword] = useState("");
 const [userLoggedIn, setUserLoggedIn] = useState(false);
 
+// medicine auto suggestion
+const [suggestions, setSuggestions] = useState<string[]>([]);
+const [showSuggestions, setShowSuggestions] = useState(false);
+const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(null);
+const [justSelected, setJustSelected] = useState(false);
+
   const { visitorId, compareCount, canCompare, resetCompareCount, incrementCompareCount, MAX_FREE_COMPARISONS } = useVisitorLimit();
   const [message, setMessage] = useState(`Only ${compareCount} search(es) left! Unlock unlimited searches by logging in`);
 
@@ -380,6 +386,50 @@ setTimeout(() => {
 
 };
 
+useEffect(() => {
+
+  if (justSelected) {
+    // 👇 skip fetching when a suggestion was just clicked
+    setJustSelected(false);
+    return;
+  }
+  
+  // Only trigger when user typed something
+  if (!searchQuery.trim()) {
+    setSuggestions([]);
+    setShowSuggestions(false);
+    return;
+  }
+
+  // Debounce (wait for user to stop typing)
+  if (debounceTimer) clearTimeout(debounceTimer);
+
+  const timer = setTimeout(async () => {
+    try {
+      const res = await fetch(`https://medicompare-production.up.railway.app/suggest?q=${encodeURIComponent(searchQuery)}`);
+      const data = await res.json();
+      setSuggestions(data || []);
+      setShowSuggestions(true);
+    } catch (err) {
+      console.error("Suggestion fetch error:", err);
+    }
+  }, 300); // 300 ms delay
+
+  setDebounceTimer(timer);
+
+  return () => clearTimeout(timer);
+}, [searchQuery]);
+
+useEffect(() => {
+  const handleClickOutside = (e: MouseEvent) => {
+    if (!(e.target as HTMLElement).closest(".suggestion-wrapper")) {
+      setShowSuggestions(false);
+    }
+  };
+  document.addEventListener("click", handleClickOutside);
+  return () => document.removeEventListener("click", handleClickOutside);
+}, []);
+
   return (
     <section
       id="home"
@@ -427,6 +477,32 @@ setTimeout(() => {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 h-12 text-base pr-14"
                 />
+
+{/* auto suggetion box */}
+                {showSuggestions && suggestions.length > 0 && (
+  <ul className="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto z-50 dark:text-black">
+    {suggestions.map((item, index) => (
+      <li
+        key={index}
+        className="px-3 py-2 cursor-pointer hover:bg-gray-100 text-sm"
+        onClick={() => {
+          setSearchQuery(item);
+          setShowSuggestions(false);
+          setJustSelected(true); // ✅ prevents refetch
+          // optional: auto-search when user picks a suggestion
+           // ✅ small delay ensures React updates state first
+  setTimeout(() => {
+    document
+      .querySelector("form[aria-label='Medicine price comparison search form']")
+      ?.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }, 200);
+        }}
+      >
+        {item}
+      </li>
+    ))}
+  </ul>
+)}
 
                 {/* Hidden file input for camera */}
 <input
