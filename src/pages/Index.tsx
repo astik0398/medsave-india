@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
+import DownloadApp from "@/components/DownloadApp";
 import { useState } from "react";
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
       <HowItWorks />
       <BlogSection />
       <FAQ />
+      <DownloadApp />
       <ContactForm />
       <Newsletter />
       <Footer />
