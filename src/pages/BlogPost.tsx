@@ -6884,7 +6884,7 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </p>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    BD doesn't specify exact times—your pharmacist might print "Take one tablet twice daily" on your label. You have flexibility in timing, though consistency helps optimize medicine effectiveness. Some people take their BD dose at 8 AM and 8 PM, while others prefer 9 AM and 6 PM. The key is maintaining roughly equal spacing between doses[505][508].
+    BD doesn't specify exact times—your pharmacist might print "Take one tablet twice daily" on your label. You have flexibility in timing, though consistency helps optimize medicine effectiveness. Some people take their BD dose at 8 AM and 8 PM, while others prefer 9 AM and 6 PM. The key is maintaining roughly equal spacing between doses.
   </p>
 
   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">
