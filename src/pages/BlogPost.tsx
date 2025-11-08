@@ -6842,12 +6842,12 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
     },
 
 
-                                                                                        "types-of-prescription-bd-sos-tds-meaning-in-prescription": {
+                                                                                        "types-of-prescription-in-india": {
       title: "​Prescription Types & TDS, SOS, BDPC, ODAC Meaning in Prescription",
       author: "Team MediBachat",  
       date: "November 08, 2025",
       readTime: "8 min read",
-      metaDescription: "Learn prescription abbreviations: BD, TDS, SOS, BDPC, ODPC, ODAC, ODHS meaning explained. Complete guide to prescription types and medication timing instructions.",
+      metaDescription: "Understand prescription codes: BDPC, ODPC, ODAC, ODHS, BD, TDS, SOS explained. Learn types of prescriptions and how to take medicines correctly with timing.",
       category: "Education",
       image: "https://images.pexels.com/photos/7578803/pexels-photo-7578803.jpeg",
       content: <>
@@ -7068,22 +7068,22 @@ Tired of switching between multiple tabs just to find the right coupon code? On 
   </h2>
 
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    <strong>OD:</strong> Once daily
-    <strong>BD:</strong> Twice daily  
-    <strong>TDS:</strong> Three times daily
-    <strong>QID:</strong> Four times daily
-    <strong>SOS:</strong> As needed
-    <strong>PC:</strong> After meals
-    <strong>AC:</strong> Before meals
-    <strong>BDPC:</strong> Twice daily after meals
-    <strong>ODPC:</strong> Once daily after meals
-    <strong>ODAC:</strong> Once daily before meals
-    <strong>ODHS:</strong> Once daily at bedtime
-    <strong>HS:</strong> At bedtime
+    <strong>OD:</strong> Once daily <br />
+    <strong>BD:</strong> Twice daily  <br />
+    <strong>TDS:</strong> Three times daily <br />
+    <strong>QID:</strong> Four times daily <br />
+    <strong>SOS:</strong> As needed <br />
+    <strong>PC:</strong> After meals <br />
+    <strong>AC:</strong> Before meals <br />
+    <strong>BDPC:</strong> Twice daily after meals <br />
+    <strong>ODPC:</strong> Once daily after meals <br />
+    <strong>ODAC:</strong> Once daily before meals <br />
+    <strong>ODHS:</strong> Once daily at bedtime <br />
+    <strong>HS:</strong> At bedtime <br />
     <strong>STAT:</strong> Immediately/Urgently
   </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
     Understanding prescription abbreviations transforms medical communication from mysterious code into clear instructions. When you comprehend what BD in medical prescription means, understand TDS meaning in prescription, recognize what is SOS in medical prescription, and grasp different types of prescription — you become an informed patient capable of following instructions accurately. This knowledge directly impacts your medicine effectiveness and health outcomes. The next time you receive a prescription filled with abbreviations, reference this guide to decode every instruction confidently and correctly.
   </p>
 

@@ -334,9 +334,9 @@ const BlogSection = () => {
 
 
                                                            {
-      id: "types-of-prescription-bd-sos-tds-meaning-in-prescription",
+      id: "types-of-prescription-in-india",
       title: "​Prescription Types & TDS, SOS, BDPC, ODAC Meaning in Prescription",
-      excerpt: "Learn prescription abbreviations: BD, TDS, SOS, BDPC, ODPC, ODAC, ODHS meaning explained. Complete guide to prescription types and medication timing instructions.",
+      excerpt: "Understand prescription codes: BDPC, ODPC, ODAC, ODHS, BD, TDS, SOS explained. Learn types of prescriptions and how to take medicines correctly with timing.",
       author: "Team MediBachat ",
       date: "November 08, 2025",
       readTime: "8 min read",
