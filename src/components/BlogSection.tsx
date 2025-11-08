@@ -331,6 +331,18 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.unsplash.com/photo-1564505676257-57af8f7e43ab?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
     },
+
+
+                                                           {
+      id: "types-of-prescription-bd-sos-tds-meaning-in-prescription",
+      title: "​Prescription Types & TDS, SOS, BDPC, ODAC Meaning in Prescription",
+      excerpt: "Learn prescription abbreviations: BD, TDS, SOS, BDPC, ODPC, ODAC, ODHS meaning explained. Complete guide to prescription types and medication timing instructions.",
+      author: "Team MediBachat ",
+      date: "November 08, 2025",
+      readTime: "8 min read",
+      category: "Education",
+      image: "https://images.pexels.com/photos/7578803/pexels-photo-7578803.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
