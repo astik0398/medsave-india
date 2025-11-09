@@ -46,7 +46,8 @@ const ResetPasswordPage = () => {
         });
 
                 // 🧹 Sign out temporary session and redirect to login
-        await supabase.auth.signOut();
+        await supabase.auth.signOut({ scope: "global" });
+        
         navigate("/");
 
     }
