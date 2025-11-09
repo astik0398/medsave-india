@@ -48,7 +48,7 @@ const Header = ({ user }: HeaderProps) => {
       icon: ChartNoAxesCombined,
     },
     { label: "FAQ", href: "/#faq", icon: HelpCircle },
-    { label: "Contact", href: "/#contact", icon: Phone },
+    // { label: "Contact", href: "/#contact", icon: Phone },
   ];
 
   return (

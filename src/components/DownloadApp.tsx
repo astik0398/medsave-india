@@ -2,13 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Download, Smartphone } from "lucide-react";
 
 const DownloadApp = () => {
-  const handleDownload = () => {
-    // Replace with your actual APK download link
-    window.open("YOUR_APK_DOWNLOAD_LINK", "_blank");
+  
+    const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/medibachat.apk"; // path relative to public folder
+    link.download = "medibachat.apk";
+    link.click();
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-background border-t">
+    <section className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
@@ -22,7 +25,7 @@ const DownloadApp = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Get the best medicine price comparison experience on your Android device. 
+            Get the best medicine price comparison app experience on your Android device. 
             Compare prices, find deals, and save money on medicines - all from your phone!
           </p>
 

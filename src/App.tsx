@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import TermsOfService from "./pages/TermsOfService";
 import BlogPost from "./pages/BlogPost";
 import ScrollHandler from "./components/ui/ScrollHandler";
+import Disclaimer from "./pages/Disclaimer";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/about-us" element={<AboutUs />} />  {/* Add this */}
             <Route path="/terms-of-service" element={<TermsOfService />} />  {/* Add this */}
+            <Route path="/disclaimer" element={<Disclaimer />} />  {/* Add this */}
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

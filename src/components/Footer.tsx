@@ -17,7 +17,9 @@ const Footer = () => {
       { label: "About Us", href: "/about-us" },
       // { label: "How It Works", href: "#how-it-works" },
       { label: "Privacy Policy", href: "/privacy-policy" },
-      { label: "Terms of Service", href: "/terms-of-service" },
+      { label: "Terms & Conditions", href: "/terms-of-service" },
+
+      { label: "Disclaimer", href: "/disclaimer" },
     ],
     features: [
       { label: "Medicine Price Comparison", href: "#price-comparison" },
@@ -40,10 +42,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    // { icon: Facebook, href: "#", label: "Facebook" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/medi_bachat?igsh=OXgwcHZqOGdmZzBz", label: "Instagram" },
   ];
 
   return (
@@ -56,7 +58,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img src={logo} alt="MedSave India" className="h-8 w-8" />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                MedSave India
+                MediBachat
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
@@ -85,7 +87,7 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Company</h4>
+            <h4 className="font-semibold text-foreground mb-4">MediBachat</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -159,7 +161,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-[-40px]">
           {/* Copyright */}
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-            <span>© 2024 MedSave India. Made with</span>
+            <span>© 2025 MediBachat Made with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
             <span>in India. All rights reserved.</span>
           </div>
@@ -168,6 +170,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             {socialLinks.map((social, index) => (
               <a
+              target="_blank"
                 key={index}
                 href={social.href}
                 aria-label={social.label}

@@ -613,9 +613,9 @@ useEffect(() => {
        <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Welcome to MediPrice Spy</DialogTitle>
+            <DialogTitle>Welcome to MediBachat</DialogTitle>
             <DialogDescription>
-              Sign in to your account or create a new one to start comparing medicine prices.
+              Sign in to your account or create a new one to start comparing medicine prices with <b>no restrictions!</b>
             </DialogDescription>
           </DialogHeader>
           

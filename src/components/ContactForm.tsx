@@ -99,7 +99,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                       Email
                     </h4>
                     <p className="text-muted-foreground">
-                      medsaveindia@gmail.com
+                      medibachatforyou@gmail.com
                     </p>
                     {/* <p className="text-sm text-muted-foreground">
                       We'll respond within 24 hours
@@ -154,7 +154,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                   href="#faq"
                   className="block text-sm text-primary hover:underline"
                 >
-                  → Is MedSave India free to use?
+                  → Is MediBachat free to use?
                 </a>
                 <a
                   href="#faq"
