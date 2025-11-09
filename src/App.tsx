@@ -30,7 +30,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/about-us" element={<AboutUs />} />  {/* Add this */}
+            <Route path="/about-medibachat" element={<AboutUs />} />  {/* Add this */}
             <Route path="/terms-of-service" element={<TermsOfService />} />  {/* Add this */}
             <Route path="/disclaimer" element={<Disclaimer />} />  {/* Add this */}
 

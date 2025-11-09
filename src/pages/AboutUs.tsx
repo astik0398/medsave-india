@@ -10,7 +10,7 @@ const AboutUs: React.FC = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-10">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground">
-              About Us
+              About MediBachat — India’s Medicine Price Tracker Website
             </h1>
             <p className="text-sm text-muted-foreground mt-2">
               Last Updated: November 9, 2025
@@ -19,80 +19,78 @@ const AboutUs: React.FC = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-[1.05rem]">
             <p>
-              Hello! <strong className="text-foreground">MediBachat</strong> is
-              a professional platform where we provide informative, accurate,
-              and reliable content focused on{" "}
-              <strong className="text-foreground">
-                online medicine price comparison
-              </strong>
-              . Our goal is to make healthcare more affordable and accessible
-              for everyone in India by helping users compare medicine prices
-              across multiple trusted online pharmacies.
+              <strong className="text-foreground">MediBachat</strong> is India’s
+              leading <strong>medicine price comparison platform</strong>,
+              designed to help users find, compare, and save on medicines from
+              trusted online pharmacies like Tata 1mg, Netmeds, and PharmEasy.
+              Our mission is simple — to make healthcare more affordable and
+              transparent for every Indian household.
             </p>
 
             <p>
-              At MediBachat, we are driven by our passion for technology and
-              healthcare innovation. Our mission is to empower users with
-              transparent price data, enabling smarter purchase decisions and
-              maximum savings on medicines. We curate, compare, and display the
-              latest price information from verified pharmacies to ensure users
-              always get the best possible deals.
+              Founded with the belief that price transparency can transform
+              healthcare, MediBachat curates real-time medicine price data from
+              multiple sources. We analyze and display accurate comparisons so
+              users can make informed choices — saving both time and money on
+              every purchase.
             </p>
 
-            <p>
-              We are constantly improving our platform to enhance your
-              experience, offering real-time comparisons, exclusive discounts,
-              and detailed insights into drug prices and availability.
-            </p>
-
-            <p>
-              You can always count on{" "}
-              <strong className="text-foreground">MediBachat</strong> to bring
-              you:
-            </p>
+            <h2 className="text-2xl font-semibold text-foreground mt-6">
+              What We Offer
+            </h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                Transparent and updated medicine price comparisons from verified
-                Indian pharmacies.
+                <strong>Real-time price tracking</strong> for branded and
+                generic medicines across top Indian pharmacies.
               </li>
               <li>
-                Exclusive online coupons and promotional offers to maximize your
-                savings.
+                <strong>Coupon and offer aggregation</strong> to help you unlock
+                the biggest discounts instantly.
               </li>
               <li>
-                Reliable, easy-to-use interface with accurate data for a smooth
-                experience.
+                <strong>Price history and trends</strong> (coming soon) so you
+                can decide the best time to buy.
+              </li>
+              <li>
+                <strong>Reliable, verified data</strong> collected ethically from
+                official sources.
               </li>
             </ul>
 
             <p>
-              Our team is dedicated to providing trustworthy information and
-              simplifying the medicine-buying experience. Your support motivates
-              us to continue improving every day.
+              We take pride in offering a clean, user-friendly experience backed
+              by technology. Our team works continuously to improve data
+              accuracy, add new features, and make MediBachat the most trusted
+              name in medicine price comparison.
+            </p>
+
+            <h2 className="text-2xl font-semibold text-foreground mt-6">
+              Why Choose MediBachat?
+            </h2>
+            <p>
+              Unlike other health blogs or directories, MediBachat focuses
+              exclusively on <strong>medicine price comparison</strong>. We are
+              not affiliated with any single pharmacy, ensuring complete
+              neutrality in the prices we display. Our goal is to empower you
+              with transparent, unbiased data so you can choose what’s best for
+              your health and wallet.
             </p>
 
             <p>
-              The About Us page is inspired and adapted with the help of the{" "}
-              <a
-                href="https://originality.ai/blog/about-us-generator"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                About Us Generator
-              </a>
-              .
+              We are a small but dedicated team passionate about the
+              intersection of healthcare and technology. Every day, we work to
+              build tools that make online medicine shopping smarter and more
+              affordable for millions of Indians.
             </p>
 
             <p>
-              We hope you find all the content on{" "}
-              <strong className="text-foreground">MediBachat</strong> valuable
-              and insightful. Our mission is to make healthcare savings simple,
-              transparent, and accessible for every Indian household.
+              For transparency, this About Page was refined with assistance from
+              AI tools and edited manually to reflect our real mission and
+              values.
             </p>
 
             <p>
-              <strong>Visit us at:</strong>{" "}
+              <strong>Official Website:</strong>{" "}
               <a
                 href="https://medibachat.in/"
                 target="_blank"
@@ -104,7 +102,7 @@ const AboutUs: React.FC = () => {
             </p>
 
             <p>
-              <strong>For any inquiries or feedback, contact us via email:</strong>{" "}
+              <strong>Contact Email:</strong>{" "}
               <a
                 href="mailto:medibachatforyou@gmail.com"
                 className="text-primary hover:underline"
@@ -114,8 +112,8 @@ const AboutUs: React.FC = () => {
             </p>
 
             <p className="font-semibold text-foreground">
-              Thank you for visiting MediBachat — your trusted medicine price
-              comparison partner!
+              Thank you for trusting MediBachat — where transparency meets
+              savings in healthcare.
             </p>
           </div>
         </div>

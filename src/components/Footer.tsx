@@ -14,7 +14,7 @@ import logo from "@/assets/logo.png";
 const Footer = () => {
   const footerLinks = {
     company: [
-      { label: "About Us", href: "/about-us" },
+      { label: "About Us", href: "/about-medibachat" },
       // { label: "How It Works", href: "#how-it-works" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms & Conditions", href: "/terms-of-service" },
