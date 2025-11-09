@@ -90,24 +90,9 @@ const Header = ({ user }: HeaderProps) => {
         className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white"
 
         onClick={async () => {
-  try {
-    // Global logout (invalidate all tokens)
-    await supabase.auth.signOut({ scope: "global" });
-
-    // Clean up everything local
-    Object.keys(localStorage).forEach((key) => {
-      if (key.startsWith("sb-")) localStorage.removeItem(key);
-    });
-    sessionStorage.clear();
-    indexedDB.deleteDatabase("supabase-auth");
-
-    console.log("✅ Fully logged out globally and locally.");
-  } catch (err) {
-    console.error("Logout error:", err.message);
-  } finally {
-    window.location.reload();
-  }
-}}
+          await supabase.auth.signOut(); // Logout from Supabase
+          window.location.reload(); // refresh to reset state
+        }}
       >
         Log Out
       </Button>
