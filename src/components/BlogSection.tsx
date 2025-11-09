@@ -343,6 +343,18 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.pexels.com/photos/7578803/pexels-photo-7578803.jpeg"
     },
+
+
+                                                               {
+      id: "veterinary-medicine-online-india-guide-buying-safely",
+      title: "Things You Need to Know Before Ordering Veterinary Medicines Online",
+      excerpt: "Complete guide to ordering veterinary medicine online India safely. Learn about top veterinary medicine companies, how to find veterinarian doctor near me, and verify authenticity.",
+      author: "Team MediBachat ",
+      date: "November 10, 2025",
+      readTime: "11 min read",
+      category: "Education",
+      image: "https://images.pexels.com/photos/6235018/pexels-photo-6235018.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
