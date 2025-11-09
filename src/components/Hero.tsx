@@ -46,6 +46,11 @@ const [showSuggestions, setShowSuggestions] = useState(false);
 const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(null);
 const [justSelected, setJustSelected] = useState(false);
 
+// forgot password states
+const [isForgotOpen, setIsForgotOpen] = useState(false);
+const [forgotEmail, setForgotEmail] = useState("");
+const [forgotLoading, setForgotLoading] = useState(false);
+
   const { visitorId, compareCount, canCompare, resetCompareCount, incrementCompareCount, MAX_FREE_COMPARISONS } = useVisitorLimit();
   const [message, setMessage] = useState(`Only ${compareCount} search(es) left! Unlock unlimited searches by logging in`);
 
@@ -318,6 +323,39 @@ const handleLogin = async () => {
 
     // ✅ Mark user as logged in and reset visitor count
     setUserLoggedIn(true);
+  }
+};
+
+const handleForgotPassword = async () => {
+  if (!forgotEmail) {
+    toast({
+      title: "Email required",
+      description: "Please enter your registered email address",
+    });
+    return;
+  }
+
+  setForgotLoading(true);
+  try {
+    const { error } = await supabase.auth.resetPasswordForEmail(forgotEmail, {
+      redirectTo: `${window.location.origin}/reset-password`, // page user will be redirected to
+    });
+
+    if (error) throw error;
+
+    toast({
+      title: "Reset link sent!",
+      description: "Please check your email for password reset instructions.",
+    });
+    setIsForgotOpen(false);
+  } catch (err) {
+    console.error("Reset error:", err.message);
+    toast({
+      title: "Error",
+      description: err.message || "Failed to send reset link. Try again later.",
+    });
+  } finally {
+    setForgotLoading(false);
   }
 };
 
@@ -641,7 +679,13 @@ useEffect(() => {
 
                 />
               </div>
-              <Button className="w-full" variant="hero" onClick={handleLogin}>Sign In</Button>
+              <Button className="w-full" variant="hero" onClick={handleLogin}><p className="text-white">Sign In</p></Button>
+
+              <p className="text-sm text-right text-blue-600 mt-2 cursor-pointer hover:underline"
+   onClick={() => setIsForgotOpen(true)}>
+  Forgot Password?
+</p>
+
             </TabsContent>
             
             <TabsContent value="signup" className="space-y-4 mt-4">
@@ -670,11 +714,42 @@ useEffect(() => {
               <Button 
                onClick={handleSignUp}
   disabled={authLoading}
-              className="w-full" variant="hero">  {authLoading ? "Signing Up..." : "Sign Up"}</Button>
+              className="w-full" variant="hero"><p className="text-white">{authLoading ? "Signing Up..." : "Sign Up"}</p></Button>
             </TabsContent>
           </Tabs>
         </DialogContent>
       </Dialog>
+
+      <Dialog open={isForgotOpen} onOpenChange={setIsForgotOpen}>
+  <DialogContent className="sm:max-w-[400px]">
+    <DialogHeader>
+      <DialogTitle>Reset Password</DialogTitle>
+      <DialogDescription>
+        Enter your email address and we’ll send you a link to reset your password.
+      </DialogDescription>
+    </DialogHeader>
+
+    <div className="space-y-4 mt-4">
+      <Label htmlFor="forgot-email">Email</Label>
+      <Input
+        id="forgot-email"
+        type="email"
+        placeholder="Enter your registered email"
+        value={forgotEmail}
+        onChange={(e) => setForgotEmail(e.target.value)}
+      />
+      <Button
+        className="w-full"
+        variant="hero"
+        onClick={handleForgotPassword}
+        disabled={forgotLoading}
+      >
+        <p className="text-white">{forgotLoading ? "Sending..." : "Send Reset Link"}</p>
+      </Button>
+    </div>
+  </DialogContent>
+</Dialog>
+
     </section>
   );
 };

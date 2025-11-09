@@ -12,6 +12,7 @@ import TermsOfService from "./pages/TermsOfService";
 import BlogPost from "./pages/BlogPost";
 import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
+import ResetPasswordPage from "./components/ResetPasswordPage";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/about-medibachat" element={<AboutUs />} />  {/* Add this */}
             <Route path="/terms-of-service" element={<TermsOfService />} />  {/* Add this */}
             <Route path="/disclaimer" element={<Disclaimer />} />  {/* Add this */}
+            <Route path="/reset-password" element={<ResetPasswordPage />} />  {/* Add this */}
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
