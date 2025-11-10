@@ -355,6 +355,18 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.pexels.com/photos/6235018/pexels-photo-6235018.jpeg"
     },
+
+
+                                                                   {
+      id: "knee-cap-for-knee-pain-guide-and-comparison",
+      title: "Complete Guide to Knee Caps for Knee Pain Relief and Gym",
+      excerpt: "Complete knee cap guide: compression sleeves vs braces for pain relief & gym. Types, benefits, price comparison in India, and how to choose the right support",
+      author: "Team MediBachat ",
+      date: "November 11, 2025",
+      readTime: "8 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
