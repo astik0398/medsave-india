@@ -367,6 +367,17 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     },
+
+                                                                       {
+      id: "best-pain-relief-spray-and-gel-india-comparison",
+      title: "Best Pain Relief Spray and Gel in India: Complete Comparison",
+      excerpt: "Compare best pain relief spray and gel in India: Volini vs Moov. Complete guide to topical pain relief products with pricing, benefits, and buying tips.",
+      author: "Team MediBachat ",
+      date: "November 11, 2025",
+      readTime: "10 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1618914241652-ff0a094b5a86?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
