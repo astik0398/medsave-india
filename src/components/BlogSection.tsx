@@ -378,6 +378,18 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.unsplash.com/photo-1618914241652-ff0a094b5a86?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     },
+
+
+                                                                           {
+      id: "posture-corrector-belt-vs-back-support-belt-comparison",
+      title: "Posture Corrector Belt vs Back Support Belt: Which One Do You Need?",
+      excerpt: "Compare posture corrector belt vs back support belt: understand differences, benefits, and which to choose. Complete guide for back pain relief and posture correction.",
+      author: "Team MediBachat ",
+      date: "November 11, 2025",
+      readTime: "10 min read",
+      category: "Education",
+      image: "https://images.pexels.com/photos/5327461/pexels-photo-5327461.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
