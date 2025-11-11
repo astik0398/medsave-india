@@ -390,6 +390,19 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.pexels.com/photos/5327461/pexels-photo-5327461.jpeg"
     },
+
+
+
+                                                                           {
+      id: "best-orthopedic-pillow-india-neck-cervical-back-pain",
+      title: "Best Orthopedic Pillow in India for Neck, Cervical, and Back Pain Relief",
+      excerpt: "Best orthopedic pillow in India: cervical, neck pain relief, back pain support. Compare memory foam, latex, gel. Complete guide to orthopedic sleeping pillows.",
+      author: "Team MediBachat ",
+      date: "November 11, 2025",
+      readTime: "10 min read",
+      category: "Education",
+      image: "https://images.unsplash.com/photo-1701826510629-051bb954fb8f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
