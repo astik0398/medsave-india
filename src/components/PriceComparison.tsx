@@ -9,6 +9,7 @@ import truemeds from "../assets/truemeds trans.png";
 import pharmeasy from "../assets/pharmeasy trans.png";
 import apollo from "../assets/apllo pharmacy trans.png";
 import medkart from "../assets/medkart_pharmacy_logo-removebg-preview.png"
+import medibuddyLogo from "../assets/images__3_-removebg-preview.png"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
@@ -127,7 +128,8 @@ const PriceComparison = () => {
         pharmeasy: "PharmEasy",
         apollopharmacy: "Apollo Pharmacy",
         truemeds: "Truemeds",
-        medkart: "Medkart"
+        medkart: "Medkart",
+        medibuddy: "MediBuddy"
       };
 
       const logoMap = {
@@ -136,7 +138,8 @@ const PriceComparison = () => {
         pharmeasy: pharmeasy,
         apollopharmacy: apollo,
         truemeds: truemeds,
-        medkart: medkart
+        medkart: medkart,
+        medibuddy: medibuddyLogo
       };
 
       const transformed = Object.entries(savedPriceData).map(
