@@ -9,10 +9,12 @@ import {
   House,
   Scale,
   ChartNoAxesCombined,
+  IndianRupee,
+  Wallet,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/medi bachat dark mode (1).png";
-import logoLight from "@/assets/medibachat all images (3).png"
+import logoLight from "@/assets/medibachat all images (3).png";
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 
 import { useTheme } from "next-themes";
@@ -22,22 +24,20 @@ interface HeaderProps {
 }
 
 const Header = ({ user }: HeaderProps) => {
+  const getInitials = (fullName: string) => {
+    console.log("fullName--", fullName);
 
-    const getInitials = (fullName: string) => {
-
-      console.log('fullName--', fullName);
-      
     if (!fullName) return "";
     const names = fullName.split(" ");
-    const initials = names.map(n => n[0].toUpperCase()).slice(0, 2);
+    const initials = names.map((n) => n[0].toUpperCase()).slice(0, 2);
     return initials.join("");
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme } = useTheme(); // get current theme
 
-  console.log('theme right now--------->', theme);
-  
+  console.log("theme right now--------->", theme);
+
   const navItems = [
     { label: "Home", href: "/#home", icon: House },
     { label: "Compare Price", href: "/#price-comparison", icon: Scale },
@@ -48,6 +48,8 @@ const Header = ({ user }: HeaderProps) => {
       icon: ChartNoAxesCombined,
     },
     { label: "FAQ", href: "/#faq", icon: HelpCircle },
+
+{ label: "Pricing", href: "/pricing", icon: Wallet },
     // { label: "Contact", href: "/#contact", icon: Phone },
   ];
 
@@ -56,7 +58,11 @@ const Header = ({ user }: HeaderProps) => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src={theme === 'dark' ? logo: logoLight} alt="MedSave India" className="h-40 w-40" />
+          <img
+            src={theme === "dark" ? logo : logoLight}
+            alt="MedSave India"
+            className="h-40 w-40"
+          />
         </div>
 
         {/* Desktop Navigation */}
@@ -77,51 +83,62 @@ const Header = ({ user }: HeaderProps) => {
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
           {user ? (
-    <>
-      {/* Profile Icon */}
-      <div style={{marginRight:'10px', boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold">
-        {getInitials(user.full_name)}
-      </div>
+            <>
+              {/* Profile Icon */}
+              <div
+                style={{
+                  marginRight: "10px",
+                  boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+                }}
+                className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold"
+              >
+                {getInitials(user.full_name)}
+              </div>
 
-      {/* Logout Button */}
-      <Button
-        variant="hero"
-        size="sm"
-        className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white"
-
-        onClick={async () => {
-          await supabase.auth.signOut(); // Logout from Supabase
-          window.location.reload(); // refresh to reset state
-        }}
-      >
-        Log Out
-      </Button>
-    </>
-  ) : (
-    /* Login Button */
-    <Button
-      variant="hero"
-      size="sm"
-      className="dark:text-white pl-4 pr-4"
-      onClick={() => {
-        // Trigger your login modal
-        window.dispatchEvent(new Event("openLoginModal"));
-      }}
-    >
-      Log In
-    </Button>
-  )}
-
+              {/* Logout Button */}
+              <Button
+                variant="hero"
+                size="sm"
+                className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white"
+                onClick={async () => {
+                  await supabase.auth.signOut(); // Logout from Supabase
+                  window.location.reload(); // refresh to reset state
+                }}
+              >
+                Log Out
+              </Button>
+            </>
+          ) : (
+            /* Login Button */
+            <Button
+              variant="hero"
+              size="sm"
+              className="dark:text-white pl-4 pr-4"
+              onClick={() => {
+                // Trigger your login modal
+                window.dispatchEvent(new Event("openLoginModal"));
+              }}
+            >
+              Log In
+            </Button>
+          )}
         </div>
 
         {/* Mobile Controls */}
         <div className="md:hidden flex items-center space-x-2">
           <ThemeToggle />
 
-          {user && 
-      <div style={{marginRight:'10px', boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold">
-        {getInitials(user.full_name)}
-      </div>}
+          {user && (
+            <div
+              style={{
+                marginRight: "10px",
+                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+              }}
+              className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold"
+            >
+              {getInitials(user.full_name)}
+            </div>
+          )}
           <button
             className="p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -153,35 +170,34 @@ const Header = ({ user }: HeaderProps) => {
             ))}
             <div className="pt-4">
               {user ? (
-    <>
-      {/* Logout Button */}
-      <Button
-        variant="hero"
-        size="sm"
-        className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white w-full"
-
-        onClick={async () => {
-          await supabase.auth.signOut(); // Logout from Supabase
-          window.location.reload(); // refresh to reset state
-        }}
-      >
-        Log Out
-      </Button>
-    </>
-  ) : (
-    /* Login Button */
-    <Button
-      variant="hero"
-      size="sm"
-      className="dark:text-white w-full"
-      onClick={() => {
-        // Trigger your login modal
-        window.dispatchEvent(new Event("openLoginModal"));
-      }}
-    >
-      Log In
-    </Button>
-  )}
+                <>
+                  {/* Logout Button */}
+                  <Button
+                    variant="hero"
+                    size="sm"
+                    className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white w-full"
+                    onClick={async () => {
+                      await supabase.auth.signOut(); // Logout from Supabase
+                      window.location.reload(); // refresh to reset state
+                    }}
+                  >
+                    Log Out
+                  </Button>
+                </>
+              ) : (
+                /* Login Button */
+                <Button
+                  variant="hero"
+                  size="sm"
+                  className="dark:text-white w-full"
+                  onClick={() => {
+                    // Trigger your login modal
+                    window.dispatchEvent(new Event("openLoginModal"));
+                  }}
+                >
+                  Log In
+                </Button>
+              )}
             </div>
           </nav>
         </div>

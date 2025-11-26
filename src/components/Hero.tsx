@@ -17,7 +17,9 @@ import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 
 interface HeroProps {
-  setUser: React.Dispatch<React.SetStateAction<{ full_name: string; email: string } | null>>;
+  setUser: React.Dispatch<
+    React.SetStateAction<{ full_name: string; email: string } | null>
+  >;
 }
 
 const Hero = ({ setUser }: HeroProps) => {
@@ -29,30 +31,41 @@ const Hero = ({ setUser }: HeroProps) => {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
 
   // signup management
-const [signupName, setSignupName] = useState("");
-const [signupEmail, setSignupEmail] = useState("");
-const [signupPassword, setSignupPassword] = useState("");
-const [authLoading, setAuthLoading] = useState(false);
-const [authMessage, setAuthMessage] = useState("");
+  const [signupName, setSignupName] = useState("");
+  const [signupEmail, setSignupEmail] = useState("");
+  const [signupPassword, setSignupPassword] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
+  const [authMessage, setAuthMessage] = useState("");
 
-// login
-const [loginEmail, setLoginEmail] = useState("");
-const [loginPassword, setLoginPassword] = useState("");
-const [userLoggedIn, setUserLoggedIn] = useState(false);
+  // login
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [userLoggedIn, setUserLoggedIn] = useState(false);
 
-// medicine auto suggestion
-const [suggestions, setSuggestions] = useState<string[]>([]);
-const [showSuggestions, setShowSuggestions] = useState(false);
-const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(null);
-const [justSelected, setJustSelected] = useState(false);
+  // medicine auto suggestion
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(
+    null
+  );
+  const [justSelected, setJustSelected] = useState(false);
 
-// forgot password states
-const [isForgotOpen, setIsForgotOpen] = useState(false);
-const [forgotEmail, setForgotEmail] = useState("");
-const [forgotLoading, setForgotLoading] = useState(false);
+  // forgot password states
+  const [isForgotOpen, setIsForgotOpen] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState("");
+  const [forgotLoading, setForgotLoading] = useState(false);
 
-  const { visitorId, compareCount, canCompare, resetCompareCount, incrementCompareCount, MAX_FREE_COMPARISONS } = useVisitorLimit();
-  const [message, setMessage] = useState(`Only ${compareCount} search(es) left! Unlock unlimited searches by logging in`);
+  const {
+    visitorId,
+    compareCount,
+    canCompare,
+    resetCompareCount,
+    incrementCompareCount,
+    MAX_FREE_COMPARISONS,
+  } = useVisitorLimit();
+  const [message, setMessage] = useState("");
+
+  const [authCheckComplete, setAuthCheckComplete] = useState(false); // New flag
 
   const currentDate = new Date();
   const formattedDate = `${String(currentDate.getDate()).padStart(
@@ -64,40 +77,47 @@ const [forgotLoading, setForgotLoading] = useState(false);
   )}-${currentDate.getFullYear()}`;
 
   const finalDateTime = new Date()
-  .toLocaleString("en-GB", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-    timeZone: "Asia/Kolkata",
-  })
-  .replace(",", "")
-  .replace(/\//g, "-");
+    .toLocaleString("en-GB", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      timeZone: "Asia/Kolkata",
+    })
+    .replace(",", "")
+    .replace(/\//g, "-");
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
 
-      if (!userLoggedIn && !canCompare) {
-  setIsAuthOpen(true);
-  return;
-}
+    if (!userLoggedIn) {
+      setIsAuthOpen(true);
+      return;
+    }
 
-     // Insert into all_qwery (always log the search query + date)
-  const { error: logError } = await supabase
-    .from("all_qwery")
-    .insert([
+    const { data: session } = await supabase.auth.getUser();
+    const userFullName =
+      session?.user?.user_metadata?.full_name || "Unknown User";
+    const userEmail = session?.user?.email || null;
+
+    console.log("userName- - - - - userEmail", userFullName, userEmail);
+
+    // Insert into all_qwery (always log the search query + date)
+    const { error: logError } = await supabase.from("all_qwery").insert([
       {
-        searchQuery: searchQuery,   // the term user typed
-        searched_at: finalDateTime
+        searchQuery: searchQuery, // the term user typed
+        searched_at: finalDateTime,
+        user_name: userFullName, // 👈 ADD THIS
+        user_email: userEmail, // 👈 OPTIONAL: Add email too
       },
     ]);
 
-  if (logError) {
-    console.error("Supabase log error:", logError);
-  }
+    if (logError) {
+      console.error("Supabase log error:", logError);
+    }
 
     setLoading(true);
     setError("");
@@ -130,12 +150,12 @@ const [forgotLoading, setForgotLoading] = useState(false);
       localStorage.setItem("med_qwery", searchQuery);
 
       // Build prices array with null safety
-const pricesArray = validEntries.map(([platform, data]) => {
-  const numericPrice = parseFloat(
-    ((data as any).price?.replace(/[^\d.]/g, "") ?? "0")
-  );
-  return { [platform]: numericPrice };
-});
+      const pricesArray = validEntries.map(([platform, data]) => {
+        const numericPrice = parseFloat(
+          (data as any).price?.replace(/[^\d.]/g, "") ?? "0"
+        );
+        return { [platform]: numericPrice };
+      });
 
       // Check if record already exists
       const { data: existingRecords, error: selectError } = await supabase
@@ -177,10 +197,7 @@ const pricesArray = validEntries.map(([platform, data]) => {
         .getElementById("price-comparison")
         ?.scrollIntoView({ behavior: "smooth" });
 
-      incrementCompareCount();
-            const remaining = MAX_FREE_COMPARISONS - (compareCount + 1);
-
-      setMessage(`${Math.max(remaining, 0)} search(es) left! Unlock unlimited searches by logging in`);
+      // const remaining = MAX_FREE_COMPARISONS - (compareCount + 1);
 
     } catch (err) {
       console.error(err);
@@ -190,22 +207,17 @@ const pricesArray = validEntries.map(([platform, data]) => {
     }
   };
 
-    useEffect(() => {
-
-        if (userLoggedIn) {
-    setMessage(""); // Clear message for logged-in users
-    return;
-  }
-    
-        const remaining = MAX_FREE_COMPARISONS - compareCount;
-
-        if (remaining <= 0) {
-    setMessage(`No searches left! Unlock unlimited searches by logging in`);
+ useEffect(() => {
+  if (!authCheckComplete) return; // Wait for auth check
+  
+  if (userLoggedIn) {
+    setMessage("");
   } else {
-    setMessage(`Only ${remaining} searches left! Unlock unlimited searches by logging in`);
+    setMessage(
+      `Login to start using MediBachat — searching is free for all logged-in users!`
+    );
   }
-
-  }, [compareCount, MAX_FREE_COMPARISONS, userLoggedIn]);
+}, [userLoggedIn, authCheckComplete]); // Add authCheckComplete!
 
   useEffect(() => {
     const handleFocusEvent = () => {
@@ -219,254 +231,277 @@ const pricesArray = validEntries.map(([platform, data]) => {
   }, []);
 
   useEffect(() => {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://www.medibachat.in/",
-    "name": "MediBachat",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.medibachat.in/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      url: "https://www.medibachat.in/",
+      name: "MediBachat",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://www.medibachat.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+
+    // ✅ Correct cleanup: explicitly returns void
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+  const handleSignUp = async () => {
+    setAuthLoading(true);
+    setAuthMessage("");
+
+    if (!signupName || !signupEmail || !signupPassword) {
+      setAuthMessage("Please fill in all fields.");
+      setAuthLoading(false);
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email: signupEmail,
+        password: signupPassword,
+        options: {
+          data: { full_name: signupName },
+          emailRedirectTo: window.location.origin,
+        },
+      });
+
+      if (error) throw error;
+
+      console.log("data.user---", data.user);
+
+      if (data.user) {
+        await supabase.from("user_profiles").insert([
+          {
+            user_id: data.user.id,
+            full_name: signupName,
+            email: signupEmail,
+            created_at: new Date(),
+          },
+        ]);
+      }
+
+      toast({
+        title: "Sign-up successful!",
+        description: "Sign-up successful! Please proceed to login",
+      });
+    } catch (error) {
+      console.error("Signup error:", error);
+      setAuthMessage(error.message || "Error signing up. Please try again.");
+    } finally {
+      setAuthLoading(false);
     }
   };
 
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.text = JSON.stringify(schemaData);
-  document.head.appendChild(script);
+  const handleLogin = async () => {
+    if (!loginEmail || !loginPassword) {
+      alert("Please enter email and password");
+      return;
+    }
 
-  // ✅ Correct cleanup: explicitly returns void
-  return () => {
-    document.head.removeChild(script);
-  };
-}, []);
-
-const handleSignUp = async () => {
-  setAuthLoading(true);
-  setAuthMessage("");
-
-  if (!signupName || !signupEmail || !signupPassword) {
-    setAuthMessage("Please fill in all fields.");
-    setAuthLoading(false);
-    return;
-  }
-
-  try {
-    const { data, error } = await supabase.auth.signUp({
-      email: signupEmail,
-      password: signupPassword,
-      options: {
-        data: { full_name: signupName },
-        emailRedirectTo: window.location.origin,
-      },
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: loginEmail,
+      password: loginPassword,
     });
 
-    if (error) throw error;
-
-    console.log('data.user---', data.user);
-    
-    if (data.user) {
-  await supabase.from("user_profiles").insert([
-    {
-      user_id: data.user.id,
-      full_name: signupName,
-      email: signupEmail,
-      created_at: new Date(),
-    },
-  ]);
-}
-
-     toast({
-            title: "Sign-up successful!",
-            description: "Sign-up successful! Please proceed to login",
-          });
-
-  } catch (error) {
-    console.error("Signup error:", error);
-    setAuthMessage(error.message || "Error signing up. Please try again.");
-  } finally {
-    setAuthLoading(false);
-  }
-};
-
-const handleLogin = async () => {
-  if (!loginEmail || !loginPassword) {
-    alert("Please enter email and password");
-    return;
-  }
-
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email: loginEmail,
-    password: loginPassword,
-  });
-
-  if (error) {
-    console.error("Login error:", error.message);
-    toast({
+    if (error) {
+      console.error("Login error:", error.message);
+      toast({
         title: "Login Failed!",
         description: "Invalid Credentials! Check your email or password",
       });
-  } else {
-     toast({
+    } else {
+      toast({
         title: "Login Successful!",
         description: "You have logged in successfully!",
       });
 
-       // Set the logged-in user state for Header
-    if (data.user) {
-      const { email, user_metadata } = data.user;
-      setUser({ full_name: user_metadata.full_name || "", email });
+      // Set the logged-in user state for Header
+      if (data.user) {
+        const { email, user_metadata } = data.user;
+        setUser({ full_name: user_metadata.full_name || "", email });
+      }
+
+      setIsAuthOpen(false);
+
+      // ✅ Mark user as logged in and reset visitor count
+      setUserLoggedIn(true);
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    if (!forgotEmail) {
+      toast({
+        title: "Email required",
+        description: "Please enter your registered email address",
+      });
+      return;
     }
 
-    setIsAuthOpen(false);
+    setForgotLoading(true);
+    try {
+      const { error } = await supabase.auth.resetPasswordForEmail(forgotEmail, {
+        redirectTo: `${window.location.origin}/reset-password`, // page user will be redirected to
+      });
 
-    // ✅ Mark user as logged in and reset visitor count
-    setUserLoggedIn(true);
-  }
-};
+      if (error) throw error;
 
-const handleForgotPassword = async () => {
-  if (!forgotEmail) {
-    toast({
-      title: "Email required",
-      description: "Please enter your registered email address",
-    });
-    return;
-  }
+      toast({
+        title: "Reset link sent!",
+        description: "Please check your email for password reset instructions.",
+      });
+      setIsForgotOpen(false);
+    } catch (err) {
+      console.error("Reset error:", err.message);
+      toast({
+        title: "Error",
+        description:
+          err.message || "Failed to send reset link. Try again later.",
+      });
+    } finally {
+      setForgotLoading(false);
+    }
+  };
 
-  setForgotLoading(true);
-  try {
-    const { error } = await supabase.auth.resetPasswordForEmail(forgotEmail, {
-      redirectTo: `${window.location.origin}/reset-password`, // page user will be redirected to
-    });
-
-    if (error) throw error;
-
-    toast({
-      title: "Reset link sent!",
-      description: "Please check your email for password reset instructions.",
-    });
-    setIsForgotOpen(false);
-  } catch (err) {
-    console.error("Reset error:", err.message);
-    toast({
-      title: "Error",
-      description: err.message || "Failed to send reset link. Try again later.",
-    });
-  } finally {
-    setForgotLoading(false);
-  }
-};
-
-useEffect(() => {
+ useEffect(() => {
   const getSession = async () => {
-    const { data } = await supabase.auth.getSession();
-    if (data.session) {
-      const user = data.session.user;
-      setUser({ full_name: user.user_metadata.full_name || "", email: user.email });
-      setUserLoggedIn(true); // mark as logged in
+    try {
+      const { data } = await supabase.auth.getSession();
+      if (data.session) {
+        const user = data.session.user;
+        setUser({
+          full_name: user.user_metadata.full_name || "",
+          email: user.email,
+        });
+        setUserLoggedIn(true);
+      } else {
+        // ✅ Explicitly set to false if NO session
+        setUserLoggedIn(false);
+      }
+    } catch (err) {
+      console.error("Session check error:", err);
+      setUserLoggedIn(false);
+    } finally {
+      // ✅ Mark auth check as complete
+      setAuthCheckComplete(true);
     }
   };
 
   getSession();
-}, []);
+}, []); // Empty dependency array - run only on mount
 
-useEffect(() => {
-  const handleOpenLoginModal = () => {
-    setIsAuthOpen(true);
+  useEffect(() => {
+    const handleOpenLoginModal = () => {
+      setIsAuthOpen(true);
+    };
+
+    window.addEventListener("openLoginModal", handleOpenLoginModal);
+
+    return () => {
+      window.removeEventListener("openLoginModal", handleOpenLoginModal);
+    };
+  }, []);
+
+  const handleFileChange = async (event) => {
+    const file = event.target.files?.[0];
+
+    console.log("im here at 1");
+
+    if (!file) return;
+
+    console.log("im here at 2");
+
+    const formData = new FormData();
+    formData.append("image", file);
+
+    const res = await fetch(
+      "https://medicompare-production.up.railway.app/api/extract-medicine",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    const data = await res.json();
+
+    let text = data.medicines || "";
+
+    // extract last non-empty line and clean it
+    const medicine = text
+      .split("\n")
+      .map((line) => line.replace(/[-*]/g, "").trim())
+      .filter(Boolean)
+      .pop();
+
+    console.log("Extracted medicine names----:", medicine);
+
+    setSearchQuery(medicine);
+
+    setTimeout(() => {
+      document
+        .querySelector(
+          "form[aria-label='Medicine price comparison search form']"
+        )
+        ?.dispatchEvent(
+          new Event("submit", { bubbles: true, cancelable: true })
+        );
+    }, 200);
   };
 
-  window.addEventListener("openLoginModal", handleOpenLoginModal);
-
-  return () => {
-    window.removeEventListener("openLoginModal", handleOpenLoginModal);
-  };
-}, []);
-
-const handleFileChange = async (event) => {
-  const file = event.target.files?.[0];
-
-  console.log('im here at 1');
-  
-  if (!file) return;
-
-    console.log('im here at 2');
-
-  const formData = new FormData();
-  formData.append("image", file);
-
-  const res = await fetch("https://medicompare-production.up.railway.app/api/extract-medicine", {
-    method: "POST",
-    body: formData,
-  });
-
-  const data = await res.json();
-  
-  let text = data.medicines || "";
-
-// extract last non-empty line and clean it
-const medicine = text
-  .split("\n")
-  .map(line => line.replace(/[-*]/g, "").trim())
-  .filter(Boolean)
-  .pop();
-
-console.log("Extracted medicine names----:", medicine);
-
-setSearchQuery(medicine)
-
-setTimeout(() => {
-  document.querySelector("form[aria-label='Medicine price comparison search form']")?.dispatchEvent(
-    new Event("submit", { bubbles: true, cancelable: true })
-  );
-}, 200);
-
-};
-
-useEffect(() => {
-
-  if (justSelected) {
-    // 👇 skip fetching when a suggestion was just clicked
-    setJustSelected(false);
-    return;
-  }
-  
-  // Only trigger when user typed something
-  if (!searchQuery.trim()) {
-    setSuggestions([]);
-    setShowSuggestions(false);
-    return;
-  }
-
-  // Debounce (wait for user to stop typing)
-  if (debounceTimer) clearTimeout(debounceTimer);
-
-  const timer = setTimeout(async () => {
-    try {
-      const res = await fetch(`https://medicompare-production.up.railway.app/suggest?q=${encodeURIComponent(searchQuery)}`);
-      const data = await res.json();
-      setSuggestions(data || []);
-      setShowSuggestions(true);
-    } catch (err) {
-      console.error("Suggestion fetch error:", err);
+  useEffect(() => {
+    if (justSelected) {
+      // 👇 skip fetching when a suggestion was just clicked
+      setJustSelected(false);
+      return;
     }
-  }, 300); // 300 ms delay
 
-  setDebounceTimer(timer);
-
-  return () => clearTimeout(timer);
-}, [searchQuery]);
-
-useEffect(() => {
-  const handleClickOutside = (e: MouseEvent) => {
-    if (!(e.target as HTMLElement).closest(".suggestion-wrapper")) {
+    // Only trigger when user typed something
+    if (!searchQuery.trim()) {
+      setSuggestions([]);
       setShowSuggestions(false);
+      return;
     }
-  };
-  document.addEventListener("click", handleClickOutside);
-  return () => document.removeEventListener("click", handleClickOutside);
-}, []);
+
+    // Debounce (wait for user to stop typing)
+    if (debounceTimer) clearTimeout(debounceTimer);
+
+    const timer = setTimeout(async () => {
+      try {
+        const res = await fetch(
+          `https://medicompare-production.up.railway.app/suggest?q=${encodeURIComponent(
+            searchQuery
+          )}`
+        );
+        const data = await res.json();
+        setSuggestions(data || []);
+        setShowSuggestions(true);
+      } catch (err) {
+        console.error("Suggestion fetch error:", err);
+      }
+    }, 300); // 300 ms delay
+
+    setDebounceTimer(timer);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!(e.target as HTMLElement).closest(".suggestion-wrapper")) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
 
   return (
     <section
@@ -484,19 +519,28 @@ useEffect(() => {
                   Save Up to 70%
                 </span>
               </h1>
-                  <h2 className="text-2xl font-semibold text-muted-foreground sr-only">
-  India’s trusted online medicine price comparison tool for branded, generic, and pet medicines.
-</h2>
+              <h2 className="text-2xl font-semibold text-muted-foreground sr-only">
+                India’s trusted online medicine price comparison tool for
+                branded, generic, and pet medicines.
+              </h2>
 
-
-             <p className="text-xl text-base text-muted-foreground max-w-2xl">
-  Compare drug prices across <strong>PharmEasy</strong>, <strong>Tata 1mg</strong>, and more. 
-  Find <strong>medicine substitutes with price</strong>, do a quick <strong>medicine price check</strong>, 
-  and discover the <strong>cheapest medicine online</strong> — whether you’re buying 
-  <strong> piles medicine</strong>, the <strong>best cough medicine</strong>, or even <strong>pet medicine online</strong>. 
-  MediBachat <strong><a style={{color:'blue'}} href="#price-comparison">drug cost comparisons</a></strong> tool can help!
-</p>
-
+              <p className="text-xl text-base text-muted-foreground max-w-2xl">
+                Compare drug prices across <strong>PharmEasy</strong>,{" "}
+                <strong>Tata 1mg</strong>, and more. Find{" "}
+                <strong>medicine substitutes with price</strong>, do a quick{" "}
+                <strong>medicine price check</strong>, and discover the{" "}
+                <strong>cheapest medicine online</strong> — whether you’re
+                buying
+                <strong> piles medicine</strong>, the{" "}
+                <strong>best cough medicine</strong>, or even{" "}
+                <strong>pet medicine online</strong>. MediBachat{" "}
+                <strong>
+                  <a style={{ color: "blue" }} href="#price-comparison">
+                    drug cost comparisons
+                  </a>
+                </strong>{" "}
+                tool can help!
+              </p>
             </div>
 
             {/* Search Form */}
@@ -516,54 +560,60 @@ useEffect(() => {
                   className="pl-10 h-12 text-base pr-14"
                 />
 
-{/* auto suggetion box */}
+                {/* auto suggetion box */}
                 {showSuggestions && suggestions.length > 0 && (
-  <ul className="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto z-50 dark:text-black">
-    {suggestions.map((item, index) => (
-      <li
-        key={index}
-        className="px-3 py-2 cursor-pointer hover:bg-gray-100 text-sm"
-        onClick={() => {
-          setSearchQuery(item);
-          setShowSuggestions(false);
-          setJustSelected(true); // ✅ prevents refetch
-          // optional: auto-search when user picks a suggestion
-           // ✅ small delay ensures React updates state first
-  setTimeout(() => {
-    document
-      .querySelector("form[aria-label='Medicine price comparison search form']")
-      ?.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
-  }, 200);
-        }}
-      >
-        {item}
-      </li>
-    ))}
-  </ul>
-)}
+                  <ul className="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto z-50 dark:text-black">
+                    {suggestions.map((item, index) => (
+                      <li
+                        key={index}
+                        className="px-3 py-2 cursor-pointer hover:bg-gray-100 text-sm"
+                        onClick={() => {
+                          setSearchQuery(item);
+                          setShowSuggestions(false);
+                          setJustSelected(true); // ✅ prevents refetch
+                          // optional: auto-search when user picks a suggestion
+                          // ✅ small delay ensures React updates state first
+                          setTimeout(() => {
+                            document
+                              .querySelector(
+                                "form[aria-label='Medicine price comparison search form']"
+                              )
+                              ?.dispatchEvent(
+                                new Event("submit", {
+                                  bubbles: true,
+                                  cancelable: true,
+                                })
+                              );
+                          }, 200);
+                        }}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 {/* Hidden file input for camera */}
-<input
-  type="file"
-  accept="image/*"
-  capture="environment" // opens back camera on mobile
-  className="hidden"
-  ref={fileInputRef}
-  onChange={handleFileChange}
-/>
+                <input
+                  type="file"
+                  accept="image/*"
+                  capture="environment" // opens back camera on mobile
+                  className="hidden"
+                  ref={fileInputRef}
+                  onChange={handleFileChange}
+                />
 
-{/* Camera icon inside the input */}
+                {/* Camera icon inside the input */}
 
-                  <Camera
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer h-6 w-6" // ⬅️ Increased size
-
- onClick={() => {
-    if (fileInputRef.current) {
-      fileInputRef.current.value = ""; // ✅ important: reset old file
-      fileInputRef.current.click();    // open camera
-    }
-  }}
-  />
+                <Camera
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer h-6 w-6" // ⬅️ Increased size
+                  onClick={() => {
+                    if (fileInputRef.current) {
+                      fileInputRef.current.value = ""; // ✅ important: reset old file
+                      fileInputRef.current.click(); // open camera
+                    }
+                  }}
+                />
               </div>
               <Button
                 type="submit"
@@ -578,16 +628,12 @@ useEffect(() => {
               </Button>
             </form>
 
-           <p
-                        style={{ marginTop: "15px" }}
-
-  className={`animate-bounce font-semibold text-[13px] ${
-   ( MAX_FREE_COMPARISONS - compareCount) <= 1 ? "text-red-500" : "text-green-400"
-  }`}
->
-  {message}
-</p>
-
+            <p
+              style={{ marginTop: "15px" }}
+              className={`animate-bounce font-semibold text-[13px] text-green-400`}
+            >
+              {message}
+            </p>
 
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
@@ -622,7 +668,9 @@ useEffect(() => {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Real-time Updates</h3>
+                  <h3 className="font-semibold text-foreground">
+                    Real-time Updates
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     Drug cost comparisons
                   </p>
@@ -648,108 +696,133 @@ useEffect(() => {
         </div>
       </div>
 
-       <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
+      <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>Welcome to MediBachat</DialogTitle>
             <DialogDescription>
-              Sign in to your account or create a new one to start comparing medicine prices with <b>no restrictions!</b>
+              Sign in to your account or create a new one to start comparing
+              medicine prices with <b>no restrictions!</b>
             </DialogDescription>
           </DialogHeader>
-          
+
           <Tabs defaultValue="signin" className="w-full">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="signin">Sign In</TabsTrigger>
               <TabsTrigger value="signup">Sign Up</TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="signin" className="space-y-4 mt-4">
               <div className="space-y-2">
                 <Label htmlFor="signin-email">Email</Label>
-                <Input id="signin-email" type="email" placeholder="Enter your email" 
-                 value={loginEmail}
-      onChange={(e) => setLoginEmail(e.target.value)}
+                <Input
+                  id="signin-email"
+                  type="email"
+                  placeholder="Enter your email"
+                  value={loginEmail}
+                  onChange={(e) => setLoginEmail(e.target.value)}
                 />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="signin-password">Password</Label>
-                <Input id="signin-password" type="password" placeholder="Enter your password" 
-                value={loginPassword}
-      onChange={(e) => setLoginPassword(e.target.value)}
-
+                <Input
+                  id="signin-password"
+                  type="password"
+                  placeholder="Enter your password"
+                  value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
                 />
               </div>
-              <Button className="w-full" variant="hero" onClick={handleLogin}><p className="text-white">Sign In</p></Button>
+              <Button className="w-full" variant="hero" onClick={handleLogin}>
+                <p className="text-white">Sign In</p>
+              </Button>
 
-              <p className="text-sm text-right text-blue-600 mt-2 cursor-pointer hover:underline"
-   onClick={() => setIsForgotOpen(true)}>
-  Forgot Password?
-</p>
-
+              <p
+                className="text-sm text-right text-blue-600 mt-2 cursor-pointer hover:underline"
+                onClick={() => setIsForgotOpen(true)}
+              >
+                Forgot Password?
+              </p>
             </TabsContent>
-            
+
             <TabsContent value="signup" className="space-y-4 mt-4">
               <div className="space-y-2">
                 <Label htmlFor="signup-name">Full Name</Label>
-                <Input id="signup-name" type="text" placeholder="Enter your full name" 
-                value={signupName}
-    onChange={(e) => setSignupName(e.target.value)}
+                <Input
+                  id="signup-name"
+                  type="text"
+                  placeholder="Enter your full name"
+                  value={signupName}
+                  onChange={(e) => setSignupName(e.target.value)}
                 />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="signup-email">Email</Label>
-                <Input id="signup-email" type="email" placeholder="Enter your email" 
-                 value={signupEmail}
-    onChange={(e) => setSignupEmail(e.target.value)}
+                <Input
+                  id="signup-email"
+                  type="email"
+                  placeholder="Enter your email"
+                  value={signupEmail}
+                  onChange={(e) => setSignupEmail(e.target.value)}
                 />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="signup-password">Password</Label>
-                <Input id="signup-password" type="password" placeholder="Create a password" 
-                    value={signupPassword}
-                    onChange={(e) => setSignupPassword(e.target.value)}
-
+                <Input
+                  id="signup-password"
+                  type="password"
+                  placeholder="Create a password"
+                  value={signupPassword}
+                  onChange={(e) => setSignupPassword(e.target.value)}
                 />
               </div>
-              <Button 
-               onClick={handleSignUp}
-  disabled={authLoading}
-              className="w-full" variant="hero"><p className="text-white">{authLoading ? "Signing Up..." : "Sign Up"}</p></Button>
+              <Button
+                onClick={handleSignUp}
+                disabled={authLoading}
+                className="w-full"
+                variant="hero"
+              >
+                <p className="text-white">
+                  {authLoading ? "Signing Up..." : "Sign Up"}
+                </p>
+              </Button>
             </TabsContent>
           </Tabs>
         </DialogContent>
       </Dialog>
 
       <Dialog open={isForgotOpen} onOpenChange={setIsForgotOpen}>
-  <DialogContent className="sm:max-w-[400px]">
-    <DialogHeader>
-      <DialogTitle>Reset Password</DialogTitle>
-      <DialogDescription>
-        Enter your email address and we’ll send you a link to reset your password.
-      </DialogDescription>
-    </DialogHeader>
+        <DialogContent className="sm:max-w-[400px]">
+          <DialogHeader>
+            <DialogTitle>Reset Password</DialogTitle>
+            <DialogDescription>
+              Enter your email address and we’ll send you a link to reset your
+              password.
+            </DialogDescription>
+          </DialogHeader>
 
-    <div className="space-y-4 mt-4">
-      <Label htmlFor="forgot-email">Email</Label>
-      <Input
-        id="forgot-email"
-        type="email"
-        placeholder="Enter your registered email"
-        value={forgotEmail}
-        onChange={(e) => setForgotEmail(e.target.value)}
-      />
-      <Button
-        className="w-full"
-        variant="hero"
-        onClick={handleForgotPassword}
-        disabled={forgotLoading}
-      >
-        <p className="text-white">{forgotLoading ? "Sending..." : "Send Reset Link"}</p>
-      </Button>
-    </div>
-  </DialogContent>
-</Dialog>
-
+          <div className="space-y-4 mt-4">
+            <Label htmlFor="forgot-email">Email</Label>
+            <Input
+              id="forgot-email"
+              type="email"
+              placeholder="Enter your registered email"
+              value={forgotEmail}
+              onChange={(e) => setForgotEmail(e.target.value)}
+            />
+            <Button
+              className="w-full"
+              variant="hero"
+              onClick={handleForgotPassword}
+              disabled={forgotLoading}
+            >
+              <p className="text-white">
+                {forgotLoading ? "Sending..." : "Send Reset Link"}
+              </p>
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

@@ -13,6 +13,7 @@ import BlogPost from "./pages/BlogPost";
 import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
+import Pricing from "./components/Pricing";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,8 @@ const App = () => (
             <Route path="/terms-of-service" element={<TermsOfService />} />  {/* Add this */}
             <Route path="/disclaimer" element={<Disclaimer />} />  {/* Add this */}
             <Route path="/reset-password" element={<ResetPasswordPage />} />  {/* Add this */}
+
+            <Route path="/pricing" element={<Pricing />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
