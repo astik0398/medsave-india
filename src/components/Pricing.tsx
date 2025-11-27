@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabaseClient";
 
 const Pricing = () => {
   const plans = [
@@ -103,9 +105,17 @@ const Pricing = () => {
     // Add your plan selection logic here
   };
 
+  const [user, setUser] = useState(null);
+
+useEffect(() => {
+  supabase.auth.getUser().then(({ data }) => {
+    setUser(data?.user?.user_metadata || null);
+  });
+}, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F5F9] dark:bg-[#020817]">
-      <Header />
+      <Header user={user} />
       <main className="flex-1">
         {/* Hero Section */}
 <section className="relative pt-12 md:pt-16 pb-20 md:pb-24 overflow-hidden">
