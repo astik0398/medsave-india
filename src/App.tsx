@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import { AuthProvider } from "@/contexts/AuthContext";
+import LoginModal from "@/components/LoginModal";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -20,30 +22,27 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-
-  <ScrollHandler />
-
-
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/blog/:id" element={<BlogPost />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/about-medibachat" element={<AboutUs />} />  {/* Add this */}
-            <Route path="/terms-of-service" element={<TermsOfService />} />  {/* Add this */}
-            <Route path="/disclaimer" element={<Disclaimer />} />  {/* Add this */}
-            <Route path="/reset-password" element={<ResetPasswordPage />} />  {/* Add this */}
-
-            <Route path="/pricing" element={<Pricing />} />
-
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+      <AuthProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <LoginModal />
+          <BrowserRouter>
+            <ScrollHandler />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/about-medibachat" element={<AboutUs />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/disclaimer" element={<Disclaimer />} />
+              <Route path="/reset-password" element={<ResetPasswordPage />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
     </ThemeProvider>
   </QueryClientProvider>
 );
