@@ -12,16 +12,12 @@ import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
 import DownloadApp from "@/components/DownloadApp";
-import { useState } from "react";
 
 const Index = () => {
-
-    const [user, setUser] = useState<{ full_name: string; email: string } | null>(null);
-
   return (
     <div className="min-h-screen">
-      <Header user={user} />
-      <Hero setUser={setUser}  />
+      <Header />
+      <Hero />
       <PriceComparison />
       <FlashDeals />
       <CouponsSection />

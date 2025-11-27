@@ -15,18 +15,14 @@ import {
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/medi bachat dark mode (1).png";
 import logoLight from "@/assets/medibachat all images (3).png";
-import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
-
+import { supabase } from "@/lib/supabaseClient.js";
+import { useAuth } from "@/contexts/AuthContext";
 import { useTheme } from "next-themes";
 
-interface HeaderProps {
-  user?: { full_name: string; email: string } | null;
-}
-
-const Header = ({ user }: HeaderProps) => {
+const Header = () => {
+  const { user, openLoginModal } = useAuth();
+  
   const getInitials = (fullName: string) => {
-    console.log("fullName--", fullName);
-
     if (!fullName) return "";
     const names = fullName.split(" ");
     const initials = names.map((n) => n[0].toUpperCase()).slice(0, 2);
@@ -34,9 +30,7 @@ const Header = ({ user }: HeaderProps) => {
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme } = useTheme(); // get current theme
-
-  console.log("theme right now--------->", theme);
+  const { theme } = useTheme();
 
   const navItems = [
     { label: "Home", href: "/#home", icon: House },
@@ -114,10 +108,7 @@ const Header = ({ user }: HeaderProps) => {
               variant="hero"
               size="sm"
               className="dark:text-white pl-4 pr-4"
-              onClick={() => {
-                // Trigger your login modal
-                window.dispatchEvent(new Event("openLoginModal"));
-              }}
+              onClick={openLoginModal}
             >
               Log In
             </Button>
@@ -190,10 +181,7 @@ const Header = ({ user }: HeaderProps) => {
                   variant="hero"
                   size="sm"
                   className="dark:text-white w-full"
-                  onClick={() => {
-                    // Trigger your login modal
-                    window.dispatchEvent(new Event("openLoginModal"));
-                  }}
+                  onClick={openLoginModal}
                 >
                   Log In
                 </Button>

@@ -3,46 +3,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, TrendingDown, Shield, Clock, Camera } from "lucide-react";
 import heroImage from "@/assets/medicine price comparison.png";
-import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
+import { supabase } from "@/lib/supabaseClient.js";
 import useVisitorLimit from "../hooks/useVisitorLimit";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Label } from "@/components/ui/label";
-import { toast } from "@/hooks/use-toast";
+import { useAuth } from "@/contexts/AuthContext";
 
-interface HeroProps {
-  setUser: React.Dispatch<
-    React.SetStateAction<{ full_name: string; email: string } | null>
-  >;
-}
-
-const Hero = ({ setUser }: HeroProps) => {
+const Hero = () => {
+  const { userLoggedIn, openLoginModal } = useAuth();
+  
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [isAuthOpen, setIsAuthOpen] = useState(false);
-
-  // signup management
-  const [signupName, setSignupName] = useState("");
-  const [signupEmail, setSignupEmail] = useState("");
-  const [signupPassword, setSignupPassword] = useState("");
-  const [authLoading, setAuthLoading] = useState(false);
-  const [authMessage, setAuthMessage] = useState("");
-
-  // login
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-  const [userLoggedIn, setUserLoggedIn] = useState(false);
-
-  // medicine auto suggestion
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(
@@ -94,7 +66,7 @@ const Hero = ({ setUser }: HeroProps) => {
     if (!searchQuery.trim()) return;
 
     if (!userLoggedIn) {
-      setIsAuthOpen(true);
+      openLoginModal();
       return;
     }
 
@@ -208,8 +180,6 @@ const Hero = ({ setUser }: HeroProps) => {
   };
 
  useEffect(() => {
-  if (!authCheckComplete) return; // Wait for auth check
-  
   if (userLoggedIn) {
     setMessage("");
   } else {
@@ -217,7 +187,7 @@ const Hero = ({ setUser }: HeroProps) => {
       `Login to start using MediBachat — searching is free for all logged-in users!`
     );
   }
-}, [userLoggedIn, authCheckComplete]); // Add authCheckComplete!
+}, [userLoggedIn]);
 
   useEffect(() => {
     const handleFocusEvent = () => {
@@ -248,165 +218,8 @@ const Hero = ({ setUser }: HeroProps) => {
     script.text = JSON.stringify(schemaData);
     document.head.appendChild(script);
 
-    // ✅ Correct cleanup: explicitly returns void
     return () => {
       document.head.removeChild(script);
-    };
-  }, []);
-
-  const handleSignUp = async () => {
-    setAuthLoading(true);
-    setAuthMessage("");
-
-    if (!signupName || !signupEmail || !signupPassword) {
-      setAuthMessage("Please fill in all fields.");
-      setAuthLoading(false);
-      return;
-    }
-
-    try {
-      const { data, error } = await supabase.auth.signUp({
-        email: signupEmail,
-        password: signupPassword,
-        options: {
-          data: { full_name: signupName },
-          emailRedirectTo: window.location.origin,
-        },
-      });
-
-      if (error) throw error;
-
-      console.log("data.user---", data.user);
-
-      if (data.user) {
-        await supabase.from("user_profiles").insert([
-          {
-            user_id: data.user.id,
-            full_name: signupName,
-            email: signupEmail,
-            created_at: new Date(),
-          },
-        ]);
-      }
-
-      toast({
-        title: "Sign-up successful!",
-        description: "Sign-up successful! Please proceed to login",
-      });
-    } catch (error) {
-      console.error("Signup error:", error);
-      setAuthMessage(error.message || "Error signing up. Please try again.");
-    } finally {
-      setAuthLoading(false);
-    }
-  };
-
-  const handleLogin = async () => {
-    if (!loginEmail || !loginPassword) {
-      alert("Please enter email and password");
-      return;
-    }
-
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email: loginEmail,
-      password: loginPassword,
-    });
-
-    if (error) {
-      console.error("Login error:", error.message);
-      toast({
-        title: "Login Failed!",
-        description: "Invalid Credentials! Check your email or password",
-      });
-    } else {
-      toast({
-        title: "Login Successful!",
-        description: "You have logged in successfully!",
-      });
-
-      // Set the logged-in user state for Header
-      if (data.user) {
-        const { email, user_metadata } = data.user;
-        setUser({ full_name: user_metadata.full_name || "", email });
-      }
-
-      setIsAuthOpen(false);
-
-      // ✅ Mark user as logged in and reset visitor count
-      setUserLoggedIn(true);
-    }
-  };
-
-  const handleForgotPassword = async () => {
-    if (!forgotEmail) {
-      toast({
-        title: "Email required",
-        description: "Please enter your registered email address",
-      });
-      return;
-    }
-
-    setForgotLoading(true);
-    try {
-      const { error } = await supabase.auth.resetPasswordForEmail(forgotEmail, {
-        redirectTo: `${window.location.origin}/reset-password`, // page user will be redirected to
-      });
-
-      if (error) throw error;
-
-      toast({
-        title: "Reset link sent!",
-        description: "Please check your email for password reset instructions.",
-      });
-      setIsForgotOpen(false);
-    } catch (err) {
-      console.error("Reset error:", err.message);
-      toast({
-        title: "Error",
-        description:
-          err.message || "Failed to send reset link. Try again later.",
-      });
-    } finally {
-      setForgotLoading(false);
-    }
-  };
-
- useEffect(() => {
-  const getSession = async () => {
-    try {
-      const { data } = await supabase.auth.getSession();
-      if (data.session) {
-        const user = data.session.user;
-        setUser({
-          full_name: user.user_metadata.full_name || "",
-          email: user.email,
-        });
-        setUserLoggedIn(true);
-      } else {
-        // ✅ Explicitly set to false if NO session
-        setUserLoggedIn(false);
-      }
-    } catch (err) {
-      console.error("Session check error:", err);
-      setUserLoggedIn(false);
-    } finally {
-      // ✅ Mark auth check as complete
-      setAuthCheckComplete(true);
-    }
-  };
-
-  getSession();
-}, []); // Empty dependency array - run only on mount
-
-  useEffect(() => {
-    const handleOpenLoginModal = () => {
-      setIsAuthOpen(true);
-    };
-
-    window.addEventListener("openLoginModal", handleOpenLoginModal);
-
-    return () => {
-      window.removeEventListener("openLoginModal", handleOpenLoginModal);
     };
   }, []);
 
@@ -695,134 +508,6 @@ const Hero = ({ setUser }: HeroProps) => {
           </div>
         </div>
       </div>
-
-      <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Welcome to MediBachat</DialogTitle>
-            <DialogDescription>
-              Sign in to your account or create a new one to start comparing
-              medicine prices with <b>no restrictions!</b>
-            </DialogDescription>
-          </DialogHeader>
-
-          <Tabs defaultValue="signin" className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="signin">Sign In</TabsTrigger>
-              <TabsTrigger value="signup">Sign Up</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="signin" className="space-y-4 mt-4">
-              <div className="space-y-2">
-                <Label htmlFor="signin-email">Email</Label>
-                <Input
-                  id="signin-email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={loginEmail}
-                  onChange={(e) => setLoginEmail(e.target.value)}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="signin-password">Password</Label>
-                <Input
-                  id="signin-password"
-                  type="password"
-                  placeholder="Enter your password"
-                  value={loginPassword}
-                  onChange={(e) => setLoginPassword(e.target.value)}
-                />
-              </div>
-              <Button className="w-full" variant="hero" onClick={handleLogin}>
-                <p className="text-white">Sign In</p>
-              </Button>
-
-              <p
-                className="text-sm text-right text-blue-600 mt-2 cursor-pointer hover:underline"
-                onClick={() => setIsForgotOpen(true)}
-              >
-                Forgot Password?
-              </p>
-            </TabsContent>
-
-            <TabsContent value="signup" className="space-y-4 mt-4">
-              <div className="space-y-2">
-                <Label htmlFor="signup-name">Full Name</Label>
-                <Input
-                  id="signup-name"
-                  type="text"
-                  placeholder="Enter your full name"
-                  value={signupName}
-                  onChange={(e) => setSignupName(e.target.value)}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="signup-email">Email</Label>
-                <Input
-                  id="signup-email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={signupEmail}
-                  onChange={(e) => setSignupEmail(e.target.value)}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="signup-password">Password</Label>
-                <Input
-                  id="signup-password"
-                  type="password"
-                  placeholder="Create a password"
-                  value={signupPassword}
-                  onChange={(e) => setSignupPassword(e.target.value)}
-                />
-              </div>
-              <Button
-                onClick={handleSignUp}
-                disabled={authLoading}
-                className="w-full"
-                variant="hero"
-              >
-                <p className="text-white">
-                  {authLoading ? "Signing Up..." : "Sign Up"}
-                </p>
-              </Button>
-            </TabsContent>
-          </Tabs>
-        </DialogContent>
-      </Dialog>
-
-      <Dialog open={isForgotOpen} onOpenChange={setIsForgotOpen}>
-        <DialogContent className="sm:max-w-[400px]">
-          <DialogHeader>
-            <DialogTitle>Reset Password</DialogTitle>
-            <DialogDescription>
-              Enter your email address and we’ll send you a link to reset your
-              password.
-            </DialogDescription>
-          </DialogHeader>
-
-          <div className="space-y-4 mt-4">
-            <Label htmlFor="forgot-email">Email</Label>
-            <Input
-              id="forgot-email"
-              type="email"
-              placeholder="Enter your registered email"
-              value={forgotEmail}
-              onChange={(e) => setForgotEmail(e.target.value)}
-            />
-            <Button
-              className="w-full"
-              variant="hero"
-              onClick={handleForgotPassword}
-              disabled={forgotLoading}
-            >
-              <p className="text-white">
-                {forgotLoading ? "Sending..." : "Send Reset Link"}
-              </p>
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 };
