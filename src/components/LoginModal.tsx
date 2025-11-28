@@ -103,8 +103,10 @@ const LoginModal = () => {
 
       // Set the logged-in user state
       if (data.user) {
-        const { email, user_metadata } = data.user;
-        setUser({ full_name: user_metadata.full_name || "", email: email || "" });
+        const { email, user_metadata, id } = data.user;
+        console.log('email, user_metadata, id----', email, user_metadata, id);
+        
+        setUser({ full_name: user_metadata.full_name || "", email: email || "", id: id });
       }
 
       setIsAuthOpen(false);
@@ -193,7 +195,7 @@ const LoginModal = () => {
               <button
                 type="button"
                 onClick={() => setIsForgotOpen(true)}
-                className="w-full text-sm text-primary hover:underline"
+                className="w-full text-sm text-primary hover:underline text-right"
               >
                 Forgot Password?
               </button>

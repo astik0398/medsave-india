@@ -16,6 +16,7 @@ import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import Pricing from "./components/Pricing";
+import Ads from "./contexts/Ads";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
       <AuthProvider>
+        <Ads/>
         <TooltipProvider>
           <Toaster />
           <Sonner />

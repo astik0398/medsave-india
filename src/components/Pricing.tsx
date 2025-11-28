@@ -4,8 +4,106 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "@/hooks/use-toast";
 
 const Pricing = () => {
+
+    const { userLoggedIn, user, openLoginModal } = useAuth();
+
+    // Load Razorpay script
+const loadRazorpayScript = () => {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+};
+
+const startPayment = async (amount: number, planName: string) => {
+  if (!userLoggedIn) {
+    openLoginModal();
+    return;
+  }
+
+  const res = await loadRazorpayScript();
+  if (!res) {
+    alert("Razorpay SDK failed to load. Check your internet connection.");
+    return;
+  }
+
+  try {
+    // 1️⃣ Create order from backend
+    const orderResponse = await fetch("https://medicompare-production.up.railway.app/create-order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        amount,
+        userId: user?.id,
+      }),
+    });
+
+    const orderData = await orderResponse.json();
+
+    const options: any = {
+      key: orderData.key,
+      amount: orderData.amount,
+      currency: orderData.currency,
+      name: "MediBachat",
+      description: "Premium Plan",
+      order_id: orderData.orderId,
+
+      prefill: {
+        name: user?.full_name,
+        email: user?.email,
+        contact: user?.phone || "",
+      },
+
+      handler: async function (response: any) {
+        // 2️⃣ Verify payment on backend
+        const verifyRes = await fetch("https://medicompare-production.up.railway.app/verify-payment", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature,
+            userId: user?.id,
+            planName
+          }),
+        });
+
+        const verifyData = await verifyRes.json();
+
+        if (verifyData.success) {
+          toast({
+                  title: "Plan Activated!",
+                  description: "Payment successful! Premium activated.",
+                });
+
+          window.location.reload();
+        } else {
+          toast({
+        title: "Payment failed!",
+        description: "Payment verification failed.",
+      });
+        }
+      },
+
+      theme: { color: "#0A54B6" },
+    };
+
+    const rzp = new (window as any).Razorpay(options);
+    rzp.open();
+
+  } catch (error) {
+    console.error("Payment error:", error);
+    alert("Something went wrong while initiating payment.");
+  }
+};
+  
   const plans = [
     {
       name: "Free",
@@ -32,7 +130,7 @@ const Pricing = () => {
       name: "Saver",
       price: "₹39",
       period: "month",
-      badge: "Light Buyers",
+      badge: "Most Popular",
       description: "Light monthly medicine buyers",
       features: [
         { icon: Search, text: "300 searches per month", included: true },
@@ -54,7 +152,7 @@ const Pricing = () => {
       name: "Pro",
       price: "₹79",
       period: "month",
-      badge: "Most Popular",
+      badge: "Regular Buyers",
       description: "Regular users, chronic patients, families",
       features: [
         { icon: Search, text: "Unlimited searches", included: true },
@@ -99,9 +197,16 @@ const Pricing = () => {
   ];
 
   const handleSelectPlan = (planName: string) => {
-    console.log(`Selected plan: ${planName}`);
-    // Add your plan selection logic here
-  };
+  console.log(`Selected plan: ${planName}`);
+
+  if (!userLoggedIn) {
+    openLoginModal();
+    return;
+  }
+
+  if (planName === "Saver") startPayment(39, planName);
+  if (planName === "Pro") startPayment(79, planName);
+};
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F5F9] dark:bg-[#020817]">
@@ -177,14 +282,17 @@ const Pricing = () => {
                   </CardContent>
 
                   <CardFooter className="pt-6">
-                    <Button 
-                      variant={plan.variant} 
-                      className="w-full"
-                      size="lg"
-                      onClick={() => handleSelectPlan(plan.name)}
-                    >
-                      {plan.cta}
-                    </Button>
+                    
+                    <Button
+  variant={plan.variant}
+  className="w-full"
+  size="lg"
+  disabled={user?.plan_name === plan.name}   // 👈 active plan check
+  onClick={() => handleSelectPlan(plan.name)}
+>
+  {user?.plan_name === plan.name ? "Active Plan" : plan.cta}
+</Button>
+
                   </CardFooter>
                 </Card>
               ))}
