@@ -82,7 +82,6 @@ const startPayment = async (amount: number, planName: string) => {
                   title: "Plan Activated!",
                   description: "Payment successful! Premium activated.",
                 });
-
           window.location.reload();
         } else {
           toast({

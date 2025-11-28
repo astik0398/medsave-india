@@ -12,7 +12,6 @@ import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
 import DownloadApp from "@/components/DownloadApp";
-import AdFlashDeals from "@/contexts/AdFlashDeals";
 
 const Index = () => {
   return (
@@ -20,7 +19,6 @@ const Index = () => {
       <Header />
       <Hero />
       <PriceComparison />
-      <AdFlashDeals/>
       <FlashDeals />
       <CouponsSection />
       <Testimonials/>
