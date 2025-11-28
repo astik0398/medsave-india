@@ -111,7 +111,7 @@ const startPayment = async (amount: number, planName: string) => {
       badge: "Default",
       description: "First-time users",
       features: [
-        { icon: Search, text: "30 searches per month", included: true },
+        { icon: Search, text: "20 searches per month", included: true },
         { icon: Sparkles, text: "Ad-Free Experience", included: false },
         { icon: Clock, text: "7-day price history", included: true },
         { icon: Clock, text: "Recently viewed (last 5)", included: true },
@@ -132,7 +132,7 @@ const startPayment = async (amount: number, planName: string) => {
       badge: "Most Popular",
       description: "Light monthly medicine buyers",
       features: [
-        { icon: Search, text: "300 searches per month", included: true },
+        { icon: Search, text: "100 searches per month", included: true },
         { icon: Sparkles, text: "Ad-Free Experience", included: true },
         { icon: Clock, text: "30-day price history", included: true },
         { icon: Heart, text: "Save up to 20 medicines", included: true },
@@ -286,7 +286,13 @@ const startPayment = async (amount: number, planName: string) => {
   variant={plan.variant}
   className="w-full"
   size="lg"
-  disabled={user?.plan_name === plan.name}   // 👈 active plan check
+  disabled={
+    // Disable all buttons if user is on Saver or Pro
+    (user?.plan_name === "Saver" || user?.plan_name === "Pro") ||
+
+    // Disable only the Free button if user is on Free
+    (user?.plan_name === "Free" && plan.name === "Free")
+  }
   onClick={() => handleSelectPlan(plan.name)}
 >
   {user?.plan_name === plan.name ? "Active Plan" : plan.cta}

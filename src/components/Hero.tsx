@@ -6,9 +6,10 @@ import heroImage from "@/assets/medicine price comparison.png";
 import { supabase } from "@/lib/supabaseClient.js";
 import useVisitorLimit from "../hooks/useVisitorLimit";
 import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "@/hooks/use-toast";
 
 const Hero = () => {
-  const { userLoggedIn, openLoginModal } = useAuth();
+  const { user, userLoggedIn, openLoginModal } = useAuth();
   
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -61,6 +62,28 @@ const Hero = () => {
     .replace(",", "")
     .replace(/\//g, "-");
 
+    const trackSearchLimit = async () => {
+  if (!user) return;
+
+  const res = await fetch("https://medicompare-production.up.railway.app/track-search", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ userId: user.id }),
+  });
+
+  const data = await res.json();
+
+  if (!data.allowed) {
+    toast({
+      title: "Search Limit Reached",
+      description: "Upgrade your plan to continue searching.",
+    });
+    return false;
+  }
+
+  return true;
+};
+
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
@@ -69,6 +92,9 @@ const Hero = () => {
       openLoginModal();
       return;
     }
+
+    const allowed = await trackSearchLimit();
+if (!allowed) return;
 
     const { data: session } = await supabase.auth.getUser();
     const userFullName =
