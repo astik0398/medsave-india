@@ -397,7 +397,7 @@ if (transformed.length > 0) {
                       {item.platform}
                     </h3>
                   </div>
-                 <div >
+                 <div>
   {/* Rating Row */}
   <div className="flex items-center space-x-1">
     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -407,9 +407,9 @@ if (transformed.length > 0) {
   {/* Bookmark exactly under rating */}
   <div className="flex justify-center mt-4">
     {bookmarkedItems.has(`${item.platform}-${item.price}`) ? (
-      <BookmarkCheck className="h-5 w-5 cursor-pointer text-yellow-500 fill-yellow-500" />
+      <Bookmark className="h-5 w-5 cursor-pointer text-yellow-500 fill-yellow-500" />
     ) : (
-      <Bookmark className="h-5 w-5 cursor-pointer text-muted-foreground hover:text-yellow-500 transition-colors" onClick={()=> addToBookmark(item)}/>
+      <BookmarkCheck className="h-5 w-5 cursor-pointer text-muted-foreground hover:text-yellow-500 transition-colors" onClick={()=> addToBookmark(item)}/>
     )}
   </div>
 </div>

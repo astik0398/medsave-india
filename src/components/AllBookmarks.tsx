@@ -8,11 +8,28 @@ import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "@/hooks/use-toast";
 import Header from "./Header";
 import Footer from "./Footer";
+import netmeds from "../assets/netmeds trans.png";
+import onemg from "../assets/1mg trans.png";
+import truemeds from "../assets/truemeds trans.png";
+import pharmeasy from "../assets/pharmeasy trans.png";
+import apollo from "../assets/apllo pharmacy trans.png";
+import medkart from "../assets/medkart_pharmacy_logo-removebg-preview.png"
+import medibuddyLogo from "../assets/images__3_-removebg-preview.png"
 
 const AllBookmarks = () => {
   const [bookmarks, setBookmarks] = useState([]);
   const [loading, setLoading] = useState(true);
   const { user, openLoginModal } = useAuth();
+
+   const logoMap = {
+          netmeds: netmeds,
+          tata1mg: onemg,
+          pharmeasy: pharmeasy,
+          apollopharmacy: apollo,
+          truemeds: truemeds,
+          medkart: medkart,
+          medibuddy: medibuddyLogo
+        };
 
   useEffect(() => {
     if (!user) {
@@ -32,6 +49,8 @@ const AllBookmarks = () => {
 
       if (error) throw error;
 
+      console.log('bookmak data', data);
+      
       setBookmarks(data || []);
     } catch (error) {
       console.error("Error fetching bookmarks:", error);
@@ -138,10 +157,11 @@ const AllBookmarks = () => {
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center space-x-2">
                           <img
-                            src={item.logo}
-                            width="45px"
-                            alt={`${item.platform} medicine price logo`}
-                          />
+  src={logoMap[item.platform.toLowerCase().replace(/\s/g, '')] || "💊"}
+  width="45px"
+  alt={`${item.platform} medicine price logo`}
+/>
+
                           <h3 className="font-semibold text-foreground">
                             {item.platform}
                           </h3>
