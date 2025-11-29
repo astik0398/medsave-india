@@ -6,10 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
 
     const { userLoggedIn, user, openLoginModal } = useAuth();
+  const navigate = useNavigate();
 
     // Load Razorpay script
 const loadRazorpayScript = () => {
@@ -82,7 +84,8 @@ const startPayment = async (amount: number, planName: string) => {
                   title: "Plan Activated!",
                   description: "Payment successful! Premium activated.",
                 });
-          window.location.reload();
+          
+                 navigate("/");
         } else {
           toast({
         title: "Payment failed!",

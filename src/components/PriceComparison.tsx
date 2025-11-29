@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Star, Truck, Clock, Bell } from "lucide-react";
+import { ExternalLink, Star, Truck, Clock, Bell, BookmarkCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import netmeds from "../assets/netmeds trans.png";
 import onemg from "../assets/1mg trans.png";
@@ -17,6 +17,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import whatsappIcon from '../assets/whatsapp.svg'
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 import { toast } from "@/hooks/use-toast";
+import { useAuth } from "@/contexts/AuthContext";
 
 const PriceComparison = () => {
   const [priceData, setPriceData] = useState([]);
@@ -27,6 +28,37 @@ const PriceComparison = () => {
   const [whatsappNumber, setWhatsappNumber] = useState("");
   const [priceDropPercentage, setPriceDropPercentage] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const { user } = useAuth();
+
+  const addToBookmark = async (item) => {
+  if (!user) {
+    toast({
+      title: "Login required",
+      description: "Please login to bookmark items.",
+    });
+    return;
+  }
+
+  const { error } = await supabase.from("bookmarks").insert({
+    user_id: user.id,
+    search_result: item, // 👈 saving entire item as JSON
+  });
+
+  if (error) {
+    console.error("Bookmark Error:", error);
+    toast({
+      title: "Error",
+      description: "Could not save bookmark.",
+    });
+    return;
+  }
+
+  toast({
+    title: "Saved!",
+    description: "Added to your bookmarks.",
+  });
+};
 
   const handleConfirm = async () => {
      let med_qwery = localStorage.getItem("med_qwery")
@@ -341,7 +373,7 @@ if (transformed.length > 0) {
               }`}
             >
               {item.price === lowestPrice && (
-                <Badge className="absolute top-2 right-4 bg-secondary dark:bg-[#10B77F] text-secondary-foreground">
+                <Badge className="absolute top-2 left-4 bg-secondary dark:bg-[#10B77F] text-secondary-foreground">
                   Best Price
                 </Badge>
               )}
@@ -353,12 +385,19 @@ if (transformed.length > 0) {
                       {item.platform}
                     </h3>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm text-muted-foreground">
-                      {item.rating}
-                    </span>
-                  </div>
+                  <div >
+  {/* Rating Row */}
+  <div className="flex items-center space-x-1">
+    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+    <span className="text-sm text-muted-foreground">{item.rating}</span>
+  </div>
+
+  {/* Bookmark exactly under rating */}
+  <div className="flex justify-center mt-4">
+    <BookmarkCheck className="h-5 w-5 cursor-pointer text-muted-foreground hover:text-primary" onClick={()=> addToBookmark(item)}/>
+  </div>
+</div>
+
                 </div>
 
                 <div className="space-y-3">

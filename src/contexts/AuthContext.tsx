@@ -9,6 +9,7 @@ interface AuthContextType {
     email: string;
     phone?: string;
     plan_name?: string;   // 👈 ADDED
+    search_count?: number;
   } | null;
   session: Session | null;
   userLoggedIn: boolean;
@@ -20,6 +21,7 @@ interface AuthContextType {
     email: string;
     phone?: string;
     plan_name?: string;  // 👈 ADDED
+    search_count?: number;
   } | null) => void;
   setUserLoggedIn: (loggedIn: boolean) => void;
   openLoginModal: () => void;
@@ -46,6 +48,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     email: string;
     phone?: string;
     plan_name?: string; // 👈 ADDED
+    search_count?: number;
   } | null>(null);
 
   const [session, setSession] = useState<Session | null>(null);
@@ -89,6 +92,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
               email: profile?.email || authUser.email || "",
               phone: profile?.phone || authUser.user_metadata.phone || "",
               plan_name: profile?.plan_name || "Free", // 👈 DEFAULT FREE
+              search_count: profile?.search_count || 0,   // 👈 ADD THIS
             });
           });
 

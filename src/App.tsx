@@ -16,6 +16,7 @@ import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import Pricing from "./components/Pricing";
+import AllBookmarks from "./components/AllBookmarks.jsx"
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/disclaimer" element={<Disclaimer />} />
               <Route path="/reset-password" element={<ResetPasswordPage />} />
               <Route path="/pricing" element={<Pricing />} />
+              <Route path="/all-bookmarks" element={<AllBookmarks/>}/>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

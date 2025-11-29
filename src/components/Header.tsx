@@ -11,6 +11,8 @@ import {
   ChartNoAxesCombined,
   IndianRupee,
   Wallet,
+  Bookmark,
+  BookmarkCheck,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/medi bachat dark mode (1).png";
@@ -18,9 +20,11 @@ import logoLight from "@/assets/medibachat all images (3).png";
 import { supabase } from "@/lib/supabaseClient.js";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTheme } from "next-themes";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { user, openLoginModal } = useAuth();
+  const navigate = useNavigate()
   
   const getInitials = (fullName: string) => {
     if (!fullName) return "";
@@ -75,6 +79,7 @@ const Header = () => {
 
         {/* Desktop Controls */}
         <div className="hidden md:flex items-center space-x-4">
+        <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD]" style={{width:'18px'}} onClick={()=> navigate('/all-bookmarks')}/>
           <ThemeToggle />
           {user ? (
             <>
@@ -96,7 +101,6 @@ const Header = () => {
                 className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white"
                 onClick={async () => {
                   await supabase.auth.signOut(); // Logout from Supabase
-                  window.location.reload(); // refresh to reset state
                 }}
               >
                 Log Out
@@ -117,6 +121,8 @@ const Header = () => {
 
         {/* Mobile Controls */}
         <div className="md:hidden flex items-center space-x-2">
+                  <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD]" style={{width:'18px', marginRight:'10px'}} onClick={()=> navigate('/all-bookmarks')}/>
+
           <ThemeToggle />
 
           {user && (
@@ -169,7 +175,6 @@ const Header = () => {
                     className="bg-red-500 pl-4 pr-4 hover:bg-red-600 text-white dark:text-white w-full"
                     onClick={async () => {
                       await supabase.auth.signOut(); // Logout from Supabase
-                      window.location.reload(); // refresh to reset state
                     }}
                   >
                     Log Out
