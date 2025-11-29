@@ -79,7 +79,7 @@ const Header = () => {
 
         {/* Desktop Controls */}
         <div className="hidden md:flex items-center space-x-4">
-        <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD]" style={{width:'18px'}} onClick={()=> navigate('/all-bookmarks')}/>
+        <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD] cursor-pointer transition-transform duration-200 hover:scale-110" style={{width:'18px'}} onClick={()=> navigate('/all-bookmarks')}/>
           <ThemeToggle />
           {user ? (
             <>
@@ -121,7 +121,7 @@ const Header = () => {
 
         {/* Mobile Controls */}
         <div className="md:hidden flex items-center space-x-2">
-                  <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD]" style={{width:'18px', marginRight:'10px'}} onClick={()=> navigate('/all-bookmarks')}/>
+                  <BookmarkCheck  className="text-yellow-500 dark:text-[#0059CD] cursor-pointer transition-transform duration-200 hover:scale-110" style={{width:'18px', marginRight:'10px'}} onClick={()=> navigate('/all-bookmarks')}/>
 
           <ThemeToggle />
 

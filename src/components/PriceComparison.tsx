@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Star, Truck, Clock, Bell, BookmarkCheck } from "lucide-react";
+import { ExternalLink, Star, Truck, Clock, Bell, Bookmark, BookmarkCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import netmeds from "../assets/netmeds trans.png";
 import onemg from "../assets/1mg trans.png";
@@ -28,6 +28,7 @@ const PriceComparison = () => {
   const [whatsappNumber, setWhatsappNumber] = useState("");
   const [priceDropPercentage, setPriceDropPercentage] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [bookmarkedItems, setBookmarkedItems] = useState<Set<string>>(new Set());
 
   const { user } = useAuth();
 
@@ -36,6 +37,16 @@ const PriceComparison = () => {
     toast({
       title: "Login required",
       description: "Please login to bookmark items.",
+    });
+    return;
+  }
+
+  // Check if already bookmarked
+  const itemKey = `${item.platform}-${item.price}`;
+  if (bookmarkedItems.has(itemKey)) {
+    toast({
+      title: "Already bookmarked",
+      description: "This item is already in your bookmarks.",
     });
     return;
   }
@@ -54,6 +65,7 @@ const PriceComparison = () => {
     return;
   }
 
+  setBookmarkedItems(prev => new Set(prev).add(itemKey));
   toast({
     title: "Saved!",
     description: "Added to your bookmarks.",
@@ -385,7 +397,7 @@ if (transformed.length > 0) {
                       {item.platform}
                     </h3>
                   </div>
-                  <div >
+                 <div >
   {/* Rating Row */}
   <div className="flex items-center space-x-1">
     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -394,7 +406,11 @@ if (transformed.length > 0) {
 
   {/* Bookmark exactly under rating */}
   <div className="flex justify-center mt-4">
-    <BookmarkCheck className="h-5 w-5 cursor-pointer text-muted-foreground hover:text-primary" onClick={()=> addToBookmark(item)}/>
+    {bookmarkedItems.has(`${item.platform}-${item.price}`) ? (
+      <BookmarkCheck className="h-5 w-5 cursor-pointer text-yellow-500 fill-yellow-500" />
+    ) : (
+      <Bookmark className="h-5 w-5 cursor-pointer text-muted-foreground hover:text-yellow-500 transition-colors" onClick={()=> addToBookmark(item)}/>
+    )}
   </div>
 </div>
 
