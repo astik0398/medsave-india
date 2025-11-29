@@ -18,7 +18,7 @@ const Footer = () => {
       // { label: "How It Works", href: "#how-it-works" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms & Conditions", href: "/terms-of-service" },
-
+      { label: "Refund & Cancellation", href: "/refund-and-cancellation" },
       { label: "Disclaimer", href: "/disclaimer" },
     ],
     features: [

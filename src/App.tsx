@@ -17,6 +17,7 @@ import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import Pricing from "./components/Pricing";
 import AllBookmarks from "./components/AllBookmarks"
+import RefundAndCancel from "./pages/RefundAndCancel";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/about-medibachat" element={<AboutUs />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/disclaimer" element={<Disclaimer />} />
+              <Route path="/refund-and-cancellation" element={<RefundAndCancel/>}/>
               <Route path="/reset-password" element={<ResetPasswordPage />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/all-bookmarks" element={<AllBookmarks/>}/>
