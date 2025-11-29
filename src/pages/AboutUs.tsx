@@ -111,6 +111,15 @@ const AboutUs: React.FC = () => {
               </a>
             </p>
 
+             <p>
+                            <strong>Founder & Operator:</strong>{" "}
+              <a
+                className="text-primary hover:underline"
+              >
+                 KUMAR ASTIK
+              </a>
+            </p>
+
             <p className="font-semibold text-foreground">
               Thank you for trusting MediBachat — where transparency meets
               savings in healthcare.
