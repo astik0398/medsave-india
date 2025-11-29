@@ -16,7 +16,7 @@ import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import Pricing from "./components/Pricing";
-import AllBookmarks from "./components/AllBookmarks.jsx"
+import AllBookmarks from "./components/AllBookmarks"
 
 const queryClient = new QueryClient();
 
