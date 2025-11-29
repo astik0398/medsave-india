@@ -15,11 +15,14 @@ import pharmeasy from "../assets/pharmeasy trans.png";
 import apollo from "../assets/apllo pharmacy trans.png";
 import medkart from "../assets/medkart_pharmacy_logo-removebg-preview.png"
 import medibuddyLogo from "../assets/images__3_-removebg-preview.png"
+import { useNavigate } from "react-router-dom";
 
 const AllBookmarks = () => {
   const [bookmarks, setBookmarks] = useState([]);
   const [loading, setLoading] = useState(true);
   const { user, openLoginModal } = useAuth();
+
+  const navigate = useNavigate()
 
    const logoMap = {
           netmeds: netmeds,
@@ -88,22 +91,48 @@ const AllBookmarks = () => {
     }
   };
 
+  const handleClearAll = async () => {
+  try {
+    const { error } = await supabase
+      .from("bookmarks")
+      .delete()
+      .eq("user_id", user.id);
+
+    if (error) throw error;
+
+    setBookmarks([]); // instantly clear UI
+
+    toast({
+      title: "Cleared",
+      description: "All bookmarks have been removed.",
+    });
+  } catch (error) {
+    console.error("Error clearing bookmarks:", error);
+    toast({
+      title: "Error",
+      description: "Could not clear bookmarks.",
+      variant: "destructive",
+    });
+  }
+};
+
   if (!user) {
     return (
       <>
         <Header />
         <div className="min-h-screen bg-background py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div style={{ display:'flex', flexDirection:'column', alignItems:'center', marginTop:'20vh'}}>
+              <div className="text-8xl mb-4">📚</div>
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               My Bookmarks
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
+               <p className="text-lg text-muted-foreground mb-8">
               Please log in to view your bookmarks.
             </p>
-            <Button variant="hero" onClick={openLoginModal}>
+              <Button variant="hero" style={{color:'white'}} onClick={openLoginModal}>
               Log In
             </Button>
-          </div>
+            </div>
         </div>
         <Footer />
       </>
@@ -127,25 +156,43 @@ const AllBookmarks = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-background py-20">
+      <div className="min-h-screen bg-background py-10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          {bookmarks.length>0 && (<div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               My Bookmarks
             </h1>
             <p className="text-lg text-muted-foreground">
               Your saved medicine price comparisons
             </p>
-          </div>
+          </div>)}
 
-          {bookmarks.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="text-lg text-muted-foreground">
-                You haven't bookmarked any medicines yet.
+            {bookmarks.length > 0 && (
+            <div className="flex justify-end mb-6">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={handleClearAll}
+              >
+                <Trash2 className="h-4 w-4 mr-2" />
+                Clear All
+              </Button>
+            </div>
+          )}
+
+         {bookmarks.length === 0 ? (
+            <div style={{ display:'flex', flexDirection:'column', alignItems:'center', marginTop:'20vh'}}>
+              <div className="text-8xl mb-4">📚</div>
+              <h3 className="text-2xl font-semibold mb-4">No bookmarks yet</h3>
+              <p className="text-muted-foreground mb-6">
+                Start comparing medicine prices and bookmark your favorites!
               </p>
+              <Button variant="hero" style={{color:'white'}} onClick={()=> navigate("/")}>
+                Start Comparing
+              </Button>
             </div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-8xl mx-auto">
               {bookmarks.map((bookmark: any) => {
                 const item = bookmark.search_result;
                 return (
@@ -181,7 +228,9 @@ const AllBookmarks = () => {
                           </div>
                         </div>
                       </div>
-
+<h3 className="text-lg font-bold text-foreground mb-2">
+                            {item.name}
+                          </h3>
                       <div className="space-y-3">
                         <div>
                           <div className="flex items-baseline space-x-2 mb-1">
