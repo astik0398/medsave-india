@@ -7,103 +7,74 @@ import Footer from "@/components/Footer";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+declare global {
+  interface Window {
+    Cashfree: any;
+  }
+}
 
 const Pricing = () => {
 
     const { userLoggedIn, user, openLoginModal } = useAuth();
+
+      const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-    // Load Razorpay script
-const loadRazorpayScript = () => {
-  return new Promise((resolve) => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.onload = () => resolve(true);
-    script.onerror = () => resolve(false);
-    document.body.appendChild(script);
-  });
-};
-
 const startPayment = async (amount: number, planName: string) => {
-  if (!userLoggedIn) {
-    openLoginModal();
-    return;
-  }
+  setLoading(true);
+    setError(null);
 
-  const res = await loadRazorpayScript();
-  if (!res) {
-    alert("Razorpay SDK failed to load. Check your internet connection.");
-    return;
-  }
-
-  try {
-    // 1️⃣ Create order from backend
-    const orderResponse = await fetch("https://medicompare-production.up.railway.app/create-order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        amount,
-        userId: user?.id,
-      }),
-    });
-
-    const orderData = await orderResponse.json();
-
-    const options: any = {
-      key: orderData.key,
-      amount: orderData.amount,
-      currency: orderData.currency,
-      name: "MediBachat",
-      description: "Premium Plan",
-      order_id: orderData.orderId,
-
-      prefill: {
-        name: user?.full_name,
-        email: user?.email,
-        contact: user?.phone || "",
-      },
-
-      handler: async function (response: any) {
-        // 2️⃣ Verify payment on backend
-        const verifyRes = await fetch("https://medicompare-production.up.railway.app/verify-payment", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            razorpay_order_id: response.razorpay_order_id,
-            razorpay_payment_id: response.razorpay_payment_id,
-            razorpay_signature: response.razorpay_signature,
-            userId: user?.id,
-            planName
-          }),
-        });
-
-        const verifyData = await verifyRes.json();
-
-        if (verifyData.success) {
-          toast({
-                  title: "Plan Activated!",
-                  description: "Payment successful! Premium activated.",
-                });
-          
-                 navigate("/");
-        } else {
-          toast({
-        title: "Payment failed!",
-        description: "Payment verification failed.",
+    try {
+      // Step 1: Call backend to create order
+      const orderResponse = await fetch('https://medicompare-production.up.railway.app/create-order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          amount,
+          customerName: user?.full_name,
+          customerId: user?.id,
+          customerEmail: user?.email,
+          customerPhone: '9999999999',
+          planName
+        }),
       });
-        }
-      },
 
-      theme: { color: "#0A54B6" },
-    };
+      if (!orderResponse.ok) {
+        throw new Error('Failed to create order');
+      }
 
-    const rzp = new (window as any).Razorpay(options);
-    rzp.open();
+      const orderData = await orderResponse.json();
 
-  } catch (error) {
-    console.error("Payment error:", error);
-    alert("Something went wrong while initiating payment.");
-  }
+      if (!orderData.success) {
+        throw new Error(orderData.error || 'Failed to create order');
+      }
+
+      console.log('✅ Order Created:', orderData);
+
+      // Step 2: Initialize Cashfree from window object
+      const cashfree = window.Cashfree({
+        mode: 'production', // Change to 'production' for live
+      });
+
+      // Step 3: Redirect to payment gateway
+      const checkoutOptions = {
+        paymentSessionId: orderData.payment_session_id,
+        redirectTarget: '_blank',
+      };
+
+      await cashfree.checkout(checkoutOptions);
+
+    } catch (err: any) {
+      console.error('❌ Payment error:', err);
+      setError(err.message || 'Payment failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
 };
   
   const plans = [
