@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { CheckCircle, Clock, AlertCircle, Download, Home } from 'lucide-react';
+import Footer from './Footer';
+import Header from './Header';
 
 interface PaymentDetails {
   orderId: string;
@@ -121,7 +123,7 @@ function PaymentSuccess() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500 mb-4"></div>
           <p className="text-gray-300 font-medium">Verifying your payment...</p>
@@ -134,17 +136,19 @@ function PaymentSuccess() {
   const isPending = paymentDetails?.status === 'PENDING';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4">
+   <>
+   <Header/>
+    <div className="min-h-screen bg-[#F2F5F9] dark:bg-[#020817] py-12 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Status Card */}
         <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl overflow-hidden">
           {/* Header with Status Icon */}
           <div className={`py-8 px-6 text-center ${
             isSuccess 
-              ? 'bg-gradient-to-r from-green-500/20 to-emerald-500/20' 
+              ? 'bg-green-500 dark:bg-green-500/20' 
               : isPending
-              ? 'bg-gradient-to-r from-amber-500/20 to-orange-500/20'
-              : 'bg-gradient-to-r from-red-500/20 to-pink-500/20'
+              ? 'bg-amber-500 dark:bg-amber-500/20'
+              : 'bg-red-500 dark:bg-red-500/20'
           }`}>
             {isSuccess && (
               <>
@@ -312,11 +316,13 @@ function PaymentSuccess() {
 
         {/* Footer Info */}
         <div className="mt-8 text-center text-gray-400 text-sm">
-          <p>If you have any questions, please check your email or contact our support team</p>
-          <p className="mt-2 text-gray-500">Support: support@medibachat.in | Phone: 1-800-PAYMENT</p>
+          <p>If you have any questions, please contact us at our mail</p>
+          <p className="mt-2 text-gray-500">Support: medibachatforyou@gmail.com</p>
         </div>
       </div>
     </div>
+    <Footer/>
+   </>
   );
 }
 
