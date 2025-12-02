@@ -77,7 +77,7 @@ function PaymentSuccess() {
     addRow("Order ID:", paymentDetails.orderId);
     addRow("Transaction ID:", paymentDetails.transactionId);
     addRow("Plan:", paymentDetails.planName);
-    addRow("Amount Paid:", `₹${paymentDetails.amount}`);
+    addRow("Amount Paid:", `Rs. ${paymentDetails.amount}`);
     addRow("Payment Method:", paymentDetails.paymentMethod);
     addRow("Date & Time:", paymentDetails.timestamp);
 
@@ -280,11 +280,11 @@ function PaymentSuccess() {
               <div className="px-6 py-8">
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   {/* Name */}
-                  <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                  <div className="dark:bg-white/5 rounded-lg p-4 border border-white/10">
                     <p className="text-gray-400 text-sm font-medium mb-2">
                       Name
                     </p>
-                    <p className="text-white text-lg font-semibold break-all">
+                    <p className="text-gray-600 dark:text-white text-lg font-semibold break-all">
                       {paymentDetails.name}
                     </p>
                   </div>
@@ -294,7 +294,7 @@ function PaymentSuccess() {
                     <p className="text-gray-400 text-sm font-medium mb-2">
                       Order ID
                     </p>
-                    <p className="text-white text-lg font-semibold break-all">
+                    <p className="text-gray-600 dark:text-white text-lg font-semibold break-all">
                       {paymentDetails.orderId}
                     </p>
                   </div>
@@ -324,7 +324,7 @@ function PaymentSuccess() {
                     <p className="text-gray-400 text-sm font-medium mb-2">
                       Transaction ID
                     </p>
-                    <p className="text-white text-sm font-mono break-all">
+                    <p className="text-gray-600 dark:text-white text-sm font-mono break-all">
                       {paymentDetails.transactionId}
                     </p>
                   </div>
@@ -334,7 +334,7 @@ function PaymentSuccess() {
                     <p className="text-gray-400 text-sm font-medium mb-2">
                       Date & Time
                     </p>
-                    <p className="text-white text-sm">
+                    <p className="text-gray-600 dark:text-white text-sm">
                       {paymentDetails.timestamp}
                     </p>
                   </div>
@@ -344,7 +344,7 @@ function PaymentSuccess() {
                     <p className="text-gray-400 text-sm font-medium mb-2">
                       Payment Method
                     </p>
-                    <p className="text-white text-sm">
+                    <p className="text-gray-600 dark:text-white text-sm">
                       {paymentDetails.paymentMethod}
                     </p>
                   </div>

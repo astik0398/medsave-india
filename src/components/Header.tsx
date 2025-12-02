@@ -21,6 +21,7 @@ import { supabase } from "@/lib/supabaseClient.js";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTheme } from "next-themes";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { user, openLoginModal } = useAuth();
@@ -66,14 +67,14 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-12">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="flex items-center space-x-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               <item.icon className="h-4 w-4 relative top-[1.2px]" />
               <span>{item.label}</span>
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -155,15 +156,15 @@ const Header = () => {
         <div className="md:hidden border-t border-border bg-background">
           <nav className="container mx-auto px-4 py-4 space-y-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <item.icon className="h-4 w-4" />
                 <span>{item.label}</span>
-              </a>
+              </Link>
             ))}
             <div className="pt-4">
               {user ? (
