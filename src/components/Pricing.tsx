@@ -177,8 +177,8 @@ const startPayment = async (amount: number, planName: string) => {
     return;
   }
 
-  if (planName === "Saver") startPayment(39, planName);
-  if (planName === "Pro") startPayment(79, planName);
+  if (planName === "Saver") startPayment(3, planName);
+  if (planName === "Pro") startPayment(6, planName);
 };
 
   return (

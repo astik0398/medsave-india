@@ -10,7 +10,7 @@ import { toast } from "@/hooks/use-toast";
 
 const Hero = () => {
   const { user, userLoggedIn, openLoginModal } = useAuth();
-  
+
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -62,27 +62,30 @@ const Hero = () => {
     .replace(",", "")
     .replace(/\//g, "-");
 
-    const trackSearchLimit = async () => {
-  if (!user) return;
+  const trackSearchLimit = async () => {
+    if (!user) return;
 
-  const res = await fetch("https://medicompare-production.up.railway.app/track-search", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ userId: user.id }),
-  });
+    const res = await fetch(
+      "https://medicompare-production.up.railway.app/track-search",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId: user.id }),
+      }
+    );
 
-  const data = await res.json();
+    const data = await res.json();
 
-  if (!data.allowed) {
-    toast({
-      title: "Search Limit Reached",
-      description: "Upgrade your plan to continue searching.",
-    });
-    return false;
-  }
+    if (!data.allowed) {
+      toast({
+        title: "Search Limit Reached",
+        description: "Upgrade your plan to continue searching.",
+      });
+      return false;
+    }
 
-  return true;
-};
+    return true;
+  };
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -93,8 +96,15 @@ const Hero = () => {
       return;
     }
 
+    setLoading(true);
+    setError("");
+
     const allowed = await trackSearchLimit();
-if (!allowed) return;
+
+    if (!allowed) {
+      setLoading(false);
+      return;
+    }
 
     const { data: session } = await supabase.auth.getUser();
     const userFullName =
@@ -116,9 +126,6 @@ if (!allowed) return;
     if (logError) {
       console.error("Supabase log error:", logError);
     }
-
-    setLoading(true);
-    setError("");
 
     try {
       const response = await fetch(
@@ -196,7 +203,6 @@ if (!allowed) return;
         ?.scrollIntoView({ behavior: "smooth" });
 
       // const remaining = MAX_FREE_COMPARISONS - (compareCount + 1);
-
     } catch (err) {
       console.error(err);
       setError("Something went wrong while fetching medicine data.");
@@ -205,15 +211,15 @@ if (!allowed) return;
     }
   };
 
- useEffect(() => {
-  if (userLoggedIn) {
-    setMessage("");
-  } else {
-    setMessage(
-      `Login to start using MediBachat — searching is free for all logged-in users!`
-    );
-  }
-}, [userLoggedIn]);
+  useEffect(() => {
+    if (userLoggedIn) {
+      setMessage("");
+    } else {
+      setMessage(
+        `Login to start using MediBachat — searching is free for all logged-in users!`
+      );
+    }
+  }, [userLoggedIn]);
 
   useEffect(() => {
     const handleFocusEvent = () => {
