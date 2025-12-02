@@ -62,6 +62,10 @@ const Hero = () => {
     .replace(",", "")
     .replace(/\//g, "-");
 
+    const deviceType = /Mobi|Android|iPhone/i.test(navigator.userAgent)
+  ? "mobile"
+  : "desktop";
+
   const trackSearchLimit = async () => {
     if (!user) return;
 
@@ -120,6 +124,7 @@ const Hero = () => {
         searched_at: finalDateTime,
         user_name: userFullName, // 👈 ADD THIS
         user_email: userEmail, // 👈 OPTIONAL: Add email too
+        device: deviceType
       },
     ]);
 
