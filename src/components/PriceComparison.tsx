@@ -332,7 +332,7 @@ if (transformed.length > 0) {
   }
 
   return (
-    <section id="price-comparison" className="py-5 bg-background border-t border border-primary/20">
+    <section id="price-comparison" className="py-5 bg-background border-t">
       
       <div className="relative w-full max-w-sm md:max-w-6xl mx-auto mb-10 md:mb-16 rounded-2xl overflow-hidden shadow-lg">
   {/* Banner Image */}
@@ -465,7 +465,7 @@ if (transformed.length > 0) {
 
         {/* Medicine Info */}
         <div className="max-w-4xl mx-auto mb-8">
-          <Card className="p-6 shadow-soft border border-primary/20 hover:border-primary/40">
+          <Card className="p-6 shadow-soft">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -500,7 +500,7 @@ if (transformed.length > 0) {
             <Card
              
               key={index}
-              className={`border border-primary/20 hover:border-primary/40 relative overflow-hidden transition-all duration-300 ${item.price === lowestPrice ? 'shadow-[0_0_40px_2px_rgba(57,255,20,0.9)] dark:shadow-strong' : ''} hover:scale-105 ${
+              className={`relative overflow-hidden transition-all duration-300 ${item.price === lowestPrice ? 'shadow-[0_0_40px_2px_rgba(57,255,20,0.9)] dark:shadow-strong' : ''} hover:scale-105 ${
                 !item.inStock ? "opacity-75" : ""
               }`}
             >
