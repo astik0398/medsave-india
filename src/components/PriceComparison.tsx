@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Star, Truck, Clock, Bell, Bookmark, BookmarkCheck } from "lucide-react";
+import { ExternalLink, Star, Truck, Clock, Bell, Bookmark, BookmarkCheck, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import netmeds from "../assets/netmeds trans.png";
 import onemg from "../assets/1mg trans.png";
@@ -18,6 +18,7 @@ import whatsappIcon from '../assets/whatsapp.svg'
 import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your folder structure
 import { toast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
+import banner from "../assets/web banner cut.png"
 
 const PriceComparison = () => {
   const [priceData, setPriceData] = useState([]);
@@ -29,7 +30,7 @@ const PriceComparison = () => {
   const [priceDropPercentage, setPriceDropPercentage] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [bookmarkedItems, setBookmarkedItems] = useState<Set<string>>(new Set());
-
+  const [showRemoveAdsModal, setShowRemoveAdsModal] = useState(false)
   const { user } = useAuth();
 
   const addToBookmark = async (item) => {
@@ -330,7 +331,100 @@ if (transformed.length > 0) {
   }
 
   return (
-    <section id="price-comparison" className="py-20 bg-background border-t">
+    <section id="price-comparison" className="py-5 bg-background border-t">
+      
+      <div className="relative w-full max-w-7xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-lg">
+  {/* Banner Image */}
+  <img
+    src={banner}
+    alt="Medicine Banner"
+    className="w-full h-[220px] md:h-[250px] object-cover"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 ">
+
+      {/* ✅ SPONSORED BADGE */}
+    <span className="absolute top-3 left-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-md tracking-wide uppercase">
+      Sponsored
+    </span>
+
+       {/* ✅ CLOSE (❌) ICON (Top Right) */}
+      <button
+        className="absolute top-3 right-3 bg-black/80 hover:bg-black text-white p-2 rounded-full transition"
+        aria-label="Close banner"
+      >
+        <X onClick={()=> setShowRemoveAdsModal(true)}
+ className="h-4 w-4" />
+      </button>
+
+  <Button
+    className="absolute bottom-10 left-[35%] bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-xl"
+    onClick={() => window.open("www.sharesubscription.in", "_blank")}
+  >
+    Visit Now
+  </Button>
+</div>
+
+</div>
+
+<Dialog open={showRemoveAdsModal} onOpenChange={setShowRemoveAdsModal}>
+  <DialogContent className="sm:max-w-md rounded-3xl border border-white/10 bg-gradient-to-br from-[#020817] to-[#0B1222] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]">
+
+    <DialogHeader>
+      <DialogTitle className="text-center text-2xl font-extrabold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+        Go Premium 🚀
+      </DialogTitle>
+    </DialogHeader>
+
+    <div className="space-y-6 text-center py-4">
+
+      <p className="text-sm text-muted-foreground">
+        Remove all ads and unlock premium features for the best experience
+      </p>
+
+      {/* ✅ FEATURE LIST */}
+      <div className="grid gap-3 text-sm">
+        {[
+          "Ad-free browsing",
+          "Exclusive medicine deals",
+          "Faster price checks",
+          "Priority WhatsApp alerts",
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl py-2"
+          >
+            <span className="text-green-400">✔</span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* ✅ UPGRADE BUTTON */}
+      <Button
+        className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white font-bold py-4 rounded-2xl text-lg shadow-[0_15px_40px_-10px_rgba(16,185,129,0.8)] hover:scale-105 transition-all"
+        onClick={() => {
+          setShowRemoveAdsModal(false);
+          window.open("https://medibachat.in/pricing", "_blank");
+        }}
+      >
+        Upgrade to Premium
+      </Button>
+
+      {/* ✅ SECONDARY ACTION */}
+      <button
+        className="text-xs text-muted-foreground hover:text-white transition"
+        onClick={() => setShowRemoveAdsModal(false)}
+      >
+        Maybe later
+      </button>
+
+    </div>
+  </DialogContent>
+</Dialog>
+
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
