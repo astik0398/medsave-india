@@ -19,6 +19,7 @@ import { supabase } from "@/lib/supabaseClient.js"; // Adjust path based on your
 import { toast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import banner from "../assets/web banner cut.png"
+import { Link } from "react-router-dom";
 
 const PriceComparison = () => {
   const [priceData, setPriceData] = useState([]);
@@ -333,19 +334,27 @@ if (transformed.length > 0) {
   return (
     <section id="price-comparison" className="py-5 bg-background border-t">
       
-      <div className="relative w-full max-w-7xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full max-w-sm md:max-w-6xl mx-auto mb-10 md:mb-16 rounded-2xl overflow-hidden shadow-lg">
   {/* Banner Image */}
   <img
-    src={banner}
-    alt="Medicine Banner"
-    className="w-full h-[220px] md:h-[250px] object-cover"
-  />
+  src={banner}
+  alt="Medicine Banner"
+  className="
+    w-full 
+    h-auto 
+    max-h-[260px] 
+    md:h-[280px] 
+    md:object-cover 
+    object-contain 
+    bg-black
+  "
+/>
 
   {/* Overlay */}
   <div className="absolute inset-0 ">
 
       {/* ✅ SPONSORED BADGE */}
-    <span className="absolute top-3 left-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-md tracking-wide uppercase">
+    <span className="absolute top-3 left-3 bg-yellow-400 text-black md:text-xs text-[8px] font-bold md:px-3 md:py-1 px-1.5 py-1 rounded-full shadow-md tracking-wide uppercase">
       Sponsored
     </span>
 
@@ -358,12 +367,29 @@ if (transformed.length > 0) {
  className="h-4 w-4" />
       </button>
 
-  <Button
-    className="absolute bottom-10 left-[35%] bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-xl"
-    onClick={() => window.open("www.sharesubscription.in", "_blank")}
-  >
-    Visit Now
-  </Button>
+<Button
+  className="
+    absolute 
+    bottom-1 left-1/2 -translate-x-20           /* ✅ MOBILE: tighter spacing */
+    md:bottom-10 md:left-[35%] md:translate-x-0  /* ✅ DESKTOP */
+
+    bg-red-600 hover:bg-red-700 
+    text-white 
+
+    px-4 h-[30px] text-[10px]                      /* ✅ EXTRA SMALL ON MOBILE */
+    md:px-8 md:py-6 md:text-lg                   /* ✅ NORMAL ON DESKTOP */
+
+    font-semibold 
+
+    rounded-2xl
+    md:rounded-md 
+    shadow-lg
+  "
+>
+  <a href="https://www.sharesubscription.in">Visit Now</a>
+</Button>
+
+
 </div>
 
 </div>
