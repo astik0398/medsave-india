@@ -295,7 +295,7 @@ const startPayment = async (amount: number, planName: string) => {
   </div>
 
   {/* Card Wrapper */}
-  <Card className="shadow-soft">
+  <Card className="shadow-soft border-border">
     <CardContent className="p-6">
       <Accordion type="single" collapsible className="space-y-4">
         {faqData.map((faq, index) => (

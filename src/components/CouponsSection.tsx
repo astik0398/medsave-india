@@ -53,7 +53,7 @@ const CouponsSection = () => {
   };
 
   return (
-    <section id="coupons" className="py-20  border-t">
+    <section id="coupons" className="py-20  border-t border-primary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center space-x-2 mb-4">
@@ -69,7 +69,7 @@ const CouponsSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {coupons.map((platform, platformIndex) => (
-            <Card key={platformIndex} className="shadow-soft hover:shadow-medium transition-all duration-300">
+            <Card key={platformIndex} className="shadow-soft hover:shadow-medium transition-all duration-300 border-primary/20">
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center space-x-3">
                   <img width='50px' src={platform.logo}   alt={`${platform.platform} coupon code and offers`}  />

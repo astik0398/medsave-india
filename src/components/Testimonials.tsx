@@ -81,7 +81,7 @@ const Testimonials = () => {
   const autoplay = Autoplay({ delay: 3000 }) as unknown as EmblaPluginType;
 
   return (
-    <section className="py-12 px-4 bg-[#F2F5F9] dark:bg-[#020817] border-t">
+    <section className="py-12 px-4 bg-[#F2F5F9] dark:bg-[#020817] border-t border-primary/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -108,7 +108,7 @@ const Testimonials = () => {
                 className="md:basis-1/2 lg:basis-1/3"
               >
                 <div className="p-2 h-full">
-                  <Card className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">
+                  <Card className="relative border-primary/20 overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">
                     <CardContent className="pt-6 pb-6 flex flex-col h-full min-h-[280px]">
                       <div className="absolute top-4 right-4 text-primary/10">
                         <Quote size={48} />

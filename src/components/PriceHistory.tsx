@@ -162,7 +162,7 @@ const PriceHistory = () => {
   };
 
   return (
-    <section id="price-history" className="py-20 bg-background border-t">
+    <section id="price-history" className="py-20 bg-background border-t border-primary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -225,7 +225,7 @@ const PriceHistory = () => {
           </div>
 
           {/* Chart Placeholder */}
-          <Card className="shadow-soft">
+          <Card className="shadow-soft border-primary/20 ">
             <CardContent className="p-8">
               <div className="h-96 w-full flex items-center justify-center bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 dark:shadow-strong rounded-lg">
                 <div className="text-center">
@@ -266,7 +266,7 @@ const PriceHistory = () => {
             {Object.entries(platformColors).map(([platform, color]) => (
               <div
                 key={platform}
-                className="flex items-center space-x-2 p-3 bg-card rounded-lg border"
+                className="flex items-center space-x-2 p-3 bg-card rounded-lg border border-primary/20"
               >
                 <div
                   className="w-4 h-4 rounded"
@@ -281,7 +281,7 @@ const PriceHistory = () => {
 
           {/* Price Insights */}
           <div className="grid md:grid-cols-3 gap-6 mt-8">
-            <Card className="p-4">
+            <Card className="p-4 border-primary/20">
               <div className="flex items-center space-x-2 mb-2">
                 <TrendingDown className="h-5 w-5 text-secondary dark:text-[#10B780]" />
                 <h4 className="font-semibold text-foreground">
@@ -296,7 +296,7 @@ const PriceHistory = () => {
               </p>
             </Card>
 
-            <Card className="p-4">
+            <Card className="p-4 border-primary/20">
               <div className="flex items-center space-x-2 mb-2">
                 <Calendar className="h-5 w-5 text-primary dark:text-[#004EB4]" />
                 <h4 className="font-semibold text-foreground">
@@ -311,7 +311,7 @@ const PriceHistory = () => {
               </p>
             </Card>
 
-            <Card className="p-4">
+            <Card className="p-4 border-primary/20">
               <div className="flex items-center space-x-2 mb-2">
                 <TrendingUp className="h-5 w-5 text-accent dark:text-[#0670FF]" />
                 <h4 className="font-semibold text-foreground">

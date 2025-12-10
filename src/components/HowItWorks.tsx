@@ -74,7 +74,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="py-10 bg-background mb-10">
+    <section className="py-10 bg-background mb-10 border-t border-primary/20">
       <h1 className="sr-only">How MediBachat Works — Medicine Price Comparison Tool in India</h1>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -95,7 +95,7 @@ useEffect(() => {
               
               {steps.map((step, index) => (
                 <article key={index} className="relative">
-                  <Card className="text-center shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
+                  <Card className="text-center border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
                     <CardContent className="p-8">
                       {/* Step Number */}
                       <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">
@@ -153,17 +153,17 @@ useEffect(() => {
 
         {/* Additional Benefits */}
         <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
+          <div className="border-primary/20 text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
             <h4 className="font-semibold text-primary mb-2">100% Verified</h4>
             <p className="text-sm text-muted-foreground">All partner pharmacies are licensed and verified</p>
           </div>
           
-          <div className="text-center p-6 bg-[#C2F0E0] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
+          <div className="border-primary/20 text-center p-6 bg-[#C2F0E0] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
             <h4 className="font-semibold text-secondary dark:text-primary mb-2">Real-time Prices</h4>
             <p className="text-sm text-muted-foreground">Prices updated every hour for accuracy</p>
           </div>
           
-          <div className="text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
+          <div className="border-primary/20 text-center p-6 bg-[#B8D4F9] dark:bg-[#020817] dark:border dark:border-grey-900 rounded-2xl">
             <h4 className="font-semibold text-primary mb-2">Free to Use</h4>
             <p className="text-sm text-muted-foreground">No hidden charges or subscription fees</p>
           </div>

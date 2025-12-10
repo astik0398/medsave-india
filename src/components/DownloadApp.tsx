@@ -11,7 +11,7 @@ const DownloadApp = () => {
   };
 
   return (
-    <section className="py-20 bg-background border-t">
+    <section className="py-20 bg-background border-t border-primary/20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex justify-center">

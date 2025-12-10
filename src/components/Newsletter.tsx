@@ -58,9 +58,9 @@ const handleSubmit = async (e: React.FormEvent) => {
 };
 
   return (
-    <section className="py-20 bg-[#005ED9] dark:bg-[#020817] border-t">
+    <section className="py-20 bg-[#005ED9] dark:bg-[#020817] border-t border-primary/20">
       <div className="container mx-auto px-4">
-        <Card className="max-w-4xl mx-auto bg-background/95 backdrop-blur shadow-strong">
+        <Card className="max-w-4xl mx-auto bg-background/95 backdrop-blur shadow-strong border-primary/20">
           <CardContent className="p-8 md:p-12">
             <div className="text-center mb-8">
               <div className="flex items-center justify-center space-x-2 mb-4">

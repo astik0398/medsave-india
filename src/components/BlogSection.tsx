@@ -423,7 +423,7 @@ const BlogSection = () => {
   };
 
   return (
-    <section className="py-20 dark:bg-[#020817] border-t">
+    <section className="py-20 dark:bg-[#020817] border-t border-primary/20">
       <div className="container mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-12" id="blog">
@@ -495,7 +495,7 @@ const BlogSection = () => {
         {/* Regular Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.filter(post => !post.featured).slice(0, 5).map(post => (
-            <Card key={post.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card key={post.id} className="border-primary/20 overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="relative overflow-hidden">
                 <img
                   src={post.image}
@@ -552,7 +552,7 @@ const BlogSection = () => {
                 <ArrowRight className="w-10 h-10" />
               </button>
             </DialogTrigger>
-            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+            <DialogContent className="border-primary/20 max-w-4xl max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <DialogTitle className="text-2xl font-bold">All Blog Posts</DialogTitle>
                 <DialogDescription>
@@ -561,7 +561,7 @@ const BlogSection = () => {
               </DialogHeader>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 {blogPosts.map(post => (
-                  <Card key={post.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
+                  <Card key={post.id} className="border-primary/20 overflow-hidden group hover:shadow-lg transition-all duration-300">
                     <div className="relative overflow-hidden">
                       <img
                         src={post.image}
