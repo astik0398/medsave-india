@@ -75,7 +75,7 @@ const FlashDeals = () => {
   ];
 
   return (
-    <section className="py-16 bg-[#F2F5F9] dark:bg-[#020817] border-t">
+    <section className="py-16 bg-[#F2F5F9] dark:bg-[#020817] border-t border border-primary/20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
