@@ -71,7 +71,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 };
 
   return (
-    <section id="contact" className="py-20 bg-background border-t border-primary/20">
+    <section id="contact" className="py-20 bg-background border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -167,7 +167,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
           </div>
 
           {/* Contact Form */}
-          <Card className="shadow-medium border-primary/20">
+          <Card className="shadow-medium">
             <CardHeader>
               <CardTitle className="text-xl text-foreground">
                 Send us a Message

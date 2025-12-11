@@ -561,7 +561,7 @@ const BlogSection = () => {
               </DialogHeader>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 {blogPosts.map(post => (
-                  <Card key={post.id} className="border-primary/20 overflow-hidden group hover:shadow-lg transition-all duration-300">
+                  <Card key={post.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
                     <div className="relative overflow-hidden">
                       <img
                         src={post.image}

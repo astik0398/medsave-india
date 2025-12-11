@@ -75,7 +75,7 @@ const FlashDeals = () => {
   ];
 
   return (
-    <section className="py-16 bg-[#F2F5F9] dark:bg-[#020817] border-t border-primary/20">
+    <section className="py-16 bg-[#F2F5F9] dark:bg-[#020817] border-t">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -103,7 +103,7 @@ const FlashDeals = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {flashDeals.map((deal) => (
                 <CarouselItem key={deal.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-soft bg-gradient-to-br from-card to-card/80 max-w-md">
+                  <Card className="h-full hover:border-primary/40 transition-all duration-300 hover:shadow-soft bg-gradient-to-br from-card to-card/80">
                     <CardContent className="p-6">
                       {/* Timer and Discount Badge */}
                       <div className="flex items-center justify-between mb-4">

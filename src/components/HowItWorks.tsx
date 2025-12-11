@@ -74,7 +74,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="py-10 bg-background mb-10 border-t border-primary/20">
+    <section className="py-10 bg-background mb-10 border-t ">
       <h1 className="sr-only">How MediBachat Works — Medicine Price Comparison Tool in India</h1>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -95,7 +95,7 @@ useEffect(() => {
               
               {steps.map((step, index) => (
                 <article key={index} className="relative">
-                  <Card className="text-center border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
+                  <Card className="text-center  shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
                     <CardContent className="p-8">
                       {/* Step Number */}
                       <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">

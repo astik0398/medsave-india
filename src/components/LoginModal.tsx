@@ -151,7 +151,7 @@ const LoginModal = () => {
   return (
     <>
       <Dialog open={isAuthOpen} onOpenChange={setIsAuthOpen}>
-        <DialogContent className="sm:max-w-xs border-primary/20">
+        <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="text-center text-2xl font-bold">
               Welcome to MediBachat
@@ -245,7 +245,7 @@ const LoginModal = () => {
 
       {/* Forgot Password Dialog */}
       <Dialog open={isForgotOpen} onOpenChange={setIsForgotOpen}>
-        <DialogContent className="sm:max-w-xs border-primary/20">
+        <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle>Reset Password</DialogTitle>
             <DialogDescription>

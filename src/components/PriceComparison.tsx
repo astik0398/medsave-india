@@ -381,7 +381,7 @@ const PriceComparison = () => {
   };
 
   return (
-    <section id="price-comparison" className="py-5 bg-background border-t border-primary/20">
+    <section id="price-comparison" className="py-5 bg-background border-t">
       <div className="relative w-full max-w-sm md:max-w-6xl mx-auto mb-10 md:mb-16 rounded-2xl overflow-hidden shadow-lg">
         {/* Banner Image */}
         <img
@@ -507,7 +507,7 @@ const PriceComparison = () => {
 
         {/* Medicine Info */}
         <div className="max-w-4xl mx-auto mb-8">
-          <Card className="p-6 shadow-soft border-primary/20 hover:border-primary/40">
+          <Card className="p-6 shadow-soft hover:border-primary/40">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -541,7 +541,7 @@ const PriceComparison = () => {
           {priceData.map((item, index) => (
             <Card
               key={index}
-              className={`relative overflow-hidden border-primary/20 transition-all duration-300 ${
+              className={`relative overflow-hidden transition-all duration-300 ${
                 item.price === lowestPrice
                   ? "shadow-[0_0_40px_2px_rgba(57,255,20,0.9)] dark:shadow-strong"
                   : ""
@@ -597,7 +597,7 @@ const PriceComparison = () => {
                         ₹{item.originalPrice}
                       </span>
                     </div>
-                    <Badge variant="outline" className="text-xs border-border">
+                    <Badge variant="outline" className="text-xs">
                       {item.discount}% OFF
                     </Badge>
                   </div>

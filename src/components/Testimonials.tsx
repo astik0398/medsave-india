@@ -108,7 +108,7 @@ const Testimonials = () => {
                 className="md:basis-1/2 lg:basis-1/3"
               >
                 <div className="p-2 h-full">
-                  <Card className="relative border-primary/20 overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full max-w-md">
+                  <Card className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">
                     <CardContent className="pt-6 pb-6 flex flex-col h-full min-h-[280px]">
                       <div className="absolute top-4 right-4 text-primary/10">
                         <Quote size={48} />
