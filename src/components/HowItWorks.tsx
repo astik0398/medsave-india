@@ -125,7 +125,7 @@ useEffect(() => {
                   <div></div>
                 )}
                 
-                <Card className="shadow-soft">
+                <Card className="shadow-soft border-primary/20">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       {/* Step Number & Icon */}

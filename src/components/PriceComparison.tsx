@@ -597,7 +597,7 @@ const PriceComparison = () => {
                         ₹{item.originalPrice}
                       </span>
                     </div>
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border-border">
                       {item.discount}% OFF
                     </Badge>
                   </div>
