@@ -656,10 +656,10 @@ const PriceComparison = () => {
             className="flex flex-col justify-center items-center text-center space-y-4 bg-[#F2F5F9] dark:bg-[#020817] dark:border dark:border-gray-800 rounded-2xl"
           >
             <p className="text-sm text-muted-foreground">
-              Prices are updated every hour. Last updated: 2 hours ago
+              If MediBachat helped you save money, a coffee keeps us going ☕
             </p>
 
-            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+            {/* <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
                 <Button
                   variant="hero"
@@ -735,7 +735,19 @@ const PriceComparison = () => {
                   </Button>
                 </div>
               </DialogContent>
-            </Dialog>
+            </Dialog> */}
+
+            <a
+              href="https://www.buymeacoffee.com/MediBachat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=☕&slug=MediBachat&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+                alt="Buy me a coffee"
+                style={{ height: "45px" }}
+              />
+            </a>
           </div>
         </div>
       </div>
