@@ -13,6 +13,7 @@ import {
   Wallet,
   Bookmark,
   BookmarkCheck,
+  CalendarClock,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import logo from "@/assets/medi bachat dark mode (1).png";
@@ -46,7 +47,7 @@ const Header = () => {
       href: "/#price-history",
       icon: ChartNoAxesCombined,
     },
-    { label: "FAQ", href: "/#faq", icon: HelpCircle },
+    { label: "Refill Reminder", href: "/#refill", icon: CalendarClock },
 
 { label: "Pricing", href: "/pricing", icon: Wallet },
     // { label: "Contact", href: "/#contact", icon: Phone },

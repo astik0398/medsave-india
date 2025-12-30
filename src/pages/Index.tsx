@@ -12,6 +12,7 @@ import FlashDeals from "@/components/FlashDeals";
 import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
 import DownloadApp from "@/components/DownloadApp";
+import RefillReminderSection from "@/components/RefillReminderSection";
 
 const Index = () => {
   return (
@@ -26,7 +27,8 @@ const Index = () => {
       <HowItWorks />
       <BlogSection />
       <FAQ />
-      <DownloadApp />
+      {/* <DownloadApp /> */}
+      <RefillReminderSection/>
       <ContactForm />
       <Newsletter />
       <Footer />
