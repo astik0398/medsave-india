@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { format, addDays } from "date-fns";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +20,8 @@ import {
 import { Pill, Calendar as CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/lib/supabaseClient";
+import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "@/hooks/use-toast";
 
 const RefillReminder = () => {
   const [medicineName, setMedicineName] = useState("");
@@ -27,6 +29,7 @@ const RefillReminder = () => {
   const [dosageAmount, setDosageAmount] = useState("");
   const [dosageFrequency, setDosageFrequency] = useState("day");
   const [startDate, setStartDate] = useState<Date>();
+  const { user } = useAuth();
 
   const { estimatedDays, estimatedDate } = useMemo(() => {
     if (
@@ -70,16 +73,30 @@ const RefillReminder = () => {
         start_date: startDate,
         estimated_days: estimatedDays,
         estimated_refill_date: estimatedDate,
+        email: user.email,
+        reminder_sent: false,
+        user_id: user.id
       },
     ]);
 
   if (error) {
     console.error("Error saving reminder:", error);
-    alert("Failed to save reminder. Please try again.");
+     toast({
+            title: "Error Setting Reminder!",
+            description: "Failed to set the reminder. Please try again.",
+          });
+
   } else {
-    alert("Refill reminder saved successfully!");
+     toast({
+            title: "Reminder Set Successfully!",
+            description: "You'll receive refill reminder 3 days before the estimated refill date.",
+          });
   }
 };
+
+useEffect(()=> {
+    console.log('user--', user);
+}, [])
 
   return (
     <Card className="w-full max-w-xl">
