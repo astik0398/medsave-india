@@ -75,7 +75,8 @@ const RefillReminder = () => {
         estimated_refill_date: estimatedDate,
         email: user.email,
         reminder_sent: false,
-        user_id: user.id
+        user_id: user.id,
+        user_name: user.full_name
       },
     ]);
 
@@ -97,6 +98,7 @@ const RefillReminder = () => {
 useEffect(()=> {
     console.log('user--', user);
 }, [])
+
 
   return (
     <Card className="w-full max-w-xl">
