@@ -403,6 +403,17 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.unsplash.com/photo-1701826510629-051bb954fb8f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
     },
+
+                                                                             {
+      id: "why-medicine-prices-increase-every-year-in-india",
+      title: "Why Medicine Prices Increase Every Year in India",
+      excerpt: "Why do medicine prices increase every year in India? Understand inflation, raw material costs, taxes, regulations, and how to reduce your medicine bills.",
+      author: "Team MediBachat ",
+      date: "January 26, 2026",
+      readTime: "10 min read",
+      category: "Education",
+      image: "https://images.pexels.com/photos/7277984/pexels-photo-7277984.jpeg"
+    },
   ];
 
   const getCategoryColor = (category: string) => {
