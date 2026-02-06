@@ -54,7 +54,7 @@ const Pricing = () => {
     try {
       // Step 1: Call backend to create order
       const orderResponse = await fetch(
-        "https://medicompare-production.up.railway.app/create-order",
+        "https://medi-compare-be.onrender.com/create-order",
         {
           method: "POST",
           headers: {
