@@ -118,7 +118,7 @@ function PaymentSuccess() {
 
         // Call backend to verify payment status
         const response = await fetch(
-          "https://medi-compare.onrender.com/verify-payment",
+          "https://medicompare-production-be.up.railway.app/verify-payment",
           {
             method: "POST",
             headers: {

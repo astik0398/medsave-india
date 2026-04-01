@@ -70,7 +70,7 @@ const Hero = () => {
     if (!user) return;
 
     const res = await fetch(
-      "https://medi-compare.onrender.com/track-search",
+      "https://medicompare-production-be.up.railway.app/track-search",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -134,7 +134,7 @@ const Hero = () => {
 
     try {
       const response = await fetch(
-        "https://medi-compare.onrender.com/search",
+        "https://medicompare-production-be.up.railway.app/search",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -273,7 +273,7 @@ const Hero = () => {
     formData.append("image", file);
 
     const res = await fetch(
-      "https://medi-compare.onrender.com/api/extract-medicine",
+      "https://medicompare-production-be.up.railway.app/api/extract-medicine",
       {
         method: "POST",
         body: formData,
@@ -326,7 +326,7 @@ const Hero = () => {
     const timer = setTimeout(async () => {
       try {
         const res = await fetch(
-          `https://medi-compare.onrender.com/suggest?q=${encodeURIComponent(
+          `https://medicompare-production-be.up.railway.app/suggest?q=${encodeURIComponent(
             searchQuery
           )}`
         );
