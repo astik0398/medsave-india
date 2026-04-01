@@ -111,7 +111,7 @@ const Pricing = () => {
       badge: "Default",
       description: "First-time users",
       features: [
-        { icon: Search, text: "08 searches per month", included: true },
+        { icon: Search, text: "03 searches per month", included: true },
         { icon: Sparkles, text: "Ad-Free Experience", included: false },
         { icon: Clock, text: "7-day price history", included: true },
         { icon: Clock, text: "Recently viewed (last 5)", included: true },
@@ -137,7 +137,7 @@ const Pricing = () => {
       badge: "Most Popular",
       description: "Light monthly medicine buyers",
       features: [
-        { icon: Search, text: "100 searches per month", included: true },
+        { icon: Search, text: "30 searches per month", included: true },
         { icon: Sparkles, text: "Ad-Free Experience", included: false },
         { icon: Clock, text: "30-day price history", included: true },
         { icon: Clock, text: "Recently viewed (last 15)", included: true },
@@ -163,7 +163,7 @@ const Pricing = () => {
       badge: "Regular Buyers",
       description: "Regular users, chronic patients, families",
       features: [
-        { icon: Search, text: "250 searches per month", included: true },
+        { icon: Search, text: "80 searches per month", included: true },
         { icon: Sparkles, text: "Ad-Free Experience", included: true },
         { icon: Clock, text: "90-day price history", included: true },
         { icon: Clock, text: "Recently viewed (last 50)", included: true },
