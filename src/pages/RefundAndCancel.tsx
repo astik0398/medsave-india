@@ -1,10 +1,16 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const RefundAndCancel: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Cancellation & Refund Policy | MediBachat"
+        description="Read MediBachat's Cancellation and Refund Policy for purchases and subscriptions on our medicine price comparison platform."
+        path="/refund-and-cancellation"
+      />
       <Header />
       <section className="py-10 bg-background text-foreground">
         <div className="container mx-auto px-4 max-w-4xl">

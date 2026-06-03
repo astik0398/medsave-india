@@ -1,10 +1,16 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const PrivacyPolicy: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Privacy Policy | MediBachat"
+        description="Read MediBachat's Privacy Policy to learn how we collect, use, and protect your personal information when comparing medicine prices online in India."
+        path="/privacy-policy"
+      />
       <Header />
       <section className="py-10 bg-background text-foreground">
         <div className="container mx-auto px-4 max-w-4xl">
