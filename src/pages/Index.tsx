@@ -13,10 +13,28 @@ import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
 import DownloadApp from "@/components/DownloadApp";
 import RefillReminderSection from "@/components/RefillReminderSection";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Medicine Price Comparison Online in India | Compare Drug Prices, Coupons & Deals - MediBachat"
+        description="Compare medicine prices across Tata 1mg, Netmeds, PharmEasy, Apollo Pharmacy & Truemeds. Find verified coupons & save up to 70% on medicines in India."
+        path="/"
+        keywords="medicine price comparison, compare drug prices, online medicine discount, cheapest medicine online, buy medicine online India, medicine coupons"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "MediBachat",
+          url: "https://medibachat.in/",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://medibachat.in/?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        }}
+      />
       <Header />
       <Hero />
       <PriceComparison />

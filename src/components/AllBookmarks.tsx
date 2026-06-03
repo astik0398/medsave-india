@@ -8,6 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "@/hooks/use-toast";
 import Header from "./Header";
 import Footer from "./Footer";
+import SEO from "./SEO";
 import netmeds from "../assets/netmeds trans.png";
 import onemg from "../assets/1mg trans.png";
 import truemeds from "../assets/truemeds trans.png";
@@ -155,6 +156,11 @@ const AllBookmarks = () => {
 
   return (
     <>
+      <SEO
+        title="My Bookmarks | MediBachat"
+        description="View and manage all your bookmarked medicine price comparisons on MediBachat."
+        path="/all-bookmarks"
+      />
       <Header />
       <div className="min-h-screen bg-background py-10">
         <div className="container mx-auto px-4">

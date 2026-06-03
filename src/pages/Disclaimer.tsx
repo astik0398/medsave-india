@@ -1,10 +1,16 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
+import SEO from "@/components/SEO";
 
 const Disclaimer: React.FC = () => {
   return (
     <div>
+        <SEO
+          title="Disclaimer | MediBachat"
+          description="MediBachat displays medicine prices from multiple online pharmacies for informational purposes. Read our full disclaimer here."
+          path="/disclaimer"
+        />
         <Header/>
 
         <section className="py-10 bg-background text-foreground">

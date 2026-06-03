@@ -1,10 +1,16 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const TermsOfService: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Terms of Service | MediBachat"
+        description="Read the Terms of Service for using MediBachat — the medicine price comparison platform helping Indians save on online pharmacy purchases."
+        path="/terms-of-service"
+      />
       <Header />
       <main className="py-10 bg-background text-foreground">
         <div className="container mx-auto max-w-4xl px-4 bg-background rounded-2xl shadow-lg border border-border">

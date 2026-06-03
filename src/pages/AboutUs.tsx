@@ -1,10 +1,24 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const AboutUs: React.FC = () => {
   return (
     <>
+      <SEO
+        title="About MediBachat | India's Trusted Medicine Price Comparison Platform"
+        description="Learn about MediBachat — India's leading medicine price comparison platform helping users save on medicines from Tata 1mg, Netmeds, PharmEasy & more."
+        path="/about-medibachat"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "MediBachat",
+          url: "https://medibachat.in/",
+          logo: "https://medibachat.in/og-image.png",
+          description: "India's leading medicine price comparison platform.",
+        }}
+      />
       <Header />
       <section className="py-10 bg-background text-foreground">
         <div className="container mx-auto px-4 max-w-4xl">
