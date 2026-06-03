@@ -18,7 +18,7 @@ const Hero = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [debounceTimer, setDebounceTimer] = useState<NodeJS.Timeout | null>(
+  const [debounceTimer, setDebounceTimer] = useState<ReturnType<typeof setTimeout> | null>(
     null
   );
   const [justSelected, setJustSelected] = useState(false);
