@@ -224,6 +224,11 @@ const Pricing = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F5F9] dark:bg-[#020817]">
+      <SEO
+        title="Pricing Plans | MediBachat Premium Medicine Price Tracking"
+        description="Choose a MediBachat pricing plan to unlock premium medicine price comparison features, refill reminders, and exclusive coupon savings across Indian pharmacies."
+        path="/pricing"
+      />
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
