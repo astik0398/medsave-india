@@ -424,6 +424,17 @@ const BlogSection = () => {
   readTime: "12 min read",
   category: "Education",
   image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=60"
+},
+
+{
+  id: "how-to-store-medicines-at-home-safely",
+  title: "How to Store Medicines at Home Safely: Common Mistakes to Avoid",
+  excerpt: "Learn the right way to store medicines at home. Discover how temperature, humidity, and sunlight affect medicine effectiveness and safety.",
+  author: "Team MediBachat",
+  date: "June 06, 2026",
+  readTime: "9 min read",
+  category: "Education",
+  image: "https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 }
   ];
 
