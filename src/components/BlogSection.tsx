@@ -414,6 +414,17 @@ const BlogSection = () => {
       category: "Education",
       image: "https://images.pexels.com/photos/7277984/pexels-photo-7277984.jpeg"
     },
+
+    {
+  id: "generic-vs-branded-medicines-india-price-comparison",
+  title: "Generic vs Branded Medicines in India: Are You Paying More Than Necessary?",
+  excerpt: "Discover the difference between generic and branded medicines in India. Compare prices, quality, effectiveness, safety, and learn how to save up to 80% on your medicine bills.",
+  author: "Team MediBachat",
+  date: "June 06, 2026",
+  readTime: "12 min read",
+  category: "Education",
+  image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=60"
+}
   ];
 
   const getCategoryColor = (category: string) => {
