@@ -446,6 +446,17 @@ const BlogSection = () => {
   readTime: "10 min read",
   category: "Education",
   image: "https://images.unsplash.com/photo-1579154204601-01588f351e67"
+},
+
+{
+  id: "why-lab-test-prices-differ-between-diagnostic-centers",
+  title: "Why Do Lab Test Prices Differ So Much Between Diagnostic Centers?",
+  excerpt: "Ever wondered why the same blood test costs ₹150 at one lab and ₹600 at another? Learn the factors behind lab test pricing in India.",
+  author: "Team MediBachat",
+  date: "June 07, 2026",
+  readTime: "10 min read",
+  category: "Education",
+  image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b"
 }
   ];
 
