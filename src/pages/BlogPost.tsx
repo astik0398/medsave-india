@@ -15202,6 +15202,316 @@ const BlogPost = () => {
 </>
       ),
     },
+
+             "cbc-test-price-comparison-india": {
+      title:
+        "CBC Test Price Comparison in India: Which Lab Offers the Best Value?",
+      author: "Team MediBachat",
+      date: "June 06, 2026",
+      readTime: "10 min read",
+      metaDescription:
+        "Compare CBC test prices in India across diagnostic labs. Learn what a Complete Blood Count (CBC) test includes, average costs, factors affecting pricing, and how to save money on blood tests.",
+      category: "Education",
+      image:
+        "https://images.unsplash.com/photo-1579154204601-01588f351e67",
+      content: (
+      <>
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+        CBC Test Price Comparison in India: Which Lab Offers the Best Value?
+      </h1>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        A Complete Blood Count (CBC) test is one of the most commonly prescribed
+        diagnostic tests in India. Whether you're experiencing fatigue,
+        fever, infection symptoms, or simply undergoing a routine health
+        checkup, your doctor will often recommend a CBC test as the first
+        step in understanding your overall health.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        However, if you've ever searched online for a CBC blood test, you've
+        probably noticed that prices vary significantly between diagnostic
+        centers. One lab may charge ₹199, while another may charge ₹599 or
+        more for what appears to be the same test.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        So why does this happen? Which lab offers the best value? And how can
+        you avoid overpaying for routine blood tests? In this guide, we'll
+        break down CBC test pricing in India and help you make an informed
+        decision.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        What Is a CBC Test?
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        A Complete Blood Count (CBC) test measures different components of
+        your blood and provides valuable insights into your overall health.
+        Doctors frequently use it to detect infections, anemia, inflammation,
+        blood disorders, and other medical conditions.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        The test typically evaluates:
+      </p>
+
+      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+        <li>Red Blood Cell (RBC) Count</li>
+        <li>White Blood Cell (WBC) Count</li>
+        <li>Hemoglobin Levels</li>
+        <li>Platelet Count</li>
+        <li>Hematocrit</li>
+        <li>Mean Corpuscular Volume (MCV)</li>
+        <li>Mean Corpuscular Hemoglobin (MCH)</li>
+        <li>Differential White Cell Count</li>
+      </ul>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Because it provides such a broad overview of health, the CBC test is
+        often included in annual health checkups and preventive screening
+        packages.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        Average CBC Test Price in India
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        The cost of a CBC test depends on factors such as the diagnostic
+        center, city, home sample collection availability, and promotional
+        discounts.
+      </p>
+
+      <table className="min-w-full border border-gray-300 mb-6">
+        <thead>
+          <tr className="bg-gray-100 dark:bg-gray-800">
+            <th className="border border-gray-300 px-4 py-2">Lab Type</th>
+            <th className="border border-gray-300 px-4 py-2">
+              Typical Price Range
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2">
+              Local Diagnostic Centers
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              ₹150 - ₹300
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2">
+              Mid-Sized Labs
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              ₹250 - ₹450
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2">
+              Premium Diagnostic Chains
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              ₹350 - ₹700
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2">
+              Home Collection Packages
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              ₹299 - ₹799
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        While the actual CBC test methodology may be similar, pricing often
+        differs because of operational and service-related factors.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        Why Do CBC Test Prices Differ Between Labs?
+      </h2>
+
+      <img
+            src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?q=80&w=1225&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="lab test price comparison"
+          />
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-2 mb-6">
+        Many patients assume a higher-priced test automatically means better
+        quality. In reality, several factors influence diagnostic test costs.
+      </p>
+
+      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+        <li>
+          Home sample collection services increase operational costs.
+        </li>
+        <li>
+          Premium diagnostic brands invest heavily in infrastructure and
+          customer support.
+        </li>
+        <li>
+          Faster report delivery often comes with a higher price tag.
+        </li>
+        <li>
+          Location plays a major role in pricing differences.
+        </li>
+        <li>
+          Promotional discounts and subscription plans can reduce costs.
+        </li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        Is a Cheaper CBC Test Less Accurate?
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Not necessarily. Many affordable diagnostic labs use modern automated
+        analyzers and follow standardized testing procedures. A lower price
+        often reflects operational efficiency rather than reduced quality.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Instead of focusing solely on price, patients should consider factors
+        such as lab reputation, report turnaround time, customer reviews, and
+        accreditation status.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        When Should You Get a CBC Test?
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Doctors may recommend a CBC test for several reasons:
+      </p>
+
+      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+        <li>Persistent fatigue or weakness.</li>
+        <li>Frequent infections.</li>
+        <li>Unexplained fever.</li>
+        <li>Routine annual health checkups.</li>
+        <li>Monitoring chronic medical conditions.</li>
+        <li>Evaluating treatment effectiveness.</li>
+        <li>Pre-surgery investigations.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        How to Save Money on CBC Tests
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Healthcare expenses can add up quickly, especially when multiple lab
+        tests are required. Fortunately, there are several ways to reduce
+        diagnostic costs without compromising on quality.
+      </p>
+
+      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+        <li>Compare prices before booking a test.</li>
+        <li>Look for bundled health checkup packages.</li>
+        <li>Use promotional offers and discounts.</li>
+        <li>Consider nearby accredited labs.</li>
+        <li>Book multiple tests together when appropriate.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        Future of Lab Test Price Comparison in India
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Just as consumers compare flight tickets, hotels, and medicines,
+        diagnostic test comparison is becoming increasingly important. More
+        patients are beginning to compare prices before booking blood tests,
+        especially for routine screenings like CBC, thyroid profiles, and
+        diabetes tests.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        Platforms that aggregate lab test pricing can help patients identify
+        affordable options while maintaining transparency in healthcare
+        spending.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        How MediBachat Can Help
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        At MediBachat, our mission is to help consumers make smarter
+        healthcare spending decisions. While many people already compare
+        medicine prices, diagnostic testing is another area where significant
+        savings are possible.
+      </p>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+        As healthcare comparison tools evolve, patients will increasingly be
+        able to compare CBC test prices, home collection options, report
+        delivery times, and diagnostic providers from a single platform.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+        Frequently Asked Questions
+      </h2>
+
+      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+     
+          <b>Q: What is the normal CBC test price in India?</b>
+          <br />
+          <b>A:</b> Most CBC tests typically cost between ₹150 and ₹700,
+          depending on the diagnostic center and services offered.
+        
+
+        <br />
+          <b>Q: Is fasting required for a CBC test?</b>
+          <br />
+          <b>A:</b> In most cases, fasting is not required for a standard CBC
+          test.
+        
+<br />
+        
+          <b>Q: How long does it take to receive CBC test results?</b>
+          <br />
+          <b>A:</b> Many labs provide reports within a few hours to one day.
+        
+
+      <br />
+          <b>Q: Can a CBC test detect infection?</b>
+          <br />
+          <b>A:</b> A CBC test can provide indicators that may suggest
+          infection, which your doctor interprets alongside symptoms and other
+          tests.
+        
+
+        <br />
+          <b>Q: Should I choose the cheapest lab available?</b>
+          <br />
+          <b>A:</b> Price is important, but you should also consider
+          accreditation, reliability, reviews, and convenience.
+        
+      </ul>
+
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+        Final Thoughts
+      </h2>
+
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        A CBC test is one of the most important and widely used diagnostic
+        investigations in healthcare. While prices can vary significantly
+        between diagnostic centers, understanding what affects pricing can help
+        you avoid unnecessary expenses. Comparing options, evaluating service
+        quality, and choosing reputable providers can help you get the best
+        value for your healthcare budget. As lab test comparison tools become
+        more common, finding affordable and transparent healthcare services
+        will become easier than ever.
+      </p>
+    </>
+      ),
+    },
   };
 
   const post = blogPosts[id as keyof typeof blogPosts];

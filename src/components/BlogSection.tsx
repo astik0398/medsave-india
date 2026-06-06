@@ -435,6 +435,17 @@ const BlogSection = () => {
   readTime: "9 min read",
   category: "Education",
   image: "https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+
+{
+  id: "cbc-test-price-comparison-india",
+  title: "CBC Test Price Comparison in India: Which Lab Offers the Best Value?",
+  excerpt: "Compare CBC test prices across major diagnostic labs in India. Learn what a Complete Blood Count test includes, average costs, and how to save money on routine health checkups.",
+  author: "Team MediBachat",
+  date: "June 06, 2026",
+  readTime: "10 min read",
+  category: "Education",
+  image: "https://images.unsplash.com/photo-1579154204601-01588f351e67"
 }
   ];
 
