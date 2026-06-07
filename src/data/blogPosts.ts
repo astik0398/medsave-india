@@ -425,6 +425,17 @@ export const blogPosts: BlogPost[] = [
   readTime: "8 min read",
   category: "Guide",
   image: "https://images.unsplash.com/photo-1682706841281-f723c5bfcd83?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+
+{
+  id: "fasting-vs-non-fasting-blood-tests",
+  title: "Fasting vs Non-Fasting Blood Tests: What You Need to Know",
+  excerpt: "Confused about fasting requirements before blood tests? Learn which diagnostic tests require fasting and which do not.",
+  author: "Team MediBachat",
+  date: "June 07, 2026",
+  readTime: "9 min read",
+  category: "Education",
+  image: "https://images.unsplash.com/photo-1627035537702-ddca174d7987?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 }
 ];
 

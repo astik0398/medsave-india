@@ -14312,8 +14312,7 @@ const BlogPost = () => {
     },
 
     "why-medicine-prices-increase-every-year-in-india": {
-      title:
-        "Why Medicine Prices Increase Every Year in India",
+      title: "Why Medicine Prices Increase Every Year in India",
       author: "Team MediBachat",
       date: "January 26, 2026",
       readTime: "10 min read",
@@ -14324,152 +14323,291 @@ const BlogPost = () => {
         "https://images.pexels.com/photos/7277984/pexels-photo-7277984.jpeg",
       content: (
         <>
-  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-    Why Medicine Prices Increase Every Year in India
-  </h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Why Medicine Prices Increase Every Year in India
+          </h1>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Have you ever noticed that the same medicine you bought last year feels more expensive today—even though the brand, dosage, and packaging haven’t changed? You’re not imagining it. Medicine prices in India increase almost every year, quietly adding pressure to household budgets. For families managing long-term treatments or monthly prescriptions, these small increases compound into a significant financial burden over time.
-    <br /><br />
-    Unlike gadgets or luxury items, medicines are not optional purchases. You can postpone buying a new phone, but you cannot delay essential medication. This makes understanding why medicine prices rise every year in India extremely important. In this guide, we break down the real, non-technical reasons behind rising medicine costs, explain how pricing works behind the scenes, and show how smart consumers can reduce their medicine expenses using tools like <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/"><b>MediBachat</b></a>.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Have you ever noticed that the same medicine you bought last year
+            feels more expensive today—even though the brand, dosage, and
+            packaging haven’t changed? You’re not imagining it. Medicine prices
+            in India increase almost every year, quietly adding pressure to
+            household budgets. For families managing long-term treatments or
+            monthly prescriptions, these small increases compound into a
+            significant financial burden over time.
+            <br />
+            <br />
+            Unlike gadgets or luxury items, medicines are not optional
+            purchases. You can postpone buying a new phone, but you cannot delay
+            essential medication. This makes understanding why medicine prices
+            rise every year in India extremely important. In this guide, we
+            break down the real, non-technical reasons behind rising medicine
+            costs, explain how pricing works behind the scenes, and show how
+            smart consumers can reduce their medicine expenses using tools like{" "}
+            <a
+              style={{ color: "blue" }}
+              target="_blank"
+              href="https://medibachat.in/"
+            >
+              <b>MediBachat</b>
+            </a>
+            .
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Inflation: The Silent Driver of Rising Medicine Prices
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Inflation: The Silent Driver of Rising Medicine Prices
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Inflation is one of the biggest reasons medicine prices increase every year in India. Inflation affects everything—from transportation costs to employee salaries—and the pharmaceutical industry is no exception. Even when a medicine’s formula remains unchanged, the cost of producing, storing, and delivering it increases annually due to inflationary pressure.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Inflation is one of the biggest reasons medicine prices increase
+            every year in India. Inflation affects everything—from
+            transportation costs to employee salaries—and the pharmaceutical
+            industry is no exception. Even when a medicine’s formula remains
+            unchanged, the cost of producing, storing, and delivering it
+            increases annually due to inflationary pressure.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Pharmaceutical companies face rising expenses in electricity, fuel, packaging materials, and logistics. These costs are eventually passed on to consumers in the form of small price hikes. Individually, these increases may look minor, but across hundreds of medicines and repeated purchases, the impact becomes significant for Indian households.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Pharmaceutical companies face rising expenses in electricity, fuel,
+            packaging materials, and logistics. These costs are eventually
+            passed on to consumers in the form of small price hikes.
+            Individually, these increases may look minor, but across hundreds of
+            medicines and repeated purchases, the impact becomes significant for
+            Indian households.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Rising Raw Material and API Costs
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Rising Raw Material and API Costs
+          </h2>
 
-  <img src="https://images.pexels.com/photos/27288569/pexels-photo-27288569.jpeg" alt="medicine price comparison" className="mb-4"/>
+          <img
+            src="https://images.pexels.com/photos/27288569/pexels-photo-27288569.jpeg"
+            alt="medicine price comparison"
+            className="mb-4"
+          />
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Most medicines rely on Active Pharmaceutical Ingredients (APIs), many of which are imported. India depends heavily on international suppliers for raw materials, and any global disruption—currency fluctuations, supply shortages, geopolitical tensions, or shipping delays—directly affects medicine pricing.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Most medicines rely on Active Pharmaceutical Ingredients (APIs),
+            many of which are imported. India depends heavily on international
+            suppliers for raw materials, and any global disruption—currency
+            fluctuations, supply shortages, geopolitical tensions, or shipping
+            delays—directly affects medicine pricing.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    When API prices rise globally, manufacturers have limited options. They either absorb losses or increase medicine prices. Over time, repeated increases in raw material costs lead to consistent annual price revisions. This is one of the less visible but most impactful reasons medicine prices increase every year in India.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            When API prices rise globally, manufacturers have limited options.
+            They either absorb losses or increase medicine prices. Over time,
+            repeated increases in raw material costs lead to consistent annual
+            price revisions. This is one of the less visible but most impactful
+            reasons medicine prices increase every year in India.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Supply Chain, Storage, and Transportation Expenses
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Supply Chain, Storage, and Transportation Expenses
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Medicines do not travel directly from factories to patients. They pass through multiple layers—manufacturers, distributors, wholesalers, pharmacies, and delivery partners. Each step adds cost. Cold-chain medicines require temperature-controlled storage and transport, which further increases operational expenses.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Medicines do not travel directly from factories to patients. They
+            pass through multiple layers—manufacturers, distributors,
+            wholesalers, pharmacies, and delivery partners. Each step adds cost.
+            Cold-chain medicines require temperature-controlled storage and
+            transport, which further increases operational expenses.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Fuel price hikes, toll charges, warehousing rent, and last-mile delivery costs all rise year after year. Online pharmacies also invest heavily in logistics and compliance infrastructure. These rising supply chain costs are a major contributor to annual medicine price increases.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Fuel price hikes, toll charges, warehousing rent, and last-mile
+            delivery costs all rise year after year. Online pharmacies also
+            invest heavily in logistics and compliance infrastructure. These
+            rising supply chain costs are a major contributor to annual medicine
+            price increases.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Government Regulations and Price Control Limits
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Government Regulations and Price Control Limits
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Many people assume medicine prices are completely controlled by the government. While India does regulate essential medicines under price control mechanisms, not all medicines fall under these rules. Even for regulated medicines, manufacturers are often allowed limited annual price increases to account for inflation and rising production costs.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Many people assume medicine prices are completely controlled by the
+            government. While India does regulate essential medicines under
+            price control mechanisms, not all medicines fall under these rules.
+            Even for regulated medicines, manufacturers are often allowed
+            limited annual price increases to account for inflation and rising
+            production costs.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Non-essential medicines, lifestyle drugs, supplements, and medical devices often have fewer restrictions. This creates noticeable price differences across categories and explains why some medicines see sharper price hikes than others. Understanding these regulations helps consumers make smarter purchasing decisions.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Non-essential medicines, lifestyle drugs, supplements, and medical
+            devices often have fewer restrictions. This creates noticeable price
+            differences across categories and explains why some medicines see
+            sharper price hikes than others. Understanding these regulations
+            helps consumers make smarter purchasing decisions.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Marketing, Branding, and Packaging Costs
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Marketing, Branding, and Packaging Costs
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Beyond manufacturing, pharmaceutical companies spend heavily on branding, packaging upgrades, and marketing. Improved blister packs, redesigned labels, tamper-proof seals, and compliance updates all add to production costs. These enhancements improve safety and usability but also contribute to price increases.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Beyond manufacturing, pharmaceutical companies spend heavily on
+            branding, packaging upgrades, and marketing. Improved blister packs,
+            redesigned labels, tamper-proof seals, and compliance updates all
+            add to production costs. These enhancements improve safety and
+            usability but also contribute to price increases.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Branded medicines often increase in price faster than generics because they carry higher promotional expenses. This is why comparing prices across platforms using <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/"><b>MediBachat</b></a> can reveal surprisingly large differences for the same medicine.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Branded medicines often increase in price faster than generics
+            because they carry higher promotional expenses. This is why
+            comparing prices across platforms using{" "}
+            <a
+              style={{ color: "blue" }}
+              target="_blank"
+              href="https://medibachat.in/"
+            >
+              <b>MediBachat</b>
+            </a>{" "}
+            can reveal surprisingly large differences for the same medicine.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Demand Growth and Population Pressure
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Demand Growth and Population Pressure
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    India’s growing population and increasing awareness about healthcare have significantly boosted medicine demand. Chronic conditions, preventive healthcare, and longer life expectancy mean people are buying medicines more frequently and for longer durations.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            India’s growing population and increasing awareness about healthcare
+            have significantly boosted medicine demand. Chronic conditions,
+            preventive healthcare, and longer life expectancy mean people are
+            buying medicines more frequently and for longer durations.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Higher demand combined with limited manufacturing expansion can push prices upward. Even when supply remains stable, increased consumption leads to higher operational and inventory management costs, indirectly impacting medicine prices.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Higher demand combined with limited manufacturing expansion can push
+            prices upward. Even when supply remains stable, increased
+            consumption leads to higher operational and inventory management
+            costs, indirectly impacting medicine prices.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Why the Same Medicine Costs Different Across Platforms
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Why the Same Medicine Costs Different Across Platforms
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    One confusing aspect for consumers is seeing different prices for the same medicine across platforms like Tata 1mg, PharmEasy, Netmeds, Apollo Pharmacy, and local chemists. These differences arise due to varying discount strategies, procurement contracts, operational costs, and promotional offers.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            One confusing aspect for consumers is seeing different prices for
+            the same medicine across platforms like Tata 1mg, PharmEasy,
+            Netmeds, Apollo Pharmacy, and local chemists. These differences
+            arise due to varying discount strategies, procurement contracts,
+            operational costs, and promotional offers.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    This is where price comparison becomes essential. Instead of paying more by default, you can instantly compare prices across platforms using <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/"><b>MediBachat</b></a> and choose the most affordable option without compromising authenticity or safety.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This is where price comparison becomes essential. Instead of paying
+            more by default, you can instantly compare prices across platforms
+            using{" "}
+            <a
+              style={{ color: "blue" }}
+              target="_blank"
+              href="https://medibachat.in/"
+            >
+              <b>MediBachat</b>
+            </a>{" "}
+            and choose the most affordable option without compromising
+            authenticity or safety.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    How Annual Price Increases Affect Indian Families
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How Annual Price Increases Affect Indian Families
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Annual medicine price hikes hit hardest when treatments are long-term. Even a 5–10% yearly increase can translate into thousands of rupees over time. Families managing diabetes, blood pressure, respiratory conditions, or elderly care feel this impact the most.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Annual medicine price hikes hit hardest when treatments are
+            long-term. Even a 5–10% yearly increase can translate into thousands
+            of rupees over time. Families managing diabetes, blood pressure,
+            respiratory conditions, or elderly care feel this impact the most.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Many households underestimate how much they spend on medicines annually. Tracking expenses and comparing prices regularly can reveal hidden savings opportunities that significantly reduce overall healthcare costs.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Many households underestimate how much they spend on medicines
+            annually. Tracking expenses and comparing prices regularly can
+            reveal hidden savings opportunities that significantly reduce
+            overall healthcare costs.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    How You Can Reduce the Impact of Rising Medicine Prices
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How You Can Reduce the Impact of Rising Medicine Prices
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    While you cannot control inflation or manufacturing costs, you can control how much you pay. Comparing prices before purchasing is the simplest and most effective strategy. Online platforms often offer different discounts for the same medicine on different days.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            While you cannot control inflation or manufacturing costs, you can
+            control how much you pay. Comparing prices before purchasing is the
+            simplest and most effective strategy. Online platforms often offer
+            different discounts for the same medicine on different days.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Using <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/"><b>MediBachat</b></a>, you can instantly compare medicine prices across multiple trusted online pharmacies, track price changes, and make informed decisions. Over a year, these small savings add up to meaningful financial relief.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Using{" "}
+            <a
+              style={{ color: "blue" }}
+              target="_blank"
+              href="https://medibachat.in/"
+            >
+              <b>MediBachat</b>
+            </a>
+            , you can instantly compare medicine prices across multiple trusted
+            online pharmacies, track price changes, and make informed decisions.
+            Over a year, these small savings add up to meaningful financial
+            relief.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    The Future of Medicine Pricing in India
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            The Future of Medicine Pricing in India
+          </h2>
 
-  <img src="https://images.pexels.com/photos/3873149/pexels-photo-3873149.jpeg" alt="medicine price checker" className="mb-4"/>
+          <img
+            src="https://images.pexels.com/photos/3873149/pexels-photo-3873149.jpeg"
+            alt="medicine price checker"
+            className="mb-4"
+          />
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Medicine prices are unlikely to stop rising entirely, but increased transparency and digital tools are empowering consumers. Price comparison platforms, data-driven insights, and smarter regulation are slowly shifting the balance in favor of patients.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Medicine prices are unlikely to stop rising entirely, but increased
+            transparency and digital tools are empowering consumers. Price
+            comparison platforms, data-driven insights, and smarter regulation
+            are slowly shifting the balance in favor of patients.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-    As healthcare becomes more digital, informed consumers will spend less despite rising prices. The key is awareness, comparison, and consistency.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            As healthcare becomes more digital, informed consumers will spend
+            less despite rising prices. The key is awareness, comparison, and
+            consistency.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8 mb-6">
-    If rising medicine prices are affecting your monthly budget, start comparing before you buy. Visit <a style={{color:'blue'}} target="_blank" href="https://medibachat.in/"><b>MediBachat</b></a> to check real-time medicine prices, compare trusted platforms, and make smarter healthcare spending decisions. Saving money on medicines doesn’t require compromising on quality—it requires information.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8 mb-6">
+            If rising medicine prices are affecting your monthly budget, start
+            comparing before you buy. Visit{" "}
+            <a
+              style={{ color: "blue" }}
+              target="_blank"
+              href="https://medibachat.in/"
+            >
+              <b>MediBachat</b>
+            </a>{" "}
+            to check real-time medicine prices, compare trusted platforms, and
+            make smarter healthcare spending decisions. Saving money on
+            medicines doesn’t require compromising on quality—it requires
+            information.
+          </p>
 
-  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-6 italic">
-    This article is for informational and educational purposes only. It does not provide medical advice or recommendations. Always consult a qualified healthcare professional for diagnosis, treatment, or medical decisions.
-  </p>
-</>
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-6 italic">
+            This article is for informational and educational purposes only. It
+            does not provide medical advice or recommendations. Always consult a
+            qualified healthcare professional for diagnosis, treatment, or
+            medical decisions.
+          </p>
+        </>
       ),
     },
 
-       "generic-vs-branded-medicines-india-price-comparison": {
+    "generic-vs-branded-medicines-india-price-comparison": {
       title:
         "Generic vs Branded Medicines in India: Are You Paying More Than Necessary?",
       author: "Team MediBachat",
@@ -14481,315 +14619,305 @@ const BlogPost = () => {
       image:
         "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=400&fit=crop&crop=center",
       content: (
-        <> 
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Generic vs Branded Medicines in India: Are You Paying More Than Necessary?
-        </h1>
+        <>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Generic vs Branded Medicines in India: Are You Paying More Than
+            Necessary?
+          </h1>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Many Indians unknowingly spend thousands of rupees extra every year on
-    medicines simply because they choose branded medicines over generic
-    alternatives. But does a higher price always mean better quality? Are
-    generic medicines really as effective as branded medicines?
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Many Indians unknowingly spend thousands of rupees extra every year
+            on medicines simply because they choose branded medicines over
+            generic alternatives. But does a higher price always mean better
+            quality? Are generic medicines really as effective as branded
+            medicines?
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    These are some of the most common questions patients ask before buying
-    medicines. In this guide, we'll explain the difference between generic
-    and branded medicines, compare their prices, discuss safety concerns,
-    and show how you can reduce your healthcare expenses without
-    compromising on quality.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            These are some of the most common questions patients ask before
+            buying medicines. In this guide, we'll explain the difference
+            between generic and branded medicines, compare their prices, discuss
+            safety concerns, and show how you can reduce your healthcare
+            expenses without compromising on quality.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    What Are Generic Medicines?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Are Generic Medicines?
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Generic medicines contain the same active pharmaceutical ingredient
-    (API), strength, dosage form, and intended use as their branded
-    counterparts. They are manufactured after the original patent of a drug
-    expires and are designed to provide the same therapeutic effect.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Generic medicines contain the same active pharmaceutical ingredient
+            (API), strength, dosage form, and intended use as their branded
+            counterparts. They are manufactured after the original patent of a
+            drug expires and are designed to provide the same therapeutic
+            effect.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    For example, if a branded company sells Paracetamol 650mg under a
-    popular brand name, another manufacturer can produce a generic version
-    containing the same medicine and dosage once regulatory requirements
-    are met.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            For example, if a branded company sells Paracetamol 650mg under a
+            popular brand name, another manufacturer can produce a generic
+            version containing the same medicine and dosage once regulatory
+            requirements are met.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    What Are Branded Medicines?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Are Branded Medicines?
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Branded medicines are marketed under a specific brand name by a
-    pharmaceutical company. These medicines often involve significant
-    investments in research, advertising, marketing, doctor outreach,
-    packaging, and distribution.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Branded medicines are marketed under a specific brand name by a
+            pharmaceutical company. These medicines often involve significant
+            investments in research, advertising, marketing, doctor outreach,
+            packaging, and distribution.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    While branded medicines are trusted by many patients and doctors, a
-    large portion of their higher cost often comes from branding and
-    marketing expenses rather than the medicine itself.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            While branded medicines are trusted by many patients and doctors, a
+            large portion of their higher cost often comes from branding and
+            marketing expenses rather than the medicine itself.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Generic vs Branded Medicines: Quick Comparison
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Generic vs Branded Medicines: Quick Comparison
+          </h2>
 
-  <table className="min-w-full border border-gray-300 mb-6">
-    <thead>
-      <tr className="bg-gray-100 dark:bg-gray-800">
-        <th className="border border-gray-300 px-4 py-2">Factor</th>
-        <th className="border border-gray-300 px-4 py-2">
-          Generic Medicine
-        </th>
-        <th className="border border-gray-300 px-4 py-2">
-          Branded Medicine
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Active Ingredient
-        </td>
-        <td className="border border-gray-300 px-4 py-2">Same</td>
-        <td className="border border-gray-300 px-4 py-2">Same</td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Effectiveness
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Comparable
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Comparable
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">Safety</td>
-        <td className="border border-gray-300 px-4 py-2">
-          Regulated
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Regulated
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">Price</td>
-        <td className="border border-gray-300 px-4 py-2">
-          Usually Lower
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Usually Higher
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">Marketing Cost</td>
-        <td className="border border-gray-300 px-4 py-2">Minimal</td>
-        <td className="border border-gray-300 px-4 py-2">High</td>
-      </tr>
-    </tbody>
-  </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">Factor</th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Generic Medicine
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Branded Medicine
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Active Ingredient
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Same</td>
+                <td className="border border-gray-300 px-4 py-2">Same</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Effectiveness
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Comparable</td>
+                <td className="border border-gray-300 px-4 py-2">Comparable</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Safety</td>
+                <td className="border border-gray-300 px-4 py-2">Regulated</td>
+                <td className="border border-gray-300 px-4 py-2">Regulated</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Price</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Usually Lower
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Usually Higher
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Marketing Cost
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Minimal</td>
+                <td className="border border-gray-300 px-4 py-2">High</td>
+              </tr>
+            </tbody>
+          </table>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Why Are Generic Medicines Cheaper?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Why Are Generic Medicines Cheaper?
+          </h2>
 
-  <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=1179&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="generic medicine price comparison" className="mb-4"/>
+          <img
+            src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=1179&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="generic medicine price comparison"
+            className="mb-4"
+          />
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    The biggest reason generic medicines cost less is that manufacturers do
-    not need to spend heavily on drug discovery, clinical research, or
-    large-scale marketing campaigns. Since the active ingredient is already
-    known and approved, generic manufacturers can focus primarily on
-    production and distribution.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The biggest reason generic medicines cost less is that manufacturers
+            do not need to spend heavily on drug discovery, clinical research,
+            or large-scale marketing campaigns. Since the active ingredient is
+            already known and approved, generic manufacturers can focus
+            primarily on production and distribution.
+          </p>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>Lower marketing expenses</li>
-    <li>No initial research and development costs</li>
-    <li>Competitive manufacturing environment</li>
-    <li>Government initiatives promoting affordable medicines</li>
-    <li>Availability through Jan Aushadhi Kendras</li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Lower marketing expenses</li>
+            <li>No initial research and development costs</li>
+            <li>Competitive manufacturing environment</li>
+            <li>Government initiatives promoting affordable medicines</li>
+            <li>Availability through Jan Aushadhi Kendras</li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Real-World Price Comparison
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Real-World Price Comparison
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Let's look at a simplified example of how prices can differ between
-    branded and generic medicines.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Let's look at a simplified example of how prices can differ between
+            branded and generic medicines.
+          </p>
 
-  <table className="min-w-full border border-gray-300 mb-6">
-    <thead>
-      <tr className="bg-gray-100 dark:bg-gray-800">
-        <th className="border border-gray-300 px-4 py-2">Medicine</th>
-        <th className="border border-gray-300 px-4 py-2">
-          Branded Price
-        </th>
-        <th className="border border-gray-300 px-4 py-2">
-          Generic Price
-        </th>
-        <th className="border border-gray-300 px-4 py-2">Savings</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Paracetamol 650mg
-        </td>
-        <td className="border border-gray-300 px-4 py-2">₹35</td>
-        <td className="border border-gray-300 px-4 py-2">₹12</td>
-        <td className="border border-gray-300 px-4 py-2">66%</td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Metformin 500mg
-        </td>
-        <td className="border border-gray-300 px-4 py-2">₹45</td>
-        <td className="border border-gray-300 px-4 py-2">₹18</td>
-        <td className="border border-gray-300 px-4 py-2">60%</td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Amlodipine 5mg
-        </td>
-        <td className="border border-gray-300 px-4 py-2">₹55</td>
-        <td className="border border-gray-300 px-4 py-2">₹20</td>
-        <td className="border border-gray-300 px-4 py-2">63%</td>
-      </tr>
-    </tbody>
-  </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">Medicine</th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Branded Price
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Generic Price
+                </th>
+                <th className="border border-gray-300 px-4 py-2">Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Paracetamol 650mg
+                </td>
+                <td className="border border-gray-300 px-4 py-2">₹35</td>
+                <td className="border border-gray-300 px-4 py-2">₹12</td>
+                <td className="border border-gray-300 px-4 py-2">66%</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Metformin 500mg
+                </td>
+                <td className="border border-gray-300 px-4 py-2">₹45</td>
+                <td className="border border-gray-300 px-4 py-2">₹18</td>
+                <td className="border border-gray-300 px-4 py-2">60%</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Amlodipine 5mg
+                </td>
+                <td className="border border-gray-300 px-4 py-2">₹55</td>
+                <td className="border border-gray-300 px-4 py-2">₹20</td>
+                <td className="border border-gray-300 px-4 py-2">63%</td>
+              </tr>
+            </tbody>
+          </table>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    The exact prices may vary across pharmacies and brands, but the overall
-    pattern remains the same: generic medicines are often significantly
-    cheaper than branded alternatives.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The exact prices may vary across pharmacies and brands, but the
+            overall pattern remains the same: generic medicines are often
+            significantly cheaper than branded alternatives.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Are Generic Medicines Safe?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Are Generic Medicines Safe?
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    One of the biggest myths surrounding generic medicines is that they are
-    somehow inferior or less effective. In reality, generic medicines sold
-    through licensed channels must comply with regulatory standards and
-    quality requirements.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            One of the biggest myths surrounding generic medicines is that they
+            are somehow inferior or less effective. In reality, generic
+            medicines sold through licensed channels must comply with regulatory
+            standards and quality requirements.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    However, patients should always purchase medicines from trusted
-    pharmacies and follow their doctor's advice before switching from one
-    medicine to another.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            However, patients should always purchase medicines from trusted
+            pharmacies and follow their doctor's advice before switching from
+            one medicine to another.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    How MediBachat Helps You Save Money
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How MediBachat Helps You Save Money
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Many patients focus only on the medicine prescribed and forget to
-    compare prices across platforms. Using a medicine comparison platform
-    like{" "}
-    <a
-      href="https://medibachat.in"
-      target="_blank"
-      className="text-blue-500"
-    >
-      MediBachat
-    </a>
-    , you can compare medicine prices across major online pharmacies,
-    discover discounts, and identify cost-effective alternatives.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Many patients focus only on the medicine prescribed and forget to
+            compare prices across platforms. Using a medicine comparison
+            platform like{" "}
+            <a
+              href="https://medibachat.in"
+              target="_blank"
+              className="text-blue-500"
+            >
+              MediBachat
+            </a>
+            , you can compare medicine prices across major online pharmacies,
+            discover discounts, and identify cost-effective alternatives.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    For people managing chronic conditions such as diabetes, hypertension,
-    or thyroid disorders, even small savings every month can add up to
-    thousands of rupees annually.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            For people managing chronic conditions such as diabetes,
+            hypertension, or thyroid disorders, even small savings every month
+            can add up to thousands of rupees annually.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    When Should You Consider Generic Medicines?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            When Should You Consider Generic Medicines?
+          </h2>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>When managing long-term medical conditions.</li>
-    <li>When medicine costs are becoming difficult to afford.</li>
-    <li>When a doctor or pharmacist suggests an equivalent option.</li>
-    <li>When comparing prices across multiple pharmacies.</li>
-    <li>When buying medicines through Jan Aushadhi stores.</li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>When managing long-term medical conditions.</li>
+            <li>When medicine costs are becoming difficult to afford.</li>
+            <li>When a doctor or pharmacist suggests an equivalent option.</li>
+            <li>When comparing prices across multiple pharmacies.</li>
+            <li>When buying medicines through Jan Aushadhi stores.</li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Frequently Asked Questions
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    
-      <b>Q: Are generic medicines as effective as branded medicines?</b>
-      <br />
-      <b>A:</b> Generic medicines contain the same active ingredient and
-      are intended to provide the same therapeutic benefit.
-    
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: Are generic medicines as effective as branded medicines?</b>
+            <br />
+            <b>A:</b> Generic medicines contain the same active ingredient and
+            are intended to provide the same therapeutic benefit.
+            <br />
+            <b>Q: Why are branded medicines more expensive?</b>
+            <br />
+            <b>A:</b> Branded medicines often include marketing, promotion,
+            distribution, and brand-building costs.
+            <br />
+            <b>Q: Can I replace my branded medicine with a generic version?</b>
+            <br />
+            <b>A:</b> Always consult your doctor or pharmacist before making any
+            changes to prescribed medicines.
+            <br />
+            <b>Q: Where can I compare medicine prices online?</b>
+            <br />
+            <b>A:</b> You can use medicine price comparison platforms such as
+            MediBachat to compare prices across multiple pharmacies.
+            <br />
+            <b>Q: Are Jan Aushadhi medicines generic medicines?</b>
+            <br />
+            <b>A:</b> Yes, Jan Aushadhi stores primarily provide affordable
+            generic medicines to make healthcare more accessible.
+          </ul>
 
-    <br />
-      <b>Q: Why are branded medicines more expensive?</b>
-      <br />
-      <b>A:</b> Branded medicines often include marketing, promotion,
-      distribution, and brand-building costs.
-    
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
 
-   <br />
-      <b>Q: Can I replace my branded medicine with a generic version?</b>
-      <br />
-      <b>A:</b> Always consult your doctor or pharmacist before making any
-      changes to prescribed medicines.
-    
-
-    <br />
-      <b>Q: Where can I compare medicine prices online?</b>
-      <br />
-      <b>A:</b> You can use medicine price comparison platforms such as
-      MediBachat to compare prices across multiple pharmacies.
-    
-
-    <br />
-      <b>Q: Are Jan Aushadhi medicines generic medicines?</b>
-      <br />
-      <b>A:</b> Yes, Jan Aushadhi stores primarily provide affordable
-      generic medicines to make healthcare more accessible.
-    
-  </ul>
-
-  <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
-    Final Thoughts
-  </h2>
-
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-    Choosing between generic and branded medicines is not always about
-    quality—it is often about awareness. Understanding how medicines are
-    priced can help you make smarter healthcare decisions and reduce
-    unnecessary expenses. By comparing prices, exploring generic
-    alternatives where appropriate, and using tools like MediBachat, you
-    can make your healthcare budget go much further while still receiving
-    the medicines you need.
-  </p>
-</>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Choosing between generic and branded medicines is not always about
+            quality—it is often about awareness. Understanding how medicines are
+            priced can help you make smarter healthcare decisions and reduce
+            unnecessary expenses. By comparing prices, exploring generic
+            alternatives where appropriate, and using tools like MediBachat, you
+            can make your healthcare budget go much further while still
+            receiving the medicines you need.
+          </p>
+        </>
       ),
     },
 
-           "how-to-store-medicines-at-home-safely": {
-      title:
-        "How to Store Medicines at Home Safely: Common Mistakes to Avoid",
+    "how-to-store-medicines-at-home-safely": {
+      title: "How to Store Medicines at Home Safely: Common Mistakes to Avoid",
       author: "Team MediBachat",
       date: "June 06, 2026",
       readTime: "09 min read",
@@ -14799,411 +14927,399 @@ const BlogPost = () => {
       image:
         "https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: (
-       <>
-       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-        How to Store Medicines at Home Safely: Common Mistakes to Avoid
-       </h1>
+        <>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            How to Store Medicines at Home Safely: Common Mistakes to Avoid
+          </h1>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Most people pay attention to buying the right medicines but often forget
-    an equally important factor: storing them correctly. Improper medicine
-    storage can reduce effectiveness, alter chemical composition, and in
-    some cases even make medicines unsafe to consume.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Most people pay attention to buying the right medicines but often
+            forget an equally important factor: storing them correctly. Improper
+            medicine storage can reduce effectiveness, alter chemical
+            composition, and in some cases even make medicines unsafe to
+            consume.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Whether you regularly purchase medicines online, keep a family first-aid
-    kit, or manage long-term health conditions, understanding proper
-    medicine storage is essential. In this guide, you'll learn how to store
-    medicines safely at home, avoid common mistakes, and ensure that your
-    medicines remain effective until their expiry date.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Whether you regularly purchase medicines online, keep a family
+            first-aid kit, or manage long-term health conditions, understanding
+            proper medicine storage is essential. In this guide, you'll learn
+            how to store medicines safely at home, avoid common mistakes, and
+            ensure that your medicines remain effective until their expiry date.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Why Proper Medicine Storage Matters
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Why Proper Medicine Storage Matters
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Medicines are carefully formulated to work under specific conditions.
-    Exposure to excessive heat, humidity, sunlight, or contamination can
-    affect their stability and performance. This means a medicine that was
-    perfectly safe and effective when purchased may become less effective if
-    stored incorrectly.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Medicines are carefully formulated to work under specific
+            conditions. Exposure to excessive heat, humidity, sunlight, or
+            contamination can affect their stability and performance. This means
+            a medicine that was perfectly safe and effective when purchased may
+            become less effective if stored incorrectly.
+          </p>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>Maintains medicine effectiveness.</li>
-    <li>Prevents chemical degradation.</li>
-    <li>Reduces accidental poisoning risks.</li>
-    <li>Helps avoid unnecessary medicine waste.</li>
-    <li>Keeps medicines safe for children and pets.</li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Maintains medicine effectiveness.</li>
+            <li>Prevents chemical degradation.</li>
+            <li>Reduces accidental poisoning risks.</li>
+            <li>Helps avoid unnecessary medicine waste.</li>
+            <li>Keeps medicines safe for children and pets.</li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    The Ideal Temperature for Storing Medicines
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            The Ideal Temperature for Storing Medicines
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Most medicines should be stored at room temperature, typically between
-    20°C and 25°C. However, some medications require refrigeration, while
-    others should never be frozen.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Most medicines should be stored at room temperature, typically
+            between 20°C and 25°C. However, some medications require
+            refrigeration, while others should never be frozen.
+          </p>
 
-  <table className="min-w-full border border-gray-300 mb-6">
-    <thead>
-      <tr className="bg-gray-100 dark:bg-gray-800">
-        <th className="border border-gray-300 px-4 py-2">
-          Medicine Type
-        </th>
-        <th className="border border-gray-300 px-4 py-2">
-          Recommended Storage
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Tablets & Capsules
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Cool, dry place
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Insulin
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Refrigeration required
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Syrups
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Follow label instructions
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-          Eye Drops
-        </td>
-        <td className="border border-gray-300 px-4 py-2">
-          Often require cool storage
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">
+                  Medicine Type
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Recommended Storage
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Tablets & Capsules
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Cool, dry place
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Insulin</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Refrigeration required
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Syrups</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Follow label instructions
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Eye Drops</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Often require cool storage
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Always read the storage instructions printed on the medicine package.
-    Different products may have different requirements.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Always read the storage instructions printed on the medicine
+            package. Different products may have different requirements.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Common Medicine Storage Mistakes
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Common Medicine Storage Mistakes
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Many households unknowingly make storage mistakes that can compromise
-    medicine quality.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Many households unknowingly make storage mistakes that can
+            compromise medicine quality.
+          </p>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>
-      <b>Keeping medicines in the bathroom:</b> Bathrooms are exposed to
-      frequent humidity and temperature fluctuations.
-    </li>
-    <li>
-      <b>Leaving medicines in cars:</b> Vehicles can become extremely hot,
-      especially during Indian summers.
-    </li>
-    <li>
-      <b>Removing medicines from original packaging:</b> Packaging protects
-      medicines from moisture and contamination.
-    </li>
-    <li>
-      <b>Ignoring expiry dates:</b> Expired medicines may not perform as
-      intended.
-    </li>
-    <li>
-      <b>Storing medicines within reach of children:</b> This increases the
-      risk of accidental ingestion.
-    </li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>
+              <b>Keeping medicines in the bathroom:</b> Bathrooms are exposed to
+              frequent humidity and temperature fluctuations.
+            </li>
+            <li>
+              <b>Leaving medicines in cars:</b> Vehicles can become extremely
+              hot, especially during Indian summers.
+            </li>
+            <li>
+              <b>Removing medicines from original packaging:</b> Packaging
+              protects medicines from moisture and contamination.
+            </li>
+            <li>
+              <b>Ignoring expiry dates:</b> Expired medicines may not perform as
+              intended.
+            </li>
+            <li>
+              <b>Storing medicines within reach of children:</b> This increases
+              the risk of accidental ingestion.
+            </li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Where Should You Store Medicines at Home?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Where Should You Store Medicines at Home?
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    The best place to store medicines is a cool, dry cabinet away from
-    direct sunlight and heat sources. A dedicated medicine box or cabinet
-    can help keep everything organized and easy to access.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The best place to store medicines is a cool, dry cabinet away from
+            direct sunlight and heat sources. A dedicated medicine box or
+            cabinet can help keep everything organized and easy to access.
+          </p>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>Bedroom cupboard shelves</li>
-    <li>Dedicated medicine cabinets</li>
-    <li>Locked storage boxes</li>
-    <li>Cool storage areas away from kitchen appliances</li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Bedroom cupboard shelves</li>
+            <li>Dedicated medicine cabinets</li>
+            <li>Locked storage boxes</li>
+            <li>Cool storage areas away from kitchen appliances</li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    How Often Should You Check Your Medicines?
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How Often Should You Check Your Medicines?
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Conduct a medicine audit every 3-6 months. Remove expired medicines,
-    check packaging integrity, and verify that storage conditions remain
-    appropriate.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Conduct a medicine audit every 3-6 months. Remove expired medicines,
+            check packaging integrity, and verify that storage conditions remain
+            appropriate.
+          </p>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    This simple habit helps prevent accidental use of expired medications
-    and keeps your home medicine supply organized.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This simple habit helps prevent accidental use of expired
+            medications and keeps your home medicine supply organized.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Tips for Families with Children and Pets
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Tips for Families with Children and Pets
+          </h2>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    <li>Use child-resistant containers whenever available.</li>
-    <li>Store medicines in locked cabinets.</li>
-    <li>Keep medicines out of sight and reach.</li>
-    <li>Never refer to medicine as candy.</li>
-    <li>Dispose of unused medicines responsibly.</li>
-  </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Use child-resistant containers whenever available.</li>
+            <li>Store medicines in locked cabinets.</li>
+            <li>Keep medicines out of sight and reach.</li>
+            <li>Never refer to medicine as candy.</li>
+            <li>Dispose of unused medicines responsibly.</li>
+          </ul>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-  Medicine Storage During Indian Summers
-</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Medicine Storage During Indian Summers
+          </h2>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Storing medicines during Indian summers can be particularly challenging.
-  In many cities, indoor temperatures can easily exceed 35°C, especially in
-  rooms without air conditioning. High temperatures can accelerate the
-  degradation of medicines and reduce their effectiveness long before the
-  expiry date printed on the package.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Storing medicines during Indian summers can be particularly
+            challenging. In many cities, indoor temperatures can easily exceed
+            35°C, especially in rooms without air conditioning. High
+            temperatures can accelerate the degradation of medicines and reduce
+            their effectiveness long before the expiry date printed on the
+            package.
+          </p>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  During summer months, avoid storing medicines near windows, balconies,
-  kitchen appliances, or inside parked vehicles. Even a few hours of
-  exposure to extreme heat can affect temperature-sensitive medicines.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            During summer months, avoid storing medicines near windows,
+            balconies, kitchen appliances, or inside parked vehicles. Even a few
+            hours of exposure to extreme heat can affect temperature-sensitive
+            medicines.
+          </p>
 
-<ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-  <li>Store medicines in the coolest room of your house.</li>
-  <li>Avoid direct sunlight at all times.</li>
-  <li>Keep medicines away from gas stoves and ovens.</li>
-  <li>Use air-conditioned rooms when possible.</li>
-  <li>Never leave medicines inside a parked car.</li>
-</ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Store medicines in the coolest room of your house.</li>
+            <li>Avoid direct sunlight at all times.</li>
+            <li>Keep medicines away from gas stoves and ovens.</li>
+            <li>Use air-conditioned rooms when possible.</li>
+            <li>Never leave medicines inside a parked car.</li>
+          </ul>
 
-<h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-  Travel Medicine Storage Guide
-</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Travel Medicine Storage Guide
+          </h2>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Whether you're traveling for business, vacation, or medical treatment,
-  carrying medicines safely is extremely important. Travel exposes medicines
-  to temperature changes, sunlight, moisture, and accidental damage.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Whether you're traveling for business, vacation, or medical
+            treatment, carrying medicines safely is extremely important. Travel
+            exposes medicines to temperature changes, sunlight, moisture, and
+            accidental damage.
+          </p>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  If you take prescription medicines regularly, always carry enough supply
-  for the entire trip plus a few extra days. Keeping medicines in their
-  original packaging can help identify them easily and preserve important
-  instructions.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            If you take prescription medicines regularly, always carry enough
+            supply for the entire trip plus a few extra days. Keeping medicines
+            in their original packaging can help identify them easily and
+            preserve important instructions.
+          </p>
 
-<ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-  <li>Carry medicines in your cabin bag while flying.</li>
-  <li>Keep prescriptions handy for verification if required.</li>
-  <li>Use insulated pouches for temperature-sensitive medicines.</li>
-  <li>Protect medicines from direct sunlight.</li>
-  <li>Keep medicines dry and away from liquids.</li>
-</ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Carry medicines in your cabin bag while flying.</li>
+            <li>Keep prescriptions handy for verification if required.</li>
+            <li>Use insulated pouches for temperature-sensitive medicines.</li>
+            <li>Protect medicines from direct sunlight.</li>
+            <li>Keep medicines dry and away from liquids.</li>
+          </ul>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Frequent travelers should also maintain a small first-aid kit containing
-  essential medicines, bandages, antiseptics, and copies of important
-  prescriptions.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Frequent travelers should also maintain a small first-aid kit
+            containing essential medicines, bandages, antiseptics, and copies of
+            important prescriptions.
+          </p>
 
-<h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-  Storage Requirements for Insulin and Biologics
-</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Storage Requirements for Insulin and Biologics
+          </h2>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Some medicines require special storage conditions, and insulin is one of
-  the most common examples. Unlike ordinary tablets, insulin is highly
-  sensitive to temperature changes. Improper storage can make it less
-  effective and impact blood sugar management.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Some medicines require special storage conditions, and insulin is
+            one of the most common examples. Unlike ordinary tablets, insulin is
+            highly sensitive to temperature changes. Improper storage can make
+            it less effective and impact blood sugar management.
+          </p>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Unopened insulin products are generally stored in a refrigerator according
-  to manufacturer instructions. However, freezing insulin can permanently
-  damage it. Similarly, many biologic medicines used for autoimmune
-  conditions and other specialized treatments also require careful
-  temperature control.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Unopened insulin products are generally stored in a refrigerator
+            according to manufacturer instructions. However, freezing insulin
+            can permanently damage it. Similarly, many biologic medicines used
+            for autoimmune conditions and other specialized treatments also
+            require careful temperature control.
+          </p>
 
-<table className="min-w-full border border-gray-300 mb-6">
-  <thead>
-    <tr className="bg-gray-100 dark:bg-gray-800">
-      <th className="border border-gray-300 px-4 py-2">
-        Product Type
-      </th>
-      <th className="border border-gray-300 px-4 py-2">
-        Storage Consideration
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className="border border-gray-300 px-4 py-2">
-        Insulin
-      </td>
-      <td className="border border-gray-300 px-4 py-2">
-        Refrigeration required, do not freeze
-      </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 px-4 py-2">
-        Biologics
-      </td>
-      <td className="border border-gray-300 px-4 py-2">
-        Follow manufacturer temperature guidelines
-      </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 px-4 py-2">
-        Vaccines
-      </td>
-      <td className="border border-gray-300 px-4 py-2">
-        Cold-chain storage may be required
-      </td>
-    </tr>
-  </tbody>
-</table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">
+                  Product Type
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Storage Consideration
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Insulin</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Refrigeration required, do not freeze
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Biologics</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Follow manufacturer temperature guidelines
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Vaccines</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Cold-chain storage may be required
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Always follow the storage instructions provided by your healthcare
-  professional and product packaging. Never assume that all medicines can be
-  stored under the same conditions.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Always follow the storage instructions provided by your healthcare
+            professional and product packaging. Never assume that all medicines
+            can be stored under the same conditions.
+          </p>
 
-<h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-  How to Dispose of Expired Medicines in India
-</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How to Dispose of Expired Medicines in India
+          </h2>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Expired medicines should never be kept indefinitely inside your medicine
-  cabinet. Apart from creating confusion, they may also pose safety risks if
-  accidentally consumed. Regularly checking expiry dates and disposing of
-  old medicines responsibly is an important part of medicine management.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Expired medicines should never be kept indefinitely inside your
+            medicine cabinet. Apart from creating confusion, they may also pose
+            safety risks if accidentally consumed. Regularly checking expiry
+            dates and disposing of old medicines responsibly is an important
+            part of medicine management.
+          </p>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Before discarding medicines, remove personal information from prescription
-  labels whenever possible. Avoid giving expired medicines to friends,
-  relatives, or neighbors, even if the packaging appears unopened.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Before discarding medicines, remove personal information from
+            prescription labels whenever possible. Avoid giving expired
+            medicines to friends, relatives, or neighbors, even if the packaging
+            appears unopened.
+          </p>
 
-<ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-  <li>Review medicine expiry dates every 3-6 months.</li>
-  <li>Separate expired medicines from active medicines immediately.</li>
-  <li>Do not consume medicines beyond their expiry date.</li>
-  <li>Follow local disposal recommendations where available.</li>
-  <li>Keep discarded medicines away from children and pets.</li>
-</ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Review medicine expiry dates every 3-6 months.</li>
+            <li>
+              Separate expired medicines from active medicines immediately.
+            </li>
+            <li>Do not consume medicines beyond their expiry date.</li>
+            <li>Follow local disposal recommendations where available.</li>
+            <li>Keep discarded medicines away from children and pets.</li>
+          </ul>
 
-<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-  Maintaining an organized medicine cabinet and removing expired products
-  regularly helps ensure that only safe and effective medicines remain
-  available when your family needs them.
-</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Maintaining an organized medicine cabinet and removing expired
+            products regularly helps ensure that only safe and effective
+            medicines remain available when your family needs them.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    How MediBachat Helps You Manage Medicines Better
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How MediBachat Helps You Manage Medicines Better
+          </h2>
 
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Proper storage is only one part of medicine management. Patients can
-    also save money by comparing medicine prices before purchasing. Using{" "}
-    <a
-      href="https://medibachat.in"
-      target="_blank"
-      className="text-blue-500"
-    >
-      MediBachat
-    </a>
-    , you can compare medicine prices across major online pharmacies and
-    identify the most affordable options for your healthcare needs.
-  </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Proper storage is only one part of medicine management. Patients can
+            also save money by comparing medicine prices before purchasing.
+            Using{" "}
+            <a
+              href="https://medibachat.in"
+              target="_blank"
+              className="text-blue-500"
+            >
+              MediBachat
+            </a>
+            , you can compare medicine prices across major online pharmacies and
+            identify the most affordable options for your healthcare needs.
+          </p>
 
-  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-    Frequently Asked Questions
-  </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
 
-  <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-    
-      <b>Q: Is the bathroom a good place to store medicines?</b>
-      <br />
-      <b>A:</b> No. Bathrooms are typically humid environments that can
-      affect medicine stability.
-    
-<br />
-    
-      <b>Q: Can heat damage medicines?</b>
-      <br />
-      <b>A:</b> Yes. Excessive heat can reduce effectiveness and alter the
-      chemical composition of certain medicines.
-    
-<br />
-    
-      <b>Q: Should medicines always be refrigerated?</b>
-      <br />
-      <b>A:</b> No. Only medicines that specifically require refrigeration
-      should be stored in a refrigerator.
-    
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: Is the bathroom a good place to store medicines?</b>
+            <br />
+            <b>A:</b> No. Bathrooms are typically humid environments that can
+            affect medicine stability.
+            <br />
+            <b>Q: Can heat damage medicines?</b>
+            <br />
+            <b>A:</b> Yes. Excessive heat can reduce effectiveness and alter the
+            chemical composition of certain medicines.
+            <br />
+            <b>Q: Should medicines always be refrigerated?</b>
+            <br />
+            <b>A:</b> No. Only medicines that specifically require refrigeration
+            should be stored in a refrigerator.
+            <br />
+            <b>Q: Can I use medicines after the expiry date?</b>
+            <br />
+            <b>A:</b> It's generally recommended to avoid using expired
+            medicines and replace them when necessary.
+            <br />
+            <b>Q: How often should I check my medicine cabinet?</b>
+            <br />
+            <b>A:</b> Every 3-6 months is a good practice.
+          </ul>
 
-    <br />
-      <b>Q: Can I use medicines after the expiry date?</b>
-      <br />
-      <b>A:</b> It's generally recommended to avoid using expired medicines
-      and replace them when necessary.
-    
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
 
-    <br />
-      <b>Q: How often should I check my medicine cabinet?</b>
-      <br />
-      <b>A:</b> Every 3-6 months is a good practice.
-    
-  </ul>
-
-  <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
-    Final Thoughts
-  </h2>
-
-  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-    Proper medicine storage is one of the easiest ways to protect your
-    health and your wallet. By keeping medicines in the right environment,
-    monitoring expiry dates, and avoiding common storage mistakes, you can
-    ensure that your medicines remain safe and effective whenever you need
-    them. A few simple precautions today can prevent costly mistakes and
-    improve medicine safety for your entire family.
-  </p>
-</>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Proper medicine storage is one of the easiest ways to protect your
+            health and your wallet. By keeping medicines in the right
+            environment, monitoring expiry dates, and avoiding common storage
+            mistakes, you can ensure that your medicines remain safe and
+            effective whenever you need them. A few simple precautions today can
+            prevent costly mistakes and improve medicine safety for your entire
+            family.
+          </p>
+        </>
       ),
     },
 
-             "cbc-test-price-comparison-india": {
+    "cbc-test-price-comparison-india": {
       title:
         "CBC Test Price Comparison in India: Which Lab Offers the Best Value?",
       author: "Team MediBachat",
@@ -15212,308 +15328,293 @@ const BlogPost = () => {
       metaDescription:
         "Compare CBC test prices in India across diagnostic labs. Learn what a Complete Blood Count (CBC) test includes, average costs, factors affecting pricing, and how to save money on blood tests.",
       category: "Education",
-      image:
-        "https://images.unsplash.com/photo-1579154204601-01588f351e67",
+      image: "https://images.unsplash.com/photo-1579154204601-01588f351e67",
       content: (
-      <>
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-        CBC Test Price Comparison in India: Which Lab Offers the Best Value?
-      </h1>
+        <>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            CBC Test Price Comparison in India: Which Lab Offers the Best Value?
+          </h1>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        A Complete Blood Count (CBC) test is one of the most commonly prescribed
-        diagnostic tests in India. Whether you're experiencing fatigue,
-        fever, infection symptoms, or simply undergoing a routine health
-        checkup, your doctor will often recommend a CBC test as the first
-        step in understanding your overall health.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            A Complete Blood Count (CBC) test is one of the most commonly
+            prescribed diagnostic tests in India. Whether you're experiencing
+            fatigue, fever, infection symptoms, or simply undergoing a routine
+            health checkup, your doctor will often recommend a CBC test as the
+            first step in understanding your overall health.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        However, if you've ever searched online for a CBC blood test, you've
-        probably noticed that prices vary significantly between diagnostic
-        centers. One lab may charge ₹199, while another may charge ₹599 or
-        more for what appears to be the same test.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            However, if you've ever searched online for a CBC blood test, you've
+            probably noticed that prices vary significantly between diagnostic
+            centers. One lab may charge ₹199, while another may charge ₹599 or
+            more for what appears to be the same test.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        So why does this happen? Which lab offers the best value? And how can
-        you avoid overpaying for routine blood tests? In this guide, we'll
-        break down CBC test pricing in India and help you make an informed
-        decision.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            So why does this happen? Which lab offers the best value? And how
+            can you avoid overpaying for routine blood tests? In this guide,
+            we'll break down CBC test pricing in India and help you make an
+            informed decision.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        What Is a CBC Test?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Is a CBC Test?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        A Complete Blood Count (CBC) test measures different components of
-        your blood and provides valuable insights into your overall health.
-        Doctors frequently use it to detect infections, anemia, inflammation,
-        blood disorders, and other medical conditions.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            A Complete Blood Count (CBC) test measures different components of
+            your blood and provides valuable insights into your overall health.
+            Doctors frequently use it to detect infections, anemia,
+            inflammation, blood disorders, and other medical conditions.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        The test typically evaluates:
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The test typically evaluates:
+          </p>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Red Blood Cell (RBC) Count</li>
-        <li>White Blood Cell (WBC) Count</li>
-        <li>Hemoglobin Levels</li>
-        <li>Platelet Count</li>
-        <li>Hematocrit</li>
-        <li>Mean Corpuscular Volume (MCV)</li>
-        <li>Mean Corpuscular Hemoglobin (MCH)</li>
-        <li>Differential White Cell Count</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Red Blood Cell (RBC) Count</li>
+            <li>White Blood Cell (WBC) Count</li>
+            <li>Hemoglobin Levels</li>
+            <li>Platelet Count</li>
+            <li>Hematocrit</li>
+            <li>Mean Corpuscular Volume (MCV)</li>
+            <li>Mean Corpuscular Hemoglobin (MCH)</li>
+            <li>Differential White Cell Count</li>
+          </ul>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Because it provides such a broad overview of health, the CBC test is
-        often included in annual health checkups and preventive screening
-        packages.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Because it provides such a broad overview of health, the CBC test is
+            often included in annual health checkups and preventive screening
+            packages.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Average CBC Test Price in India
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Average CBC Test Price in India
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        The cost of a CBC test depends on factors such as the diagnostic
-        center, city, home sample collection availability, and promotional
-        discounts.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The cost of a CBC test depends on factors such as the diagnostic
+            center, city, home sample collection availability, and promotional
+            discounts.
+          </p>
 
-      <table className="min-w-full border border-gray-300 mb-6">
-        <thead>
-          <tr className="bg-gray-100 dark:bg-gray-800">
-            <th className="border border-gray-300 px-4 py-2">Lab Type</th>
-            <th className="border border-gray-300 px-4 py-2">
-              Typical Price Range
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Local Diagnostic Centers
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹150 - ₹300
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Mid-Sized Labs
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹250 - ₹450
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Premium Diagnostic Chains
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹350 - ₹700
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Home Collection Packages
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹299 - ₹799
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">Lab Type</th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Typical Price Range
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Local Diagnostic Centers
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹150 - ₹300
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Mid-Sized Labs
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹250 - ₹450
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Premium Diagnostic Chains
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹350 - ₹700
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Home Collection Packages
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹299 - ₹799
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        While the actual CBC test methodology may be similar, pricing often
-        differs because of operational and service-related factors.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            While the actual CBC test methodology may be similar, pricing often
+            differs because of operational and service-related factors.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Why Do CBC Test Prices Differ Between Labs?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Why Do CBC Test Prices Differ Between Labs?
+          </h2>
 
-      <img
+          <img
             src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?q=80&w=1225&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="lab test price comparison"
           />
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-2 mb-6">
-        Many patients assume a higher-priced test automatically means better
-        quality. In reality, several factors influence diagnostic test costs.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-2 mb-6">
+            Many patients assume a higher-priced test automatically means better
+            quality. In reality, several factors influence diagnostic test
+            costs.
+          </p>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>
-          Home sample collection services increase operational costs.
-        </li>
-        <li>
-          Premium diagnostic brands invest heavily in infrastructure and
-          customer support.
-        </li>
-        <li>
-          Faster report delivery often comes with a higher price tag.
-        </li>
-        <li>
-          Location plays a major role in pricing differences.
-        </li>
-        <li>
-          Promotional discounts and subscription plans can reduce costs.
-        </li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Home sample collection services increase operational costs.</li>
+            <li>
+              Premium diagnostic brands invest heavily in infrastructure and
+              customer support.
+            </li>
+            <li>Faster report delivery often comes with a higher price tag.</li>
+            <li>Location plays a major role in pricing differences.</li>
+            <li>
+              Promotional discounts and subscription plans can reduce costs.
+            </li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Is a Cheaper CBC Test Less Accurate?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Is a Cheaper CBC Test Less Accurate?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Not necessarily. Many affordable diagnostic labs use modern automated
-        analyzers and follow standardized testing procedures. A lower price
-        often reflects operational efficiency rather than reduced quality.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Not necessarily. Many affordable diagnostic labs use modern
+            automated analyzers and follow standardized testing procedures. A
+            lower price often reflects operational efficiency rather than
+            reduced quality.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Instead of focusing solely on price, patients should consider factors
-        such as lab reputation, report turnaround time, customer reviews, and
-        accreditation status.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Instead of focusing solely on price, patients should consider
+            factors such as lab reputation, report turnaround time, customer
+            reviews, and accreditation status.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        When Should You Get a CBC Test?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            When Should You Get a CBC Test?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Doctors may recommend a CBC test for several reasons:
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Doctors may recommend a CBC test for several reasons:
+          </p>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Persistent fatigue or weakness.</li>
-        <li>Frequent infections.</li>
-        <li>Unexplained fever.</li>
-        <li>Routine annual health checkups.</li>
-        <li>Monitoring chronic medical conditions.</li>
-        <li>Evaluating treatment effectiveness.</li>
-        <li>Pre-surgery investigations.</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Persistent fatigue or weakness.</li>
+            <li>Frequent infections.</li>
+            <li>Unexplained fever.</li>
+            <li>Routine annual health checkups.</li>
+            <li>Monitoring chronic medical conditions.</li>
+            <li>Evaluating treatment effectiveness.</li>
+            <li>Pre-surgery investigations.</li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How to Save Money on CBC Tests
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How to Save Money on CBC Tests
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Healthcare expenses can add up quickly, especially when multiple lab
-        tests are required. Fortunately, there are several ways to reduce
-        diagnostic costs without compromising on quality.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Healthcare expenses can add up quickly, especially when multiple lab
+            tests are required. Fortunately, there are several ways to reduce
+            diagnostic costs without compromising on quality.
+          </p>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Compare prices before booking a test.</li>
-        <li>Look for bundled health checkup packages.</li>
-        <li>Use promotional offers and discounts.</li>
-        <li>Consider nearby accredited labs.</li>
-        <li>Book multiple tests together when appropriate.</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Compare prices before booking a test.</li>
+            <li>Look for bundled health checkup packages.</li>
+            <li>Use promotional offers and discounts.</li>
+            <li>Consider nearby accredited labs.</li>
+            <li>Book multiple tests together when appropriate.</li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Future of Lab Test Price Comparison in India
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Future of Lab Test Price Comparison in India
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Just as consumers compare flight tickets, hotels, and medicines,
-        diagnostic test comparison is becoming increasingly important. More
-        patients are beginning to compare prices before booking blood tests,
-        especially for routine screenings like CBC, thyroid profiles, and
-        diabetes tests.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Just as consumers compare flight tickets, hotels, and medicines,
+            diagnostic test comparison is becoming increasingly important. More
+            patients are beginning to compare prices before booking blood tests,
+            especially for routine screenings like CBC, thyroid profiles, and
+            diabetes tests.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Platforms that aggregate lab test pricing can help patients identify
-        affordable options while maintaining transparency in healthcare
-        spending.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Platforms that aggregate lab test pricing can help patients identify
+            affordable options while maintaining transparency in healthcare
+            spending.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How MediBachat Can Help
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How MediBachat Can Help
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        At MediBachat, our mission is to help consumers make smarter
-        healthcare spending decisions. While many people already compare
-        medicine prices, diagnostic testing is another area where significant
-        savings are possible.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            At MediBachat, our mission is to help consumers make smarter
+            healthcare spending decisions. While many people already compare
+            medicine prices, diagnostic testing is another area where
+            significant savings are possible.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        As healthcare comparison tools evolve, patients will increasingly be
-        able to compare CBC test prices, home collection options, report
-        delivery times, and diagnostic providers from a single platform.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            As healthcare comparison tools evolve, patients will increasingly be
+            able to compare CBC test prices, home collection options, report
+            delivery times, and diagnostic providers from a single platform.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Frequently Asked Questions
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-     
-          <b>Q: What is the normal CBC test price in India?</b>
-          <br />
-          <b>A:</b> Most CBC tests typically cost between ₹150 and ₹700,
-          depending on the diagnostic center and services offered.
-        
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: What is the normal CBC test price in India?</b>
+            <br />
+            <b>A:</b> Most CBC tests typically cost between ₹150 and ₹700,
+            depending on the diagnostic center and services offered.
+            <br />
+            <b>Q: Is fasting required for a CBC test?</b>
+            <br />
+            <b>A:</b> In most cases, fasting is not required for a standard CBC
+            test.
+            <br />
+            <b>Q: How long does it take to receive CBC test results?</b>
+            <br />
+            <b>A:</b> Many labs provide reports within a few hours to one day.
+            <br />
+            <b>Q: Can a CBC test detect infection?</b>
+            <br />
+            <b>A:</b> A CBC test can provide indicators that may suggest
+            infection, which your doctor interprets alongside symptoms and other
+            tests.
+            <br />
+            <b>Q: Should I choose the cheapest lab available?</b>
+            <br />
+            <b>A:</b> Price is important, but you should also consider
+            accreditation, reliability, reviews, and convenience.
+          </ul>
 
-        <br />
-          <b>Q: Is fasting required for a CBC test?</b>
-          <br />
-          <b>A:</b> In most cases, fasting is not required for a standard CBC
-          test.
-        
-<br />
-        
-          <b>Q: How long does it take to receive CBC test results?</b>
-          <br />
-          <b>A:</b> Many labs provide reports within a few hours to one day.
-        
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
 
-      <br />
-          <b>Q: Can a CBC test detect infection?</b>
-          <br />
-          <b>A:</b> A CBC test can provide indicators that may suggest
-          infection, which your doctor interprets alongside symptoms and other
-          tests.
-        
-
-        <br />
-          <b>Q: Should I choose the cheapest lab available?</b>
-          <br />
-          <b>A:</b> Price is important, but you should also consider
-          accreditation, reliability, reviews, and convenience.
-        
-      </ul>
-
-      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
-        Final Thoughts
-      </h2>
-
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-        A CBC test is one of the most important and widely used diagnostic
-        investigations in healthcare. While prices can vary significantly
-        between diagnostic centers, understanding what affects pricing can help
-        you avoid unnecessary expenses. Comparing options, evaluating service
-        quality, and choosing reputable providers can help you get the best
-        value for your healthcare budget. As lab test comparison tools become
-        more common, finding affordable and transparent healthcare services
-        will become easier than ever.
-      </p>
-    </>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            A CBC test is one of the most important and widely used diagnostic
+            investigations in healthcare. While prices can vary significantly
+            between diagnostic centers, understanding what affects pricing can
+            help you avoid unnecessary expenses. Comparing options, evaluating
+            service quality, and choosing reputable providers can help you get
+            the best value for your healthcare budget. As lab test comparison
+            tools become more common, finding affordable and transparent
+            healthcare services will become easier than ever.
+          </p>
+        </>
       ),
     },
 
-                 "why-lab-test-prices-differ-between-diagnostic-centers": {
+    "why-lab-test-prices-differ-between-diagnostic-centers": {
       title:
         "Why Do Lab Test Prices Differ So Much Between Diagnostic Centers?",
       author: "Team MediBachat",
@@ -15522,327 +15623,322 @@ const BlogPost = () => {
       metaDescription:
         "Wondering why the same lab test costs ₹200 at one diagnostic center and ₹800 at another? Learn the factors affecting lab test prices in India, including technology, accreditation, home collection, and more.",
       category: "Education",
-      image:
-        "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b",
+      image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b",
       content: (
         <>
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-        Why Do Lab Test Prices Differ So Much Between Diagnostic Centers?
-      </h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Why Do Lab Test Prices Differ So Much Between Diagnostic Centers?
+          </h1>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Have you ever searched for a blood test online and wondered why one
-        diagnostic center charges ₹199 while another charges ₹799 for what
-        appears to be the exact same test?
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Have you ever searched for a blood test online and wondered why one
+            diagnostic center charges ₹199 while another charges ₹799 for what
+            appears to be the exact same test?
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Whether you're booking a CBC test, thyroid profile, vitamin D test,
-        HbA1c test, or a full body health checkup, price differences between
-        labs can sometimes be surprisingly large. For many patients, this
-        creates confusion and raises an important question:
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Whether you're booking a CBC test, thyroid profile, vitamin D test,
+            HbA1c test, or a full body health checkup, price differences between
+            labs can sometimes be surprisingly large. For many patients, this
+            creates confusion and raises an important question:
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        <b>
-          Does a higher price mean a better test, or are you simply paying
-          more for branding and convenience?
-        </b>
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            <b>
+              Does a higher price mean a better test, or are you simply paying
+              more for branding and convenience?
+            </b>
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        In this guide, we'll explore the real reasons behind lab test price
-        differences in India and help you understand how to choose a
-        diagnostic center that offers the best value for your money.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            In this guide, we'll explore the real reasons behind lab test price
+            differences in India and help you understand how to choose a
+            diagnostic center that offers the best value for your money.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        The Same Test Can Have Very Different Prices
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            The Same Test Can Have Very Different Prices
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Let's take a common example: a Complete Blood Count (CBC) test.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Let's take a common example: a Complete Blood Count (CBC) test.
+          </p>
 
-      <table className="min-w-full border border-gray-300 mb-6">
-        <thead>
-          <tr className="bg-gray-100 dark:bg-gray-800">
-            <th className="border border-gray-300 px-4 py-2">
-              Diagnostic Center Type
-            </th>
-            <th className="border border-gray-300 px-4 py-2">
-              Typical CBC Test Price
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Local Lab
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹150 - ₹250
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              Regional Diagnostic Chain
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹250 - ₹450
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">
-              National Diagnostic Brand
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              ₹400 - ₹700
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">
+                  Diagnostic Center Type
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Typical CBC Test Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Local Lab</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹150 - ₹250
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Regional Diagnostic Chain
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹250 - ₹450
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  National Diagnostic Brand
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  ₹400 - ₹700
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Even though the test measures the same blood parameters, the pricing
-        can vary by several hundred rupees.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Even though the test measures the same blood parameters, the pricing
+            can vary by several hundred rupees.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        1. Accreditation and Quality Standards
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            1. Accreditation and Quality Standards
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        One major factor affecting diagnostic test pricing is accreditation.
-        Many premium laboratories invest heavily in quality control systems,
-        staff training, and certifications such as NABL accreditation.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            One major factor affecting diagnostic test pricing is accreditation.
+            Many premium laboratories invest heavily in quality control systems,
+            staff training, and certifications such as NABL accreditation.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Maintaining these standards requires regular audits, calibration of
-        equipment, documentation, and compliance procedures. These additional
-        operational expenses often contribute to higher test prices.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Maintaining these standards requires regular audits, calibration of
+            equipment, documentation, and compliance procedures. These
+            additional operational expenses often contribute to higher test
+            prices.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        2. Technology and Equipment Used
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            2. Technology and Equipment Used
+          </h2>
 
-      <img src="https://images.unsplash.com/photo-1694230155228-cdde50083573?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lab test price compare" />
+          <img
+            src="https://images.unsplash.com/photo-1694230155228-cdde50083573?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Lab test price compare"
+          />
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
-        Modern diagnostic laboratories frequently invest in advanced automated
-        analyzers capable of processing hundreds or even thousands of samples
-        daily. These machines improve efficiency, consistency, and turnaround
-        times but come with substantial acquisition and maintenance costs.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            Modern diagnostic laboratories frequently invest in advanced
+            automated analyzers capable of processing hundreds or even thousands
+            of samples daily. These machines improve efficiency, consistency,
+            and turnaround times but come with substantial acquisition and
+            maintenance costs.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Smaller labs may use more basic systems that still provide reliable
-        results but at lower operating costs, allowing them to offer cheaper
-        pricing.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Smaller labs may use more basic systems that still provide reliable
+            results but at lower operating costs, allowing them to offer cheaper
+            pricing.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        3. Home Sample Collection Services
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            3. Home Sample Collection Services
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Home sample collection has become increasingly popular, especially in
-        large Indian cities. While convenient, this service increases the
-        overall cost of testing.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Home sample collection has become increasingly popular, especially
+            in large Indian cities. While convenient, this service increases the
+            overall cost of testing.
+          </p>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Travel costs for phlebotomists.</li>
-        <li>Scheduling and logistics management.</li>
-        <li>Transportation of samples.</li>
-        <li>Additional manpower requirements.</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Travel costs for phlebotomists.</li>
+            <li>Scheduling and logistics management.</li>
+            <li>Transportation of samples.</li>
+            <li>Additional manpower requirements.</li>
+          </ul>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        As a result, tests that include home collection are often priced
-        higher than walk-in laboratory visits.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            As a result, tests that include home collection are often priced
+            higher than walk-in laboratory visits.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        4. Brand Reputation and Marketing Costs
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            4. Brand Reputation and Marketing Costs
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Similar to airlines, hospitals, and online pharmacies, diagnostic
-        brands spend money on marketing, customer support, mobile apps,
-        websites, and nationwide expansion.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Similar to airlines, hospitals, and online pharmacies, diagnostic
+            brands spend money on marketing, customer support, mobile apps,
+            websites, and nationwide expansion.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        These expenses eventually become part of the pricing structure. While
-        brand recognition can increase trust among patients, it does not
-        necessarily mean every test is significantly different from what a
-        reputable local lab provides.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            These expenses eventually become part of the pricing structure.
+            While brand recognition can increase trust among patients, it does
+            not necessarily mean every test is significantly different from what
+            a reputable local lab provides.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        5. Location Matters More Than You Think
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            5. Location Matters More Than You Think
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Real estate costs, staff salaries, utility expenses, and operational
-        overheads vary significantly across cities. A diagnostic center in
-        Mumbai, Bengaluru, or Delhi may face much higher operating costs than
-        a lab in a smaller city.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Real estate costs, staff salaries, utility expenses, and operational
+            overheads vary significantly across cities. A diagnostic center in
+            Mumbai, Bengaluru, or Delhi may face much higher operating costs
+            than a lab in a smaller city.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        This is one reason why identical tests can have different pricing in
-        different regions of India.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This is one reason why identical tests can have different pricing in
+            different regions of India.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        6. Report Delivery Speed
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            6. Report Delivery Speed
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Some laboratories prioritize rapid report generation and offer
-        same-day or even same-hour reporting. Achieving this level of service
-        requires additional infrastructure and staffing.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Some laboratories prioritize rapid report generation and offer
+            same-day or even same-hour reporting. Achieving this level of
+            service requires additional infrastructure and staffing.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Faster turnaround times often result in higher testing fees,
-        especially for specialized diagnostic tests.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Faster turnaround times often result in higher testing fees,
+            especially for specialized diagnostic tests.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Does a Higher Price Mean Better Accuracy?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Does a Higher Price Mean Better Accuracy?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        This is perhaps the most common misconception among patients.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This is perhaps the most common misconception among patients.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        A higher-priced test does not automatically guarantee better results.
-        Many affordable laboratories operate modern equipment and maintain
-        strict quality control standards. Conversely, simply paying more does
-        not necessarily provide additional diagnostic value.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            A higher-priced test does not automatically guarantee better
+            results. Many affordable laboratories operate modern equipment and
+            maintain strict quality control standards. Conversely, simply paying
+            more does not necessarily provide additional diagnostic value.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Instead of focusing exclusively on price, consider factors such as
-        accreditation, customer reviews, transparency, and service quality.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Instead of focusing exclusively on price, consider factors such as
+            accreditation, customer reviews, transparency, and service quality.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How to Choose the Right Diagnostic Lab
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How to Choose the Right Diagnostic Lab
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Compare prices across multiple providers.</li>
-        <li>Check whether the lab is accredited.</li>
-        <li>Read recent customer reviews.</li>
-        <li>Verify report delivery timelines.</li>
-        <li>Evaluate home collection availability.</li>
-        <li>Look for package discounts.</li>
-        <li>Choose transparency over marketing claims.</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Compare prices across multiple providers.</li>
+            <li>Check whether the lab is accredited.</li>
+            <li>Read recent customer reviews.</li>
+            <li>Verify report delivery timelines.</li>
+            <li>Evaluate home collection availability.</li>
+            <li>Look for package discounts.</li>
+            <li>Choose transparency over marketing claims.</li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        The Rise of Lab Test Price Comparison Platforms
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            The Rise of Lab Test Price Comparison Platforms
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Healthcare consumers today compare everything from flights and hotel
-        bookings to medicines and insurance policies. Diagnostic testing is
-        quickly becoming the next category where price transparency matters.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Healthcare consumers today compare everything from flights and hotel
+            bookings to medicines and insurance policies. Diagnostic testing is
+            quickly becoming the next category where price transparency matters.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Lab test comparison platforms help patients identify the best balance
-        between affordability, convenience, and quality. Instead of manually
-        checking dozens of providers, patients can compare prices, services,
-        and turnaround times in one place.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Lab test comparison platforms help patients identify the best
+            balance between affordability, convenience, and quality. Instead of
+            manually checking dozens of providers, patients can compare prices,
+            services, and turnaround times in one place.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How MediBachat Plans to Help
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How MediBachat Plans to Help
+          </h2>
 
-      <img src="https://images.unsplash.com/photo-1707902665498-a202981fb5ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lab test price comparison" />
+          <img
+            src="https://images.unsplash.com/photo-1707902665498-a202981fb5ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Lab test price comparison"
+          />
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
-        MediBachat already helps users compare medicine prices across multiple
-        online pharmacies. As healthcare costs continue to rise, diagnostic
-        testing is another area where meaningful savings are possible.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            MediBachat already helps users compare medicine prices across
+            multiple online pharmacies. As healthcare costs continue to rise,
+            diagnostic testing is another area where meaningful savings are
+            possible.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Our vision is to bring the same transparency to lab testing that we
-        currently provide for medicines—helping patients find affordable and
-        trustworthy healthcare options without spending hours researching
-        different providers.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Our vision is to bring the same transparency to lab testing that we
+            currently provide for medicines—helping patients find affordable and
+            trustworthy healthcare options without spending hours researching
+            different providers.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Frequently Asked Questions
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        
-          <b>Q: Why is the same blood test cheaper at some labs?</b>
-          <br />
-          <b>A:</b> Pricing differences can result from location, operating
-          costs, technology, marketing expenses, and home collection services.
-        
-<br />
-      
-          <b>Q: Are cheaper labs less reliable?</b>
-          <br />
-          <b>A:</b> Not necessarily. Many affordable labs maintain excellent
-          quality standards and provide accurate results.
-        
-<br />
-        
-          <b>Q: Is NABL accreditation important?</b>
-          <br />
-          <b>A:</b> Accreditation is a useful quality indicator, though it is
-          not the only factor patients should consider.
-        
-<br />
-      
-          <b>Q: Should I always choose the cheapest lab?</b>
-          <br />
-          <b>A:</b> Price is important, but quality, reviews, transparency,
-          and convenience should also influence your decision.
-        
-<br />
-        
-          <b>Q: Can I save money by comparing lab test prices?</b>
-          <br />
-          <b>A:</b> Absolutely. Comparing providers often reveals substantial
-          price differences for the same diagnostic tests.
-        
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: Why is the same blood test cheaper at some labs?</b>
+            <br />
+            <b>A:</b> Pricing differences can result from location, operating
+            costs, technology, marketing expenses, and home collection services.
+            <br />
+            <b>Q: Are cheaper labs less reliable?</b>
+            <br />
+            <b>A:</b> Not necessarily. Many affordable labs maintain excellent
+            quality standards and provide accurate results.
+            <br />
+            <b>Q: Is NABL accreditation important?</b>
+            <br />
+            <b>A:</b> Accreditation is a useful quality indicator, though it is
+            not the only factor patients should consider.
+            <br />
+            <b>Q: Should I always choose the cheapest lab?</b>
+            <br />
+            <b>A:</b> Price is important, but quality, reviews, transparency,
+            and convenience should also influence your decision.
+            <br />
+            <b>Q: Can I save money by comparing lab test prices?</b>
+            <br />
+            <b>A:</b> Absolutely. Comparing providers often reveals substantial
+            price differences for the same diagnostic tests.
+          </ul>
 
-      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
-        Final Thoughts
-      </h2>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-        The next time you notice a large price difference between diagnostic
-        centers, remember that several factors influence lab test pricing.
-        Accreditation, technology, convenience, location, and branding all
-        play a role. Understanding these factors can help you make smarter
-        healthcare decisions and avoid overpaying for routine tests. As lab
-        test comparison tools become more common, patients will have greater
-        transparency and control over their healthcare spending.
-      </p>
-    </>
-
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            The next time you notice a large price difference between diagnostic
+            centers, remember that several factors influence lab test pricing.
+            Accreditation, technology, convenience, location, and branding all
+            play a role. Understanding these factors can help you make smarter
+            healthcare decisions and avoid overpaying for routine tests. As lab
+            test comparison tools become more common, patients will have greater
+            transparency and control over their healthcare spending.
+          </p>
+        </>
       ),
     },
 
-                     "home-sample-collection-vs-lab-visit": {
+    "home-sample-collection-vs-lab-visit": {
       title:
         "Home Sample Collection vs Lab Visit: Which Option Is Better for Diagnostic Tests?",
       author: "Team MediBachat",
@@ -15854,323 +15950,680 @@ const BlogPost = () => {
       image:
         "https://images.unsplash.com/photo-1682706841281-f723c5bfcd83?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: (
-<>
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-        Home Sample Collection vs Lab Visit: Which Option Is Better?
-      </h1>
+        <>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Home Sample Collection vs Lab Visit: Which Option Is Better?
+          </h1>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Diagnostic testing has become more accessible than ever before. Today,
-        patients can either visit a diagnostic center for their blood tests or
-        schedule a home sample collection where a trained phlebotomist visits
-        their home and collects the required sample.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Diagnostic testing has become more accessible than ever before.
+            Today, patients can either visit a diagnostic center for their blood
+            tests or schedule a home sample collection where a trained
+            phlebotomist visits their home and collects the required sample.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        This convenience has transformed the healthcare experience for millions
-        of Indians. However, many patients still wonder whether home sample
-        collection is as reliable as visiting a diagnostic center and whether
-        the extra cost is actually worth paying.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This convenience has transformed the healthcare experience for
+            millions of Indians. However, many patients still wonder whether
+            home sample collection is as reliable as visiting a diagnostic
+            center and whether the extra cost is actually worth paying.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        If you're planning a CBC test, thyroid profile, vitamin D test, HbA1c
-        test, cholesterol screening, or even a full body health checkup, this
-        guide will help you understand the pros and cons of both options.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            If you're planning a CBC test, thyroid profile, vitamin D test,
+            HbA1c test, cholesterol screening, or even a full body health
+            checkup, this guide will help you understand the pros and cons of
+            both options.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        What Is Home Sample Collection?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Is Home Sample Collection?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Home sample collection is a service offered by many diagnostic labs
-        where a trained healthcare professional visits your home, office, or
-        preferred location to collect blood, urine, or other diagnostic
-        samples.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Home sample collection is a service offered by many diagnostic labs
+            where a trained healthcare professional visits your home, office, or
+            preferred location to collect blood, urine, or other diagnostic
+            samples.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        After collection, the samples are transported to the laboratory for
-        analysis. Reports are typically delivered digitally through email,
-        mobile apps, or patient portals.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            After collection, the samples are transported to the laboratory for
+            analysis. Reports are typically delivered digitally through email,
+            mobile apps, or patient portals.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        What Is a Traditional Lab Visit?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Is a Traditional Lab Visit?
+          </h2>
 
-      <img src="https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Home test" />
+          <img
+            src="https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Home test"
+          />
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
-        In a traditional lab visit, patients travel to a diagnostic center,
-        register for the required tests, provide samples on-site, and wait for
-        their reports to be processed.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            In a traditional lab visit, patients travel to a diagnostic center,
+            register for the required tests, provide samples on-site, and wait
+            for their reports to be processed.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        This remains the most common approach for diagnostic testing in India,
-        particularly for specialized tests that require immediate processing.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This remains the most common approach for diagnostic testing in
+            India, particularly for specialized tests that require immediate
+            processing.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Home Sample Collection vs Lab Visit: Quick Comparison
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Home Sample Collection vs Lab Visit: Quick Comparison
+          </h2>
 
-      <table className="min-w-full border border-gray-300 mb-6">
-        <thead>
-          <tr className="bg-gray-100 dark:bg-gray-800">
-            <th className="border border-gray-300 px-4 py-2">Factor</th>
-            <th className="border border-gray-300 px-4 py-2">
-              Home Collection
-            </th>
-            <th className="border border-gray-300 px-4 py-2">
-              Lab Visit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">Convenience</td>
-            <td className="border border-gray-300 px-4 py-2">Excellent</td>
-            <td className="border border-gray-300 px-4 py-2">Moderate</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">Cost</td>
-            <td className="border border-gray-300 px-4 py-2">Usually Higher</td>
-            <td className="border border-gray-300 px-4 py-2">Usually Lower</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">Travel Required</td>
-            <td className="border border-gray-300 px-4 py-2">No</td>
-            <td className="border border-gray-300 px-4 py-2">Yes</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">Senior Friendly</td>
-            <td className="border border-gray-300 px-4 py-2">Excellent</td>
-            <td className="border border-gray-300 px-4 py-2">Moderate</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2">Urgent Tests</td>
-            <td className="border border-gray-300 px-4 py-2">Good</td>
-            <td className="border border-gray-300 px-4 py-2">Excellent</td>
-          </tr>
-        </tbody>
-      </table>
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">Factor</th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Home Collection
+                </th>
+                <th className="border border-gray-300 px-4 py-2">Lab Visit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Convenience
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Excellent</td>
+                <td className="border border-gray-300 px-4 py-2">Moderate</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Cost</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Usually Higher
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Usually Lower
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Travel Required
+                </td>
+                <td className="border border-gray-300 px-4 py-2">No</td>
+                <td className="border border-gray-300 px-4 py-2">Yes</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Senior Friendly
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Excellent</td>
+                <td className="border border-gray-300 px-4 py-2">Moderate</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Urgent Tests
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Good</td>
+                <td className="border border-gray-300 px-4 py-2">Excellent</td>
+              </tr>
+            </tbody>
+          </table>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Advantages of Home Sample Collection
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Advantages of Home Sample Collection
+          </h2>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        1. Maximum Convenience
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            1. Maximum Convenience
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        The biggest advantage of home blood test services is convenience. You
-        don't need to travel, wait in queues, or spend time finding parking.
-        This is particularly useful for working professionals and busy families.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The biggest advantage of home blood test services is convenience.
+            You don't need to travel, wait in queues, or spend time finding
+            parking. This is particularly useful for working professionals and
+            busy families.
+          </p>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        2. Ideal for Senior Citizens
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            2. Ideal for Senior Citizens
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Elderly patients often face mobility challenges. Home sample collection
-        allows them to complete routine health screenings without leaving home,
-        making healthcare more accessible and comfortable.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Elderly patients often face mobility challenges. Home sample
+            collection allows them to complete routine health screenings without
+            leaving home, making healthcare more accessible and comfortable.
+          </p>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        3. Reduced Exposure to Crowds
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            3. Reduced Exposure to Crowds
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        During flu seasons or outbreaks of infectious diseases, many patients
-        prefer minimizing visits to crowded healthcare facilities.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            During flu seasons or outbreaks of infectious diseases, many
+            patients prefer minimizing visits to crowded healthcare facilities.
+          </p>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        4. Better for Chronic Disease Monitoring
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            4. Better for Chronic Disease Monitoring
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Patients managing diabetes, thyroid disorders, cholesterol issues, and
-        other chronic conditions often require frequent testing. Home sample
-        collection makes regular monitoring much easier.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Patients managing diabetes, thyroid disorders, cholesterol issues,
+            and other chronic conditions often require frequent testing. Home
+            sample collection makes regular monitoring much easier.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Advantages of Visiting a Diagnostic Lab
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Advantages of Visiting a Diagnostic Lab
+          </h2>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        1. Lower Cost
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            1. Lower Cost
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Diagnostic labs often charge less when patients visit directly because
-        there are no home collection logistics involved.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Diagnostic labs often charge less when patients visit directly
+            because there are no home collection logistics involved.
+          </p>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        2. Faster Processing for Certain Tests
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            2. Faster Processing for Certain Tests
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Some specialized tests benefit from immediate processing after sample
-        collection. Visiting the lab directly may reduce delays associated with
-        transportation.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Some specialized tests benefit from immediate processing after
+            sample collection. Visiting the lab directly may reduce delays
+            associated with transportation.
+          </p>
 
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-        3. Access to Additional Services
-      </h3>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            3. Access to Additional Services
+          </h3>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Diagnostic centers may offer ECGs, X-rays, ultrasounds, and other
-        imaging services that cannot be performed at home.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Diagnostic centers may offer ECGs, X-rays, ultrasounds, and other
+            imaging services that cannot be performed at home.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Is Home Sample Collection Accurate?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Is Home Sample Collection Accurate?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        One of the most frequently searched questions on Google is whether
-        home sample collection is accurate.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            One of the most frequently searched questions on Google is whether
+            home sample collection is accurate.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        In most cases, yes. Reputable diagnostic providers use trained
-        phlebotomists and follow standardized sample handling protocols.
-        Accuracy generally depends more on the laboratory's quality control
-        systems than on the collection location itself.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            In most cases, yes. Reputable diagnostic providers use trained
+            phlebotomists and follow standardized sample handling protocols.
+            Accuracy generally depends more on the laboratory's quality control
+            systems than on the collection location itself.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        However, patients should always choose trusted providers with good
-        reviews and proper accreditation.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            However, patients should always choose trusted providers with good
+            reviews and proper accreditation.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Which Tests Are Best Suited for Home Collection?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Which Tests Are Best Suited for Home Collection?
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>CBC Test</li>
-        <li>Thyroid Profile</li>
-        <li>HbA1c Test</li>
-        <li>Lipid Profile</li>
-        <li>Vitamin D Test</li>
-        <li>Liver Function Test</li>
-        <li>Kidney Function Test</li>
-        <li>Routine Health Checkups</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>CBC Test</li>
+            <li>Thyroid Profile</li>
+            <li>HbA1c Test</li>
+            <li>Lipid Profile</li>
+            <li>Vitamin D Test</li>
+            <li>Liver Function Test</li>
+            <li>Kidney Function Test</li>
+            <li>Routine Health Checkups</li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How Much More Does Home Collection Cost?
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How Much More Does Home Collection Cost?
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        Home sample collection typically costs between ₹50 and ₹300 extra,
-        depending on location, provider, and test package. Some diagnostic
-        platforms waive these charges during promotional campaigns.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Home sample collection typically costs between ₹50 and ₹300 extra,
+            depending on location, provider, and test package. Some diagnostic
+            platforms waive these charges during promotional campaigns.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        For patients who value convenience, the additional cost is often worth
-        paying, especially when travel expenses and time savings are considered.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            For patients who value convenience, the additional cost is often
+            worth paying, especially when travel expenses and time savings are
+            considered.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        How to Choose Between Home Collection and Lab Visits
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            How to Choose Between Home Collection and Lab Visits
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        <li>Choose home collection if convenience is your priority.</li>
-        <li>Choose home collection for elderly family members.</li>
-        <li>Choose home collection for routine blood tests.</li>
-        <li>Visit a lab if you need imaging services.</li>
-        <li>Visit a lab if you're seeking the lowest possible cost.</li>
-        <li>Visit a lab for highly specialized testing requirements.</li>
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Choose home collection if convenience is your priority.</li>
+            <li>Choose home collection for elderly family members.</li>
+            <li>Choose home collection for routine blood tests.</li>
+            <li>Visit a lab if you need imaging services.</li>
+            <li>Visit a lab if you're seeking the lowest possible cost.</li>
+            <li>Visit a lab for highly specialized testing requirements.</li>
+          </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        The Future of Diagnostic Testing in India
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            The Future of Diagnostic Testing in India
+          </h2>
 
-      <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="lab visit test" />
+          <img
+            src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="lab visit test"
+          />
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
-        The popularity of at-home healthcare services continues to grow.
-        Patients increasingly expect healthcare to be as convenient as online
-        shopping and food delivery.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            The popularity of at-home healthcare services continues to grow.
+            Patients increasingly expect healthcare to be as convenient as
+            online shopping and food delivery.
+          </p>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-        As diagnostic providers expand their home collection networks, patients
-        will gain more flexibility in choosing how and where they complete
-        their health screenings.
-      </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            As diagnostic providers expand their home collection networks,
+            patients will gain more flexibility in choosing how and where they
+            complete their health screenings.
+          </p>
 
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
-        Frequently Asked Questions
-      </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
 
-      <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
-        
-          <b>Q: Is home sample collection safe?</b>
-          <br />
-          <b>A:</b> Yes, when performed by trained professionals from reputable
-          diagnostic providers.
-        
-<br />
-        
-          <b>Q: Is home sample collection more expensive?</b>
-          <br />
-          <b>A:</b> Usually yes, but the convenience often justifies the extra
-          cost.
-        
-<br />
-        
-          <b>Q: Are home-collected blood tests accurate?</b>
-          <br />
-          <b>A:</b> Yes, provided proper collection and transportation protocols
-          are followed.
-        
-<br />
-        
-          <b>Q: Can senior citizens use home sample collection?</b>
-          <br />
-          <b>A:</b> Absolutely. It is one of the most popular use cases.
-        
-<br />
-        
-          <b>Q: Which option is better overall?</b>
-          <br />
-          <b>A:</b> It depends on your priorities. Home collection wins on
-          convenience, while lab visits often win on cost.
-        
-      </ul>
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: Is home sample collection safe?</b>
+            <br />
+            <b>A:</b> Yes, when performed by trained professionals from
+            reputable diagnostic providers.
+            <br />
+            <b>Q: Is home sample collection more expensive?</b>
+            <br />
+            <b>A:</b> Usually yes, but the convenience often justifies the extra
+            cost.
+            <br />
+            <b>Q: Are home-collected blood tests accurate?</b>
+            <br />
+            <b>A:</b> Yes, provided proper collection and transportation
+            protocols are followed.
+            <br />
+            <b>Q: Can senior citizens use home sample collection?</b>
+            <br />
+            <b>A:</b> Absolutely. It is one of the most popular use cases.
+            <br />
+            <b>Q: Which option is better overall?</b>
+            <br />
+            <b>A:</b> It depends on your priorities. Home collection wins on
+            convenience, while lab visits often win on cost.
+          </ul>
 
-      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
-        Final Thoughts
-      </h2>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
 
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-        Both home sample collection and traditional lab visits have their own
-        advantages. Home collection offers unmatched convenience, while lab
-        visits may provide lower costs and access to additional diagnostic
-        services. The best choice depends on your budget, health condition,
-        location, and personal preferences. As healthcare becomes increasingly
-        digital, patients will continue to benefit from having both options
-        available.
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Both home sample collection and traditional lab visits have their
+            own advantages. Home collection offers unmatched convenience, while
+            lab visits may provide lower costs and access to additional
+            diagnostic services. The best choice depends on your budget, health
+            condition, location, and personal preferences. As healthcare becomes
+            increasingly digital, patients will continue to benefit from having
+            both options available. If you want to know about{" "}
+            <a
+              target="_blank"
+              className="font-semibold text-blue-500"
+              href="https://medibachat.in/blog/why-lab-test-prices-differ-between-diagnostic-centers"
+            >
+              Lab Test Prices Differentiation
+            </a>{" "}
+            then feel free to check out that blog.
+          </p>
+        </>
+      ),
+    },
 
-        If you want to know about <a target="_blank" className="font-semibold text-blue-500" href="https://medibachat.in/blog/why-lab-test-prices-differ-between-diagnostic-centers">Lab Test Prices Differentiation</a> then feel free to check out that blog.
-      </p>
-    </>
+    "fasting-vs-non-fasting-blood-tests": {
+      title:
+        "Fasting vs Non-Fasting Blood Tests: Things to Know Before Your Next Health Checkup",
+      author: "Team MediBachat",
+      date: "June 07, 2026",
+      readTime: "9 min read",
+      metaDescription:
+        "Compare home sample collection vs lab visits for blood tests in India. Learn about cost, convenience, accuracy, turnaround time, and which option is best for your health checkups.",
+      category: "Education",
+      image:
+        "https://images.unsplash.com/photo-1627035537702-ddca174d7987?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Fasting vs Non-Fasting Blood Tests: What to Know Before Your Next
+            Health Checkup?
+          </h1>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            One of the most common questions patients ask before booking a blood
+            test is: <b>"Do I need to fast?"</b>
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Whether you're getting a routine health checkup, a fasting blood
+            sugar test, a lipid profile, or a thyroid test, understanding
+            fasting requirements is essential. Failing to prepare properly can
+            affect certain test results and may even require you to repeat the
+            test.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            In this comprehensive guide, we'll explain the difference between
+            fasting and non-fasting blood tests, which tests require fasting,
+            whether you can drink water before a blood test, and how to prepare
+            for your next diagnostic appointment.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Is a Fasting Blood Test?
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            A fasting blood test requires you to avoid food and most beverages
+            for a specific period before your blood sample is collected.
+            Depending on the test, fasting may range from 8 to 12 hours.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The purpose of fasting is to ensure that recent meals do not
+            influence important measurements such as blood glucose,
+            triglycerides, or cholesterol levels. By eliminating the effect of
+            food intake, healthcare providers obtain a more standardized
+            baseline measurement.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Explore practical healthcare guides, medicine savings tips, lab test
+            insights, and wellness articles curated to help you make informed
+            health decisions. For further details go through all our{" "}
+            <a
+              target="_blank"
+              className="text-blue-500"
+              href="https://medibachat.in/blog"
+            >
+              <b>blog posts.</b>
+            </a>
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Is a Non-Fasting Blood Test?
+          </h2>
+
+          <img
+            src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1153&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="why to fast before blood tests"
+          />
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            A non-fasting blood test can be performed regardless of when you
+            last ate. Most routine diagnostic tests fall into this category and
+            do not require any special preparation.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Advances in diagnostic medicine have allowed doctors to accurately
+            interpret many test results without requiring patients to fast. This
+            has made healthcare more convenient, especially for elderly
+            patients, children, and people with diabetes.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Fasting vs Non-Fasting Blood Tests: Quick Comparison
+          </h2>
+
+          <table className="min-w-full border border-gray-300 mb-6">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800">
+                <th className="border border-gray-300 px-4 py-2">Factor</th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Fasting Test
+                </th>
+                <th className="border border-gray-300 px-4 py-2">
+                  Non-Fasting Test
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Food Allowed
+                </td>
+                <td className="border border-gray-300 px-4 py-2">No</td>
+                <td className="border border-gray-300 px-4 py-2">Yes</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Preparation Required
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Yes</td>
+                <td className="border border-gray-300 px-4 py-2">Usually No</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Scheduling</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Often Morning
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Any Time</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Convenience
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Moderate</td>
+                <td className="border border-gray-300 px-4 py-2">High</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Common Blood Tests That Require Fasting
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Not every blood test requires fasting. However, several important
+            tests are commonly performed after an overnight fast.
+          </p>
+
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Fasting Blood Sugar (FBS)</li>
+            <li>Lipid Profile Test</li>
+            <li>Triglyceride Test</li>
+            <li>Glucose Tolerance Test</li>
+            <li>Certain Metabolic Panels</li>
+            <li>Some Preventive Health Checkup Packages</li>
+          </ul>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            If you're unsure whether fasting is required, always confirm with
+            your doctor or diagnostic center before your appointment.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Common Blood Tests That Usually Do Not Require Fasting
+          </h2>
+
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Complete Blood Count (CBC)</li>
+            <li>Thyroid Profile (TSH, T3, T4)</li>
+            <li>HbA1c Test</li>
+            <li>Vitamin D Test</li>
+            <li>Vitamin B12 Test</li>
+            <li>Kidney Function Test (in many situations)</li>
+            <li>Liver Function Test (depending on recommendations)</li>
+          </ul>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Because requirements can vary, patients should follow the
+            instructions provided by their healthcare professional rather than
+            relying on assumptions.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Can You Drink Water Before a Blood Test?
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            This is one of the most searched questions related to fasting blood
+            tests.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            In many cases, plain water is allowed during the fasting period
+            because it helps maintain hydration and can make blood collection
+            easier. However, beverages such as tea, coffee, juice, soft drinks,
+            milk, or flavored water may affect certain test results and should
+            generally be avoided unless specifically permitted.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            What Happens If You Accidentally Eat Before a Fasting Test?
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Eating before a fasting blood test may alter certain measurements,
+            particularly blood glucose and triglyceride levels. Depending on the
+            test and the amount consumed, your healthcare provider may recommend
+            rescheduling the test.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            If you accidentally eat, it's usually best to inform the laboratory
+            or your doctor rather than attempting to hide the mistake.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Why Fasting Matters for Cholesterol and Blood Sugar Tests
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Food intake can temporarily affect several blood markers. For
+            example, consuming a meal before a lipid profile may influence
+            triglyceride levels, while eating carbohydrates before a fasting
+            blood sugar test can increase glucose measurements.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Accurate baseline values help doctors assess diabetes risk,
+            cardiovascular health, and overall metabolic function more
+            effectively.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Tips for Preparing for a Fasting Blood Test
+          </h2>
+
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <li>Schedule your test early in the morning.</li>
+            <li>Follow the fasting duration recommended by your doctor.</li>
+            <li>Stay hydrated with water if permitted.</li>
+            <li>Avoid alcohol before the test.</li>
+            <li>Get adequate sleep the night before.</li>
+            <li>Inform your doctor about medications you take.</li>
+            <li>Avoid strenuous exercise before testing.</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Fasting Blood Test vs Non-Fasting Blood Test: Which Is Better?
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Neither approach is inherently better. The correct choice depends on
+            the purpose of the test. Some measurements require fasting for
+            optimal interpretation, while many modern tests can provide accurate
+            results without dietary restrictions.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            The most important factor is following the specific preparation
+            instructions associated with your test rather than choosing one
+            approach over the other.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Booking Blood Tests Online: Compare Before You Book
+          </h2>
+
+          <img
+            src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?q=80&w=1340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="book blood test online"
+          />
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 mt-2">
+            Whether you're booking a fasting blood sugar test, lipid profile,
+            thyroid profile, CBC test, or a complete health checkup, prices can
+            vary significantly between diagnostic centers.
+          </p>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            Comparing diagnostic providers before booking can help you find the
+            best combination of affordability, convenience, home sample
+            collection options, and report turnaround times.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4">
+            Frequently Asked Questions
+          </h2>
+
+          <ul className="list-disc list-inside mb-6 text-lg text-gray-700 dark:text-gray-300">
+            <b>Q: How many hours should I fast before a blood test?</b>
+            <br />
+            <b>A:</b> Many fasting tests require 8-12 hours of fasting, but
+            requirements can vary.
+            <br />
+            <b>Q: Can I drink water before a fasting blood test?</b>
+            <br />
+            <b>A:</b> Plain water is often allowed, but always follow your
+            healthcare provider's instructions.
+            <br />
+            <b>Q: Does a CBC test require fasting?</b>
+            <br />
+            <b>A:</b> A CBC test typically does not require fasting.
+            <br />
+            <b>Q: Is fasting required for thyroid tests?</b>
+            <br />
+            <b>A:</b> Many thyroid tests can be performed without fasting,
+            though specific recommendations may vary.
+            <br />
+            <b>Q: What if I accidentally eat before my fasting test?</b>
+            <br />
+            <b>A:</b> Inform the laboratory or your doctor, as it may affect
+            certain results.
+          </ul>
+
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-4">
+            Final Thoughts
+          </h2>
+
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Understanding the difference between fasting and non-fasting blood
+            tests can help ensure accurate results and prevent unnecessary
+            repeat testing. While many modern diagnostic tests no longer require
+            fasting, certain tests such as fasting blood sugar and lipid
+            profiles still rely on proper preparation. Before your next health
+            checkup, always verify the requirements with your healthcare
+            provider and choose a trusted diagnostic center that offers
+            transparent pricing and reliable service. Discover how the{" "}
+            <a
+              className="text-blue-500"
+              target="_blank"
+              href="https://medibachat.in/blog/best-orthopedic-pillow-india-neck-cervical-back-pain"
+            >
+              <b>right orthopedic pillow</b>
+            </a>{" "}
+            can improve sleep posture and provide support for neck, cervical,
+            and back discomfort.
+          </p>
+        </>
       ),
     },
   };
