@@ -16,6 +16,13 @@
   </url>
 
   <url>
+    <loc>https://medibachat.in/blog</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://medibachat.in/about-medibachat</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
