@@ -12,6 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AboutUs from "./pages/AboutUs";
 import TermsOfService from "./pages/TermsOfService";
 import BlogPost from "./pages/BlogPost";
+import Blog from "./pages/Blog";
 import ScrollHandler from "./components/ui/ScrollHandler";
 import Disclaimer from "./pages/Disclaimer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
