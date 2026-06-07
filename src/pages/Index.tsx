@@ -48,7 +48,7 @@ const Index = () => {
       {/* <DownloadApp /> */}
       <RefillReminderSection/>
       <ContactForm />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </div>
   );

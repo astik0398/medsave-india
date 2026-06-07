@@ -415,6 +415,17 @@ export const blogPosts: BlogPost[] = [
     category: "Education",
     image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b",
   },
+
+  {
+  id: "home-sample-collection-vs-lab-visit",
+  title: "Home Sample Collection vs Visiting a Lab: Which Is Better?",
+  excerpt: "Compare home sample collection and traditional lab visits. Learn about convenience, costs, accuracy, and when each option makes sense.",
+  author: "Team MediBachat",
+  date: "June 07, 2026",
+  readTime: "8 min read",
+  category: "Guide",
+  image: "https://images.unsplash.com/photo-1682706841281-f723c5bfcd83?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
 ];
 
 export const getCategoryColor = (category: string) => {
