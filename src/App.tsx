@@ -35,6 +35,7 @@ const App = () => (
             <ScrollHandler />
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/about-medibachat" element={<AboutUs />} />
