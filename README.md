@@ -1,73 +1,134 @@
-# Welcome to your Lovable project
+# 💊 MediBachat - Frontend
 
-## Project info
+## 📖 Overview
 
-**URL**: https://lovable.dev/projects/88b5f5be-6810-4c1c-808d-a78f1255b6c6
+MediBachat is a modern medicine price comparison platform that helps users discover medicines, compare prices from multiple pharmacies, and make informed purchasing decisions.
 
-## How can I edit this code?
+This repository contains the frontend application built using React, providing a responsive and intuitive user experience for searching medicines, viewing detailed information, comparing prices, and accessing health-related content.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/88b5f5be-6810-4c1c-808d-a78f1255b6c6) and start prompting.
+- 🔍 Smart medicine search
+- 💰 Compare medicine prices across pharmacies
+- 📄 Detailed medicine information
+- 🏥 Pharmacy listings
+- 📱 Fully responsive UI
+- ⚡ Fast page navigation
+- 📰 Health & medicine blogs
+- ❤️ Wishlist/Favorites support
+- 🔄 Dynamic API integration
+- 🎨 Clean and modern user interface
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Frontend
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+- React.js
+- JavaScript (ES6+)
+- React Router DOM
+- Axios
 - Tailwind CSS
 
-## How can I deploy this project?
+### Development Tools
 
-Simply open [Lovable](https://lovable.dev/projects/88b5f5be-6810-4c1c-808d-a78f1255b6c6) and click on Share -> Publish.
+- Git
+- GitHub
+- VS Code
+- npm
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🚀 Getting Started
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Clone the repository
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+git clone https://github.com/astik0398/medsave-india.git
+```
+
+### Navigate to project
+
+```bash
+cd medsave-india
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm start
+```
+
+The application will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📱 Main Pages
+
+- Home
+- Search Medicines
+- Compare Prices
+- Blog
+- About
+- Contact
+
+---
+
+## 🎯 Key Highlights
+
+- Responsive design for all devices
+- Optimized component-based architecture
+- REST API integration
+- Reusable UI components
+- Fast loading experience
+- Clean code structure
+- Easy scalability and maintenance
+
+---
+
+## 🔌 API Integration
+
+The frontend communicates with the backend using REST APIs to:
+
+- Fetch medicines
+- Search products
+- Compare medicine prices
+- Retrieve medicine details
+
+---
+
+## 📈 Future Improvements
+
+- AI-powered medicine recommendations
+- OCR based medicine search
+- Medicine availability tracking
+- Prescription upload
+- Dark mode
+
+---
+
+## 👨‍💻 Author
+
+**Kumar Astik**
+
+- GitHub: https://github.com/astik0398
+- LinkedIn: [Kumar Astik](https://www.linkedin.com/in/kumar-astik-9444361b5)
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
