@@ -65,7 +65,7 @@ npm install
 ### Start development server
 
 ```bash
-npm start
+npm run dev
 ```
 
 The application will run at:
