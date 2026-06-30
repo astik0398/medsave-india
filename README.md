@@ -6,6 +6,8 @@ MediBachat is a modern medicine price comparison platform that helps users disco
 
 This repository contains the frontend application built using React, providing a responsive and intuitive user experience for searching medicines, viewing detailed information, comparing prices, and accessing health-related content.
 
+<img width="1888" height="879" alt="scrnli_JTluH7C9QE4fiV" src="https://github.com/user-attachments/assets/f745f2f5-7447-4608-ae47-b65b933b0bc7" />
+
 ---
 
 ## ✨ Features
@@ -74,6 +76,8 @@ The application will run at:
 http://localhost:3000
 ```
 
+<img width="1884" height="879" alt="scrnli_KXsVU72N6e6r3p" src="https://github.com/user-attachments/assets/7a643d5c-5042-4667-bc27-1f01dd83a3b4" />
+
 ---
 
 ## 📱 Main Pages
@@ -117,6 +121,8 @@ The frontend communicates with the backend using REST APIs to:
 - Medicine availability tracking
 - Prescription upload
 - Dark mode
+
+<img width="1883" height="879" alt="scrnli_nTJATd3qTe8AZ2" src="https://github.com/user-attachments/assets/61561372-773f-451c-ad80-d6eb847af046" />
 
 ---
 
