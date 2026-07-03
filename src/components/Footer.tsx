@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img src={logo} alt="MedSave India" className="h-8 w-8" />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                MediBachat By Kumar Astik
+                MediBachat - Kumar Astik
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
